@@ -8,5 +8,5 @@ if (_stime > 0) then {
 	sleep _stime;
 };
 if (!isNull _obj && {isNil {_obj getVariable "d_nodyn"} && {!dynamicSimulationEnabled _obj}}) then {
-	_obj enableDynamicSimulation true;
+	// _obj enableDynamicSimulation true; // Edited: Never enableDynamicSimulation
 };
