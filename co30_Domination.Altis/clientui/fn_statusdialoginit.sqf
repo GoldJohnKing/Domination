@@ -299,17 +299,17 @@ __ctrl2(2005) ctrlSetText str(d_points_needed # 4);
 __ctrl2(2006) ctrlSetText str(d_points_needed # 5);
 __ctrl2(2007) ctrlSetText str(d_points_needed # 6);
 
-if (!d_tt_ver) then {
-	__ctrl2(1610) cbSetChecked d_maintarget_auto_vd;
-	__ctrl2(1610) ctrlAddEventHandler ["CheckedChanged", {
-		d_maintarget_auto_vd = !d_maintarget_auto_vd;
-		if (d_maintarget_auto_vd) then {
-			systemChat (localize "STR_DOM_MISSIONSTRING_1965");
-		} else {
-			systemChat (localize "STR_DOM_MISSIONSTRING_1966");
-		};
-	}];
-};
+// if (!d_tt_ver) then { // Edited: Disable auto view distance
+// 	__ctrl2(1610) cbSetChecked d_maintarget_auto_vd;
+// 	__ctrl2(1610) ctrlAddEventHandler ["CheckedChanged", {
+// 		d_maintarget_auto_vd = !d_maintarget_auto_vd;
+// 		if (d_maintarget_auto_vd) then {
+// 			systemChat (localize "STR_DOM_MISSIONSTRING_1965");
+// 		} else {
+// 			systemChat (localize "STR_DOM_MISSIONSTRING_1966");
+// 		};
+// 	}];
+// };
 
 /*__ctrl2(1612) cbSetChecked d_player_radioprotocol;
 __ctrl2(1612) ctrlAddEventHandler ["CheckedChanged", {

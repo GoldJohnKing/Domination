@@ -2728,11 +2728,12 @@ if (hasInterface) then {
 	d_add_resp_points_pos = [];
 
 	d_earplugs_fitted = false;
-#ifndef __TT__
-	d_maintarget_auto_vd = true;
-#else
+// #ifndef __TT__ // Edited: Disable auto view distance
+// 	d_maintarget_auto_vd = true;
+// #else
+// 	d_maintarget_auto_vd = false;
+// #endif
 	d_maintarget_auto_vd = false;
-#endif
 
 	d_deploy_mhq_camo = true;
 

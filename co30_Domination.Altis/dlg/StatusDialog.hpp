@@ -390,20 +390,20 @@ class D_StatusDialog {
 			y = "0.37 * safezoneH + safezoneY";
 			onLBSelChanged = "[_this] call d_fnc_pnselchanged"; 
 		};
-#ifndef __TT__
-		class AutoVDCaption: ViewDistanceCaption {
-			idc = 1609;
-			y = "0.40 * safezoneH + safezoneY";
-			text = "$STR_DOM_MISSIONSTRING_1964";
-		};
-		class AutoVDCheckBox: RscCheckBox {
-			idc = 1610;
-			x = "0.48 * safezoneW + safezoneX";
-			y = "0.404 * safezoneH + safezoneY";
-			w = "0.02 * safezoneW";
-			h = "0.025 * safezoneH";
-		};
-#endif
+// #ifndef __TT__ // Edited: Disable auto view distance
+// 		class AutoVDCaption: ViewDistanceCaption {
+// 			idc = 1609;
+// 			y = "0.40 * safezoneH + safezoneY";
+// 			text = "$STR_DOM_MISSIONSTRING_1964";
+// 		};
+// 		class AutoVDCheckBox: RscCheckBox {
+// 			idc = 1610;
+// 			x = "0.48 * safezoneW + safezoneX";
+// 			y = "0.404 * safezoneH + safezoneY";
+// 			w = "0.02 * safezoneW";
+// 			h = "0.025 * safezoneH";
+// 		};
+// #endif
 		/*class RadioProtocolCaption: ViewDistanceCaption {
 			idc = 1611;
 			y = "0.43 * safezoneH + safezoneY";
