@@ -16,6 +16,6 @@ _vec spawn {
 	scriptName "spawn vecinit";
 	sleep 15;
 	if (alive _this && {isNil {_this getVariable "d_nodyn"} && {!dynamicSimulationEnabled  _this}}) then {
-		// _this enableDynamicSimulation true; // Edited: Never enableDynamicSimulation
+		_this enableDynamicSimulation true;
 	};
 };
