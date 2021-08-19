@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=1396;
+		nextID=1397;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14730.595,42.91,16574.697};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={14815.021,384.67749,16496.752};
+		dir[]={-0.517147,-0.64296591,0.56493694};
+		up[]={-0.43414307,0.76589477,0.47426254};
+		aside[]={0.7376169,1.4901161e-008,0.67521942};
 	};
 };
 binarizationWanted=0;
@@ -519,7 +519,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=663;
+		items=664;
 		class Item0
 		{
 			dataType="Marker";
@@ -29460,6 +29460,25 @@ class Mission
 			colorName="ColorGreen";
 			id=972;
 			atlOffset=155.44273;
+		};
+		class Item663
+		{
+			dataType="Trigger";
+			position[]={14677.713,17.91,16646.729};
+			angle=5.5152402;
+			class Attributes
+			{
+				onActivation="hint ""进入安全区，无敌状态启用""; " \n "player allowDamage false;";
+				onDeactivation="hint ""离开安全区，无敌状态取消""; " \n "player allowDamage true;";
+				sizeA=700;
+				sizeB=300;
+				sizeC=50;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=1396;
+			type="EmptyDetectorAreaR250";
 		};
 	};
 	class Connections
