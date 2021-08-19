@@ -1504,7 +1504,7 @@ class Params {
 	class d_maxnum_tks_forkick {
 		title = "$STR_DOM_MISSIONSTRING_1197";
 		values[] = {1,2,3,5,10,20,30,40,1000000};
-		default = 10;
+		default = 5;
 		texts[] = {"1","2","3","5","10","20","30","40","$STR_DOM_MISSIONSTRING_1198"};
 	};
 
@@ -1525,7 +1525,7 @@ class Params {
 	class d_sub_tk_points {
 		title = "$STR_DOM_MISSIONSTRING_1194";
 		values[] = {0,1,5,10,20,30,50};
-		default = 10;
+		default = 30;
 		texts[] = {"0","1","5","10","20","30","50"};
 	};
 	
