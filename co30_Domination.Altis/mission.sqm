@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14650.024,134.05869,16632.885};
-		dir[]={-0.56611884,-0.79600537,0.21420813};
-		up[]={-0.74449253,0.60528946,0.28170118};
-		aside[]={0.35389358,1.4901161e-008,0.93528581};
+		pos[]={14768.395,603.74329,16549.428};
+		dir[]={-0.16592529,-0.94564384,0.27969879};
+		up[]={-0.48247418,0.32520005,0.81330246};
+		aside[]={0.86005306,-1.3806857e-007,0.51020843};
 	};
 };
 binarizationWanted=0;
@@ -519,7 +519,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=664;
+		items=663;
 		class Item0
 		{
 			dataType="Marker";
@@ -14570,7 +14570,7 @@ class Mission
 			};
 			id=1043;
 			type="O_Plane_Fighter_02_F";
-			atlOffset=3.4332275e-005;
+			atlOffset=1.9073486e-006;
 		};
 		class Item454
 		{
@@ -29535,25 +29535,6 @@ class Mission
 			colorName="ColorGreen";
 			id=972;
 			atlOffset=155.44273;
-		};
-		class Item663
-		{
-			dataType="Trigger";
-			position[]={14677.713,17.91,16646.729};
-			angle=5.5152388;
-			class Attributes
-			{
-				onActivation="hint ""进入安全区，无敌状态启用""; " \n "player allowDamage false;";
-				onDeactivation="hint ""离开安全区，无敌状态取消""; " \n "player allowDamage true;";
-				sizeA=700;
-				sizeB=300;
-				sizeC=50;
-				repeatable=1;
-				activationBy="ANYPLAYER";
-				isRectangle=1;
-			};
-			id=1396;
-			type="EmptyDetectorAreaR250";
 		};
 	};
 	class Connections
