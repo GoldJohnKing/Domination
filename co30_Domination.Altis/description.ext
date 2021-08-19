@@ -491,7 +491,7 @@ class Params {
 	class d_bonus_vec_type {
 		title = "$STR_DOM_MISSIONSTRING_1736";
 		values[] = {0,1,2,3};
-		default = 0;
+		default = 2;
 		texts[] = {"$STR_DOM_MISSIONSTRING_11","$STR_DOM_MISSIONSTRING_1737","$STR_DOM_MISSIONSTRING_1738","$STR_DOM_MISSIONSTRING_1739"};
 	};
 
@@ -1504,14 +1504,14 @@ class Params {
 	class d_maxnum_tks_forkick {
 		title = "$STR_DOM_MISSIONSTRING_1197";
 		values[] = {1,2,3,5,10,20,30,40,1000000};
-		default = 5;
+		default = 10;
 		texts[] = {"1","2","3","5","10","20","30","40","$STR_DOM_MISSIONSTRING_1198"};
 	};
 
 	class d_player_kick_shootingbase {
 		title = "$STR_DOM_MISSIONSTRING_1199";
 		values[] = {2,3,5,10,20,30,1000};
-		default = 10;
+		default = 5;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1200","$STR_DOM_MISSIONSTRING_1201","$STR_DOM_MISSIONSTRING_1202","$STR_DOM_MISSIONSTRING_1203","$STR_DOM_MISSIONSTRING_1204","$STR_DOM_MISSIONSTRING_1205","$STR_DOM_MISSIONSTRING_1206"};
 	};
 
@@ -1525,7 +1525,7 @@ class Params {
 	class d_sub_tk_points {
 		title = "$STR_DOM_MISSIONSTRING_1194";
 		values[] = {0,1,5,10,20,30,50};
-		default = 30;
+		default = 5;
 		texts[] = {"0","1","5","10","20","30","50"};
 	};
 	
