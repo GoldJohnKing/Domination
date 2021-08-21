@@ -478,7 +478,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="用启动器来加入战斗吧！同志！新版本：中俄联合";
+		briefingName="中俄联合作战! 用启动器来加入战斗吧!";
 		overviewText="解放A岛 将美军从这里驱逐出去！";
 		startWeather=0;
 		startWind=0;
