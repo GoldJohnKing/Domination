@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14626.88,150.72234,16682.834};
-		dir[]={-0.67341727,-0.43932468,-0.59456116};
-		up[]={-0.32933262,0.89832836,-0.29076827};
-		aside[]={-0.66185284,-1.4901161e-008,0.74963379};
+		pos[]={14535.394,51.199924,16268.87};
+		dir[]={-0.89629787,-0.35438421,0.26660469};
+		up[]={-0.33968416,0.93509692,0.10103925};
+		aside[]={0.28510758,-3.8431608e-008,0.95850408};
 	};
 };
 binarizationWanted=0;
@@ -537,8 +537,8 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="用启动器来加入战斗吧！达瓦里氏";
-		overviewText="解放A岛 将美军从这里驱逐出去！";
+		briefingName="中俄联合作战! 同志! 用启动器来加入战斗吧!";
+		overviewText="解放A岛 将美军从这里驱逐出去!";
 		startWeather=0;
 		startWind=0;
 		forecastWeather=0;
@@ -13321,7 +13321,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14904.891,19.119999,16336.987};
-				angles[]={-0,5.4977875,0};
+				angles[]={0,5.4977875,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13361,7 +13361,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14904.7,19.128803,16322.031};
-				angles[]={-0,3.9618979,0.0039967569};
+				angles[]={0,3.9618979,0.0039967569};
 			};
 			side="Empty";
 			flags=4;
@@ -13441,7 +13441,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14867.19,19.119999,16330.598};
-				angles[]={-0,5.4977875,0};
+				angles[]={0,5.4977875,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13481,7 +13481,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14865.276,19.119999,16323.183};
-				angles[]={-0,3.9618979,0};
+				angles[]={0,3.9618979,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13521,7 +13521,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14872.503,19.119999,16325.131};
-				angles[]={-0,2.3911011,0};
+				angles[]={0,2.3911011,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13561,7 +13561,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14874.916,19.119999,16332.756};
-				angles[]={-0,3.9618979,0};
+				angles[]={0,3.9618979,0};
 			};
 			side="Empty";
 			flags=4;
@@ -26519,7 +26519,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14539.886,19.692631,16686.57};
-				angles[]={-0,2.3304508,6.2818937};
+				angles[]={0,2.3304508,6.2818937};
 			};
 			side="Empty";
 			flags=4;
@@ -26762,7 +26762,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14526.058,19.708517,16671.695};
-				angles[]={-0,2.3304508,6.2698579};
+				angles[]={0,2.3304508,6.2698579};
 			};
 			side="Empty";
 			flags=4;
@@ -28088,7 +28088,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15070.936,20.76919,17000.863};
-				angles[]={-0,1.1868243,0};
+				angles[]={0,1.1868243,0};
 			};
 			side="Empty";
 			flags=4;
@@ -28863,7 +28863,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14803.803,20.257257,16746.088};
-				angles[]={-0,5.4125628,0};
+				angles[]={0,5.4125628,0};
 			};
 			side="Empty";
 			flags=4;
