@@ -1525,7 +1525,7 @@ class Params {
 	class d_sub_tk_points {
 		title = "$STR_DOM_MISSIONSTRING_1194";
 		values[] = {0,1,5,10,20,30,50};
-		default = 5;
+		default = 30;
 		texts[] = {"0","1","5","10","20","30","50"};
 	};
 	
