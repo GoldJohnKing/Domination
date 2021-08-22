@@ -56,30 +56,30 @@ if (hasInterface) then {
 	setObjectViewDistance [1700, 0];
 };
 
-// if (d_GrasAtStart == 1) then { // Edited: Disable setTerrainGrid
-// 	setTerrainGrid 50;
-// 	d_graslayer_index = 0;
-// } else {
-// 	if (hasInterface) then {
-// 		if (d_Terraindetail == 1) then {
-// 			d_graslayer_index = 1;
-// 			setTerrainGrid 25;
-// 		} else {
-// 			private _tg = profileNamespace getVariable ["dom_terraingrid", getTerrainGrid];
-// 			diag_log ["DOM terraingrid at start:", _tg];
-// 			if (_tg != getTerrainGrid) then {
-// 				setTerrainGrid _tg;
-// 				private _tmpidx = [50, 25, 12.5, 6.25, 3.125] find _tg;
-// 				if (_tmpidx != -1) then {
-// 					d_graslayer_index = _tmpidx;
-// 				};
-// 			} else {
-// 				setTerrainGrid 25;
-// 				d_graslayer_index = 1;
-// 			};
-// 		};
-// 	};
-// };
+if (d_GrasAtStart == 1) then {
+	setTerrainGrid 50;
+	d_graslayer_index = 0;
+} else {
+	if (hasInterface) then {
+		if (d_Terraindetail == 1) then {
+			d_graslayer_index = 1;
+			setTerrainGrid 25;
+		} else {
+			private _tg = profileNamespace getVariable ["dom_terraingrid", getTerrainGrid];
+			diag_log ["DOM terraingrid at start:", _tg];
+			if (_tg != getTerrainGrid) then {
+				setTerrainGrid _tg;
+				private _tmpidx = [50, 25, 12.5, 6.25, 3.125] find _tg;
+				if (_tmpidx != -1) then {
+					d_graslayer_index = _tmpidx;
+				};
+			} else {
+				setTerrainGrid 25;
+				d_graslayer_index = 1;
+			};
+		};
+	};
+};
 
 d_target_names = [];
 call d_fnc_maketarget_names;
