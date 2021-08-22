@@ -756,21 +756,21 @@ class Params {
 	class d_InitialViewDistance {
 		title = "$STR_DOM_MISSIONSTRING_1025";
 		values[] = {1000,1600,2000,2500,3000,3500,4000,4500,5000};
-		default = 1000;
+		default = 1200;
 		texts[] = {"1000 m","1600 m","2000 m","2500 m","3000 m","3500 m","4000 m","4500 m","5000 m"};
 	};
 
 	class d_MaxViewDistance {
 		title = "$STR_DOM_MISSIONSTRING_1035";
 		values[] = {2000,3000,4000,5000,6000,7000,8000,9000,10000};
-		default = 8000;
+		default = 4000;
 		texts[] = {"2000 m","3000 m","4000 m","5000 m","6000 m","7000 m","8000 m","9000 m","10000 m"};
 	};
 
 	class d_ViewdistanceChange {
 		title = "$STR_DOM_MISSIONSTRING_1041";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	
