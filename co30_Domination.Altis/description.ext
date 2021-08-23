@@ -1192,7 +1192,7 @@ class Params {
 	class d_occ_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1900A";
 		values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 30, 35, 40, 45, 50};
-		default = 1;
+		default = 0;
 		texts[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "30", "35", "40", "45", "50"};
 	};
 
@@ -1381,7 +1381,7 @@ class Params {
 	class d_WithLessArmor_side {
 		title = "$STR_DOM_MISSIONSTRING_1730";
 		values[] = {0,1,2,3};
-		default = 3;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_11","$STR_DOM_MISSIONSTRING_1133","$STR_DOM_MISSIONSTRING_405", "$STR_DOM_MISSIONSTRING_1007_RANDOM"};
 	};
 
