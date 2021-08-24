@@ -2172,8 +2172,3 @@ class Extended_Init_Eventhandlers {
 };
 
 //__EXEC(diag_log [diag_frameno, diag_ticktime, time, "Dom description.ext processed"]);
-
-// Edited: Support Unit Voice-overs
-class Extended_PreInit_EventHandlers {
-    UVO_Faction = compileScript ["Custom\UVO_Faction.sqf"];
-};
