@@ -48,3 +48,12 @@ if (isServer) then {
 #endif
 
 diag_log [diag_frameno, diag_ticktime, time, "Dom init.sqf processed"];
+
+// Edited: Add shop system
+missionNamespace setVariable ["money", 0];
+addMissionEventHandler ["EntityKilled", {
+	params ["_killed", "_killer", "_instigator"];
+	if (isPlayer _killer) then {
+		[10] execVM "moneysystem\rewardsystem\reward.sqf";
+	};
+}];
