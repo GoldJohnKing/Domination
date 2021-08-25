@@ -1094,7 +1094,7 @@ class Params {
 	class d_civ_groupcount {
 		title = "$STR_DOM_MISSIONSTRING_1920";
 		values[] = {0,1,2,3,4,5,6,7,8,9,10,25,50,75,100,150,200,250,300};
-		default = 1;
+		default = 0;
 		texts[] = {"0","1","2","3","4","5","6","7","8","9","10","25","50","75","100","150","200","250","300"};
 	};
 
@@ -1108,7 +1108,7 @@ class Params {
 	class d_enable_civ_vehs {
 		title = "$STR_DOM_MISSIONSTRING_1890CIVVEH";
 		values[] = {0, 10, 25, 50, 75, 100};
-		default = 10;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_363", "Very Low", "Low","Medium","High","Maximum"};
 	};
 	
