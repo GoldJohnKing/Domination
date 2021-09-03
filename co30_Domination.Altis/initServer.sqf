@@ -125,4 +125,8 @@ if (isDedicated) then {
 };
 #endif
 
+[{ // Edited: Add server restart function
+    "btc_password" serverCommand "#restart";
+}, [], 43200] call CBA_fnc_waitAndExecute; // Restart every 12 hours
+
 diag_log [diag_frameno, diag_ticktime, time, "MPF initServer.sqf processed"];
