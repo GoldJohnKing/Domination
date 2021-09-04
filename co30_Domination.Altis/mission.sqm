@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=1560;
+		nextID=1567;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14798.704,25.405096,16759.832};
-		dir[]={0.39516258,-0.29272807,-0.87072515};
-		up[]={0.12097457,0.95619547,-0.26656285};
-		aside[]={-0.91061372,-1.8684659e-008,-0.41326538};
+		pos[]={14612.871,20.143295,16797.971};
+		dir[]={0.85248226,-0.13008825,0.50646323};
+		up[]={0.11187804,0.9914965,0.06646543};
+		aside[]={0.51081574,-7.4354466e-007,-0.85980707};
 	};
 };
 binarizationWanted=0;
@@ -80,13 +80,14 @@ addons[]=
 	"ZTZ99A_LK",
 	"ZBD04_LK",
 	"PGZ09_LK",
-	"ZTL11_LK"
+	"ZTL11_LK",
+	"A3_Props_F_AoW_Civilian_Gallery"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=45;
+		items=46;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -387,6 +388,13 @@ class AddonsMetaData
 			className="ZTL11_LK";
 			name="ZTL11_LK";
 		};
+		class Item45
+		{
+			className="A3_Props_F_AoW";
+			name="Arma 3 Art of War - Decorative and Mission ";
+			author="波希米亚互动工作室";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -396,7 +404,8 @@ dlcs[]=
 	"Expansion",
 	"Heli",
 	"Jets",
-	"Argo"
+	"Argo",
+	"Aow"
 };
 randomSeed=10318084;
 class ScenarioData
@@ -477,7 +486,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=579;
+		items=580;
 		class Item0
 		{
 			dataType="Marker";
@@ -17994,7 +18003,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14628.745,19.653187,16774.973};
-				angles[]={0,3.9324577,0};
+				angles[]={0,3.9324536,0};
 			};
 			side="Empty";
 			flags=5;
@@ -22659,6 +22668,65 @@ class Mission
 			id=1559;
 			type="rhs_2s3_tv";
 			atlOffset=-0.0019989014;
+		};
+		class Item579
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14614.985,20.089664,16799.334};
+				angles[]={0,0.78539819,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=1566;
+			type="GalleryFrame_02_large_rectangle_F";
+			atlOffset=1.5420017;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Picture\daoyan1.jpg";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 	};
 	class Connections
