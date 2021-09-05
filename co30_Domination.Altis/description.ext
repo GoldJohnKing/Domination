@@ -11,7 +11,7 @@ allowFunctionsLog = 1;
 #include "cfgfunctions.hpp"
 
 author = "Xeno、GOLD";
-OnLoadName = "暴打美帝! 解放A岛!";
+OnLoadName = "暴打美帝! 解放中东!";
 onLoadMission = "$STR_DOM_MISSIONSTRING_24";
 onLoadIntroTime = false;
 onLoadMissionTime = false;
@@ -463,7 +463,7 @@ class Params {
 	class d_with_MainTargetEvents {
 		title = "$STR_DOM_MISSIONSTRING_1052_EVENTS";
 		values[] = {0,1,2,-1,-2,-3,-4};
-		default = 2;
+		default = -1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_418","$STR_DOM_MISSIONSTRING_399","$STR_DOM_MISSIONSTRING_399B","$STR_DOM_MISSIONSTRING_418B","$STR_DOM_MISSIONSTRING_418C","$STR_DOM_MISSIONSTRING_418C_GUERR","$STR_DOM_MISSIONSTRING_ALL"};
 	};
 	
@@ -1276,7 +1276,7 @@ class Params {
 	class d_camp_static_weapons {
 		title = "$STR_DOM_MISSIONSTRING_STATICWEAPONS";
 		values[] = {0,1};
-		default = 1;
+		default =0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 	
@@ -1374,7 +1374,7 @@ class Params {
 	class d_WithLessArmor {
 		title = "$STR_DOM_MISSIONSTRING_1132";
 		values[] = {0,1,2,3};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_11","$STR_DOM_MISSIONSTRING_1133","$STR_DOM_MISSIONSTRING_405", "$STR_DOM_MISSIONSTRING_1007_RANDOM"};
 	};
 

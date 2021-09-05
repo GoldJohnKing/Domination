@@ -2049,7 +2049,7 @@ if (!d_gmcwgwinter) then {
 			["RHS_Mi8MTV3_vvsc"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["rhsusf_CH53E_USMC"]
+			["RHS_CH_47F_light"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2061,7 +2061,7 @@ if (!d_gmcwgwinter) then {
 			["uns_an2"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["rhsusf_CH53E_USMC"]
+			["RHS_CH_47F_light"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2547,7 +2547,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv", "AGE_LSV", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhs_btr80a_vdv", "rhs_bmd4_vdv"]
+			["rhs_tigr_sts_3camo_vdv", "AGE_LSV", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhs_btr80a_vdv_des", "rhs_bmd4_vdv", "rhs_bmp2k_vdv_des", "rhs_sprut_vdv", "rhs_t72be_vdv_des","rhs_t90sm_tv"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]
