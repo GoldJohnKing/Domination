@@ -1899,7 +1899,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","RHS_AH1Z","I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F"]
+					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","RHS_AH1Z","I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F","RHS_A10","JS_JC_FA18F"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2205,7 +2205,7 @@ if (!d_gmcwgwinter) then {
 
 	d_b_small_static_high =
 #ifdef __ALTIS__
-		"Land_BagBunker_Small_F";
+		"";
 #endif
 #ifdef __CUP_CHERNARUS__
 		"Land_BagBunker_01_small_green_F";
