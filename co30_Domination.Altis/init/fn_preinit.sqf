@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_MELB_AH6M","RHSGREF_A29B_HIDF","RHS_UH1Y","I_Plane_Fighter_03_dynamicLoadout_F"]
+					["RHS_MELB_AH6M","RHSGREF_A29B_HIDF","RHS_UH1Y","I_Plane_Fighter_03_dynamicLoadout_F","RHS_A10"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
