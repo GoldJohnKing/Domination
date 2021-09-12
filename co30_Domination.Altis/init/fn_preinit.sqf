@@ -1796,7 +1796,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_2", "LIB_FW190F8_5", "LIB_FW190F8_3"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_A10","rhsusf_f22","JS_JC_FA18F"]
+					["rhsusf_f22","JS_JC_FA18F"]
 				};
 				if (d_csla) exitWith {
 					[]
@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_MELB_AH6M","RHS_UH1Y_d","R3F_GRIPEN","R3F_TIGER","RHS_AH1Z","I_Plane_Fighter_04_F"]
+					["RHS_MELB_AH6M","R3F_GRIPEN","R3F_TIGER","I_Plane_Fighter_04_F","B_Plane_Fighter_01_F"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
