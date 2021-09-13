@@ -4,7 +4,7 @@
 ["B_APC_Tracked_01_AA_F"],
 ["B_AMF_VAB_ULTIMA_TOP_X8_F","rhsusf_M1220_M2_usarmy_d","rhsusf_M1230_M2_usarmy_d","rhsusf_M1232_M2_usarmy_d","B_AMF_VAB_ULTIMA_TOP_X8_F","rhsusf_M1237_M2_usarmy_wd","B_AMF_VAB_ULTIMA_TOP_X8_F"],
 ["rhsusf_m1025_d_m2","rhsusf_m1025_d_Mk19","rhsusf_m1025_w_m2","rhsusf_m1025_w_mk19","rhsusf_m1025_d_s_m2","rhsusf_m966_d","rhsusf_m1025_w_s_m2","rhsusf_m966_d","rhsusf_m966_d"],
-["B_Radar_System_01_F","B_SAM_System_03_F","B_SAM_System_01_F","B_SAM_System_02_F","B_AAA_System_01_F"],
+["B_Radar_System_01_F","B_SAM_System_01_F","B_SAM_System_01_F","B_SAM_System_02_F","B_AAA_System_01_F"],
 ["RHS_Stinger_AA_pod_D","B_SAM_System_01_F","RHS_M2StaticMG_D","RHS_TOW_TriPod_D","RHS_TOW_TriPod_D","RHS_M2StaticMG_USMC_D","RHS_MK19_TriPod_USMC_D"],
 ["RHS_M252_D","RHS_M119_D","RHS_M252_USMC_WD"],
 ["rhsusf_M978A4_BKIT_usarmy_d"],
