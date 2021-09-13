@@ -1796,7 +1796,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_2", "LIB_FW190F8_5", "LIB_FW190F8_3"]
 				};
 				if (d_rhs) exitWith {
-					["rhsusf_f22","JS_JC_FA18F"]
+					["rhsusf_f22","B_Plane_Fighter_01_F"]
 				};
 				if (d_csla) exitWith {
 					[]
@@ -2049,7 +2049,7 @@ if (!d_gmcwgwinter) then {
 			["RHS_Mi8MTV3_vvsc"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["rhsusf_CH53E_USMC"]
+			["ffaa_nh90_tth_transport"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2061,7 +2061,7 @@ if (!d_gmcwgwinter) then {
 			["uns_an2"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["rhsusf_CH53E_USMC"]
+			["ffaa_nh90_tth_transport"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_MELB_AH6M","R3F_GRIPEN","R3F_TIGER","I_Plane_Fighter_04_F","B_Plane_Fighter_01_F"]
+					["AMF_gazelle_minigun_f","AMF_TIGRE_01","AMF_RAFALE_M_01_F","B_AMF_PLANE_FIGHTER_02_F"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};

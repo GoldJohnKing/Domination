@@ -447,7 +447,7 @@ if (isServer) then {
 #ifndef __TT__
 	// editor varname, unique number, true = respawn only when the chopper is completely destroyed, false = respawn after some time when no crew is in the chopper or chopper is destroyed
 	// unique number must be between 3000 and 3999
-	private _choppers = [[d_chopper_1,3001,true,600],[d_chopper_2,3002,true,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3004,false,600],[d_chopper_5,3001,false,600],[d_chopper_6,3001,false,600],[d_chopper_7,3003,false,600],[d_chopper_8,3003,false,600],[d_chopper_9,3003,false,600],[d_chopper_10,3003,false,600],[d_chopper_11,3003,false,600],[d_chopper_12,3003,false,600],[d_chopper_13,3003,false,600],[d_chopper_14,3003,false,600],[d_chopper_15,3003,false,600],[d_chopper_16,3003,false,600]] select {!isNil {_x # 0}}; // Edited: Change player vehicles
+	private _choppers = [[d_chopper_1,3001,true,600],[d_chopper_2,3001,true,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3004,false,600],[d_chopper_5,3001,false,600],[d_chopper_6,3001,false,600],[d_chopper_7,3003,false,600],[d_chopper_8,3003,false,600],[d_chopper_9,3003,false,600],[d_chopper_10,3003,false,600],[d_chopper_11,3003,false,600],[d_chopper_12,3003,false,600],[d_chopper_13,3001,false,600],[d_chopper_14,3003,false,600],[d_chopper_15,3003,false,600],[d_chopper_16,3003,false,600]] select {!isNil {_x # 0}}; // Edited: Change player vehicles
 
 	if (!isNil "d_additional_wreck") then {
 		{
