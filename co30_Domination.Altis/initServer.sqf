@@ -126,9 +126,10 @@ if (isDedicated) then {
 #endif
 
 // Edited: Add server restart function
-[{"[公告]服务器将于3分钟后重启!" call CBA_fnc_notify;}, [], 43020] call CBA_fnc_waitAndExecute; // Restart Hint: 180s
-[{"[公告]服务器将于60秒后重启!" call CBA_fnc_notify;}, [], 43140] call CBA_fnc_waitAndExecute; // Restart Hint: 60s
-[{"[公告]服务器将于30秒后重启!" call CBA_fnc_notify;}, [], 43170] call CBA_fnc_waitAndExecute; // Restart Hint: 30s
+[{"[公告]服务器将于3分钟后重启!" remoteExecCall ["CBA_fnc_notify", -2];}, [], 43020] call CBA_fnc_waitAndExecute; // Restart Hint: 180s
+[{"[公告]服务器将于60秒后重启!" remoteExecCall ["CBA_fnc_notify", -2];}, [], 43140] call CBA_fnc_waitAndExecute; // Restart Hint: 60s
+[{"[公告]服务器将于30秒后重启!" remoteExecCall ["CBA_fnc_notify", -2];}, [], 43170] call CBA_fnc_waitAndExecute; // Restart Hint: 30s
+
 [{"btc_password" serverCommand "#restart";}, [], 43200] call CBA_fnc_waitAndExecute; // Restart every 12 hours
 
 diag_log [diag_frameno, diag_ticktime, time, "MPF initServer.sqf processed"];
