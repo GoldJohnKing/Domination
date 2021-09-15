@@ -36,10 +36,10 @@
 <Original>二号基地车（MHQ）</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_20">
-<Original>放下弹药箱</Original>
+<Original>空投弹药箱</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_22">
-<Original>放下载具</Original>
+<Original>空投轻型主战坦克</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_23">
 <Original>欢迎...</Original>
@@ -2180,25 +2180,25 @@
 <Original>%1 正在执行 %2 打击, 齐射 %3</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1360">
-<Original>%1 个炮兵观察手在主目标被发现了, 小心...</Original>
+<Original>%1 个JTAC在主目标被发现了, 小心...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1361">
 <Original>次要任务:  %1</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1362">
-<Original>当前主目标的炮兵观察手全部阵亡</Original>
+<Original>当前主目标的JTAC全部阵亡</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1363">
-<Original>主目标发现通讯塔。摧毁后敌人将无法呼叫支援。</Original>
+<Original>主目标发现通讯塔。摧毁后敌人将无法呼叫空中支援。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1364">
-<Original>主目标通讯塔被摧毁, 敌人无法在呼叫支援了。</Original>
+<Original>主目标通讯塔被摧毁, 敌人无法再呼叫空中支援了。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1365">
 <Original>在主目标区域发现了 %1 个敌军营地, 把他们全部占领! ! ! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1366">
-<Original>敌人在主目标发现了你, 他们现在就会呼叫支援! ! ! </Original>
+<Original>敌人在主目标发现了我们, 他们正在呼叫支援! ! ! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1367">
 <Original>敌军在主目标发现了友军小队...他们将呼叫支援! ! ! </Original>
@@ -2836,7 +2836,7 @@
 <Original>主要目标敌军指挥总部（HQ）被消灭。现在不会有敌人的进一步增援。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1822">
-<Original>情报获取各种敌人营房和主要目标的敌军指挥总部（HQ）。找到并摧毁它们以切断敌人的 INF 和装甲增援! </Original>
+<Original>搜索各种敌人营房和主要目标的敌军指挥总部（HQ）。找到并摧毁它们以切断敌人的 INF 和装甲增援! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1823">
 <Original>你必须等待 %1 秒才能在 基地车（MHQ）上创建新载具! </Original>
@@ -2851,7 +2851,7 @@
 <Original>重生</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1827">
-<Original>%1 试图让你恢复活力...</Original>
+<Original>%1 正在对你进行战场急救...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1828">
 <Original>完成各种主线任务和解决支线任务...</Original>
@@ -2908,10 +2908,10 @@
 <Original>干得好! 该设备被摧毁。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1846">
-<Original>敌人的 SAM 网站给我们带来了很多麻烦。摧毁雷达和 SAM 发射器! </Original>
+<Original>敌人的 SAM 远程防空导弹网络给我们带来了很多麻烦。摧毁雷达和 SAM 发射器! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1847">
-<Original>干得好! SAM 网站已停业。</Original>
+<Original>干得好! SAM 防空系统已被摧毁。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1848">
 <Original>你无法足够快地清除地雷...</Original>
@@ -2935,7 +2935,7 @@
 <Original>炮击取消了</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1855">
-<Original>一个主要目标敌人营房被摧毁。%1 离开...</Original>
+<Original>一个主要目标敌人营房被摧毁。%1 剩余...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1856">
 <Original>给沉船修理点带来沉船的要点! </Original>

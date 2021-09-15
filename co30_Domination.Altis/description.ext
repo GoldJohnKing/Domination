@@ -125,7 +125,7 @@ class CfgRemoteExec {
 	// List of script functions allowed to be sent from client via remoteExec
 	class Functions {
 		// State of remoteExec: 0-turned off, 1-turned on, taking whitelist into account, 2-turned on, however, ignoring whitelists (default because of backward compatibility)
-		mode = 2; // Edited: Allow all remoteExec functions, default = 1
+		mode = 2; // Edited: Allow all remoteExec commands, default = 1
 		// Ability to send jip messages: 0-disabled, 1-enabled (default)
 		jip = 0;
 		//your functions here
@@ -271,7 +271,7 @@ class CfgRemoteExec {
 	};
 	// List of script commands allowed to be sent from client via remoteExec
 	class Commands {
-		mode = 2; // Edited: Allow all remoteExec commands, default = 1
+		mode = 1;
 		jip = 0;
 		//your commands here
 		//class YourCommand1 { allowedTargets=0; jip=0; } // can target anyone, sending jip is turned off (overrides settings in the Commands class)
@@ -491,7 +491,7 @@ class Params {
 	class d_bonus_vec_type {
 		title = "$STR_DOM_MISSIONSTRING_1736";
 		values[] = {0,1,2,3};
-		default = 2;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_11","$STR_DOM_MISSIONSTRING_1737","$STR_DOM_MISSIONSTRING_1738","$STR_DOM_MISSIONSTRING_1739"};
 	};
 
@@ -1234,7 +1234,7 @@ class Params {
 	class d_snp_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1900C";
 		values[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 45, 50};
-		default = 6;
+		default = 8;
 		texts[] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "15", "20", "25", "30", "45", "50"};
 	};
 
@@ -1255,7 +1255,7 @@ class Params {
 	class d_max_bar_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1899";
 		values[] = {1, 2, 3, 4, 5, 6, 7};
-		default = 4;
+		default = 6;
 		texts[] = {"1", "2", "3", "4", "5", "6", "7"};
 	};
 
@@ -1339,7 +1339,7 @@ class Params {
 	class d_MTTowerSatchelsOnly {
 		title = "$STR_DOM_MISSIONSTRING_1213";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	
