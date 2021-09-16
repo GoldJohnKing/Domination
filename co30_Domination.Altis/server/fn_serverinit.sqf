@@ -51,7 +51,7 @@ if (d_MissionType != 2 && {d_disable_airai != 1}) then {
 			["LAC"] spawn d_fnc_airai; // LAC = Ligh Attack Chopper
 		};
 		if (d_number_attack_choppers > 0 && {d_airai_attack_chopper isNotEqualTo []}) then {
-			sleep ([200, 150 + random 60] select _first);
+			sleep ([200, 60 + random 60] select _first);
 			_first = true;
 			["HAC"] spawn d_fnc_airai; // HAC = Heavy Attack Chopper
 		};
