@@ -9,7 +9,7 @@ switch (d_own_side) do {
 		["B_AMF_TANK_CE_02_F","RHS_M2A3_wd","RHS_M2A3_BUSKIII_wd","RHS_M6_wd",
 		"rhs_bmp3mera_msv","rhs_brm1k_msv","rhs_Ob_681_2","rhs_t72be_tv",
 		"rhsusf_m1a2sep1tuskiiwd_usarmy","rhs_t80um","rhsusf_m1a2sep2wd_usarmy",
-		"RHS_Mi24P_vdv","AMF_RAFALE_M_01_F","rhs_mig29sm_vmf",
+		"RHS_Mi24P_vdv","rhs_mig29sm_vmf",
 		"RHS_Ka52_vvsc","RHS_AH64D_wd","RHS_T50_vvs_generic","RHS_T50_vvs_051",
 		"RHS_T50_vvs_052","RHS_T50_vvs_053","RHS_T50_vvs_generic_ext","RHS_T50_vvs_054","RHS_T50_vvs_blueonblue"]};
 };
