@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1569;
+	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=820;
+		nextID=848;
 	};
 	class Camera
 	{
-		pos[]={199.23663,74.056473,1148.9652};
-		dir[]={0.55855733,-0.55379266,-0.61758393};
-		up[]={0.37148866,0.83263361,-0.4107455};
-		aside[]={-0.74169171,7.4651325e-007,-0.67080462};
+		pos[]={320.64957,58.257866,758.63477};
+		dir[]={0.88228381,-0.42494664,-0.2025107};
+		up[]={0.41418013,0.90521502,-0.095067389};
+		aside[]={-0.22371452,1.9157596e-008,-0.97466207};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination_LAGH-MAF";
+sourceName="co30_Domination";
 addons[]=
 {
 	"A3_Ui_F",
@@ -79,13 +79,14 @@ addons[]=
 	"JS_JC_FA18",
 	"rhs_c_rva",
 	"USAF_C17_C",
-	"A3_Soft_F_EPC_Truck_03"
+	"A3_Soft_F_EPC_Truck_03",
+	"USAF_AC130U_C"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=48;
+		items=49;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -400,6 +401,11 @@ class AddonsMetaData
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
+		class Item48
+		{
+			className="USAF_AC130U_C";
+			name="USAF_AC130U_C";
+		};
 	};
 };
 dlcs[]=
@@ -471,7 +477,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=532;
+		items=533;
 		class Item0
 		{
 			dataType="Marker";
@@ -19326,8 +19332,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={262.21289,11.507854,1119.7955};
-				angles[]={-0,4.2760572,0};
+				position[]={262.21246,11.507854,1119.795};
+				angles[]={0,4.2760568,0};
 			};
 			side="Empty";
 			flags=4;
@@ -19380,6 +19386,23 @@ class Mission
 			id=819;
 			type="O_Truck_03_repair_F";
 			atlOffset=-0.0010004044;
+		};
+		class Item532
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={507.51129,14.008976,756.98157};
+				angles[]={-0,4.3284173,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_3";
+			};
+			id=834;
+			type="USAF_AC130U";
 		};
 	};
 	class Connections

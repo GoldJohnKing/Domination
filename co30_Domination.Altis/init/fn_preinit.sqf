@@ -988,7 +988,7 @@ if (!d_gmcwgwinter) then {
 
 	d_specops_W = call {
 		if (d_rhs) exitWith {
-			[["West","rhs_faction_socom_marsoc","rhs_group_nato_marsoc_infantry","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup, ["West","rhs_faction_socom_marsoc","rhs_group_nato_marsoc_infantry","rhs_group_nato_marsoc_infantry_team"] call d_fnc_GetConfigGroup]
+			[["West","rhs_group_nato_usarmy_wd_infantry_team","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup, ["West","rhs_group_nato_usmc_recon_d_infantry_team_lite","rhs_group_nato_usmc_recon_d_infantry_team_fast","rhs_group_nato_marsoc_infantry_team"] call d_fnc_GetConfigGroup]
 		};
 		if (d_ifa3lite) exitWith {
 			[["West","SG_STURM","Infantry","SG_GER_AT_squad"] call d_fnc_GetConfigGroup, ["West","SG_STURM","Infantry","SG_GER_infantry_squad"] call d_fnc_GetConfigGroup]
@@ -1796,7 +1796,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_2", "LIB_FW190F8_5", "LIB_FW190F8_3"]
 				};
 				if (d_rhs) exitWith {
-					["rhsusf_f22","B_Plane_Fighter_01_F"]
+					["rhsusf_f22","B_Plane_Fighter_01_F","USAF_F35A"]
 				};
 				if (d_csla) exitWith {
 					[]
@@ -1899,7 +1899,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F","RHS_A10"]
+					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["AMF_gazelle_minigun_f","AMF_TIGRE_01","I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F"]
+					["AMF_gazelle_minigun_f","AMF_TIGRE_01","I_Plane_Fighter_03_dynamicLoadout_F","pook_EF2000_BLUFOR"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
