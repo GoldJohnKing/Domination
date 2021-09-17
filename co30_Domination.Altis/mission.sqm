@@ -8,18 +8,18 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=848;
+		nextID=856;
 	};
 	class Camera
 	{
-		pos[]={320.64957,58.257866,758.63477};
-		dir[]={0.88228381,-0.42494664,-0.2025107};
-		up[]={0.41418013,0.90521502,-0.095067389};
-		aside[]={-0.22371452,1.9157596e-008,-0.97466207};
+		pos[]={402.63611,31.441809,510.05289};
+		dir[]={-0.87136441,-0.41761273,-0.25753394};
+		up[]={-0.40048736,0.90862513,-0.11836504};
+		aside[]={-0.28343254,0,0.95899218};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination";
+sourceName="co30_Domination_9";
 addons[]=
 {
 	"A3_Ui_F",
@@ -80,13 +80,15 @@ addons[]=
 	"rhs_c_rva",
 	"USAF_C17_C",
 	"A3_Soft_F_EPC_Truck_03",
-	"USAF_AC130U_C"
+	"USAF_AC130U_C",
+	"A3_Characters_F_Common",
+	"A3_Static_F_Sams_Radar_System_02"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=49;
+		items=50;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -406,6 +408,13 @@ class AddonsMetaData
 			className="USAF_AC130U_C";
 			name="USAF_AC130U_C";
 		};
+		class Item49
+		{
+			className="A3_Static_F_Sams";
+			name="Arma 3 Sams - Turrets";
+			author="波希米亚互动工作室";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -477,7 +486,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=533;
+		items=535;
 		class Item0
 		{
 			dataType="Marker";
@@ -19347,6 +19356,7 @@ class Mission
 			};
 			id=817;
 			type="USAF_C17";
+			atlOffset=9.5367432e-007;
 		};
 		class Item530
 		{
@@ -19393,7 +19403,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={507.51129,14.008976,756.98157};
-				angles[]={-0,4.3284173,0};
+				angles[]={0,4.3284173,0};
 			};
 			side="Empty";
 			flags=4;
@@ -19403,6 +19413,101 @@ class Mission
 			};
 			id=834;
 			type="USAF_AC130U";
+		};
+		class Item533
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={345.11801,8.1514387,499.96298};
+						angles[]={0,1.134464,0};
+					};
+					side="East";
+					flags=6;
+					class Attributes
+					{
+					};
+					id=855;
+					type="O_UAV_AI";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=855;
+						item1=854;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=849;
+		};
+		class Item534
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={345.11801,12.020094,499.91299};
+				angles[]={0,1.134464,0};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+				textures="JungleHex";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=854;
+			type="O_Radar_System_02_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
