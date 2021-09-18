@@ -988,7 +988,7 @@ if (!d_gmcwgwinter) then {
 
 	d_specops_W = call {
 		if (d_rhs) exitWith {
-			[["West","rhs_group_nato_usarmy_wd_infantry_team","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup, ["West","rhs_group_nato_usmc_recon_d_infantry_team_lite","rhs_group_nato_usmc_recon_d_infantry_team_fast","rhs_group_nato_marsoc_infantry_team"] call d_fnc_GetConfigGroup]
+			[["West","rhs_group_nato_usarmy_wd_infantry_team","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup, ["West","rhs_group_nato_usmc_recon_d_infantry_team_lite","rhs_group_nato_usmc_recon_d_infantry_team_fast","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup]
 		};
 		if (d_ifa3lite) exitWith {
 			[["West","SG_STURM","Infantry","SG_GER_AT_squad"] call d_fnc_GetConfigGroup, ["West","SG_STURM","Infantry","SG_GER_infantry_squad"] call d_fnc_GetConfigGroup]
@@ -1061,7 +1061,7 @@ if (!d_gmcwgwinter) then {
 #endif
 #ifdef __RHS__
 	d_sniper_E = [["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_sniper"] call d_fnc_GetConfigGroup];
-	d_sniper_W = [["West","rhs_faction_usarmy_d","rhs_group_nato_usarmy_d_infantry","rhs_group_nato_usarmy_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
+	d_sniper_W = [["West","rhs_faction_usmc_d","rhs_group_nato_usmc_d_infantry","rhs_group_nato_usmc_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 #endif
 #ifdef __UNSUNG__
@@ -1215,13 +1215,13 @@ if (!d_gmcwgwinter) then {
 	d_arti_observer_G = [["I_Soldier_TL_F"]];
 
 	if (isNil "d_number_attack_planes") then {
-		d_number_attack_planes = 1;
+		d_number_attack_planes = 4;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 1;
+		d_number_attack_choppers = 3;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
-		d_number_light_attack_choppers = 1;
+		d_number_light_attack_choppers = 3;
 	};
 	if (isNil "d_number_attack_uavs") then {
 		d_number_attack_uavs = 1;
@@ -2251,7 +2251,7 @@ if (!d_gmcwgwinter) then {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [250, 150, 320, 170];
+		d_ai_groups_respawn_time = [90, 35, 320, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
