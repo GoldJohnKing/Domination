@@ -49,7 +49,7 @@ while {true} do {
 		};
 	};
 
-	private _grpskill = 0.6 + (random 0.3);
+	private _grpskill = 1; // Edited: Tweak enemy skill, default = 0.6 + (random 0.3)
 	__TRACE_2("","_pos","_grpskill")
 
 	private _grp = [d_side_enemy] call d_fnc_creategroup;

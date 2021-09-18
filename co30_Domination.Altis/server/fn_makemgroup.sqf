@@ -33,18 +33,19 @@ if ((d_smallgrps == 0 && {_doreduce}) || {_unitsPerGroup > 0}) then {
 
 _ret resize (count _unitliste);
 
-private _subskill = if (diag_fps < 29 && {d_skillfps == 0}) then {
-	(0.12 + (random 0.04))
-} else {
-	//(0.1 + (random 0.2))
-	switch (d_EnemySkill) do {
-		case 0: {(0.1 + (random 0.05))};
-		case 1: {(0.1 + (random 0.1))};
-		case 2: {(0.1 + (random 0.2))};
-		case 3: {(0.1 + (random 0.3))};
-		case 4: {(0.1 + (random 0.4))};
-	};
-};
+// private _subskill = if (diag_fps < 29 && {d_skillfps == 0}) then { // Edited: Tweak enemy skill
+// 	(0.12 + (random 0.04))
+// } else {
+// 	//(0.1 + (random 0.2))
+// 	switch (d_EnemySkill) do {
+// 		case 0: {(0.1 + (random 0.05))};
+// 		case 1: {(0.1 + (random 0.1))};
+// 		case 2: {(0.1 + (random 0.2))};
+// 		case 3: {(0.1 + (random 0.3))};
+// 		case 4: {(0.1 + (random 0.4))};
+// 	};
+// };
+private _subskill = 1; // Edited: Tweak enemy skill
 
 if (!_mchelper) then {
 	private _nnpos = _pos findEmptyPosition [0, 30, _unitliste # 0];
@@ -70,7 +71,7 @@ private _nightorfog = call d_fnc_nightfograin;
 		[_one_unit, 4] call d_fnc_setekmode;
 	};
 	_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
-	_one_unit setSkill ["aimingAccuracy", _subskill];
+	_one_unit setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
 	_one_unit setSkill ["spotTime", _subskill];
 	_ret set [_forEachIndex, _one_unit];
 	_one_unit call d_fnc_removenvgoggles_fak;

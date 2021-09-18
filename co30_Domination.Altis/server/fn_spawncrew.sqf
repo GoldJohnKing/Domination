@@ -10,11 +10,12 @@ if (count _crew > 0) then {
 	_crew joinSilent _grp;
 	deleteGroup _uavgrp;
 
-	private _subskill = if (diag_fps > 29) then {
-		(0.1 + (random 0.1))
-	} else {
-		(0.12 + (random 0.04))
-	};
+	// private _subskill = if (diag_fps > 29) then { // Edited: Tweak enemy skill
+	// 	(0.1 + (random 0.1))
+	// } else {
+	// 	(0.12 + (random 0.04))
+	// };
+	private _subskill = 1; // Edited: Tweak enemy skill
 
 	if (unitIsUAV _vec) then {
 		{
@@ -24,7 +25,7 @@ if (count _crew > 0) then {
         if (_vec isKindOf "StaticWeapon") then {
 	     {
 	         _x setSkill ["spotDistance", 1];
-		 _x setSkill ["aimingAccuracy",(random [0.05, 0.1, 0.125])];
+		 _x setSkill ["aimingAccuracy",0]; // Edited: Tweak enemy skill, default = (random [0.05, 0.1, 0.125])
 	     } forEach _crew;
         };	
 
@@ -51,7 +52,7 @@ if (count _crew > 0) then {
 							private _one_unit = _grp createUnit [selectRandom _munits, _grp, [], 0, "CARGO"];
 							//[_one_unit] joinSilent _grp;
 							_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
-							_one_unit setSkill ["aimingAccuracy", _subskill];
+							_one_unit setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
 							_one_unit setSkill ["spotTime", _subskill];
 							_one_unit call d_fnc_removenvgoggles_fak;
 							//_one_unit enableStamina false;
@@ -92,8 +93,8 @@ if (count _crew > 0) then {
 			[_x, 4] call d_fnc_setekmode;
 		};
 		_x setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
-		_x setSkill ["aimingAccuracy", _subskill];
-		_x setSkill ["spotTime", 0.4 + _subskill];
+		_x setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
+		_x setSkill ["spotTime", _subskill]; // Edited: Tweak enemy skill, default = 0.4 + _subskill
 		//_x enableStamina false;
 		//_x enableFatigue false;
 		_x disableAI "RADIOPROTOCOL";

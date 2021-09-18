@@ -76,11 +76,12 @@ if (alive _chopper && {canMove _chopper && {alive driver _chopper}}) then {
 	_chopper flyInHeight 80;
 	_vgrp setBehaviourStrong "CARELESS";
 
-	private _subskill = if (diag_fps > 29) then {
-		(0.1 + (random 0.2))
-	} else {
-		(0.12 + (random 0.04))
-	};
+	// private _subskill = if (diag_fps > 29) then { // Edited: Tweak enemy skill
+	// 	(0.1 + (random 0.2))
+	// } else {
+	// 	(0.12 + (random 0.04))
+	// };
+	private _subskill = 1; // Edited: Tweak enemy skill
 	private _real_units = ["sabotage", d_enemy_side_short] call d_fnc_getunitlistm;
 	if (count _real_units < 5) then {
 		while {count _real_units < 5} do {
@@ -116,7 +117,7 @@ if (alive _chopper && {canMove _chopper && {alive driver _chopper}}) then {
 			[_one_unit, 4] call d_fnc_setekmode;
 		};
 		_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
-		_one_unit setSkill ["aimingAccuracy", _subskill];
+		_one_unit setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
 		_one_unit setSkill ["spotTime", _subskill];
 		//_one_unit enableStamina false;
 		//_one_unit enableFatigue false;

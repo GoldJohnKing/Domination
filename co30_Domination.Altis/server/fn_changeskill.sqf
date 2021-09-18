@@ -17,14 +17,14 @@ if (_init) then {
 	_u setVariable ["d_aimingSpeed", _u skill "aimingSpeed"];
 };
 
-if (_mode == 0) then {
-	_u setSkill ["spotDistance", _u getVariable "d_spotDistance"];
-	_u setSkill ["spotTime", _u getVariable "d_spotTime"];
-	_u setSkill ["aimingSpeed", _u getVariable "d_aimingSpeed"];
+if (_mode == 0) then { // Edited: Tweak enemy skill
+	_u setSkill ["spotDistance", 1]; // Edited: default = _u getVariable "d_spotDistance"
+	_u setSkill ["spotTime", 1]; // Edited: default = _u getVariable "d_spotTime"
+	_u setSkill ["aimingSpeed", 1]; // Edited: default = _u getVariable "d_aimingSpeed"
 } else {
-	_u setSkill ["spotDistance", 0.18];
-	_u setSkill ["spotTime", 0.18];
-	_u setSkill ["aimingSpeed", 0.18];
+	_u setSkill ["spotDistance", 1]; // Edited: default = 0.18
+	_u setSkill ["spotTime", 1]; // Edited: default = 0.18
+	_u setSkill ["aimingSpeed", 1]; // Edited: default = 0.18
 };
 
 // TODO calculate better?

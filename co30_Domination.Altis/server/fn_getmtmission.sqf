@@ -103,7 +103,7 @@ switch (_sec_kind) do {
 			d_mtmissionobjs pushBack (_forar # 1);
 		};
 		_vec setRank "COLONEL";
-		_vec setSkill 0.3;
+		_vec setSkill 1; // Edited: Tweak enemy skill, default = 0.3
 		_vec disableAI "PATH";
 
 		d_delinfsm pushBack _vec;
@@ -322,7 +322,7 @@ switch (_sec_kind) do {
 			d_mtmissionobjs pushBack (_forar # 1);
 		};
 		_vec setRank "COLONEL";
-		_vec setSkill 0.3;
+		_vec setSkill 1; // Edited: Tweak enemy skill, default = 0.3
 		_vec disableAI "PATH";
 		d_delinfsm pushBack _vec;
 		d_fixor_var = _vec;
@@ -383,7 +383,7 @@ switch (_sec_kind) do {
 			d_mtmissionobjs pushBack (_forar # 1);
 		};
 		_vec setRank "COLONEL";
-		_vec setSkill 0.3;
+		_vec setSkill 1; // Edited: Tweak enemy skill, default = 0.3
 		d_fixor_var = _vec;
 		d_delinfsm pushBack _vec;
 		_vec disableAI "PATH";
