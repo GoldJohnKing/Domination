@@ -8,14 +8,14 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=856;
+		nextID=857;
 	};
 	class Camera
 	{
-		pos[]={6054.9204,43.384472,3637.552};
-		dir[]={-0.019641582,-0.37182993,0.92809367};
-		up[]={-0.007867422,0.92830026,0.37174755};
-		aside[]={0.99977726,-7.4578566e-010,0.021158637};
+		pos[]={469.42795,62.464458,511.43475};
+		dir[]={0.81098771,-0.451592,0.37204242};
+		up[]={0.41050816,0.89219695,0.18832058};
+		aside[]={0.41698027,-4.7415233e-007,-0.90894413};
 	};
 };
 binarizationWanted=0;
@@ -80,15 +80,15 @@ addons[]=
 	"rhs_c_rva",
 	"USAF_C17_C",
 	"A3_Soft_F_EPC_Truck_03",
-	"USAF_AC130U_C",
 	"A3_Characters_F_Common",
-	"A3_Static_F_Sams_Radar_System_02"
+	"A3_Static_F_Sams_Radar_System_02",
+	"A3_Air_F_Exp_VTOL_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=50;
+		items=49;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -404,11 +404,6 @@ class AddonsMetaData
 			url="https://www.arma3.com";
 		};
 		class Item48
-		{
-			className="USAF_AC130U_C";
-			name="USAF_AC130U_C";
-		};
-		class Item49
 		{
 			className="A3_Static_F_Sams";
 			name="Arma 3 Sams - Turrets";
@@ -19399,23 +19394,6 @@ class Mission
 		};
 		class Item532
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={507.51129,14.008976,756.98157};
-				angles[]={0,4.3284173,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="d_chopper_3";
-			};
-			id=834;
-			type="USAF_AC130U";
-		};
-		class Item533
-		{
 			dataType="Group";
 			side="East";
 			class Entities
@@ -19465,7 +19443,7 @@ class Mission
 			};
 			id=849;
 		};
-		class Item534
+		class Item533
 		{
 			dataType="Object";
 			class PositionInfo
@@ -19508,6 +19486,23 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item534
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={548.99597,14.83958,547.99298};
+				angles[]={0,4.3109632,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_3";
+			};
+			id=856;
+			type="B_T_VTOL_01_armed_F";
 		};
 	};
 	class Connections
