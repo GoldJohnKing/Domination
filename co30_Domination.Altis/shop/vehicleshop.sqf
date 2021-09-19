@@ -1,4 +1,4 @@
-hint format ["欢迎来到后勤处，我这可有不少好东西——只要你的荣誉够多。"];
+hint format ["欢迎来到后勤处，我这可有不少好东西——只要你的荣誉够多。听说咱们的人在19日那天缴获了F22？现在它们能为我们所用！"];
 player addaction ["载具菜单",{
 removeallactions player;
 player addaction["荣誉查询",{["",0]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
@@ -15,7 +15,7 @@ player addaction["M1A2SEPv2: 需要4000荣誉",{["rhsusf_m1a2sep2d_usarmy",4000]
 player addaction["AH-64D阿帕奇武装直升机: 需要3000荣誉",{["RHS_AH64D",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["A-10D雷霆二式: 需要4000荣誉",{["B_Plane_CAS_01_dynamicloadout_F",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["勒克莱尔主战坦克: 需要10000荣誉",{["B_AMF_TANK_CE_02_F",10000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["米格29SM: 需要5000荣誉",{["rhs_mig29sm_vvsc",5000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["F22: 需要5000荣誉",{["rhsusf_f22",5000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["leave",{removeallActions player}];
 
 }]

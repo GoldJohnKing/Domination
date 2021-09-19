@@ -24,8 +24,8 @@ while {true} do {
 	private _funits = [];
 
 	private _limit_p = call {
-		if (_type isEqualTo "AP") exitWith {12};
-		if (_type isEqualTo "HAC") exitWith {10};
+		if (_type isEqualTo "AP") exitWith {8};
+		if (_type isEqualTo "HAC") exitWith {6};
 		if (_type isEqualTo "UAV") exitWith {5};
 		3;
 	};
@@ -35,7 +35,7 @@ while {true} do {
 		if (!d_mt_radio_down && {(call d_fnc_PlayersNumber) >= _limit_p && {diag_fps > 15}}) exitWith {
 			__TRACE("spawning airai vehicle")
 		};
-		sleep (5 + random 10);
+		sleep (5 + random 1);
 		};
 	#endif
 
@@ -145,7 +145,7 @@ while {true} do {
 		_vec setPilotLight false;
 		_vec setVehicleReceiveRemoteTargets true;
 		_vec setVehicleReportRemoteTargets true;
-		_vec setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 300),false];
+		_vec setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 200),false];
 		__TRACE_1("","_vec")
 		sleep 0.1;
 	};
@@ -287,7 +287,7 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 				         if (diag_tickTime > (_oneveh getVariable "d_enemyAir_nextRearmTime")) then {
 				              _oneveh setFuel 1;
 					      _oneveh setVehicleAmmo 1;
-					      _oneveh setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 300),false];
+					      _oneveh setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 180),false];
 					 };
 				    };
 				    if (_type isEqualTo "AP") then {
@@ -335,10 +335,10 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 #ifndef __DEBUG__
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
-		if (_num_p < 5) exitWith {1000};
-		if (_num_p < 10) exitWith {800};
-		if (_num_p < 15) exitWith {600};
-		if (_num_p < 20) exitWith {400};
+		if (_num_p < 5) exitWith {100};
+		if (_num_p < 10) exitWith {80};
+		if (_num_p < 15) exitWith {80};
+		if (_num_p < 20) exitWith {60};
 		200;
 	});
 	sleep (d_airai_respawntime + _re_random);

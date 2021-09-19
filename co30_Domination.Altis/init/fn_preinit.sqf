@@ -1215,7 +1215,7 @@ if (!d_gmcwgwinter) then {
 	d_arti_observer_G = [["I_Soldier_TL_F"]];
 
 	if (isNil "d_number_attack_planes") then {
-		d_number_attack_planes = 4;
+		d_number_attack_planes = 2;
 	};
 	if (isNil "d_number_attack_choppers") then {
 		d_number_attack_choppers = 3;
@@ -1498,7 +1498,7 @@ if (!d_gmcwgwinter) then {
 
 	// time (in sec) between attack planes and choppers over main target will respawn once they were shot down (a random value between 0 and 240 will be added)
 	if (isNil "d_airai_respawntime") then {
-		d_airai_respawntime = 1000;
+		d_airai_respawntime = 60;
 	};
 
 	d_side_missions_random = [];
@@ -1899,7 +1899,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10"]
+					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","AMF_TIGRE_01","USAF_F35A_LIGHT"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["AMF_gazelle_minigun_f","AMF_TIGRE_01","I_Plane_Fighter_03_dynamicLoadout_F","pook_EF2000_BLUFOR"]
+					["AMF_gazelle_minigun_f","AMF_TIGRE_01","I_Plane_Fighter_03_dynamicLoadout_F","pook_EF2000_BLUFOR","USAF_F35A_LIGHT"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
@@ -2251,7 +2251,7 @@ if (!d_gmcwgwinter) then {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [90, 35, 320, 170];
+		d_ai_groups_respawn_time = [50, 25, 320, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
