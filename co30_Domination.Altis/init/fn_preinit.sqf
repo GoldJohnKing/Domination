@@ -1215,10 +1215,10 @@ if (!d_gmcwgwinter) then {
 	d_arti_observer_G = [["I_Soldier_TL_F"]];
 
 	if (isNil "d_number_attack_planes") then {
-		d_number_attack_planes = 2;
+		d_number_attack_planes = 3;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 3;
+		d_number_attack_choppers = 5;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
 		d_number_light_attack_choppers = 3;
@@ -1796,7 +1796,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_2", "LIB_FW190F8_5", "LIB_FW190F8_3"]
 				};
 				if (d_rhs) exitWith {
-					["rhsusf_f22","B_Plane_Fighter_01_F","USAF_F35A"]
+					["rhsusf_f22","B_Plane_Fighter_01_F","USAF_F35A","USAF_F35A_LIGHT"]
 				};
 				if (d_csla) exitWith {
 					[]
@@ -1899,7 +1899,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","AMF_TIGRE_01","USAF_F35A_LIGHT"]
+					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","AMF_TIGRE_01"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2251,7 +2251,7 @@ if (!d_gmcwgwinter) then {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [25, 15, 300, 170];
+		d_ai_groups_respawn_time = [120, 25, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
@@ -2547,7 +2547,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv", "rhs_sprut_vdv", "O_ZBL09", "O_ZTL11", "O_ZTD05","rhs_2s3_at_tv","rhs_t80um","rhs_t90a_tv"]
+			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv", "rhs_sprut_vdv", "O_ZBL09", "O_ZTL11", "O_ZTD05","rhs_2s3_at_tv","rhs_t80um","rhs_t90a_tv","rhs_t72bd_tv"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]

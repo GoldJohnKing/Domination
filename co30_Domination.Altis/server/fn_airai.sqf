@@ -25,7 +25,7 @@ while {true} do {
 
 	private _limit_p = call {
 		if (_type isEqualTo "AP") exitWith {8};
-		if (_type isEqualTo "HAC") exitWith {6};
+		if (_type isEqualTo "HAC") exitWith {10};
 		if (_type isEqualTo "UAV") exitWith {5};
 		3;
 	};
@@ -337,7 +337,7 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 	private _re_random = (call {
 		if (_num_p < 5) exitWith {100};
 		if (_num_p < 10) exitWith {80};
-		if (_num_p < 15) exitWith {80};
+		if (_num_p < 15) exitWith {60};
 		if (_num_p < 20) exitWith {60};
 		200;
 	});
