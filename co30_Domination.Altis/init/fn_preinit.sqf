@@ -1899,7 +1899,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["BWA3_Tiger_Gunpod_FZ","BWA3_Tiger_Gunpod_PARS","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","BWA3_Tiger_RMK_Universal"]
+					["BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_RMK_FZ","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","BWA3_Tiger_RMK_Universal"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
