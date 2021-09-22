@@ -336,8 +336,8 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
 		if (_num_p < 5) exitWith {120};
-		if (_num_p < 10) exitWith {80};
-		if (_num_p < 15) exitWith {60};
+		if (_num_p < 10) exitWith {100};
+		if (_num_p < 15) exitWith {80};
 		if (_num_p < 20) exitWith {60};
 		200;
 	});
