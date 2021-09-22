@@ -21,7 +21,7 @@
 ["West","rhs_faction_usarmy_wd","rhs_group_nato_usarmy_wd_infantry","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup,
 ["West","rhs_faction_usarmy_wd","rhs_group_nato_usarmy_wd_infantry","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup,
 ["West","rhs_faction_usarmy_wd","rhs_group_nato_usarmy_wd_infantry","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup,
-["West","rhs_faction_usarmy_wd","rhs_group_nato_usarmy_wd_infantry","rhs_group_nato_usarmy_wd_infantry_team_AA"] call d_fnc_GetConfigGroup,
+["West","rhs_faction_usarmy_wd","rhs_group_nato_usarmy_wd_infantry","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup,
 ["West","rhs_faction_usarmy_wd","rhs_group_nato_usarmy_wd_infantry","rhs_group_nato_usarmy_wd_infantry_team_AA"] call d_fnc_GetConfigGroup,
 ["West","rhs_faction_usarmy_wd","rhs_group_nato_usarmy_wd_infantry","rhs_group_nato_usarmy_wd_infantry_team_AA"] call d_fnc_GetConfigGroup,
 ["West","rhs_faction_usarmy_wd","rhs_group_nato_usarmy_wd_infantry","rhs_group_nato_usarmy_wd_infantry_team_AA"] call d_fnc_GetConfigGroup,
