@@ -1038,7 +1038,7 @@ class Params {
 	class d_mhqvec_create_cooldown {
 		title = "$STR_DOM_MISSIONSTRING_1824";
 		values[] = {0, 60, 120, 300, 600, 1200, 1800};
-		default = 300;
+		default = 600;
 		texts[] = {"$STR_DOM_MISSIONSTRING_363","60","120","300","600","1200","1800"};
 	};
 
@@ -1255,7 +1255,7 @@ class Params {
 	class d_max_bar_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1899";
 		values[] = {1, 2, 3, 4, 5, 6, 7};
-		default = 6;
+		default = 4;
 		texts[] = {"1", "2", "3", "4", "5", "6", "7"};
 	};
 
