@@ -24,7 +24,7 @@ while {true} do {
 	private _funits = [];
 
 	private _limit_p = call {
-		if (_type isEqualTo "AP") exitWith {9};
+		if (_type isEqualTo "AP") exitWith {10};
 		if (_type isEqualTo "HAC") exitWith {12};
 		if (_type isEqualTo "UAV") exitWith {5};
 		3;
