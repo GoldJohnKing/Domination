@@ -1899,7 +1899,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","AMF_TIGRE_01"]
+					["BWA3_Tiger_Gunpod_FZ","BWA3_Tiger_Gunpod_PARS","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","BWA3_Tiger_RMK_Universal"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2049,7 +2049,7 @@ if (!d_gmcwgwinter) then {
 			["RHS_Mi8MTV3_vvsc"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["ffaa_nh90_tth_transport"]
+			["RHS_CH_47F"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2061,7 +2061,7 @@ if (!d_gmcwgwinter) then {
 			["uns_an2"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["ffaa_nh90_tth_transport"]
+			["RHS_CH_47F"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["AMF_gazelle_minigun_f","AMF_TIGRE_01","I_Plane_Fighter_03_dynamicLoadout_F","pook_EF2000_BLUFOR","USAF_F35A_LIGHT"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","pook_EF2000_BLUFOR","USAF_F35A_LIGHT"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
@@ -2547,7 +2547,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv", "rhs_sprut_vdv", "O_ZBL09", "O_ZTL11", "O_ZTD05","rhs_2s3_at_tv","rhs_t80um","rhs_t90a_tv","rhs_t72bd_tv"]
+			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv", "rhs_sprut_vdv", "O_ZBL09", "O_ZTL11", "O_ZTD05","rhs_2s3_at_tv","rhs_t80um","rhs_t90a_tv","rhs_t90sab_tv","rhs_t72bd_tv"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]
