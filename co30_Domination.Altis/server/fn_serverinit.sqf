@@ -45,7 +45,7 @@ if (d_MissionType != 2 && {d_disable_airai != 1}) then {
 		__TRACE("spawn_init_airai 30 secs over")
 		private _first = false;
 		if (d_number_light_attack_choppers > 0 && {d_light_attack_chopper isNotEqualTo []}) then {
-			sleep 30;
+			sleep 120;
 			_first = true;
 			// __TRACE("spawn_init_airai 30 exec LAC")
 			["LAC"] spawn d_fnc_airai; // LAC = Ligh Attack Chopper

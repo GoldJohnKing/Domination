@@ -1218,10 +1218,10 @@ if (!d_gmcwgwinter) then {
 		d_number_attack_planes = 3;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 5;
+		d_number_attack_choppers = 4;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
-		d_number_light_attack_choppers = 3;
+		d_number_light_attack_choppers = 2;
 	};
 	if (isNil "d_number_attack_uavs") then {
 		d_number_attack_uavs = 1;
@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","pook_EF2000_BLUFOR","USAF_F35A_LIGHT"]
+					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","BWA3_Tiger_Gunpod_FZ","I_Plane_Fighter_04_F"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
@@ -2251,7 +2251,7 @@ if (!d_gmcwgwinter) then {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [120, 25, 300, 170];
+		d_ai_groups_respawn_time = [150, 25, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
