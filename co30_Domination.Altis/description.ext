@@ -1052,7 +1052,7 @@ class Params {
 	class d_disable_player_arty {
 		title = "$STR_DOM_MISSIONSTRING_2077";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 	
