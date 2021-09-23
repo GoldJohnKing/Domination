@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","BWA3_Tiger_Gunpod_FZ","I_Plane_Fighter_04_F"]
+					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","BWA3_Tiger_Gunpod_FZ","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
@@ -2149,10 +2149,10 @@ if (!d_gmcwgwinter) then {
 
 	// enemy AI inf barracks in main target... As long as the building exists enemy AI inf respawns inside the building thus in the main target area!!!
 	// Needs a building which can be entered by AI (as they will respawn inside)
-	// can only be destroyed by satchel charges!!!
+	// can only be destroyed by satchel charges!!! Land_BagBunker_01_large_green_F Land_Bunker_01_HQ_F 
 	// no marker gets created!
 #ifndef __VN__
-	d_barracks_building = "Land_BagBunker_01_large_green_F";
+	d_barracks_building = "Land_Cargo_HQ_V4_F";
 #else
 	d_barracks_building = "Land_vn_o_shelter_05";
 #endif
@@ -2161,7 +2161,7 @@ if (!d_gmcwgwinter) then {
 	// if destroyed no more enemy vehicles respawn
 	d_vehicle_building =
 #ifdef __ALTIS__
-		"Land_Cargo_HQ_V1_F";
+		"Land_Cargo_Tower_V4_F";
 #endif
 #ifdef __CUP_CHERNARUS__
 		"Land_Cargo_HQ_V4_F";
@@ -2251,7 +2251,7 @@ if (!d_gmcwgwinter) then {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [140, 25, 300, 170];
+		d_ai_groups_respawn_time = [400, 25, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
