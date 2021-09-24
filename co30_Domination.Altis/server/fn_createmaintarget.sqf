@@ -232,6 +232,17 @@ if (([getPos _vec, sizeOf d_vehicle_building] call d_fnc_getslope) > 0.4) then {
 };/* else {
 	_vec setVectorUp [0,0,1];
 };*/
+//创建HQ识别物件
+createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_Router_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_TTowerSmall_1_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_BatterPack_01_open_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_Laptop_03_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_CampingTable_F", _poss, [], 0, "NONE"];
+//玩家识别HQ物件
 _vec setVariable ["d_v_pos", getPos _vec];
 if (d_bar_mhq_destroy == 1) then {
 	[_vec, 1] call d_fnc_checkmtrespawntarget;

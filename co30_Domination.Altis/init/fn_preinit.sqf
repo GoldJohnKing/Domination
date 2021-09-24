@@ -2158,10 +2158,11 @@ if (!d_gmcwgwinter) then {
 #endif
 
 	// same as barracks building. But enemy AI vehicles do not spawn inside the main target area but outside
-	// if destroyed no more enemy vehicles respawn
+	// if destroyed no more enemy vehicles respawn  
+    //Land_GuardHouse_02_F Land_i_House_Big_01_b_pink_F Land_Research_HQ_F Land_PowerStation_01_F Land_i_House_Small_03_V1_F
 	d_vehicle_building =
 #ifdef __ALTIS__
-		"Land_Cargo_Tower_V4_F";
+		"Land_PowerStation_01_F";
 #endif
 #ifdef __CUP_CHERNARUS__
 		"Land_Cargo_HQ_V4_F";
