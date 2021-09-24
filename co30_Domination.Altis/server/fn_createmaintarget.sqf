@@ -237,11 +237,8 @@ createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
 createVehicle ["Land_Router_01_olive_F", _poss, [], 0, "NONE"];
 createVehicle ["Land_TTowerSmall_1_F", _poss, [], 0, "NONE"];
 createVehicle ["Land_BatterPack_01_open_olive_F", _poss, [], 0, "NONE"];
-createVehicle ["Land_Laptop_03_olive_F", _poss, [], 0, "NONE"];
 createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
 createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
-createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
-createVehicle ["Land_CampingTable_F", _poss, [], 0, "NONE"];
 //玩家识别HQ物件
 _vec setVariable ["d_v_pos", getPos _vec];
 if (d_bar_mhq_destroy == 1) then {
