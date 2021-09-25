@@ -301,7 +301,7 @@ d_x_drop_array =
 #ifdef __OWN_SIDE_OPFOR__
 	call {
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "O_ZTQ15"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "O_ZTZ96B"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_ifa3lite) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "LIB_US_Willys_MB"], [localize "STR_DOM_MISSIONSTRING_20", "LIB_BasicWeaponsBox_SU"]]
@@ -2159,10 +2159,10 @@ if (!d_gmcwgwinter) then {
 
 	// same as barracks building. But enemy AI vehicles do not spawn inside the main target area but outside
 	// if destroyed no more enemy vehicles respawn  
-    //Land_GuardHouse_02_F Land_i_House_Big_01_b_pink_F Land_Research_HQ_F Land_PowerStation_01_F Land_i_House_Small_03_V1_F
+    //Land_GuardHouse_02_F Land_i_House_Big_01_b_pink_F Land_Research_HQ_F Land_PowerStation_01_F Land_i_House_Small_03_V1_F createVehicle ["Flag_NATO_F", _poss, [], 0, "NONE"];//添加兵营旗帜
 	d_vehicle_building =
 #ifdef __ALTIS__
-		"Land_PowerStation_01_F";
+		"Land_Research_HQ_F";
 #endif
 #ifdef __CUP_CHERNARUS__
 		"Land_Cargo_HQ_V4_F";
@@ -2548,7 +2548,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01","B_T_APC_Tracked_01_CRV_F", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv", "rhs_sprut_vdv", "O_ZBL09", "O_ZTL11", "O_ZTD05","rhs_2s3_at_tv","rhs_t80um","rhs_t90a_tv","rhs_t90sab_tv","rhs_t72be_tv"]
+			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01","B_T_APC_Tracked_01_CRV_F", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv", "rhs_sprut_vdv", "O_ZBL09", "O_ZTL11", "O_ZTD05","rhs_2s3_at_tv","rhs_t80um","rhs_t90a_tv","rhs_t90sab_tv","rhs_t72be_tv","O_ZTQ15"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]

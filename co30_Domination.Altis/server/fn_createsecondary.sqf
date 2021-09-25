@@ -164,11 +164,17 @@ if (d_ao_check_for_ai in [0, 1]) then {
 			//生成营地特别小组
 			private _campinf1 = createGroup [west, true];
 			private _campinf2 = createGroup [west, true];
+			private _campinf3 = createGroup [west, true];
 			_campinf1 createUnit ["rhsusf_army_ocp_teamleader", _poss, [], 0, "FORM"];
 			_campinf1 createUnit ["rhsusf_army_ucp_maaws", _poss, [], 0, "FORM"];
 			_campinf1 createUnit ["rhsusf_army_ucp_maaws", _poss, [], 0, "FORM"];
             _campinf2 createUnit ["rhsusf_army_ocp_arb_sniper_m107", _poss, [], 0, "FORM"];
 			_campinf2 createUnit ["rhsusf_army_ocp_sniper", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_RiflemanAT_PzF3_Fleck", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_RiflemanAT_RGW90_Fleck", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_RiflemanAT_RGW90_Fleck", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_RiflemanAT_CG_Fleck", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_MachineGunner_MG5_Fleck", _poss, [], 0, "FORM"];
 			//
 			if (d_with_dynsim == 0) then {
 				[_wf, 5] spawn d_fnc_enabledynsim;
@@ -213,11 +219,17 @@ if (d_ao_check_for_ai in [0, 1]) then {
 			//创建另一支营地部队
 			private _campinf1 = createGroup [west, true];
 			private _campinf2 = createGroup [west, true];
+			private _campinf3 = createGroup [west, true];
 			_campinf1 createUnit ["rhsusf_army_ocp_riflemanat", _poss, [], 0, "FORM"];
 			_campinf1 createUnit ["rhsusf_army_ocp_riflemanat", _poss, [], 0, "FORM"];
 			_campinf1 createUnit ["rhsusf_army_ucp_maaws", _poss, [], 0, "FORM"];
             _campinf2 createUnit ["rhsusf_army_ocp_arb_sniper_m107", _poss, [], 0, "FORM"];
 			_campinf2 createUnit ["rhsusf_army_ocp_sniper", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_RiflemanAT_PzF3_Fleck", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_RiflemanAT_RGW90_Fleck", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_RiflemanAT_RGW90_Fleck", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_RiflemanAT_CG_Fleck", _poss, [], 0, "FORM"];
+			_campinf3 createUnit ["BWA3_MachineGunner_MG5_Fleck", _poss, [], 0, "FORM"];
 			//
 			if (d_with_dynsim == 0) then {
 				[_wf, 5] spawn d_fnc_enabledynsim;

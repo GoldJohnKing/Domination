@@ -39,7 +39,7 @@
 <Original>空投弹药箱</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_22">
-<Original>空投轻型主战坦克</Original>
+<Original>空投支援主战坦克</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_23">
 <Original>欢迎...</Original>
@@ -264,7 +264,7 @@
 <Original>你离空投点太远了, 没有视野! ! ! 请靠近 (&lt;%1 米).</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_167">
-<Original>请在 %1 进行空投</Original>
+<Original>请求投放 %1 ！</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_168">
 <Original>空投取消</Original>

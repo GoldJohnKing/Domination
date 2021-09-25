@@ -234,12 +234,13 @@ if (([getPos _vec, sizeOf d_vehicle_building] call d_fnc_getslope) > 0.4) then {
 	_vec setVectorUp [0,0,1];
 };*/
 //创建HQ识别物件
-createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
-createVehicle ["Land_Router_01_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_Router_01_olive_F", _poss, [], 0, "NONE"];
 createVehicle ["Land_TTowerSmall_1_F", _poss, [], 0, "NONE"];
-createVehicle ["Land_BatterPack_01_open_olive_F", _poss, [], 0, "NONE"];
-createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
-createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_BatterPack_01_open_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Flag_NATO_F", _poss, [], 0, "NONE"];//添加旗帜
 //敌方HQ指挥官小组
 private _HQ1 = createGroup [west, true];
 private _HQ2 = createGroup [west, true];

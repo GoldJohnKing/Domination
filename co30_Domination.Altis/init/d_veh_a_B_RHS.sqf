@@ -1,5 +1,5 @@
 ["rhsusf_m1a2sep2d_usarmy","BWA3_Leopard2_Fleck","rhsusf_m1a2sep1tuskiwd_usarmy","rhsusf_m1a2sep1tuskiid_usarmy","rhsusf_m1a1fep_d"],
-["BWA3_Puma_Fleck","RHS_M2A3_BUSKIII","B_APC_Tracked_01_AA_F","RHS_M2A3_BUSKIII_wd","rhsusf_stryker_m1126_m2_d","rhsusf_m109d_usarmy","B_APC_Tracked_01_AA_F"],
+["BWA3_Puma_Fleck","BWA3_Puma_Fleck","RHS_M2A3_BUSKIII","B_APC_Tracked_01_AA_F","RHS_M2A3_BUSKIII_wd","rhsusf_stryker_m1126_m2_d","rhsusf_m109d_usarmy","B_APC_Tracked_01_AA_F"],
 ["B_AFV_Wheeled_01_cannon_F","B_AFV_Wheeled_01_up_cannon_F","I_LT_01_AT_F"],
 ["B_APC_Tracked_01_AA_F"],
 ["BWA3_Dingo2_FLW200_M2_CG13_Fleck","rhsusf_M1220_M2_usarmy_d","rhsusf_M1230_M2_usarmy_d","rhsusf_M1232_M2_usarmy_d","BWA3_Dingo2_FLW200_M2_CG13_Fleck","rhsusf_M1237_M2_usarmy_wd","BWA3_Dingo2_FLW100_MG3_Fleck"],
