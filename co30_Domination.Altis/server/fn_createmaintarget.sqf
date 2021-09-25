@@ -164,6 +164,7 @@ for "_i" from 1 to d_num_barracks_objs do {
 	_poss set [2, 0];
 	_vec = createVehicle [d_barracks_building, _poss, [], 0, "NONE"];
 	_vec setDir (_vec getDir _trg_center);
+	createVehicle ["Flag_NATO_F", _poss, [], 0, "NONE"];//添加兵营旗帜
 	if (([getPos _vec, 20] call d_fnc_getslope) > 0.4) then {
 		_vec setVectorUp (surfaceNormal (getPos _vec));
 	};
