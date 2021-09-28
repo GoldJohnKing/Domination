@@ -1818,7 +1818,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					[]
+					["B_UAV_05_F"]
 				};
 				if (d_unsung) exitWith {
 					[]
@@ -1841,7 +1841,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					[]
+					["B_UAV_05_F"]
 				};
 				if (d_gmcwg) exitWith {
 					[]
