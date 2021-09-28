@@ -6,7 +6,7 @@ disableSerialization;
 
 #define CTRL(A) (_disp displayCtrl A)
 
-private _disp = uiNamespace getVariable "d_AirDropDialog";
+private _disp = uiNamespace getVariable "d_AirDropDialog";//dialog 对话，会话
 
 d_x_drop_array params ["_array"];
 if (_array isEqualTo []) then {
@@ -25,4 +25,10 @@ if (_array isEqualTo []) then {
 	CTRL(11004) ctrlShow false;
 } else {
 	CTRL(11004) ctrlSetText (_array # 0);
+};
+_array = d_x_drop_array # 3;
+if (_array isEqualTo []) then {
+	CTRL(11005) ctrlShow false;
+} else {
+	CTRL(11005) ctrlSetText (_array # 0);
 };

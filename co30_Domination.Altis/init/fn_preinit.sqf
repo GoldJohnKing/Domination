@@ -301,7 +301,7 @@ d_x_drop_array =
 #ifdef __OWN_SIDE_OPFOR__
 	call {
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhs_tigr_m_3camo_vdv"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhs_sprut_vdv"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"], [localize "STR_DOM_MISSIONSTRING_22_1", "O_ZTL11"]]
 		};
 		if (d_ifa3lite) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "LIB_US_Willys_MB"], [localize "STR_DOM_MISSIONSTRING_20", "LIB_BasicWeaponsBox_SU"]]
@@ -316,8 +316,8 @@ d_x_drop_array =
 	[[], [], []];
 #endif
 
-// side of the pilot that will fly the drop air vehicle
-d_drop_side = d_own_side;
+// side of the pilot that will fly the drop air vehicle "EAST" d_own_side
+d_drop_side = "EAST";
 
 // d_jumpflag_vec = empty ("") means normal jump flags for HALO jump get created
 // if you add a vehicle typename to d_jumpflag_vec (d_jumpflag_vec = "B_Quadbike_01_F"; for example) only a vehicle gets created and no HALO jump is available
@@ -988,7 +988,7 @@ if (!d_gmcwgwinter) then {
 
 	d_specops_W = call {
 		if (d_rhs) exitWith {
-			[["West","rhs_faction_socom_marsoc","rhs_group_nato_marsoc_infantry","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup, ["West","rhs_faction_socom_marsoc","rhs_group_nato_marsoc_infantry","rhs_group_nato_marsoc_infantry_team"] call d_fnc_GetConfigGroup]
+			[["West","rhs_group_nato_usarmy_wd_infantry_team","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup, ["West","rhs_group_nato_usmc_recon_d_infantry_team_lite","rhs_group_nato_usmc_recon_d_infantry_team_fast","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup]
 		};
 		if (d_ifa3lite) exitWith {
 			[["West","SG_STURM","Infantry","SG_GER_AT_squad"] call d_fnc_GetConfigGroup, ["West","SG_STURM","Infantry","SG_GER_infantry_squad"] call d_fnc_GetConfigGroup]
@@ -1061,7 +1061,7 @@ if (!d_gmcwgwinter) then {
 #endif
 #ifdef __RHS__
 	d_sniper_E = [["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_sniper"] call d_fnc_GetConfigGroup];
-	d_sniper_W = [["West","rhs_faction_usarmy_d","rhs_group_nato_usarmy_d_infantry","rhs_group_nato_usarmy_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
+	d_sniper_W = [["West","rhs_faction_usmc_d","rhs_group_nato_usmc_d_infantry","rhs_group_nato_usmc_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 #endif
 #ifdef __UNSUNG__
@@ -1215,13 +1215,13 @@ if (!d_gmcwgwinter) then {
 	d_arti_observer_G = [["I_Soldier_TL_F"]];
 
 	if (isNil "d_number_attack_planes") then {
-		d_number_attack_planes = 1;
+		d_number_attack_planes = 3;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 1;
+		d_number_attack_choppers = 3;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
-		d_number_light_attack_choppers = 1;
+		d_number_light_attack_choppers = 2;
 	};
 	if (isNil "d_number_attack_uavs") then {
 		d_number_attack_uavs = 1;
@@ -1498,7 +1498,7 @@ if (!d_gmcwgwinter) then {
 
 	// time (in sec) between attack planes and choppers over main target will respawn once they were shot down (a random value between 0 and 240 will be added)
 	if (isNil "d_airai_respawntime") then {
-		d_airai_respawntime = 1000;
+		d_airai_respawntime = 60;
 	};
 
 	d_side_missions_random = [];
@@ -1526,7 +1526,7 @@ if (!d_gmcwgwinter) then {
 		if (d_csla) exitWith {
 			d_civilians_t = ["CSLA_CIV_Citizen","CSLA_CIV_Citizen_V2","CSLA_CIV_Citizen_V3","CSLA_CIV_Citizen_V4","CSLA_CIV_Doctor","CSLA_CIV_Foreman","CSLA_CIV_Foreman_V2","CSLA_CIV_Woodlander","CSLA_CIV_Woodlander_V2","CSLA_CIV_Woodlander_V3","CSLA_CIV_Woodlander_V4","CSLA_CIV_Functionary","CSLA_CIV_Functionary_V2","CSLA_CIV_Villager","CSLA_CIV_Villager_V2","CSLA_CIV_Villager_V3","CSLA_CIV_Villager_V4","CSLA_CIV_Worker","CSLA_CIV_Worker_V2","CSLA_CIV_Worker_V3","CSLA_CIV_Worker_V4"];
 		};
-		d_civilians_t = ["C_man_1","C_man_1_1_F","C_man_1_2_F","C_man_1_3_F","C_man_polo_1_F","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F","C_man_polo_5_F","C_man_polo_6_F"];
+		d_civilians_t = ["C_man_1","C_man_1_1_F","C_man_1_2_F","C_man_1_3_F","C_man_polo_1_F","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F","C_man_polo_5_F","C_man_polo_6_F","sol_xs_dress_black","sol_xs_dress_white","sol_xs_dress_b","sol_xs_dress_y","sol_xs_dress_green","sol_xs_dress","sol_xs_dress_ser","sol_xs_dress_blue","sol_xs_dress_r","C_Journalist_01_War_F","C_Man_smart_casual_1_F","C_Man_smart_casual_2_F","C_Man_casual_4_v2_F","C_Man_casual_5_v2_F","C_Man_formal_1_F","C_Man_formal_2_F","C_Man_formal_3_F","C_Man_formal_4_F","C_journalist_F","C_man_p_fugitive_F_afro","C_man_p_fugitive_F_afro","C_man_p_shorts_1_F_afro","C_man_p_fugitive_F_euro","C_man_p_shorts_1_F_euro","C_man_p_beggar_F","C_man_w_worker_F","C_Man_casual_4_F","C_Man_casual_5_F","C_Man_casual_6_F","C_IDAP_Man_Paramedic_01_F","C_IDAP_Man_EOD_01_F","C_IDAP_Man_AidWorker_02_F","C_IDAP_Man_AidWorker_01_F","C_IDAP_Man_AidWorker_07_F","C_IDAP_Man_AidWorker_08_F","C_IDAP_Man_AidWorker_09_F","C_IDAP_Man_AidWorker_06_F","C_IDAP_Man_UAV_06_medical_F","Max_Tak2_woman5","Max_Tak_woman3","Max_Tak_woman4","Max_Taky_woman1","Max_Taky_woman2","Max_Taky_woman3","Max_Taky_woman3","Max_Taky_woman4","Max_Taky_woman5","Max_Tak2_woman1","Max_Tak2_woman2","Max_Tak2_woman3","Max_Tak2_woman4","Max_Tak_woman1","Max_Tak_woman2"];
 	};
 
 	d_base_aa_vec =
@@ -1796,7 +1796,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_2", "LIB_FW190F8_5", "LIB_FW190F8_3"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_A10","rhsusf_f22"]
+					["rhsusf_f22","B_Plane_Fighter_01_F","USAF_F35A","USAF_F35A_LIGHT"]
 				};
 				if (d_csla) exitWith {
 					[]
@@ -1899,7 +1899,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","BWA3_Tiger_RMK_FZ","BWA3_Tiger_Gunpod_FZ"]
+					["BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_RMK_FZ","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","BWA3_Tiger_RMK_Universal"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2049,7 +2049,7 @@ if (!d_gmcwgwinter) then {
 			["RHS_Mi8MTV3_vvsc"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["RHS_CH_47F_light"]
+			["RHS_CH_47F"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2061,7 +2061,7 @@ if (!d_gmcwgwinter) then {
 			["uns_an2"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["RHS_CH_47F_light"]
+			["RHS_CH_47F"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_MELB_AH6M","RHS_UH1Y_d","BWA3_Tiger_Gunpod_FZ"]
+					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","BWA3_Tiger_Gunpod_FZ","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
@@ -2149,19 +2149,20 @@ if (!d_gmcwgwinter) then {
 
 	// enemy AI inf barracks in main target... As long as the building exists enemy AI inf respawns inside the building thus in the main target area!!!
 	// Needs a building which can be entered by AI (as they will respawn inside)
-	// can only be destroyed by satchel charges!!!
+	// can only be destroyed by satchel charges!!! Land_BagBunker_01_large_green_F Land_Bunker_01_HQ_F 
 	// no marker gets created!
 #ifndef __VN__
-	d_barracks_building = "Land_BagBunker_01_large_green_F";
+	d_barracks_building = "Land_Cargo_HQ_V3_F";
 #else
 	d_barracks_building = "Land_vn_o_shelter_05";
 #endif
 
 	// same as barracks building. But enemy AI vehicles do not spawn inside the main target area but outside
-	// if destroyed no more enemy vehicles respawn
+	// if destroyed no more enemy vehicles respawn  
+    //Land_GuardHouse_02_F Land_i_House_Big_01_b_pink_F Land_Research_HQ_F Land_PowerStation_01_F Land_i_House_Small_03_V1_F createVehicle ["Flag_NATO_F", _poss, [], 0, "NONE"];//添加兵营旗帜
 	d_vehicle_building =
 #ifdef __ALTIS__
-		"Land_Cargo_HQ_V1_F";
+		"Land_PowerStation_01_F";
 #endif
 #ifdef __CUP_CHERNARUS__
 		"Land_Cargo_HQ_V4_F";
@@ -2205,7 +2206,7 @@ if (!d_gmcwgwinter) then {
 
 	d_b_small_static_high =
 #ifdef __ALTIS__
-		"Land_BagBunker_Small_F";
+		"";
 #endif
 #ifdef __CUP_CHERNARUS__
 		"Land_BagBunker_01_small_green_F";
@@ -2251,7 +2252,7 @@ if (!d_gmcwgwinter) then {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [250, 150, 320, 170];
+		d_ai_groups_respawn_time = [360, 25, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
@@ -2267,7 +2268,7 @@ if (!d_gmcwgwinter) then {
 		"C_Hatchback_01_F", 0.30,
 		"C_Truck_02_covered_F", 0.05,
 		"C_Van_01_box_F", 0.05,
-		"C_Van_02_transport_F", 0.05,
+		"C_Heli_Light_01_civil_F", 0.05,
 		"C_Hatchback_01_sport_F", 0.10,
 		"C_Offroad_02_unarmed_F", 0.15,
 		"C_SUV_01_F", 0.15
@@ -2277,9 +2278,9 @@ if (!d_gmcwgwinter) then {
 		"C_Offroad_01_F", 0.10,
 		"C_Hatchback_01_F", 0.10,
 		"C_Truck_02_covered_F", 0.03,
-		"C_Truck_02_transport_F", 0.03,
-		"C_Van_01_box_F", 0.05,
-		"C_Van_02_transport_F", 0.05,
+		"C_IDAP_Truck_02_water_F", 0.03,
+		"C_IDAP_Offroad_02_unarmed_F", 0.05,
+		"C_IDAP_Truck_02_transport_F", 0.05,
 		"C_Hatchback_01_sport_F", 0.05,
 		"C_Offroad_02_unarmed_F", 0.07,
 		"C_Hatchback_01_F", 0.35,
@@ -2547,7 +2548,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_3camo_vdv", "AGE_LSV", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhs_btr80a_vdv_des", "rhs_bmd4_vdv", "rhs_bmp2k_vdv_des", "rhs_sprut_vdv", "rhs_t72be_vdv_des","rhs_t90sm_tv"]
+			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv","O_ZBL09", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]

@@ -109,7 +109,7 @@ if (isServer) then {
 	d_WithLessArmor call d_fnc_setenemymode;
 
 	// enemy ai skill: [base skill, random value (random 0.3) that gets added to the base skill]
-	d_skill_array = [[0.15,0.1], [0.2,0.1], [0.4,0.2], [0.6,0.3], [0.65,0.3]] select d_EnemySkill;
+	d_skill_array = [[0.15,0.1], [0.2,0.1], [0.4,0.2], [0.6,0.3], [1,0]] select d_EnemySkill; // Edited: Tweak enemy skill, default = [[0.15,0.1], [0.2,0.1], [0.4,0.2], [0.6,0.3], [0.65,0.3]]
 	
 	if (isNil "d_addscore_a") then {
 		d_addscore_a = [

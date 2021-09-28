@@ -1,4 +1,4 @@
-hint format ["欢迎来到后勤处，我这可有不少好东西——只要你的荣誉够多。"];
+hint format ["欢迎来到后勤处，我这可有不少好东西——只要你的荣誉够多。听说咱们的人在19日那天缴获了F22？现在它们能为我们所用！"];
 player addaction ["载具菜单",{
 removeallactions player;
 player addaction["荣誉查询",{["",0]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
@@ -10,12 +10,12 @@ player addaction["M1240防雷车: 需要1000荣誉",{["rhsusf_m1240a1_m2_usarmy_
 player addaction["BRDM-2(9P148): 需要1000荣誉",{["rhsgref_BRDM2_ATGM_msv",1000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M2A3布莱德利BUSK1: 需要3000荣誉",{["RHS_M2A3_BUSKI",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M6近程防空车: 需要2000荣誉",{["RHS_M6",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["M1A2SEPv1（TUSK II）: 需要4000荣誉",{["rhsusf_m1a2sep1tuskiid_usarmy",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["M1A2SEPv1（TUSK II）: 需要3000荣誉",{["rhsusf_m1a2sep1tuskiid_usarmy",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M1A2SEPv2: 需要4000荣誉",{["rhsusf_m1a2sep2d_usarmy",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["AH-64D阿帕奇武装直升机: 需要3000荣誉",{["RHS_AH64D",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["AH-64D阿帕奇武装直升机: 需要3000荣誉",{["RHS_AH64D",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["A-10D雷霆二式: 需要4000荣誉",{["B_Plane_CAS_01_dynamicloadout_F",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["F/A18 F: 需要400荣誉",{["JS_JC_FA18F",400]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["F/A18 E: 需要400荣誉",{["JS_JC_FA18E",400]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["豹2主战坦克: 需要6000荣誉",{["BWA3_Leopard2_Fleck",6000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["SU-25“蛙足”攻击机: 需要4000荣誉",{["RHS_Su25SM_vvsc",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["leave",{removeallActions player}];
 
 }]

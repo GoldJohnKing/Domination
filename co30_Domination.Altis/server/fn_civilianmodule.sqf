@@ -40,7 +40,13 @@ d_civArray = [
 	"C_Man_casual_4_F",
 	"C_Man_casual_5_F",
 	"C_Man_casual_6_F",
-	"C_Story_Mechanic_01_F"
+	"C_Story_Mechanic_01_F",
+	"sol_xs_dress_black",
+	"sol_xs_dress_white",
+	"sol_xs_dress_b",
+	"sol_xs_dress_y",
+	"sol_xs_dress_green",
+	"sol_xs_dress","sol_xs_dress_ser","sol_xs_dress_blue","sol_xs_dress_r","C_Journalist_01_War_F","C_Man_smart_casual_1_F","C_Man_smart_casual_2_F","C_Man_casual_4_v2_F","C_Man_casual_5_v2_F","C_Man_formal_1_F","C_Man_formal_2_F","C_Man_formal_3_F","C_Man_formal_4_F","C_journalist_F","C_man_p_fugitive_F_afro","C_man_p_fugitive_F_afro","C_man_p_shorts_1_F_afro","C_man_p_fugitive_F_euro","C_man_p_shorts_1_F_euro","C_man_p_beggar_F","C_man_w_worker_F","C_Man_casual_4_F","C_Man_casual_5_F","C_Man_casual_6_F","C_IDAP_Man_Paramedic_01_F","C_IDAP_Man_EOD_01_F","C_IDAP_Man_AidWorker_02_F","C_IDAP_Man_AidWorker_01_F","C_IDAP_Man_AidWorker_07_F","C_IDAP_Man_AidWorker_08_F","C_IDAP_Man_AidWorker_09_F","C_IDAP_Man_AidWorker_06_F","C_IDAP_Man_UAV_06_medical_F","Max_Tak2_woman5","Max_Tak_woman3","Max_Tak_woman4","Max_Taky_woman1","Max_Taky_woman2","Max_Taky_woman3","Max_Taky_woman3","Max_Taky_woman4","Max_Taky_woman5","Max_Tak2_woman1","Max_Tak2_woman2","Max_Tak2_woman3","Max_Tak2_woman4","Max_Tak_woman1","Max_Tak_woman2"
 ];
 
 #ifdef __CUP_CHERNARUS__

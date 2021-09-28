@@ -8,24 +8,28 @@
 
 params ["_u", "_mode", ["_init", false]];
 
-if (!_init && {isNil {_u getVariable "d_spotDistance"}}) exitWith {};
+// if (!_init && {isNil {_u getVariable "d_spotDistance"}}) exitWith {}; // Edited: Do not judge init or not
 
 // save initial values
-if (_init) then {
-	_u setVariable ["d_spotDistance", _u skill "spotDistance"];
-	_u setVariable ["d_spotTime", _u skill "spotTime"];
-	_u setVariable ["d_aimingSpeed", _u skill "aimingSpeed"];
-};
+// if (_init) then { // Edited: Do not judge init or not
+// 	_u setVariable ["d_spotDistance", _u skill "spotDistance"];
+// 	_u setVariable ["d_spotTime", _u skill "spotTime"];
+// 	_u setVariable ["d_aimingSpeed", _u skill "aimingSpeed"];
+// };
 
-if (_mode == 0) then {
-	_u setSkill ["spotDistance", _u getVariable "d_spotDistance"];
-	_u setSkill ["spotTime", _u getVariable "d_spotTime"];
-	_u setSkill ["aimingSpeed", _u getVariable "d_aimingSpeed"];
-} else {
-	_u setSkill ["spotDistance", 0.18];
-	_u setSkill ["spotTime", 0.18];
-	_u setSkill ["aimingSpeed", 0.18];
-};
+// if (_mode == 0) then { // Edited: Tweak enemy skill
+	_u setSkill 1;
+	_u setSkill ["aimingAccuracy", 0];
+	_u setSkill ["aimingShake", 0.2];
+	_u setSkill ["spotDistance", 0.8]; // Edited: default = _u getVariable "d_spotDistance"
+	_u setSkill ["spotTime", 0.75]; // Edited: default = _u getVariable "d_spotTime"
+	_u setSkill ["aimingSpeed", 1]; // Edited: default = _u getVariable "d_aimingSpeed"
+
+// } else {
+// 	_u setSkill ["spotDistance", 0.18];
+// 	_u setSkill ["spotTime", 0.18];
+// 	_u setSkill ["aimingSpeed", 0.18];
+// };
 
 // TODO calculate better?
 // add random value?

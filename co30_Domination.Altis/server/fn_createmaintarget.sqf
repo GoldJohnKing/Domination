@@ -164,6 +164,7 @@ for "_i" from 1 to d_num_barracks_objs do {
 	_poss set [2, 0];
 	_vec = createVehicle [d_barracks_building, _poss, [], 0, "NONE"];
 	_vec setDir (_vec getDir _trg_center);
+	createVehicle ["Flag_NATO_F", _poss, [], 0, "NONE"];//添加兵营旗帜
 	if (([getPos _vec, 20] call d_fnc_getslope) > 0.4) then {
 		_vec setVectorUp (surfaceNormal (getPos _vec));
 	};
@@ -232,6 +233,44 @@ if (([getPos _vec, sizeOf d_vehicle_building] call d_fnc_getslope) > 0.4) then {
 };/* else {
 	_vec setVectorUp [0,0,1];
 };*/
+//创建HQ识别物件
+// createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_Router_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_TTowerSmall_1_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_BatterPack_01_open_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Flag_NATO_F", _poss, [], 0, "NONE"];//添加旗帜
+//敌方HQ指挥官小组
+private _HQ1 = createGroup [west, true];
+private _HQ2 = createGroup [west, true];
+private _HQ3 = createGroup [west, true];
+private _HQ4 = createGroup [west, true];
+_HQ1 createUnit ["rhsusf_army_ucp_driver", _poss, [], 0, "FORM"];
+_HQ2 createUnit ["BWA3_Officer_Fleck", _poss, [], 0, "FORM"];
+_HQ3 createUnit ["BWA3_Tank_Commander_Multi", _poss, [], 0, "FORM"];
+_HQ4 createUnit ["rhsusf_socom_swcc_officer", _poss, [], 0, "FORM"];
+//创建直属部队
+private _HQSP1 = createGroup [west, true];
+private _HQSP2 = createGroup [west, true];
+_HQSP1 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
+_HQSP1 createUnit ["rhsusf_socom_marsoc_sarc", _poss, [], 0, "FORM"];
+_HQSP1 createUnit ["rhsusf_socom_marsoc_sniper", _poss, [], 0, "FORM"];
+_HQSP1 createUnit ["BWA3_recon_TL_Multi", _poss, [], 0, "FORM"];
+_HQSP1 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+_HQSP2 createUnit ["BWA3_recon_LAT_Multi", _poss, [], 0, "FORM"];
+_HQSP2 createUnit ["BWA3_recon_Multi", _poss, [], 0, "FORM"];
+_HQSP2 createUnit ["rhsusf_socom_marsoc_marksman", _poss, [], 0, "FORM"];
+_HQSP2 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+// private _HQANTIveh = createGroup [west, true];
+// _HQSP createUnit ["rhsusf_army_ocp_riflemanat", _poss, [], 0, "FORM"];
+// _HQSP createUnit ["rhsusf_army_ocp_arb_sniper_m107", _poss, [], 0, "FORM"];
+// _HQSP createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+// _HQSP createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+// private _HQSIN = createGroup [west, true];
+// _HQSIN createUnit ["rhsusf_army_ocp_teamleader", _poss, [], 0, "FORM"];
+// _HQSIN createUnit ["rhsusf_army_ocp_sniper", _poss, [], 0, "FORM"];
+//
 _vec setVariable ["d_v_pos", getPos _vec];
 if (d_bar_mhq_destroy == 1) then {
 	[_vec, 1] call d_fnc_checkmtrespawntarget;
