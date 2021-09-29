@@ -1199,7 +1199,7 @@ class Params {
 	class d_occ_rad {
 		title = "$STR_DOM_MISSIONSTRING_1902";
 		values[] = {125, 250, 350, 450, 550, 750, 1000};
-		default = 250;
+		default = 125;
 		texts[] = {"125m", "250m", "350m", "450m", "550m", "750m", "1000m"};
 	};
 	
@@ -1255,14 +1255,14 @@ class Params {
 	class d_max_bar_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1899";
 		values[] = {1, 2, 3, 4, 5, 6, 7};
-		default = 4;
+		default = 2;
 		texts[] = {"1", "2", "3", "4", "5", "6", "7"};
 	};
 
 	class d_max_camp_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1930";
 		values[] = {1, 2, 3, 4, 5, -1};
-		default = 3;
+		default = 1;
 		texts[] = {"1", "2", "3", "4", "5", "3 to 5"};
 	};
 
