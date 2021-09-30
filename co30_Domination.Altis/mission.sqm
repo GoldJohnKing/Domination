@@ -8,14 +8,14 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=816;
+		nextID=820;
 	};
 	class Camera
 	{
-		pos[]={12124.56,51.297153,15168.417};
-		dir[]={0.4229975,-0.47493106,-0.77169663};
-		up[]={0.2282833,0.88002282,-0.41646886};
-		aside[]={-0.87690496,-9.89603e-008,-0.48066637};
+		pos[]={12013.519,77.288139,15107.685};
+		dir[]={0.84202552,-0.52265346,-0.13352422};
+		up[]={0.51620448,0.85254478,-0.081857145};
+		aside[]={-0.15661837,-1.7626007e-008,-0.98766154};
 	};
 };
 binarizationWanted=0;
@@ -535,7 +535,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=532;
+		items=533;
 		class Item0
 		{
 			dataType="Marker";
@@ -24548,8 +24548,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11801.087,22.332376,15077.999};
-				angles[]={0,6.2657328,0};
+				position[]={11801.087,22.332376,15078};
+				angles[]={0,6.2657318,0};
 			};
 			side="Empty";
 			flags=4;
@@ -25280,6 +25280,85 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item532
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12086.191,23.181946,15107.089};
+				angles[]={0,4.712389,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addEventHandler [""GetIn"", { " \n " params [""_vehicle"", ""_role"", ""_unit"", ""_turret""]; " \n "_unit call ace_medical_treatment_fnc_fullHealLocal;}]; ";
+				name="d_vec_trans_32";
+			};
+			id=818;
+			type="O_Truck_03_medical_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=8;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[10]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_isRepairVehicle";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 	};

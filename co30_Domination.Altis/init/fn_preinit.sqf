@@ -420,7 +420,7 @@ d_wcamp =
 #endif
 
 #ifndef __VN__
-d_mash = "Land_FirstAidKit_01_closed_F";
+d_mash = "ACE_medicalSupplyCrate_advanced";
 #else
 d_mash = "Land_vn_tent_mash_01_01";
 #endif
