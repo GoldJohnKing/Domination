@@ -52,7 +52,7 @@ _unit setVariable ["d_type", _ttype];
 
 _vec lockDriver true;
 
-{_x setCaptive true} forEach _crew;
+// {_x setCaptive true} forEach _crew;//captive 被俘虏的
 
 private _pospl =+ _playerpos;
 _pospl set [2,0];

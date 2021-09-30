@@ -301,7 +301,7 @@ d_x_drop_array =
 #ifdef __OWN_SIDE_OPFOR__
 	call {
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhs_sprut_vdv"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"], [localize "STR_DOM_MISSIONSTRING_22_1", "O_ZTL11"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhs_tigr_sts_3camo_vdv"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"], [localize "STR_DOM_MISSIONSTRING_22_1", "O_ZTL11"]]
 		};
 		if (d_ifa3lite) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "LIB_US_Willys_MB"], [localize "STR_DOM_MISSIONSTRING_20", "LIB_BasicWeaponsBox_SU"]]
@@ -2548,7 +2548,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv","O_ZBL09", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv"]
+			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01", "RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_msv","rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv_des","O_ZBL09", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv", "rhs_sprut_vdv", "O_ZTL11"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]
