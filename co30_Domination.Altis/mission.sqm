@@ -12,14 +12,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12013.519,77.288139,15107.685};
-		dir[]={0.84202552,-0.52265346,-0.13352422};
-		up[]={0.51620448,0.85254478,-0.081857145};
-		aside[]={-0.15661837,-1.7626007e-008,-0.98766154};
+		pos[]={6924.4141,81.384964,7995.5059};
+		dir[]={-0.7001515,-0.35057789,0.62199926};
+		up[]={-0.26209164,0.93653351,0.23283647};
+		aside[]={0.66415048,0,0.74759889};
 	};
 };
 binarizationWanted=0;
-sourceName="61-co30_Domination_ace";
+sourceName="61-co30_Domination_ace_civ";
 addons[]=
 {
 	"A3_Ui_F",
@@ -516,7 +516,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="中东机械化作战，利用基地车快速投入战斗吧！";
+		briefingName="中东机械化作战，利用基地车快速投入战斗吧！(启动器进）";
 		overviewText="中东机械化作战，利用基地车快速投入战斗吧！";
 		timeOfChanges=1800.0002;
 		startWeather=0;
@@ -14782,10 +14782,11 @@ class Mission
 		class Item247
 		{
 			dataType="Marker";
-			position[]={3529.1406,10.98,9871.208};
+			position[]={4141.5688,18.617615,3795.5381};
 			name="d_sm_44";
 			type="Empty";
 			id=426;
+			atlOffset=-1.0623856;
 		};
 		class Item248
 		{
@@ -15548,10 +15549,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6858.4766,72.576637,8057.3203};
+				position[]={6858.4766,13.486086,8057.3203};
 				angles[]={0.054945603,0.12217304,6.2556911};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -15560,7 +15562,6 @@ class Mission
 			};
 			id=468;
 			type="Land_Cargo20_sand_F";
-			atlOffset=59.090549;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -16762,7 +16763,7 @@ class Mission
 		class Item369
 		{
 			dataType="Marker";
-			position[]={6378.3394,8.9656725,5528.3242};
+			position[]={8846.5469,12.746985,6053.5889};
 			name="d_sm_72";
 			type="Empty";
 			angle=218.23985;
@@ -16771,11 +16772,10 @@ class Mission
 		class Item370
 		{
 			dataType="Marker";
-			position[]={6208.0679,21.30579,5393.9121};
+			position[]={8676.2754,13.934805,5919.1768};
 			name="d_sm_72_1";
 			type="Empty";
 			id=549;
-			atlOffset=1.9073486e-006;
 		};
 		class Item371
 		{
@@ -18029,12 +18029,11 @@ class Mission
 		class Item420
 		{
 			dataType="Marker";
-			position[]={15923.155,32.746185,5305.4775};
+			position[]={2204.8052,12.046872,11758.304};
 			name="d_sm_22_1";
 			type="Empty";
 			angle=237.37639;
 			id=601;
-			atlOffset=3.8146973e-006;
 		};
 		class Item421
 		{

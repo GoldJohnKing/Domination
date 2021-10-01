@@ -31,7 +31,7 @@ if (isServer) then {
 	_sm_vec setDir ((direction _fortress) + 90);
 	_sm_vec setPos _bpos;
 	sleep 2.123;
-	["specops", 2, "allmen", 2, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 4, "allmen", 2, _poss, 200, true] spawn d_fnc_CreateInf;
 	sleep 2.123;
 	private _leadero = leader _ogroup;
 	_leadero setRank "COLONEL";

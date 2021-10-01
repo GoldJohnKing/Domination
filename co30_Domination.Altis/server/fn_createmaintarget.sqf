@@ -440,8 +440,8 @@ _type_list_patrol = nil;
 sleep 1.124;
 
 if (d_allow_observers == 1 && {d_no_more_observers < 2}) then {
-	d_nr_observers = floor random 4;
-	if (d_nr_observers < 2) then {d_nr_observers = 2};
+	d_nr_observers = floor random 10;
+	if (d_nr_observers < 2) then {d_nr_observers = 4};
 	d_obs_array = [];
 	private _unit_array = ["arti_observer", d_enemy_side_short] call d_fnc_getunitlistm;
 	for "_xx" from 0 to d_nr_observers - 1 do {
@@ -728,7 +728,7 @@ if (d_with_MainTargetEvents != 0) then {
             	// guerrilla events are only eligible if d_with_MainTargetEvents == -3 or -4
             	// remove guerrilla events from the temp array, do not select it here
             	_tmpMtEvents deleteAt (_tmpMtEvents find "GUERRILLA_INFANTRY");
-			};
+			     };
 			private _num_events_for = 2; // default three events for iterator starting at zero
 			if (d_with_MainTargetEvents == -4) then {
 				// "all" parameter selected so entire events array will be used

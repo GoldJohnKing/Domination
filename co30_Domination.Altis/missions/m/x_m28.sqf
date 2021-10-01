@@ -21,7 +21,7 @@ if (isServer) then {
 	private _pos_other = d_x_sm_pos # 1;
 	["aa", 1, "tracked_apc", 0, "tank", 0, _pos_other, 1, 0, false] spawn d_fnc_CreateArmor;
 	sleep 2.333;
-	["specops", 1, "allmen", 2, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 1, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
 	sleep 2.333;
 	["aa", 0, "tracked_apc", 1, "tank", 1, _pos_other, 1, 350, true] spawn d_fnc_CreateArmor;
 };

@@ -53,7 +53,7 @@ if (_docreateinf) then {
 	if (_type isEqualTo "naval") then {
 		_diam = 500;
 	};
-	["specops", (floor (random 3)) min 1, "allmen", (floor (random 3)) min 1, d_x_sm_pos # 0, _diam, true] spawn d_fnc_CreateInf;
+	["specops", (floor (random 6)) max 1, "allmen", (floor (random 6)) max 1, d_x_sm_pos # 0, _diam, true] spawn d_fnc_CreateInf;
 	sleep 2.333;
 };
 if (_type isEqualTo "naval") then {

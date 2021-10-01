@@ -192,6 +192,29 @@ private _placeCivilianCluster = {
 				_unit call BIS_fnc_ambientAnim__terminate;
 			};
 			_unit setUnitPos "DOWN";
+			if (random 100 > 1 && _unit getVariable ["unarmed", true]) then {
+				// 武器
+				private _primaryWeapon = selectRandom ["Weapon_hlc_rifle_ak74m","Weapon_hlc_rifle_akm","Weapon_hlc_rifle_auga1carb_t","Weapon_hlc_rifle_awMagnum_BL_ghillie","rhs_weap_mg42","rhs_weap_pkp","rhs_weap_M107","Weapon_hlc_rifle_FAL5000","Weapon_hlc_rifle_g3a3","Weapon_hlc_rifle_M14_Rail","Weapon_hlc_rifle_m203","Item_rhs_weap_m76","Weapon_hlc_rifle_g3sg1","Item_rhs_weap_m79","Item_rhs_weap_fnmag","Weapon_hlc_lmg_minimi_railed","Weapon_hlc_lmg_m60","Weapon_hlc_lmg_M60E4","rhssaf_weapon_m84","Item_rhs_weap_M590_8RD"]; // 平民抵抗能得到的武器（完全贴近现实，不考虑游戏性，表现出 抵抗即可）
+				private _secondaryWeapon = selectRandom ["hlc_smg_mp5k","rhs_weap_savz61_folded","rhs_weap_pp2000_folded","rhs_weap_m320"];
+
+				// 武器弹夹
+				private _primaryWeaponMagazine = (getArray (configFile >> "CfgWeapons" >> _primaryWeapon >> "magazines")) select 0;
+				private _secondaryWeaponMagazine = (getArray (configFile >> "CfgWeapons" >> _secondaryWeapon >> "magazines")) select 0;
+
+				// 给平民武器弹夹
+				(uniformContainer _unit) addMagazineCargo [_primaryWeaponMagazine, 5];
+				(uniformContainer _unit) addMagazineCargo [_secondaryWeaponMagazine, 3];
+
+				// 给平民武器
+				_unit addWeapon _primaryWeapon;
+				_unit addWeapon _secondaryWeapon;
+
+				// 让平民掏出主武器
+				_unit selectWeapon _primaryWeapon;
+
+				// 将平民标记为已有武器，避免重复执行
+				_unit setVariable ["unarmed", false];
+			}
 		}]];
 		d_cur_tgt_civ_units pushBack _civAgent;
 		if (d_ai_persistent_corpses == 0) then {

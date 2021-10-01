@@ -2,7 +2,7 @@
 //#define __DEBUG__
 #include "..\..\x_setup.sqf"
 
-d_x_sm_pos = [[3717.11,5985.61,0]]; // index: 39,   Secret container in huge radio tower on mount Grüner Berg
+d_x_sm_pos = [[3717.11,5985.61,0]]; // index: 39,   Secret container in huge radio tower on mount Grï¿½ner Berg
 d_x_sm_type = "normal"; // "convoy"
 
 if (hasInterface) then {
@@ -21,5 +21,5 @@ if (isServer) then {
 	sleep 2.22;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 300, false] spawn d_fnc_CreateArmor;
 	sleep 2.333;
-	["specops", 1, "allmen", 2, _poss, 400, true] spawn d_fnc_CreateInf;
+	["specops", 1, "allmen", 5, _poss, 400, true] spawn d_fnc_CreateInf;
 };

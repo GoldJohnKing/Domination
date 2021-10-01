@@ -27,7 +27,7 @@ for "_ii" from 0 to 3 do {
 };
 
 for "_i" from 4 to 7 do {
-	["specops", 1, "allmen", 1, _posi_array # _i, 100, true] spawn d_fnc_CreateInf;
+	["specops", 1, "allmen", 3, _posi_array # _i, 100, true] spawn d_fnc_CreateInf;
 	sleep 2.333;
 };
 
