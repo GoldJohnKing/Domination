@@ -8,14 +8,14 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=820;
+		nextID=822;
 	};
 	class Camera
 	{
-		pos[]={6924.4141,81.384964,7995.5059};
-		dir[]={-0.7001515,-0.35057789,0.62199926};
-		up[]={-0.26209164,0.93653351,0.23283647};
-		aside[]={0.66415048,0,0.74759889};
+		pos[]={6783.3755,94.285172,8143.7969};
+		dir[]={0.080153905,-0.53934479,-0.83826166};
+		up[]={0.051337563,0.84208506,-0.53689599};
+		aside[]={-0.99545968,0,-0.095185049};
 	};
 };
 binarizationWanted=0;
@@ -516,8 +516,8 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="中东机械化作战，利用基地车快速投入战斗吧！(启动器进）";
-		overviewText="中东机械化作战，利用基地车快速投入战斗吧！";
+		briefingName="中东机械化作战，利用基地车快速投入战斗吧！";
+		overviewText="中东机械化拟真作战，利用基地车快速投入战斗吧！(请在启动器进入）";
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.10000001;
@@ -16225,7 +16225,7 @@ class Mission
 		class Item313
 		{
 			dataType="Marker";
-			position[]={9047.5313,6.735703,11464.359};
+			position[]={8436.7715,19.147896,11457.623};
 			name="d_sm_20";
 			type="Empty";
 			angle=265.29733;

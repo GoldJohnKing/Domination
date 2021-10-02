@@ -988,7 +988,7 @@ if (!d_gmcwgwinter) then {
 
 	d_specops_W = call {
 		if (d_rhs) exitWith {
-			[["West","rhs_group_nato_usarmy_wd_infantry_team","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup, ["West","rhs_group_nato_usmc_recon_d_infantry_team_lite","rhs_group_nato_usmc_recon_d_infantry_team_fast","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup]
+			[["West","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_usarmy_d_infantry_squad"] call d_fnc_GetConfigGroup, ["West","rhs_group_nato_usmc_recon_d_infantry_team_lite","rhs_group_nato_usmc_recon_d_infantry_team_fast","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup]
 		};
 		if (d_ifa3lite) exitWith {
 			[["West","SG_STURM","Infantry","SG_GER_AT_squad"] call d_fnc_GetConfigGroup, ["West","SG_STURM","Infantry","SG_GER_infantry_squad"] call d_fnc_GetConfigGroup]

@@ -399,7 +399,7 @@ if (hasInterface) then {
 #ifdef __OWN_SIDE_OPFOR__
 			call {
 				if (d_rhs) exitWith {
-					["RHS_Mi8mt_Cargo_vv"]
+					["RHS_Mi8mt_vv"]
 				};
 				if (d_csla) exitWith {
 					["CSLA_Mi17"]

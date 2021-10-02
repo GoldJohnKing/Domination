@@ -72,7 +72,8 @@ sleep 0.1;
 private _crew = _veca # 1;
 // {_x setCaptive true} forEach _crew;//captive 被俘虏的
 private _unit = driver _chopper;
-
+//缓冲5分钟
+sleep 300;
 private _wp = _grp addWaypoint [_drop_pos, 0];
 _wp setWaypointBehaviour "CARELESS";
 _wp setWaypointSpeed "NORMAL";
@@ -97,6 +98,7 @@ sleep 12 + random 12;
 if (!isNil "_player" && {!isNull _player}) then {
 	1 remoteExecCall ["d_fnc_dropansw", _player];
 };
+
 private _starttime = time + 300;
 private _endtime = time + (((_vecdist / 1000) * 60) + 120);
 while {_chopper distance2D _drop_pos > 1000} do {
