@@ -107,7 +107,7 @@ sleep 2.333;
 
 // create 1 enemy with unusual hat/bandanna to help players identify them
 private _hat_type = selectRandom ["H_Cap_red", "H_Shemag_olive_hs", "H_Bandanna_surfer"];
-private _enemyGuardGroup = (["specops", 0, "allmen", 1, getPos _bldg , 5, false, true, 1] call d_fnc_CreateInf) # 0;
+private _enemyGuardGroup = (["specops", 0, "allmen", 4, getPos _bldg , 5, false, true, 1] call d_fnc_CreateInf) # 0;
 {
 	[_x, 5] call d_fnc_nodamoffdyn;
 	_x forceSpeed 0;

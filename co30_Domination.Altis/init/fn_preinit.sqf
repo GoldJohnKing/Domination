@@ -1899,7 +1899,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_RMK_FZ","RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","BWA3_Tiger_RMK_Universal"]
+					["RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2125,7 +2125,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","BWA3_Tiger_Gunpod_FZ","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR"]
+					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};

@@ -14,7 +14,7 @@ if (isServer) then {
 	d_x_sm_pos params ["_poss"];
 	["aa", 1, "tracked_apc", 1, "tank", 1, d_x_sm_pos # 1, 1, 0] spawn d_fnc_CreateArmor;
 	sleep 2.123;
-	["specops", 2, "allmen", 1, _poss, 50] spawn d_fnc_CreateInf;
+	["specops", 2, "allmen", 6, _poss, 50] spawn d_fnc_CreateInf;
 	sleep 2.111;
 	private _fortress = createVehicle [d_sm_fortress, _poss, [], 0, "NONE"];
 	_fortress setDir 55;

@@ -37,7 +37,7 @@ private _rescued = false;
 if (d_with_ranked || {d_database_found}) then {d_sm_p_pos = nil};
 
 if (_docreateinf) then {
-	["specops", (floor (random 3)) min 1, "allmen", (floor (random 3)) min 1, d_x_sm_pos # 0, 300, true] spawn d_fnc_CreateInf;
+	["specops", (floor (random 6)) max 2, "allmen", (floor (random 6)) max 2, d_x_sm_pos # 0, 300, true] spawn d_fnc_CreateInf;
 	sleep 2.333;
 };
 if (_docreatearmor) then {

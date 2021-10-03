@@ -22,7 +22,7 @@ if (isServer) then {
 	_vec addEventHandler ["HandleDamage",{(_this select 2) * 3}];
 	d_x_sm_vec_rem_ar pushBack _vec;
 	sleep 2.123;
-	["specops", 2, "basic", 3, _poss, 150,true] spawn d_fnc_CreateInf;
+	["specops", 5, "basic", 3, _poss, 150,true] spawn d_fnc_CreateInf;
 	sleep 2.123;
 	["DSHKM",1,"AGS",0,"",0,[_poss, 100, 2] call d_fnc_GetRanPointCircle,1,100,false] spawn d_fnc_CreateArmor;
 	sleep 2.123;

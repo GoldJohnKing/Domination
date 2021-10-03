@@ -22,7 +22,7 @@ if !(_vec isKindOf "Air") then {
 };
 
 if (_docreateinf) then {
-	["specops", (floor (random 3)) min 1, "allmen", (floor (random 3)) min 1, _vpos, 300, true] spawn d_fnc_CreateInf;
+	["specops", (floor (random 6)) max 3, "allmen", (floor (random 4)) max 2, _vpos, 300, true] spawn d_fnc_CreateInf;
 	sleep 2.333;
 };
 if (_docreatearmor) then {

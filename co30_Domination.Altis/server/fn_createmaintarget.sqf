@@ -75,8 +75,8 @@ __TRACE_1("","_type_list_patrol")
 private _type_list_guard_static2 = [];
 if (d_camp_static_weapons == 1) then {
 	_type_list_guard_static2 = [
-    	["stat_mg", 1, ceil (random 4)],
-    	["stat_gl", 1, ceil (random 3)]
+    	["stat_mg", 1, ceil (random 8)],
+    	["stat_gl", 1, ceil (random 5)]
     ];
 };
 
@@ -247,8 +247,8 @@ private _HQ2 = createGroup [west, true];
 private _HQ3 = createGroup [west, true];
 private _HQ4 = createGroup [west, true];
 _HQ1 createUnit ["rhsusf_army_ucp_driver", _poss, [], 0, "FORM"];
-_HQ2 createUnit ["BWA3_Officer_Fleck", _poss, [], 0, "FORM"];
-_HQ3 createUnit ["BWA3_Tank_Commander_Multi", _poss, [], 0, "FORM"];
+_HQ2 createUnit ["rhsusf_army_ucp_driver", _poss, [], 0, "FORM"];
+_HQ3 createUnit ["rhsusf_army_ucp_driver", _poss, [], 0, "FORM"];
 _HQ4 createUnit ["rhsusf_socom_swcc_officer", _poss, [], 0, "FORM"];
 //创建直属部队
 private _HQSP1 = createGroup [west, true];
@@ -256,10 +256,10 @@ private _HQSP2 = createGroup [west, true];
 _HQSP1 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
 _HQSP1 createUnit ["rhsusf_socom_marsoc_sarc", _poss, [], 0, "FORM"];
 _HQSP1 createUnit ["rhsusf_socom_marsoc_sniper", _poss, [], 0, "FORM"];
-_HQSP1 createUnit ["BWA3_recon_TL_Multi", _poss, [], 0, "FORM"];
+_HQSP1 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
 _HQSP1 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
-_HQSP2 createUnit ["BWA3_recon_LAT_Multi", _poss, [], 0, "FORM"];
-_HQSP2 createUnit ["BWA3_recon_Multi", _poss, [], 0, "FORM"];
+_HQSP2 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
+_HQSP2 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
 _HQSP2 createUnit ["rhsusf_socom_marsoc_marksman", _poss, [], 0, "FORM"];
 _HQSP2 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
 // private _HQANTIveh = createGroup [west, true];
@@ -438,10 +438,10 @@ _type_list_guard_static2 = nil;
 _type_list_patrol = nil;
 
 sleep 1.124;
-
+//敌方外围巡逻队，在“attak!”版本中是重点强化的对象
 if (d_allow_observers == 1 && {d_no_more_observers < 2}) then {
-	d_nr_observers = floor random 4;
-	if (d_nr_observers < 2) then {d_nr_observers = 2};
+	d_nr_observers = floor random 8;
+	if (d_nr_observers < 2) then {d_nr_observers = 4};
 	d_obs_array = [];
 	private _unit_array = ["arti_observer", d_enemy_side_short] call d_fnc_getunitlistm;
 	for "_xx" from 0 to d_nr_observers - 1 do {

@@ -18,7 +18,7 @@ if (isServer) then {
 	_vehicle addEventHandler ["HandleDamage", {0}];
     _vehicle remoteExecCall ["d_fnc_sabotage_sm", [0, -2] select isDedicated];
     sleep 2.123;
-    ["specops", 2, "basic", 3, _pos_other, 150,true] spawn d_fnc_CreateInf;
+    ["specops", 4, "basic", 3, _pos_other, 150,true] spawn d_fnc_CreateInf;
     sleep 2.123;
     ["DSHKM",1,"AGS",0,"DSHKM",0,[_pos_other, 50] call d_fnc_GetRanPointCircleOuter,1,100,false] spawn d_fnc_CreateArmor;
     sleep 2.123;

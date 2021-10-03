@@ -15,7 +15,7 @@ if (isServer) then {
 	private _objs = _poss nearObjects [d_sm_land_tankbig, 50];
 	//private _objs = nearestObjects [_poss, [d_sm_land_tankbig], 50];
 	sleep 2.123;
-	["specops", 2, "allmen", 1, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 2, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
 	sleep 2.221;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 400, true] spawn d_fnc_CreateArmor;
 	[_objs # 0, _objs # 1, objNull] spawn d_fnc_sidefactory;

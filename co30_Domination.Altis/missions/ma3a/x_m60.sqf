@@ -23,7 +23,7 @@ if (isServer) then {
 	d_x_sm_rem_ar pushBack _sm_vec;
 	removeAllWeapons _sm_vec;
 	sleep 2.123;
-	["specops", 2, "allmen", 2, _poss, 80, true] spawn d_fnc_CreateInf;
+	["specops", 6, "allmen", 2, _poss, 80, true] spawn d_fnc_CreateInf;
 	sleep 2.123;
 	private _leadero = leader _ogroup;
 	_leadero setRank "COLONEL";

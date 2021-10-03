@@ -16,7 +16,7 @@ if (isServer) then {
 	//private _objs = nearestObjects [_poss, [d_sm_land_tankbig], 150];
 	if (count _objs < 3) then {_objs set [2, objNull]};
 	sleep 2.123;
-	["specops", 2, "allmen", 1, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 2, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
 	sleep 2.221;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 400, true] spawn d_fnc_CreateArmor;
 	sleep 5.123;

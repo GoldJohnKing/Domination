@@ -34,7 +34,7 @@ if (_createarmor) then {
 if (_createinf) then {
 	sleep 2.123;
 	__TRACE("Creating inf")
-	["specops", 2, "allmen", (floor (random 3)) min 1, _poss, 300, true] spawn d_fnc_CreateInf;
+	["specops", 2, "allmen", (floor (random 6)) max 1, _poss, 300, true] spawn d_fnc_CreateInf;
 };
 
 if (_type == "Land_Device_assembled_F") then {
