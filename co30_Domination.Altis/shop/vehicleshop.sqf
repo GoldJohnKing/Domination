@@ -15,7 +15,7 @@ player addaction["M1A2SEPv2: 需要4000荣誉",{["rhsusf_m1a2sep2d_usarmy",4000]
 player addaction["AH-64D阿帕奇武装直升机: 需要3000荣誉",{["RHS_AH64D",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["A-10D雷霆二式: 需要4000荣誉",{["B_Plane_CAS_01_dynamicloadout_F",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["SU34“鸭嘴兽”: 需要3000荣誉",{["sab_su34_O",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["SU-25“蛙足”攻击机: 需要4000荣誉",{["RHS_Su25SM_vvsc",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["T50外挂架型: 需要4000荣誉",{["RHS_T50_vvs_generic_ext",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["leave",{removeallActions player}];
 
 }]
