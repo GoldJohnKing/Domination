@@ -1,4 +1,4 @@
-hint format ["欢迎来到后勤处，我这可有不少好东西——只要你的荣誉够多。听说咱们的人在19日那天缴获了F22？现在它们能为我们所用！"];
+hint format ["欢迎来到后勤处，我这可有不少好东西——只要你的荣誉够多。"];
 player addaction ["载具菜单",{
 removeallactions player;
 player addaction["荣誉查询",{["",0]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
@@ -14,8 +14,8 @@ player addaction["M1A2SEPv1（TUSK II）: 需要3000荣誉",{["rhsusf_m1a2sep1tu
 player addaction["M1A2SEPv2: 需要4000荣誉",{["rhsusf_m1a2sep2d_usarmy",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["AH-64D阿帕奇武装直升机: 需要3000荣誉",{["RHS_AH64D",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["A-10D雷霆二式: 需要4000荣誉",{["B_Plane_CAS_01_dynamicloadout_F",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["SU34“鸭嘴兽”: 需要3000荣誉",{["sab_su34_O",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["T50外挂架型: 需要4000荣誉",{["RHS_T50_vvs_generic_ext",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+// player addaction["SU34“鸭嘴兽”: 需要3000荣誉",{["sab_su34_O",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["T50-generic: 需要4000荣誉",{["RHS_T50_vvs_generic_ext",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["leave",{removeallActions player}];
 
 }]

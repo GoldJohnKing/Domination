@@ -2830,13 +2830,13 @@
 <Original>敌军正准备加强原型 APC。在敌人部队使用它之前, 这是一个很好的机会, 可以偷取并带到你的基地</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1820">
-<Original>所有主要目标敌人 inf 营房倒塌。现在将不再有敌人的非空降信息增援部队。</Original>
+<Original>所有主要目标敌人步兵营房倒塌。现在将不再有敌人的非空降信息增援部队。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1821">
 <Original>主要目标敌军指挥总部（HQ）被消灭。现在不会有敌人的进一步装甲增援。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1822">
-<Original>搜索各种敌人营房和主要目标的敌军指挥总部（HQ）。找到并摧毁它们以切断敌人的 INF 和装甲增援! </Original>
+<Original>搜索各种敌人营房和主要目标的敌军指挥总部（HQ）。找到并摧毁它们以切断敌人的步兵和装甲增援! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1823">
 <Original>你必须等待 %1 秒才能在 基地车（MHQ）上创建新载具! </Original>
