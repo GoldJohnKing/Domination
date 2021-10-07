@@ -659,11 +659,11 @@ if (hasInterface) then {
 		private _fla = _x;
 		if (d_additional_respawn_points isEqualTo [] || {d_additional_respawn_points findIf {count _x > 7 && {(_x # 7) == _fla}} == -1}) Then {
 #endif
-		private _side = _x getVariable ["d_flagside", blufor];
+		private _side = _x getVariable ["d_flagside", opfor];
 		private _name = _x getVariable "d_name";
 		if (isNil "_name") then {
 			private _icounter = call {
-				if (_side == blufor) exitWith {
+				if (_side == opfor) exitWith {
 					_icounter_b = _icounter_b + 1;
 					_icounter_b;
 				};
@@ -688,11 +688,11 @@ if (hasInterface) then {
 	_icounter_b = 0;
 	_icounter_i = 0;
 	{
-		private _side = _x getVariable ["d_flagside", blufor];
+		private _side = _x getVariable ["d_flagside", opfor];
 		private _name = _x getVariable "d_name";
 		if (isNil "_name") then {
 			private _icounter = call {
-				if (_side == blufor) exitWith {
+				if (_side == opfor) exitWith {
 					_icounter_b = _icounter_b + 1;
 					_icounter_b;
 				};

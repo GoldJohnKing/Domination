@@ -31,7 +31,7 @@ if (d_beam_target == "D_BASE_D") then {
 	if (!d_tt_ver) then {
 		_global_pos = markerPos "base_spawn_1";
 	} else {
-		_global_pos = [markerPos "base_spawn_2", markerPos "base_spawn_1"] select (d_player_side == blufor);
+		_global_pos = [markerPos "base_spawn_2", markerPos "base_spawn_1"] select (d_player_side == opfor);
 	};
 	if (!d_carrier) then {
 		_global_pos set [2, 0];
