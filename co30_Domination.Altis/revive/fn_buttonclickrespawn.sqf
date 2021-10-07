@@ -19,7 +19,7 @@ if (d_beam_target == "D_BASE_D") then {
 	if (!d_tt_ver) then {
 		_respawn_pos = markerPos "base_spawn_1";
 	} else {
-		_respawn_pos = [markerPos "base_spawn_2", markerPos "base_spawn_1"] select (d_player_side == opfor);
+		_respawn_pos = [markerPos "base_spawn_2", markerPos "base_spawn_1"] select (d_player_side == blufor);
 	};
 	if (!d_carrier) then {
 		_respawn_pos set [2, 0];
