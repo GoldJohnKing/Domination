@@ -12,9 +12,10 @@ player addaction["M2A3布莱德利BUSK1: 需要3000荣誉",{["RHS_M2A3_BUSKI",30
 player addaction["M6近程防空车: 需要2000荣誉",{["RHS_M6",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M1A2SEPv1（TUSK II）: 需要3000荣誉",{["rhsusf_m1a2sep1tuskiid_usarmy",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M1A2SEPv2: 需要4000荣誉",{["rhsusf_m1a2sep2d_usarmy",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["BM2T重型步兵战车: 需要4000荣誉",{["O_APC_Tracked_02_cannon_F",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["T140K主战坦克: 需要5000荣誉",{["O_MBT_04_command_F",5000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["AH-64D阿帕奇武装直升机: 需要3000荣誉",{["RHS_AH64D",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["A-10D雷霆二式: 需要4000荣誉",{["B_Plane_CAS_01_dynamicloadout_F",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-// player addaction["SU34“鸭嘴兽”: 需要3000荣誉",{["sab_su34_O",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["T50-generic: 需要4000荣誉",{["RHS_T50_vvs_generic_ext",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["leave",{removeallActions player}];
 
