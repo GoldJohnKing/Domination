@@ -1425,7 +1425,7 @@ if (!d_gmcwgwinter) then {
 					""
 				};
 				if (d_rhs) exitWith {
-					""
+					"B_Boat_Armed_01_minigun_F"
 				};
 				if (d_gmcwg) exitWith {
 					""
