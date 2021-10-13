@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=944;
+		nextID=954;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=16;
+		nextID=19;
 	};
 	class Camera
 	{
-		pos[]={8450.0371,11.123243,10060.26};
-		dir[]={0.61547023,-0.39716849,-0.68078601};
-		up[]={0.26635438,0.91774327,-0.29462036};
-		aside[]={-0.74180341,5.6970748e-008,-0.67063278};
+		pos[]={8513.3652,34.500652,10074.642};
+		dir[]={-0.68498886,-0.47102475,-0.55581111};
+		up[]={-0.36576286,0.88212001,-0.29678592};
+		aside[]={-0.63008559,-1.4901161e-008,0.77652574};
 	};
 };
 binarizationWanted=0;
@@ -559,7 +559,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=506;
+		items=507;
 		class Item0
 		{
 			dataType="Marker";
@@ -13317,8 +13317,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8088.2266,32.16621,10054.9};
-				angles[]={0,6.2648029,0};
+				position[]={8088.2261,32.166443,10054.9};
+				angles[]={0,6.2648067,0};
 			};
 			side="Empty";
 			class Attributes
@@ -13329,7 +13329,7 @@ class Mission
 			};
 			id=276;
 			type="rhsgref_BRDM2_HQ_vdv";
-			atlOffset=0.26277542;
+			atlOffset=0.26299858;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30882,26 +30882,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8475.6006,2.9258015,10048.014};
-				angles[]={0,1.5062541,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				skill=0.60000002;
-				lock="UNLOCKED";
-				name="d_boat_4";
-				dynamicSimulation=1;
-			};
-			id=924;
-			type="rhsusf_mkvsoc";
-			atlOffset=1.966881;
-		};
-		class Item505
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={8115.3452,31.488415,10123.831};
 				angles[]={6.2807932,3.181406,6.2735858};
 			};
@@ -30977,6 +30957,123 @@ class Mission
 				};
 				nAttributes=3;
 			};
+		};
+		class Item505
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8473.6641,3.6475532,10052.138};
+				angles[]={0,1.5809542,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="d_vec_mhq_3";
+			};
+			id=944;
+			type="rhsusf_mkvsoc";
+			atlOffset=2.4294684;
+		};
+		class Item506
+		{
+			dataType="Layer";
+			name="夏级火力支援艇";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8485.4053,3.1772003,10072.855};
+						angles[]={0.004026473,1.4981557,6.2311196};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="zsu";
+					};
+					id=947;
+					type="RHS_ZU23_MSV";
+					atlOffset=0.0025349855;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8471.4697,2.64396,10070.001};
+						angles[]={0.00069053395,3.1052375,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="right_at";
+					};
+					id=948;
+					type="rhs_Kornet_9M133_2_msv";
+					atlOffset=0.06272018;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8471.4375,2.5899374,10073.388};
+						angles[]={0,6.2325883,0.00048828125};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="left_at";
+					};
+					id=949;
+					type="rhs_Kornet_9M133_2_msv";
+					atlOffset=0.0086106062;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8476.8428,2.3282855,10072.123};
+						angles[]={0,1.4936179,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						init="[zsu_1,zhuti] call BIS_fnc_attachToRelative;[zsu,zhuti] call BIS_fnc_attachToRelative;[left_at,zhuti] call BIS_fnc_attachToRelative;[right_at,zhuti] call BIS_fnc_attachToRelative;[canoon,zhuti] call BIS_fnc_attachToRelative;";
+						name="zhuti";
+					};
+					id=946;
+					type="rhsusf_mkvsoc";
+					atlOffset=0.64699996;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8469.7939,3.1583853,10071.942};
+						angles[]={0,4.6421289,0.00048828125};
+					};
+					side="Empty";
+					class Attributes
+					{
+						name="zsu_1";
+					};
+					id=953;
+					type="rhs_Igla_AA_pod_msv";
+					atlOffset=3.1100245;
+				};
+			};
+			id=951;
+			atlOffset=2.5547338;
 		};
 	};
 	class Connections
