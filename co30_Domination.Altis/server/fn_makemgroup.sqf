@@ -71,7 +71,7 @@ private _nightorfog = call d_fnc_nightfograin;
 	};
 	_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
 	_one_unit setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
-	_one_unit setSkill ["spotTime", 0.75]; // Edited: Tweak enemy skill, default = _subskill
+	_one_unit setSkill ["spotTime", 0.9]; // Edited: Tweak enemy skill, default = _subskill
 	_ret set [_forEachIndex, _one_unit];
 	_one_unit call d_fnc_removenvgoggles_fak;
 	[_one_unit, _nightorfog, true] call d_fnc_changeskill;

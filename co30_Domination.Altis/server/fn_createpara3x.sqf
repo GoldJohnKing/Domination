@@ -182,7 +182,7 @@ private _make_jump = {
 					};
 					_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
 					_one_unit setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
-					_one_unit setSkill ["spotTime", 0.75]; // Edited: Tweak enemy skill, default = _subskill
+					_one_unit setSkill ["spotTime", 0.9]; // Edited: Tweak enemy skill, default = _subskill
 					//_one_unit enableStamina false;
 					//_one_unit enableFatigue false;
 					_one_unit disableAI "RADIOPROTOCOL";
@@ -299,7 +299,7 @@ private _make_jump = {
 					};
 					_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
 					_one_unit setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
-					_one_unit setSkill ["spotTime", 0.75]; // Edited: Tweak enemy skill, default = _subskill
+					_one_unit setSkill ["spotTime", 0.9]; // Edited: Tweak enemy skill, default = _subskill
 					//_one_unit enableStamina false;
 					//_one_unit enableFatigue false;
 					_one_unit disableAI "RADIOPROTOCOL";
