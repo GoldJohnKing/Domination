@@ -1270,7 +1270,7 @@ if (!d_gmcwgwinter) then {
 				"LIB_Pe2"
 			};
 			if (d_rhs) exitWith {
-				"RHS_Mi8mt_Cargo_vv"
+				"HWK_mi6rus"
 			};
 			if (d_csla) exitWith {
 				"CSLA_Mi17"

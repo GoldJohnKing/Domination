@@ -446,8 +446,8 @@ if (isServer) then {
 
 #ifndef __TT__
 	// editor varname, unique number, true = respawn only when the chopper is completely destroyed, false = respawn after some time when no crew is in the chopper or chopper is destroyed
-	// unique number must be between 3000 and 3999
-	private _choppers = [[d_chopper_1,3001,true,600],[d_chopper_2,3001,true,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3004,false,600],[d_chopper_5,3001,false,600],[d_chopper_6,3001,false,600],[d_chopper_7,3003,false,600],[d_chopper_8,3003,false,600],[d_chopper_9,3003,false,600],[d_chopper_10,3003,false,600],[d_chopper_11,3003,false,600],[d_chopper_12,3003,false,600],[d_chopper_13,3001,false,600],[d_chopper_14,3001,false,600],[d_chopper_15,3003,false,600],[d_chopper_16,3003,false,600],[d_chopper_17,3003,false,600]] select {!isNil {_x # 0}}; // Edited: Change player vehicles
+	// unique number must be between 3000 and 3999  3004是残骸调运直升机
+	private _choppers = [[d_chopper_1,3001,true,600],[d_chopper_2,3001,true,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3001,false,600],[d_chopper_5,3001,false,600],[d_chopper_6,3001,false,600],[d_chopper_7,3003,false,600],[d_chopper_8,3003,false,600],[d_chopper_9,3003,false,600],[d_chopper_10,3003,false,600],[d_chopper_11,3003,false,600],[d_chopper_12,3003,false,600],[d_chopper_13,3001,false,600],[d_chopper_14,3001,false,600],[d_chopper_15,3003,false,600],[d_chopper_16,3003,false,600],[d_chopper_17,3003,false,600]] select {!isNil {_x # 0}}; // Edited: Change player vehicles
 
 	if (!isNil "d_additional_wreck") then {
 		{
@@ -473,7 +473,7 @@ if (isServer) then {
 	// editor varname, unique number
 	//0-99 = MHQ, 100-199 = Medic vehicles, 200-299 = Fuel, Repair, Reammo trucks, 300-399 = Engineer Salvage trucks, 400-499 = Transport trucks
 	// new in 3.70  third parameter for MHQ means a message will be displayed for a MHQ if it gets destroyed
-	private _vecsar = [[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1, localize "STR_DOM_MISSIONSTRING_13"],[d_vec_mhq_3,2, localize "STR_DOM_MISSIONSTRING_13A"],[d_vec_med_1,100],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401],[d_vec_trans_3,402], [d_vec_trans_4,403], [d_vec_trans_5,404], [d_vec_trans_6,405], [d_vec_trans_7,406], [d_vec_trans_8,407],[d_vec_trans_9,408],[d_vec_trans_10,409],[d_vec_trans_11,410],[d_vec_trans_12,411],[d_vec_trans_13,412],[d_vec_trans_14,413],[d_vec_trans_15,414],[d_vec_trans_16,414],[d_vec_trans_17,414],[d_vec_trans_18,414],[d_vec_trans_19,414],[d_vec_trans_20,414]] select {!isNil {_x # 0}};
+	private _vecsar = [[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1, localize "STR_DOM_MISSIONSTRING_13"],[d_vec_mhq_3,2, localize "STR_DOM_MISSIONSTRING_13A"],[d_vec_mhq_4,3, localize "STR_DOM_MISSIONSTRING_13A"],[d_vec_med_1,100],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401],[d_vec_trans_3,402], [d_vec_trans_4,403], [d_vec_trans_5,404], [d_vec_trans_6,405], [d_vec_trans_7,406], [d_vec_trans_8,407],[d_vec_trans_9,408],[d_vec_trans_10,409],[d_vec_trans_11,410],[d_vec_trans_12,411],[d_vec_trans_13,412],[d_vec_trans_14,413],[d_vec_trans_15,414],[d_vec_trans_16,414],[d_vec_trans_17,414],[d_vec_trans_18,414],[d_vec_trans_19,414],[d_vec_trans_20,414]] select {!isNil {_x # 0}};
 	{
 		_vecsar pushBack [_x, 500 + _forEachIndex];
 	} forEach (vehicles select {(str _x) select [0, 12] isEqualTo "d_vec_wreck_"});
