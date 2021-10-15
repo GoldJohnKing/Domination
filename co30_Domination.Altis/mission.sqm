@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=964;
+		nextID=965;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=43;
+		nextID=46;
 	};
 	class Camera
 	{
-		pos[]={8095.5098,76.531822,10047.033};
-		dir[]={-0.57011133,-0.75729156,-0.31856325};
-		up[]={-0.66108674,0.65307695,-0.36939791};
-		aside[]={-0.48778823,-1.4901161e-008,0.872962};
+		pos[]={8859.0059,69.201561,10044.488};
+		dir[]={-0.72245586,-0.68956161,0.050620321};
+		up[]={-0.68787515,0.72422695,0.048197351};
+		aside[]={0.06989564,0,0.9975543};
 	};
 };
 binarizationWanted=0;
@@ -107,15 +107,14 @@ addons[]=
 	"rhs_c_mi28",
 	"JS_JC_FA18",
 	"rhsusf_c_markvsoc",
-	"fza_ah64_US",
-	"Ka50_PS",
-	"HWK_MI6_hook"
+	"HWK_MI6_hook",
+	"A3_Air_F_Beta_Heli_Attack_02"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=59;
+		items=58;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -484,22 +483,17 @@ class AddonsMetaData
 		};
 		class Item56
 		{
-			className="fza_ah64_US";
-			name="fza_ah64_US";
-			author="Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager & Community";
-		};
-		class Item57
-		{
-			className="Ka50_PS";
-			name="Ka50_PS";
-			author="PhoenixTREAL";
-		};
-		class Item58
-		{
 			className="HWK_MI6_hook";
 			name="HAWK MI6A hook";
 			author="[EC] HAWK";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=2462593883";
+		};
+		class Item57
+		{
+			className="A3_Air_F_Beta";
+			name="Arma 3 Beta - Aircraft";
+			author="波希米亚互动工作室";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -572,7 +566,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=507;
+		items=506;
 		class Item0
 		{
 			dataType="Marker";
@@ -31108,126 +31102,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8757.6816,25.514387,10125.748};
-				angles[]={0,1.5762942,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				textures="arb229th";
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=954;
-			type="fza_ah64d_b2e";
-			atlOffset=0.2802372;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"ARRAY"
-								};
-							};
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"ARRAY"
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"ARRAY"
-											};
-										};
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="fcr_enable";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item504
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8757.5996,24.136362,10044.146};
-				angles[]={0,1.5693415,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=955;
-			type="Ka50_Base_01";
-		};
-		class Item505
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={8038.3296,35.001045,10366.342};
 				angles[]={6.2824135,4.6330495,6.2824135};
 			};
@@ -31241,7 +31115,7 @@ class Mission
 			type="HWK_mi6rus";
 			atlOffset=-0.00023269653;
 		};
-		class Item506
+		class Item504
 		{
 			dataType="Object";
 			class PositionInfo
@@ -31285,16 +31159,32 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item505
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8757.9375,25.427631,10043.659};
+				angles[]={-0,1.5693477,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=964;
+			type="O_Heli_Attack_02_dynamicLoadout_F";
+			atlOffset=56.897587;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=18;
+			nextID=17;
 		};
 		class Links
 		{
-			items=18;
+			items=17;
 			class Item0
 			{
 				linkID=0;
@@ -31458,17 +31348,7 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=955;
-				item1=74;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item17
-			{
-				linkID=17;
-				item0=954;
+				item0=964;
 				item1=74;
 				class CustomData
 				{
