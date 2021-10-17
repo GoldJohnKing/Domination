@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=965;
+		nextID=969;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=46;
+		nextID=64;
 	};
 	class Camera
 	{
-		pos[]={8859.0059,69.201561,10044.488};
-		dir[]={-0.72245586,-0.68956161,0.050620321};
-		up[]={-0.68787515,0.72422695,0.048197351};
-		aside[]={0.06989564,0,0.9975543};
+		pos[]={7973.1362,53.240902,9878.7568};
+		dir[]={-0.10760091,-0.69918191,0.70682091};
+		up[]={-0.10522611,0.7149381,0.69122142};
+		aside[]={0.98862392,4.2951433e-007,0.15050045};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination_attak";
+sourceName="co30_Domination_attak_end";
 addons[]=
 {
 	"A3_Ui_F",
@@ -86,7 +86,6 @@ addons[]=
 	"rhs_c_2s3",
 	"ZTL11_LK",
 	"A3_Boat_F_Jets_Carrier_01",
-	"Su33_Protatype_PT",
 	"A3_Structures_F_Walls",
 	"A3_Structures_F_Mil_Cargo",
 	"A3_Structures_F_EPA_Civ_Constructions",
@@ -104,17 +103,19 @@ addons[]=
 	"ZTZ99_LK",
 	"rhs_c_cars",
 	"A3_Air_F_Exp_UAV_04",
-	"rhs_c_mi28",
 	"JS_JC_FA18",
 	"rhsusf_c_markvsoc",
 	"HWK_MI6_hook",
-	"A3_Air_F_Beta_Heli_Attack_02"
+	"A3_Air_F_Beta_Heli_Attack_02",
+	"Su33_Protatype_PT",
+	"sab_su34",
+	"fza_ah64_US"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=58;
+		items=59;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -418,82 +419,87 @@ class AddonsMetaData
 		};
 		class Item46
 		{
-			className="Su33_Protatype_PT";
-			name="Su33_Protatype_PT";
-		};
-		class Item47
-		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
-		class Item48
+		class Item47
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
-		class Item49
+		class Item48
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
-		class Item50
+		class Item49
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
-		class Item51
+		class Item50
 		{
 			className="ZTZ99_LK";
 			name="ZTZ99_LK";
 		};
-		class Item52
+		class Item51
 		{
 			className="rhs_c_cars";
 			name="Tigr vehicles";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item53
-		{
-			className="rhs_c_mi28";
-			name="Mi-28";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item54
+		class Item52
 		{
 			className="JS_JC_FA18";
 			name="JS_JC_FA18";
 			author="F/A-18E/F Super Hornet Team";
 		};
-		class Item55
+		class Item53
 		{
 			className="rhsusf_c_markvsoc";
 			name="Mark V SOC";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item56
+		class Item54
 		{
 			className="HWK_MI6_hook";
 			name="HAWK MI6A hook";
 			author="[EC] HAWK";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=2462593883";
 		};
-		class Item57
+		class Item55
 		{
 			className="A3_Air_F_Beta";
 			name="Arma 3 Beta - Aircraft";
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
+		};
+		class Item56
+		{
+			className="Su33_Protatype_PT";
+			name="Su33_Protatype_PT";
+		};
+		class Item57
+		{
+			className="sab_su34";
+			name="sab_su34";
+			author="[Dust]sabre";
+		};
+		class Item58
+		{
+			className="fza_ah64_US";
+			name="fza_ah64_US";
+			author="Franze, Nodunit, Sacha 'Voodooflies' Oropeza, Keplager & Community";
 		};
 	};
 };
@@ -546,7 +552,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="用启动器来加入战斗吧！达瓦里氏 （版本：“ 全面攻击” 1.0）";
+		briefingName="如显示@VET则请从游戏内进入！达瓦里氏 （版本：“ 全面攻击” 1.5）";
 		overviewText="暴打美帝！解放马尔登！";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
@@ -566,7 +572,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=506;
+		items=507;
 		class Item0
 		{
 			dataType="Marker";
@@ -22161,25 +22167,6 @@ class Mission
 		};
 		class Item468
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8781.6934,22.606752,9955.9707};
-				angles[]={0,3.1232684,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=655;
-			type="Su33_Chine";
-			atlOffset=0.4614048;
-		};
-		class Item469
-		{
 			dataType="Trigger";
 			position[]={7996.3462,29.583296,10237.035};
 			class Attributes
@@ -22193,7 +22180,7 @@ class Mission
 			id=670;
 			type="EmptyDetectorAreaR250";
 		};
-		class Item470
+		class Item469
 		{
 			dataType="Marker";
 			position[]={8764.0234,0,10074.714};
@@ -22202,7 +22189,7 @@ class Mission
 			id=674;
 			atlOffset=30.869625;
 		};
-		class Item471
+		class Item470
 		{
 			dataType="Marker";
 			position[]={4307.0049,29.743839,4150.959};
@@ -22211,7 +22198,7 @@ class Mission
 			angle=29.693468;
 			id=675;
 		};
-		class Item472
+		class Item471
 		{
 			dataType="Marker";
 			position[]={4304.4697,31.237293,4180.2231};
@@ -22221,7 +22208,7 @@ class Mission
 			angle=183.69557;
 			id=676;
 		};
-		class Item473
+		class Item472
 		{
 			dataType="Layer";
 			name="FARP_NEW";
@@ -29635,7 +29622,7 @@ class Mission
 			id=677;
 			atlOffset=0.064405441;
 		};
-		class Item474
+		class Item473
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29653,7 +29640,7 @@ class Mission
 			type="O_Truck_03_fuel_F";
 			atlOffset=-0.029132843;
 		};
-		class Item475
+		class Item474
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29670,7 +29657,7 @@ class Mission
 			id=854;
 			type="O_Truck_03_ammo_F";
 		};
-		class Item476
+		class Item475
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29687,7 +29674,7 @@ class Mission
 			id=855;
 			type="rhs_t90sm_tv";
 		};
-		class Item477
+		class Item476
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29708,7 +29695,7 @@ class Mission
 			id=856;
 			type="O_ZTZ99";
 		};
-		class Item478
+		class Item477
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29825,7 +29812,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item479
+		class Item478
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29843,7 +29830,7 @@ class Mission
 			id=870;
 			type="O_ZTZ99";
 		};
-		class Item480
+		class Item479
 		{
 			dataType="Group";
 			side="East";
@@ -29924,7 +29911,7 @@ class Mission
 			id=878;
 			atlOffset=0.00098228455;
 		};
-		class Item481
+		class Item480
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29944,50 +29931,7 @@ class Mission
 			type="O_T_UAV_04_CAS_F";
 			atlOffset=0.00098228455;
 		};
-		class Item482
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8102.5723,31.9956,10285.2};
-				angles[]={0,4.7081804,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="d_chopper_11";
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=886;
-			type="rhs_mi28n_vvsc";
-			atlOffset=0.33584213;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="rhs_decalNumber_type";
-					expression="if(_value != 'NoChange')then{ _this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cRHSAIRMI28NumberPlaces, _value]]] call rhs_fnc_decalsInit}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NoChange";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item483
+		class Item481
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30067,27 +30011,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item484
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8024.4165,30.341049,9705.0303};
-				angles[]={0.0023920804,4.7235079,6.2824135};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-				pylons=";;;;;;";
-			};
-			id=895;
-			type="Su33_Chine_PT";
-		};
-		class Item485
+		class Item482
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30128,7 +30052,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item486
+		class Item483
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30168,7 +30092,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item487
+		class Item484
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30209,7 +30133,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item488
+		class Item485
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30250,7 +30174,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item489
+		class Item486
 		{
 			dataType="Group";
 			side="East";
@@ -30541,7 +30465,7 @@ class Mission
 			id=900;
 			atlOffset=-3.8146973e-006;
 		};
-		class Item490
+		class Item487
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30582,7 +30506,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item491
+		class Item488
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30622,7 +30546,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item492
+		class Item489
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30663,7 +30587,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item493
+		class Item490
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30704,7 +30628,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item494
+		class Item491
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30745,7 +30669,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item495
+		class Item492
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30785,7 +30709,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item496
+		class Item493
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30826,7 +30750,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item497
+		class Item494
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30867,7 +30791,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item498
+		class Item495
 		{
 			dataType="Marker";
 			position[]={8456.9492,0,10033.199};
@@ -30879,7 +30803,7 @@ class Mission
 			id=918;
 			atlOffset=1.1210016;
 		};
-		class Item499
+		class Item496
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30899,7 +30823,7 @@ class Mission
 			type="rhsusf_mkvsoc";
 			atlOffset=2.7461646;
 		};
-		class Item500
+		class Item497
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30980,7 +30904,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item501
+		class Item498
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30997,7 +30921,7 @@ class Mission
 			type="rhsusf_mkvsoc";
 			atlOffset=2.4294684;
 		};
-		class Item502
+		class Item499
 		{
 			dataType="Layer";
 			name="夏级火力支援艇";
@@ -31097,7 +31021,7 @@ class Mission
 			id=951;
 			atlOffset=2.5547338;
 		};
-		class Item503
+		class Item500
 		{
 			dataType="Object";
 			class PositionInfo
@@ -31115,7 +31039,7 @@ class Mission
 			type="HWK_mi6rus";
 			atlOffset=-0.00023269653;
 		};
-		class Item504
+		class Item501
 		{
 			dataType="Object";
 			class PositionInfo
@@ -31159,13 +31083,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item505
+		class Item502
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={8757.9375,25.427631,10043.659};
-				angles[]={-0,1.5693477,0};
+				angles[]={0,1.5693477,0};
 			};
 			side="Empty";
 			class Attributes
@@ -31175,16 +31099,120 @@ class Mission
 			type="O_Heli_Attack_02_dynamicLoadout_F";
 			atlOffset=56.897587;
 		};
+		class Item503
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8024.416,30.341049,9705.0303};
+				angles[]={0.0023911009,4.7235065,6.2824173};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				pylons=";;;;;;;;;;;;";
+			};
+			id=965;
+			type="Su33_Chine";
+		};
+		class Item504
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8767.3018,25.289627,9948.9072};
+				angles[]={0,3.1290877,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="su34_1";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=966;
+			type="sab_su34_O";
+			atlOffset=0.0307827;
+		};
+		class Item505
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8758.5977,25.258766,10127.617};
+				angles[]={0,1.5699307,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=967;
+			type="fza_ah64d_b2e";
+			atlOffset=0.024616241;
+		};
+		class Item506
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8101.6333,31.965145,10285.813};
+				angles[]={0,4.7081828,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="d_chopper_11";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=968;
+			type="RHS_Ka52_vvsc";
+			atlOffset=0.33601761;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalNumber_type";
+					expression="if(_value != 'NoChange')then{ _this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cRHSAIRKA52NumberPlaces, _value]]] call rhs_fnc_decalsInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=17;
+			nextID=18;
 		};
 		class Links
 		{
-			items=17;
+			items=18;
 			class Item0
 			{
 				linkID=0;
@@ -31198,7 +31226,7 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=895;
+				item0=965;
 				item1=74;
 				class CustomData
 				{
@@ -31328,7 +31356,7 @@ class Mission
 			class Item14
 			{
 				linkID=14;
-				item0=655;
+				item0=966;
 				item1=74;
 				class CustomData
 				{
@@ -31349,6 +31377,16 @@ class Mission
 			{
 				linkID=16;
 				item0=964;
+				item1=74;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item17
+			{
+				linkID=17;
+				item0=967;
 				item1=74;
 				class CustomData
 				{
