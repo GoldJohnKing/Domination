@@ -32,7 +32,7 @@ private _selectitvec = {
 	};
 };
 
-private _type_list_guard = [
+private _type_list_guard = [ //警戒部队
 	["allmen", 0, [d_footunits_guard, 0] call _selectitmen],
 	["specops", 0, [d_footunits_guard, 1] call _selectitmen],
 	["tank", [d_vec_numbers_guard, 0] call _selectit, [d_vec_numbers_guard,0] call _selectitvec],
@@ -42,7 +42,7 @@ private _type_list_guard = [
 	["jeep_gl", [d_vec_numbers_guard, 4] call _selectit, [d_vec_numbers_guard,4] call _selectitvec]
 ];
 
-private _type_list_guard_static = [
+private _type_list_guard_static = [ //静态警戒部队
 	["allmen", 0, [d_footunits_guard_static, 0] call _selectitmen],
 	["specops",0, [d_footunits_guard_static, 1] call _selectitmen],
 	["tank", [d_vec_numbers_guard_static, 0] call _selectit, [d_vec_numbers_guard_static,0] call _selectitvec],
@@ -50,7 +50,7 @@ private _type_list_guard_static = [
 	["aa", [d_vec_numbers_guard_static, 2] call _selectit, [d_vec_numbers_guard_static,2] call _selectitvec]
 ];
 
-private _type_list_patrol = [
+private _type_list_patrol = [ //巡逻部队
 	["allmen", 0, [d_footunits_patrol, 0] call _selectitmen],
 	["specops", 0, [d_footunits_guard_static, 1] call _selectitmen],
 	["tank", [d_vec_numbers_patrol, 0] call _selectit, [d_vec_numbers_patrol,0] call _selectitvec],
