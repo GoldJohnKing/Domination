@@ -50,7 +50,7 @@ if (isServer) then {
 diag_log [diag_frameno, diag_ticktime, time, "Dom init.sqf processed"];
 
 // Edited: Add shop system
-missionNamespace setVariable ["money", 666];
+missionNamespace setVariable ["money", 68];
 addMissionEventHandler ["EntityKilled", {
 	params ["_killed", "_killer", "_instigator"];
 	if (isPlayer _killer) then {
