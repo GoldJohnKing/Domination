@@ -7,9 +7,7 @@ player addaction["德什卡武装吉普（UAZ-3151）: 需要100荣誉",{["rhsgr
 player addaction["武装悍马: 需要500荣誉",{["rhsusf_m1151_m2_v1_usarmy_d",500]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["特战悍马: 需要700荣誉",{["rhsusf_m1165a1_gmv_m2_m240_socom_d",700]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M1240防雷车: 需要1000荣誉",{["rhsusf_m1240a1_m2_usarmy_d",1000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["2S3M1自行火炮: 需要10000荣誉",{["rhs_2s3_tv",10000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["PLZ05自行火炮: 需要12000荣誉",{["O_PLZ05",12000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["BM21冰雹火箭炮: 需要20000荣誉",{["RHS_BM21_MSV_01",20000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["2S3M1自行火炮: 需要15000荣誉",{["rhs_2s3_tv",15000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M2A3布莱德利BUSK1: 需要3000荣誉",{["RHS_M2A3_BUSKI",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M6近程防空车: 需要2000荣誉",{["RHS_M6",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M1A2SEPv1（TUSK II）: 需要3000荣誉",{["rhsusf_m1a2sep1tuskiid_usarmy",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
