@@ -27,7 +27,7 @@ while {true} do {
 		if (_type isEqualTo "AP") exitWith {10};
 		if (_type isEqualTo "HAC") exitWith {12};
 		if (_type isEqualTo "UAV") exitWith {5};
-		3;
+		5;
 	};
 	__TRACE_1("","_limit_p")
 	#ifndef __DEBUG__
@@ -63,7 +63,7 @@ while {true} do {
 			_heli_type = selectRandom d_airai_attack_chopper;
 			_numair = [d_number_attack_choppers, ceil (random d_number_attack_choppers)] select (d_number_attack_choppers > 1);
 			_height = 250;
-			_heightASL = [250, 100 + (random 100), 250 + (random 250)];
+			_heightASL = [400, 100 + (random 100), 250 + (random 250)];
 		};
 		if (_type == "AP") exitWith {
 			_heli_type = selectRandom d_airai_attack_plane;
@@ -74,8 +74,8 @@ while {true} do {
 		if (_type == "LAC") exitWith {
 			_heli_type = selectRandom d_light_attack_chopper;
 			_numair = [d_number_light_attack_choppers, ceil (random d_number_light_attack_choppers)] select (d_number_light_attack_choppers > 1);
-			_height = 150;
-			_heightASL = [150, 100 + (random 50), 150 + (random 150)];
+			_height = 500;
+			_heightASL = [400, 100 + (random 50), 150 + (random 150)];
 		};
 		if (_type == "UAV") exitWith {
 			_heli_type = selectRandom d_airai_attack_uav;

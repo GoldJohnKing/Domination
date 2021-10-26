@@ -8,18 +8,18 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=733;
+		nextID=736;
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=7;
 	};
 	class Camera
 	{
-		pos[]={9478.2549,401.21286,14162.739};
-		dir[]={0.053891245,-0.51457238,0.85575181};
-		up[]={0.032341298,0.85744697,0.51355505};
-		aside[]={0.99802303,-3.7252903e-009,-0.062850825};
+		pos[]={11993.482,29.001101,2633.335};
+		dir[]={-0.068748266,-0.12136827,-0.99027938};
+		up[]={-0.0084149577,0.99259311,-0.12119611};
+		aside[]={-0.99765772,-1.8446008e-007,0.069260821};
 	};
 };
 binarizationWanted=0;
@@ -92,13 +92,15 @@ addons[]=
 	"A3_Structures_F_EPA_Mil_Scrapyard",
 	"A3_Structures_F_Items_Vessels",
 	"A3_Structures_F_Ind_Cargo",
-	"A3_Structures_F_Mil_Cargo"
+	"A3_Structures_F_Mil_Cargo",
+	"A3_Soft_F_MRAP_02",
+	"rhs_c_a2port_armor"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=54;
+		items=55;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -452,6 +454,13 @@ class AddonsMetaData
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
+		class Item54
+		{
+			className="rhs_c_a2port_armor";
+			name="A2 ported armor";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
 	};
 };
 dlcs[]=
@@ -519,7 +528,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=617;
+		items=619;
 		class Item0
 		{
 			dataType="Marker";
@@ -545,12 +554,11 @@ class Mission
 		class Item2
 		{
 			dataType="Marker";
-			position[]={11621.008,24.168028,2239.3303};
+			position[]={11812.968,24.518879,2343.7786};
 			name="xr_center";
 			type="Empty";
 			angle=93.546631;
 			id=2;
-			atlOffset=1.9073486e-006;
 		};
 		class Item3
 		{
@@ -653,12 +661,11 @@ class Mission
 		class Item13
 		{
 			dataType="Marker";
-			position[]={11455.101,22.901064,2438.0024};
+			position[]={11841.841,24.479994,2370.959};
 			name="d_bonus_create_pos";
 			type="Empty";
 			angle=97.54615;
 			id=13;
-			atlOffset=7.6293945e-006;
 		};
 		class Item14
 		{
@@ -6031,8 +6038,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11938.02,24.841896,2788.8716};
-				angles[]={6.2823396,4.7011266,6.2791886};
+				position[]={11938.02,24.841953,2788.8713};
+				angles[]={6.2823472,4.7011318,6.2791882};
 			};
 			side="Empty";
 			flags=4;
@@ -6042,7 +6049,7 @@ class Mission
 			};
 			id=142;
 			type="rhs_t90sm_tv";
-			atlOffset=-0.050056458;
+			atlOffset=-0.049999237;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11793,8 +11800,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11579.198,25.35446,2263.5654};
-				angles[]={0.016999125,3.9682684,6.2665658};
+				position[]={11917.982,24.430441,2670.7769};
+				angles[]={6.2822089,3.7588294,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11803,15 +11810,14 @@ class Mission
 			};
 			id=237;
 			type="O_Quadbike_01_F";
-			atlOffset=-0.00048065186;
 		};
 		class Item182
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11577.779,25.35354,2265.0066};
-				angles[]={0.016999125,3.9682684,6.2665658};
+				position[]={11916.295,24.431215,2671.8916};
+				angles[]={6.2822089,3.7588294,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11820,15 +11826,14 @@ class Mission
 			};
 			id=238;
 			type="O_Quadbike_01_F";
-			atlOffset=-0.00047302246;
 		};
 		class Item183
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11576.382,25.352448,2266.437};
-				angles[]={0.016999125,3.9681194,6.2665658};
+				position[]={11914.631,24.431988,2673.0002};
+				angles[]={6.2822089,3.7586803,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11837,7 +11842,6 @@ class Mission
 			};
 			id=239;
 			type="O_Quadbike_01_F";
-			atlOffset=-0.00048065186;
 		};
 		class Item184
 		{
@@ -12337,8 +12341,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11580.75,25.360193,2261.7817};
-				angles[]={0.016999125,3.9653947,6.2681832};
+				position[]={11919.871,24.428288,2669.3555};
+				angles[]={6.280467,3.7559564,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12347,7 +12351,6 @@ class Mission
 			};
 			id=249;
 			type="O_Quadbike_01_F";
-			atlOffset=-0.00043869019;
 		};
 		class Item194
 		{
@@ -24200,7 +24203,7 @@ class Mission
 			position[]={8236.6592,352.03406,14021.772};
 			name="d_sm_43_1";
 			type="Empty";
-			angle=114.48973;
+			angle=114.48972;
 			id=603;
 			atlOffset=3.0517578e-005;
 		};
@@ -26982,19 +26985,99 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11589.919,25.717211,2276.1196};
-				angles[]={0.0073652891,4.0491462,0.0010297443};
+				position[]={11969.991,25.13249,2664.4963};
+				angles[]={6.2746024,3.1764882,6.2805333};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				fuel=0;
 				name="d_vec_mhq_3";
 			};
-			id=732;
-			type="O_Truck_03_transport_F";
-			atlOffset=1.9073486e-006;
+			id=733;
+			type="O_MRAP_02_F";
+		};
+		class Item617
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11990.64,25.10132,2608.3064};
+				angles[]={6.2818937,0,-0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_vec_trans_11";
+				receiveRemoteTargets=1;
+			};
+			id=734;
+			type="rhs_zsu234_aa";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalNumber_type";
+					expression="_this setVariable ['rhs_decalNumber_type', _value,true];[_this,[['Number', cRHSZSUNumberPlaces, _value]]] call rhs_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item618
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11997.437,25.093563,2608.4878};
+				angles[]={-0,0,6.2818937};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_vec_trans_12";
+				receiveRemoteTargets=1;
+			};
+			id=735;
+			type="rhs_zsu234_aa";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalNumber_type";
+					expression="_this setVariable ['rhs_decalNumber_type', _value,true];[_this,[['Number', cRHSZSUNumberPlaces, _value]]] call rhs_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections

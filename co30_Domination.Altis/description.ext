@@ -1050,9 +1050,9 @@ class Params {
 
 	class d_mhqvec_create_cooldown {
 		title = "$STR_DOM_MISSIONSTRING_1824";
-		values[] = {0, 60, 120, 300, 600, 1200, 1800};
-		default = 600;
-		texts[] = {"$STR_DOM_MISSIONSTRING_363","60","120","300","600","1200","1800"};
+		values[] = {0, 60, 120, 300, 900, 1200, 1800};
+		default = 900;
+		texts[] = {"$STR_DOM_MISSIONSTRING_363","60","120","300","900","1200","1800"};
 	};
 
 	class d_launcher_cooldown {
