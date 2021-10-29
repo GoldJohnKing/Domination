@@ -98,8 +98,7 @@ if (_ar # 6 == 1) then {
 };
 
 if (_ar # 7 == 1) then {
-	// A3_206 deleteVehicleCrew _obj;
-	{_obj deleteVehicleCrew _x} forEach (crew _obj);
+	deleteVehicleCrew _obj;
 };
 
 if (_ar # 8 == 1) then {
@@ -134,6 +133,11 @@ if (_ar # 14 == 1) then {
 if (_ar # 17 == 1) then {
 	[_obj, 0] remoteExec ["setFeatureType", [0, -2] select isDedicated];
 	_obj setFuel 0.05;
+};
+
+if (_ar # 19 == 1) then {
+	d_priority_targets = [];
+	publicVariable "d_priority_targets";
 };
 
 _obj setVariable ["d_hkx", nil];

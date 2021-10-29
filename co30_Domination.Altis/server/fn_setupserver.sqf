@@ -45,29 +45,30 @@ if (d_MissionType in [0,2]) then {
 };
 
 #ifdef __TT__
-execfsm "fsms\fn_TTPoints.fsm";
+0 spawn d_fnc_sendttpoints;
 #endif
 
 private _applyfnc = {
 	__TRACE_1("","_this")
 	if (_this isKindOf "Plane") exitWith {
 		__TRACE("Plane")
-		[_this, 0.1]
+		[_this, d_sm_vec_weighting # 0]
 	};
 	if (_this isKindOf "Helicopter") exitWith {
 		__TRACE("Helicopter")
-		[_this, 0.2]
+		[_this, d_sm_vec_weighting # 1]
 	};
 	if (_this isKindOf "Tank") exitWith {
 		__TRACE("Tank")
-		[_this, 0.7]
+		[_this, d_sm_vec_weighting # 2]
 	};
 	__TRACE("Another")
-	[_this, 1.3]
+	[_this, d_sm_vec_weighting # 3]
 };
 
 #ifndef __TT__
 d_sm_bonus_vehicle_array = flatten (d_sm_bonus_vehicle_array apply {_x call _applyfnc});
+d_sm_bonus_vehicle_array_cur =+ d_sm_bonus_vehicle_array;
 
 private _bpos =+ d_base_array # 0;
 _bpos set [2, 1.9];
@@ -76,6 +77,8 @@ _bpos set [2, 1.9];
 __TRACE_1("","d_sm_bonus_vehicle_array")
 d_sm_bonus_vehicle_array set [0, flatten ((d_sm_bonus_vehicle_array # 0) apply {_x call _applyfnc})];
 d_sm_bonus_vehicle_array set [1, flatten ((d_sm_bonus_vehicle_array # 1) apply {_x call _applyfnc})];
+d_sm_bonus_vehicle_array_o =+ d_sm_bonus_vehicle_array # 1;
+d_sm_bonus_vehicle_array_b =+ d_sm_bonus_vehicle_array # 0;
 #endif
 
 if (d_MissionType == 2) then {
@@ -94,7 +97,7 @@ if (d_MissionType == 2) then {
 
 0 spawn d_fnc_cleanerfnc;
 
-diag_log "Internal D Version: 4.4";
+diag_log "Internal D Version: 4.56";
 
 private _av_check_fnc = {
 	_this addEventHandler ["handleDamage", {call d_fnc_pshootatarti;0}];

@@ -40,7 +40,7 @@ link17[] = {15,6};
 link18[] = {16,17};
 link19[] = {17,13};
 globals[] = {0.000000,0,0,0,0,640,480,1,22,6316128,1,-455.676758,559.340210,904.643738,-90.048965,848,832,1};
-window[] = {0,-1,-1,-1,-1,1128,632,2779,124,1,866};
+window[] = {0,-1,-1,-1,-1,1264,260,2407,260,1,866};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -206,8 +206,7 @@ class FSM
                          "private _sidevar = _wreck getVariable ""D_VEC_SIDE"";" \n
                          "private _maxrep = _wreck getVariable ""d_WreckMaxRepair"";" \n
                          "if (unitIsUAV _wreck) then {" \n
-                         "	{_wreck deleteVehicleCrew _x} forEach (crew _wreck);" \n
-                         "	// A3_206 deleteVehicleCrew _wreck;" \n
+                         "	deleteVehicleCrew _wreck;" \n
                          "};" \n
                          "private _skinpoly = [_wreck] call d_fnc_getskinpoly;" \n
                          "private _wpilot = _wreck getVariable ""d_lift_pilot"";" \n
@@ -216,14 +215,12 @@ class FSM
                          "};" \n
                          "deleteVehicle _wreck;" \n
                          "" \n
-                         "if (d_database_found) then {" \n
-                         "	if (!d_tt_ver) then {" \n
-                         "		d_bonus_vecs_db = d_bonus_vecs_db - [objNull];" \n
-                         "	} else {" \n
-                         "		switch (_rep_station_side) do {" \n
-                         "			case blufor: {d_bonus_vecs_db_w = d_bonus_vecs_db_w - [objNull]};" \n
-                         "			case opfor: {d_bonus_vecs_db_e = d_bonus_vecs_db_e - [objNull]};" \n
-                         "		};" \n
+                         "if (!d_tt_ver) then {" \n
+                         "	d_bonus_vecs_db = d_bonus_vecs_db - [objNull];" \n
+                         "} else {" \n
+                         "	switch (_rep_station_side) do {" \n
+                         "		case blufor: {d_bonus_vecs_db_w = d_bonus_vecs_db_w - [objNull]};" \n
+                         "		case opfor: {d_bonus_vecs_db_e = d_bonus_vecs_db_e - [objNull]};" \n
                          "	};" \n
                          "};" \n
                          "" \n
@@ -353,14 +350,13 @@ class FSM
                          "_timenow = ([time, serverTime] select isMultiplayer) + _totaltime;" \n
                          "_rep_station setVariable [""d_curreptime"", _timenow, true];" \n
                          "" \n
-                         "if (d_database_found) then {" \n
-                         "	if (!d_tt_ver) then {" \n
-                         "		d_bonus_vecs_db pushBack _new_vec;" \n
-                         "	} else {" \n
-                         "		switch (_rep_station_side) do {" \n
-                         "			case blufor: {d_bonus_vecs_db_w pushBack _new_vec};" \n
-                         "			case opfor: {d_bonus_vecs_db_e pushBack _new_vec};" \n
-                         "		};" \n
+                         "" \n
+                         "if (!d_tt_ver) then {" \n
+                         "	d_bonus_vecs_db pushBack _new_vec;" \n
+                         "} else {" \n
+                         "	switch (_rep_station_side) do {" \n
+                         "		case blufor: {d_bonus_vecs_db_w pushBack _new_vec};" \n
+                         "		case opfor: {d_bonus_vecs_db_e pushBack _new_vec};" \n
                          "	};" \n
                          "};" \n
                          ""/*%FSM</STATEINIT""">*/;

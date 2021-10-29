@@ -1,14 +1,14 @@
 // by Xeno
 //#define __DEBUG__
-#include "..\x_setup.sqf"
+//#include "..\x_setup.sqf"
 
-__TRACE_1("","_this")
+//__TRACE_1("","_this")
 
 params ["_map", "_type"]; // _type = 0 normal map control, 1 = GPS, 2 = custom map resources
 
 _map = _map # 0;
 
-__TRACE_1("","d_show_player_marker")
+//__TRACE_1("","d_show_player_marker")
 
 private _drawdist = d_island_x_max * (ctrlMapScale _map) + 200;
 private _mapmid = _map ctrlMapScreenToWorld [0.5, 0.5];
@@ -16,26 +16,15 @@ private _mapmid = _map ctrlMapScreenToWorld [0.5, 0.5];
 private _fnc_gmi = d_fnc_getmapicon;
 
 if (d_show_player_marker isNotEqualTo 0) then {
-	private _drawn_v = [];
-	private ["_v", "_inv", "_dodraw", "_text", "_crw", "_nmt", "_nt", "_ccrwm1", "_isc", "_vc", "_res"];
-	[d_with_ai, d_fnc_isplayer, d_show_player_marker, d_fnc_gethpname, d_mark_loc280] params ["_w_ai", "_fnc_ispl", "_s_pl_ma", "_fnc_ghpn", "_d_mark_loc280"];
+	private ["_v", "_inv", "_text", "_crw", "_nmt", "_nt", "_ccrwm1", "_isc", "_vc", "_res"];
+	[d_show_player_marker, d_fnc_gethpname, d_mark_loc280, d_fnc_gethpnameai] params ["_s_pl_ma", "_fnc_ghpn", "_d_mark_loc280", "_fnc_ghpnai"];
 	{
 		_v = vehicle _x;
 		if (_v distance2D _mapmid < _drawdist) then {
 			_inv = !isNull objectParent _x;
-			__TRACE_2("","_v","_inv")
+			//__TRACE_2("","_v","_inv")
 
-			_dodraw = [true, _x isEqualTo (crew _v # 0)] select _inv;
-			if (_w_ai && {_inv && {!_dodraw && {!(_v getVariable ["d_v_drawn", false]) && {!((crew _v # 0) call _fnc_ispl)}}}}) then {
-				_v setVariable ["d_v_drawn", true];
-				_drawn_v pushBack _v;
-				_dodraw = true;
-			};
-
-			__TRACE_1("","_drawn_v")
-			__TRACE_1("","_dodraw")
-
-			if (_dodraw) then {
+			if ([true, _x isEqualTo (crew _v # 0)] select _inv) then {
 				_text = if (_type isNotEqualTo 1) then {
 					if (!_inv) then {
 						_vc = _x getVariable ["d_ut_c", 47];
@@ -43,7 +32,11 @@ if (d_show_player_marker isNotEqualTo 0) then {
 							_x setVariable ["d_ut_c", 0];
 							call {
 								if (_s_pl_ma isEqualTo 1) exitWith {
-									_res = [_x] call _fnc_ghpn;
+									_res = if (isPlayer _x) then {
+										[_x] call _fnc_ghpn
+									} else {
+										[_x] call _fnc_ghpnai
+									};
 								};
 								if (_s_pl_ma isEqualTo 2) exitWith {
 									_res = "";
@@ -64,7 +57,7 @@ if (d_show_player_marker isNotEqualTo 0) then {
 							_vc = _v getVariable ["d_vma_c", 41];
 							if (_vc > 40) then {
 								_nmt = _v getVariable "d_ma_text";
-								__TRACE_1("","_nmt")
+								//__TRACE_1("","_nmt")
 								if (isNil "_nmt") then {
 									_nmt = getText ((configOf _v)>>"displayName");
 									_v setVariable ["d_ma_text", _nmt];
@@ -79,7 +72,7 @@ if (d_show_player_marker isNotEqualTo 0) then {
 									};
 								} forEach (_crw select {alive _x});
 								_v setVariable ["d_vma_c", 0];
-								__TRACE_1("","_nt")
+								//__TRACE_1("","_nt")
 								_res = _nt joinString "";
 								_v setVariable ["d_mac_text", _res];
 								_res
@@ -102,7 +95,7 @@ if (d_show_player_marker isNotEqualTo 0) then {
 
 				_isc = [_v, _x] call _fnc_gmi;
 
-				__TRACE_1("","_isc")
+				//__TRACE_1("","_isc")
 
 				_map drawIcon [
 					_isc # 0,
@@ -123,52 +116,10 @@ if (d_show_player_marker isNotEqualTo 0) then {
 				};
 			};
 		};
-	} forEach d_allplayermapd;
-
-	if (_w_ai) then {
-		_drawn_v apply {_x setVariable ["d_v_drawn", nil]};
-		
-		private ["_isc", "_text"];
-		{
-			if (_x distance2D _mapmid < _drawdist) then {
-				_isc = [_x, _x] call _fnc_gmi;
-				
-				_text = if (_type isNotEqualTo 1) then {
-					call {
-						if (_s_pl_ma isEqualTo 1) exitWith {
-							_ut = str _x; _ut select [count _ut - 1]
-						};
-						if (_s_pl_ma isEqualTo 2) exitWith {
-							""
-						};
-						if (_s_pl_ma isEqualTo 3) exitWith {
-							format [_d_mark_loc280, 9 - round(9 * damage _x)]
-						};
-						""
-					};
-				} else {
-					""
-				};
-
-				_map drawIcon [
-					_isc # 0,
-					_isc # 2,
-					visiblePositionASL _x,
-					_isc # 1,
-					_isc # 1,
-					getDirVisual _x,
-					_text,
-					1,
-					0.05,
-					"puristaMedium", // ROBOTO?
-					"right"
-				];
-			};
-		} forEach ((units (group player)) select {alive _x && {isNull (objectParent _x) && {!(_x call _fnc_ispl)}}});
-	};
+	} forEach (d_allplayermapd + (d_current_ai_units select {alive _x}));
 };
 
-__TRACE_1("","d_marker_vecs")
+//__TRACE_1("","d_marker_vecs")
 
 private ["_isc", "_mt", "_ee"];
 private _d_mark_loc261 = d_mark_loc261;
@@ -178,7 +129,7 @@ private _marker_vecs = d_marker_vecs;
 	if (_x distance2D _mapmid < _drawdist) then {
 		if (isNil {_x getVariable "d_mvs_not"}) then {
 			_isc = [_x, objNull, true] call _fnc_gmi;
-			__TRACE_1("","_isc")
+			//__TRACE_1("","_isc")
 			_mt = call {
 				if (!alive _x) exitWith {
 					_ee = _x getVariable "d_mvdes";

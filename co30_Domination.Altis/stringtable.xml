@@ -528,7 +528,7 @@
 <Original>仅限主要目标</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_265">
-<Original>欢迎来到 Domination! </Original>
+<Original>欢迎来到 Domination!</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_266">
 <Original>祝你玩得愉快! </Original>
@@ -744,6 +744,9 @@
 <Original>高</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_400_VERYHIGH">
+<Original>非常高</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_400_EXTREME">
 <Original>极高</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_405">
@@ -760,6 +763,9 @@
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_418C">
 <Original>总是, 多个事件</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_GUERRILLAS">
+<Original>游击队</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_418C_GUERR">
 <Original>总是, 游击队的多个事件</Original>
@@ -1928,7 +1934,7 @@
 <Original>单位: </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1223">
-<Original>分数: </Original>
+<Original>分数</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1224">
 <Original>重置 TKs</Original>
@@ -2596,6 +2602,9 @@
 <Key ID="STR_DOM_MISSIONSTRING_1705a">
 <Original>小队长</Original>
 </Key>
+<Key ID="STR_DOM_MISSIONSTRING_SQUAD">
+<Original>小队</Original>
+</Key>
 <Key ID="STR_DOM_MISSIONSTRING_1706">
 <Original>无法在队长身边重生</Original>
 </Key>
@@ -2785,10 +2794,10 @@
 <Original>我们的一名飞行员被抓获。让飞行员重返你的基地! 迅速杀死守卫。如果他们受伤, 他们将处决囚犯! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1805_TRIGGERMAN">
-<Original>一名友军战俘身穿爆炸背心。移动到标记的位置找到并干掉爆破手! 你有 %1 秒。</Original>
+<Original>一名友军战俘身穿爆炸背心。移动到标记的位置找到并干掉爆破手！你有 %1 秒。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1805_DEFUSE">
-<Original>一个友善的战俘穿着爆炸背心。移动到标记的位置并营救我们的飞行员! 您有 %1 秒。</Original>
+<Original>一个友善的战俘穿着爆炸背心。移动到标记的位置并营救我们的飞行员！您有 %1 秒。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1805_DEFUSE_NOW">
 <Original>拆解装置...</Original>
@@ -3049,7 +3058,13 @@
 <Original>成功。  + %1</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_EVENTWARNINGTIME">
-<Original>动作快点! 仅剩 %1 秒。</Original>
+<Original>动作快点！仅剩 %1 秒。</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_EVENTCIVMASSACRE">
+<Original>The enemy is killing civilians. %1 people are in danger!</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_EVENTCIVMASSACRE_END">
+<Original>%1 out of %2 civilians survived the massacre.</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1890CIVVEH">
 <Original>启用平民 民用载具 - 已启用</Original>
@@ -3538,11 +3553,6 @@
 <Original>航海载具: </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_2050">
-<German>Illuminate main target:</German>
-<Italian>Illuminate main target:</Italian>
-<Czech>Illuminate main target:</Czech>
-<Polish>Illuminate main target:</Polish>
-<Hungarian>Illuminate main target:</Hungarian>
 <Original>照亮主要目标: </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_STATICWEAPONS">
@@ -3652,6 +3662,27 @@
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_2083">
 <Original>正在获取对象...</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_SUPPRESS_VOICES">
+<Original>禁用语音：</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2084">
+<Original>如果没有可用的数据库，则将任务进度保存到 profileNamespace </Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2085">
+<Original>保存的 profileNamespace 任务进度自动加载</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2086">
+<Original>火炮发射攻击时，检查火炮攻击目标附近是否有友军。</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2087">
+<Original>您从管理员那里获得了 %1 分！</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2088">
+<Original>您已为 %2 的总分增加了 %1 分</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2089">
+<Original>添加分数</Original>
 </Key>
 </Container>
 </Package>

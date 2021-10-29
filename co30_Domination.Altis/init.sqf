@@ -3,8 +3,8 @@
 #include "x_setup.sqf"
 diag_log [diag_frameno, diag_ticktime, time, "Executing Dom init.sqf"];
 
-if (productVersion # 2 < 204) exitWith {
-	diag_log [diag_frameno, diag_ticktime, time, "You need at least A3 patch 2.04 to run the mission!!!!"];
+if (productVersion # 2 < 206) exitWith {
+	diag_log [diag_frameno, diag_ticktime, time, "You need at least A3 patch 2.06 to run the mission!!!!"];
 	endMission "LOSER";
 	forceEnd;
 };
@@ -19,8 +19,6 @@ if (isMultiplayer && {hasInterface}) then {
 
 enableSaving [false,false];
 enableTeamSwitch false;
-
-isNil {call compileScript ["d_init.sqf", false]};
 
 #ifdef __IFA3LITE__
 if (isServer) then {

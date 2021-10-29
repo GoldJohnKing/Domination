@@ -1,7 +1,6 @@
 // by Xeno
 //#define __DEBUG__
-#include "..\x_setup.sqf"
-#define __CTRL2(A) (_display displayCtrl A)
+//#include "..\x_setup.sqf"
 
 if (d_beam_target == "" || {d_x_loop_end}) exitWith {};
 
@@ -12,20 +11,21 @@ if (!isNull objectParent player) then {unassignVehicle player};
 params ["_wone"];
 
 disableSerialization;
-private _display = [uiNamespace getVariable "xr_SpectDlg", uiNamespace getVariable "d_TeleportDialog"] select (_wone == 0);
+private _disp = [uiNamespace getVariable "xr_SpectDlg", uiNamespace getVariable "d_TeleportDialog"] select (_wone == 0);
 if (_wone == 0) then {
-	__CTRL2(100102) ctrlEnable false;
-	__CTRL2(100107) ctrlEnable false;
-	__CTRL2(100108) ctrlEnable false;
-	__CTRL2(100109) ctrlEnable false;
+	(_disp displayCtrl 100102) ctrlEnable false;
+	(_disp displayCtrl 100107) ctrlEnable false;
+	(_disp displayCtrl 100108) ctrlEnable false;
+	(_disp displayCtrl 100109) ctrlEnable false;
 } else {
-	__CTRL2(3000) ctrlShow false;
+	(_disp displayCtrl 3000) ctrlShow false;
 };
 
 private _global_pos = [];
 private _global_dir = 180;
 private _typepos = 0;
 private _mrsv = objNull;
+private _respawn_target = nil;
 
 if (d_beam_target == "D_BASE_D") then {
 	if (!d_tt_ver) then {
@@ -41,18 +41,28 @@ if (d_beam_target == "D_BASE_D") then {
 	d_player_in_base = true;
 } else {
 	if (d_beam_target == "D_SQL_D") then {
-		private _lead = leader (group player);
-		private _emptycargo = [0, (vehicle _lead) emptyPositions "cargo"] select (!isNull objectParent _lead);
+		if (leader (group player) call d_fnc_iseligibletospawnnewunit) then {
+			_respawn_target = leader (group player);
+		} else {
+			// are any squadmates alive and eligible as a spawn target?
+			{
+				if (_x != player && [_x] call d_fnc_iseligibletospawnnewunit) exitWith {
+					_respawn_target = _x;
+				};
+			} forEach (units player);
+		};
+		
+		private _emptycargo = [0, (vehicle _respawn_target) emptyPositions "cargo"] select (!isNull objectParent _respawn_target);
 		if (_emptycargo == 0) then {
-			_global_pos = [(vehicle _lead) modelToWorldVisual [0, -8, 0], getPosASLVisual _lead] select (isNull objectParent _lead);
-			_global_pos set [2, _lead distance (getPos _lead)];
-			_global_dir = getDirVisual _lead;
+			_global_pos = [(vehicle _respawn_target) modelToWorldVisual [0, -8, 0], getPosASLVisual _respawn_target] select (isNull objectParent _respawn_target);
+			_global_pos set [2, _respawn_target distance (getPos _respawn_target)];
+			_global_dir = getDirVisual _respawn_target;
 			_typepos = 1;
 		} else {
 			_typepos = 2;
 		};
 		if (d_with_ranked || {d_database_found}) then {
-			[_lead, 12] remoteExecCall ["d_fnc_addscore", 2];
+			[_respawn_target, 12] remoteExecCall ["d_fnc_addscore", 2];
 		};
 		if (!d_tt_ver) then {
 			d_player_in_base = player inArea d_base_array;
@@ -61,13 +71,13 @@ if (d_beam_target == "D_BASE_D") then {
 		};
 	} else {
 		private _uidx = d_add_resp_points_uni find d_beam_target;
-		__TRACE_1("","_uidx")
+		//__TRACE_1("","_uidx")
 		if (_uidx != -1) then {
 			_global_pos = (d_additional_respawn_points # _uidx) # 1;
 			if (surfaceIsWater _global_pos) then {
 				_global_pos set [2, ((d_additional_respawn_points # _uidx) # 5) # 2];
 			};
-			__TRACE_1("","_global_pos")
+			//__TRACE_1("","_global_pos")
 			_global_dir = 0;
 			d_player_in_base = false;
 		} else {
@@ -75,16 +85,16 @@ if (d_beam_target == "D_BASE_D") then {
 			if !(_mrs isKindOf "Ship") then {
 				if (isNil "d_alt_map_pos") then {
 					_global_pos = _mrs call d_fnc_posbehindvec;
-					__TRACE_1("1","_global_pos")
+					//__TRACE_1("1","_global_pos")
 					(boundingBoxReal _mrs) params ["_p1", "_p2"];
 					private _maxHeight = abs ((_p2 # 2) - (_p1 # 2)) / 2;
-					__TRACE_1("","_maxHeight")
+					//__TRACE_1("","_maxHeight")
 					_global_pos set [2, (_mrs distance (getPos _mrs)) - _maxHeight];
 				} else {
 					_global_pos = d_alt_map_pos;
 					_global_pos set [2, 0];
 				};
-				__TRACE_1("2","_global_pos")
+				//__TRACE_1("2","_global_pos")
 				_global_dir = getDirVisual _mrs;
 				_typepos = 1;
 			} else {
@@ -124,7 +134,7 @@ if (_typepos == 1) then {
 		};
 	} else {
 		if (_typepos == 2) then {
-			player moveInCargo (vehicle leader (group player));
+			player moveInCargo (vehicle _respawn_target);
 		} else {
 			if (_typepos == 3) then {
 				player moveInCargo _mrsv;

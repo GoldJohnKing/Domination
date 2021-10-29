@@ -16,25 +16,22 @@ params ["_target_radius", "_target_center"];
 
 private _mt_event_key = format ["d_X_MTEVENT_%1", d_cur_tgt_name];
 
-private _trigger = [_target_center, [120,120,0,false,10], ["ANYPLAYER","PRESENT",true], ["this","thisTrigger setVariable ['d_event_start_time', time];",""]] call d_fnc_CreateTriggerLocal;
+private _trigger = [_target_center, [(d_cur_target_radius * 0.50),(d_cur_target_radius * 0.50),0,false,10], ["ANYPLAYER","PRESENT",true], ["this","thisTrigger setVariable ['d_event_start_time', time];",""]] call d_fnc_CreateTriggerLocal;
 
 private _event_start_time = nil;
+private _event_target = nil;
 private _event_target_name = nil;
 private _event_survive_time = 180; // in seconds
 private _event_succeed_points = 5;
 
 waitUntil {sleep 5;!isNil {_trigger getVariable "d_event_start_time"}};
 _event_start_time = _trigger getVariable "d_event_start_time";
-d_priority_target = [allPlayers, _target_center] call BIS_fnc_nearestPosition;
-publicVariable "d_priority_target";
-_event_target_name = name d_priority_target;
+d_priority_targets pushBack ([allPlayers, _target_center] call BIS_fnc_nearestPosition);
+publicVariable "d_priority_targets";
+_event_target = d_priority_targets # 0;
+_event_target_name = name _event_target;
 
-d_priority_target addEventHandler ["Killed", {
-	// reset
-	d_priority_target = nil;
-	publicVariable "d_priority_target";
-	(_this # 0) removeEventHandler ["Killed", _thisEventhandler];
-}];
+[_event_target, 19] call d_fnc_setekmode;
 
 diag_log [format["markedfordeath begins start time: %1 _event_target_name: %2", _event_start_time, _event_target_name]];
 d_kb_logic1 kbTell [
@@ -46,19 +43,24 @@ d_kb_logic1 kbTell [
 	d_kbtel_chan
 ];
 
+private _event_description = format [localize "STR_DOM_MISSIONSTRING_MARKEDFORDEATH", _event_target_name, _event_survive_time];
+d_mt_event_messages_array pushBack _event_description;
+publicVariable "d_mt_event_messages_array";
+
 // waitUntil either killed EH or _event_survive_time duration
-waitUntil {sleep 3;isNil "d_priority_target" || {(time - _event_start_time) > _event_survive_time}};
+waitUntil {sleep 3;d_priority_targets isEqualTo []  || {(time - _event_start_time) > _event_survive_time}};
 
 diag_log ["markedfordeath ended"];
 
-if (isNil "d_priority_target") then {
+if (d_priority_targets isEqualTo []) then {
 	diag_log ["markedfordeath failure"];
+	private _fail_survive_time = time - _event_start_time;
 	d_kb_logic1 kbTell [
     	d_kb_logic2,
     	d_kb_topic_side,
     	"PlayerMarkedForDeathFail",
     	["1", "", _event_target_name, []],
-    	["2", "", str (time - _event_start_time), []],
+    	["2", "", str _fail_survive_time, []],
     	d_kbtel_chan
     ];
 } else {
@@ -74,11 +76,12 @@ if (isNil "d_priority_target") then {
 	];
 	{
 		_x addScore _event_succeed_points;
-	} forEach d_allplayers;
+	} forEach (allPlayers - entities "HeadlessClient_F");
 	// reset 
-	d_priority_target = nil;
-	publicVariable "d_priority_target";
+	d_priority_targets deleteAt 0;
+	publicVariable "d_priority_targets";
 };
 
 // cleanup
-// nothing?
+d_mt_event_messages_array deleteAt (d_mt_event_messages_array find _event_description);
+publicVariable "d_mt_event_messages_array";

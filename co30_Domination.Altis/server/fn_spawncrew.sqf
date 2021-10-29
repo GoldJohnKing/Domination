@@ -10,37 +10,42 @@ if (count _crew > 0) then {
 	_crew joinSilent _grp;
 	deleteGroup _uavgrp;
 
-	private _subskill = if (diag_fps > 29) then { // Edited: Tweak enemy skill
-		(0.1 + (random 0.1))
+	private _subskill = if (diag_fps > 29) then {
+		0.1 + (random 0.1)
 	} else {
-		(0.12 + (random 0.04))
+		0.12 + (random 0.04)
 	};
 
 	if (unitIsUAV _vec) then {
+		{_x setSkill ["spotDistance", 1]} forEach _crew;
+	};
+	if (_vec isKindOf "StaticWeapon") then {
 		{
 			_x setSkill ["spotDistance", 1];
+			_x setSkill ["aimingAccuracy", random [0.05, 0.1, 0.125]];
 		} forEach _crew;
 	};
-        if (_vec isKindOf "StaticWeapon") then {
-	     {
-	         _x setSkill ["spotDistance", 1];
-		 _x setSkill ["aimingAccuracy",0]; // Edited: Tweak enemy skill, default = (random [0.05, 0.1, 0.125])
-	     } forEach _crew;
-        };	
+	
+	if (!unitIsUAV _vec && {!(_vec isKindOf "Air")}) then {
+		if (!isNull driver _vec && {!isNull gunner _vec && {!isNull commander _vec}}) then {
+			_vec deleteVehicleCrew (commander _vec);
+			__TRACE_1("deleting commander","_vec")
+		};
+	};
 
 	private _addus = [];
-	if (!_nocargo) then {
+	if (!_nocargo && {(call d_fnc_PlayersNumber) < 18}) then {
 		private _ran =
 #ifdef __IFA3LITE__
 			random 100 > 80;
 #else
-			random 100 > 49;
+			random 100 > 59;
 #endif
 		if (_ran && {_vec isKindOf "Wheeled_APC" || {_vec isKindOf "Wheeled_APC_F" || {_vec isKindOf "Tracked_APC" || {_vec isKindOf "APC_Tracked_01_base_F" || {_vec isKindOf "APC_Tracked_02_base_F" || {_vec isKindOf "APC_Tracked_03_base_F"}}}}}}) then {
 			private _counter = _vec emptyPositions "cargo";
 			__TRACE_2("","typeOf _vec","_counter")
 			if (_counter > 0) then {
-				_counter = (ceil (random _counter)) min 6;
+				_counter = (ceil (random _counter)) min 4;
 				if (_counter > 0) then {
 					private _munits = ["allmen", side _grp] call d_fnc_getunitlistm;
 					__TRACE_1("","_munits")

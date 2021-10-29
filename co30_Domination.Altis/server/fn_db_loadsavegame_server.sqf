@@ -34,6 +34,30 @@ if (!d_tt_ver) then {
 				_dbresult = ["missionGet2", [toLower (worldName + _sname + briefingname)]] call d_fnc_queryconfig;
 			};
 		};
+		if (d_db_type == -1) exitWith {
+			_dbresult = [];
+			private _pn_missionsave = profileNamespace getVariable ["dom_missionsave", []];
+			if (_pn_missionsave isEqualTo []) exitWith {};
+			if (_sender != objNull) then {
+				private _comna = tolower (worldName + _sname);
+				private _idx = _pn_missionsave findIf {(_x # 12) == _comna};
+				if (_idx != -1) then {
+					private _tmpar =+ _pn_missionsave # _idx;
+					_tmpar deleteAt 12;
+					_tmpar deleteAt 0;
+					_dbresult = [_tmpar];
+				};
+			} else {
+				private _comna = toLower (worldName + _sname + briefingname);
+				private _idx = _pn_missionsave findIf {(_x # 13) == _comna};
+				if (_idx != -1) then {
+					private _tmpar =+ _pn_missionsave # _idx;
+					_tmpar deleteAt 13;
+					_tmpar deleteAt 0;
+					_dbresult = [_tmpar];
+				};
+			};
+		};
 	};
 } else {
 	call {
@@ -56,16 +80,36 @@ if (!d_tt_ver) then {
 				_dbresult = ["missionttGet2", [toLower (worldName + _sname + briefingname)]] call d_fnc_queryconfig;
 			};
 		};
+		if (d_db_type == -1) exitWith {
+			_dbresult = [];
+			private _pn_missionsave = profileNamespace getVariable ["dom_missionsavett", []];
+			if (_pn_missionsave isEqualTo []) exitWith {};
+			if (_sender != objNull) then {
+				private _comna = tolower (worldName + _sname);
+				private _idx = _pn_missionsave findIf {(_x # 18) == _comna};
+				if (_idx != -1) then {
+					private _tmpar =+ _pn_missionsave # _idx;
+					_tmpar deleteAt 18;
+					_tmpar deleteAt 12;
+					_tmpar deleteAt 0;
+					_dbresult = [_tmpar];
+				};
+			} else {
+				private _comna = toLower (worldName + _sname + briefingname);
+				private _idx = _pn_missionsave findIf {(_x # 19) == _comna};
+				if (_idx != -1) then {
+					private _tmpar =+ _pn_missionsave # _idx;
+					_tmpar deleteAt 19;
+					_tmpar deleteAt 12;
+					_tmpar deleteAt 0;
+					_dbresult = [_tmpar];
+				};
+			};
+		};
 	};
 };
 
 __TRACE_1("","_dbresult")
-
-#ifdef __DEBUG__
-{
-	diag_log _x;
-} forEach (_dbresult # 0);
-#endif
 
 if (_dbresult isEqualTo []) exitWith {
 	diag_log ["DOM db loadsavegame _dbresult is []:", _this];
@@ -75,6 +119,12 @@ if (_dbresult isEqualTo []) exitWith {
 		diag_log format [localize "STR_DOM_MISSIONSTRING_1752", _sname];
 	};
 };
+
+#ifdef __DEBUG__
+{
+	diag_log _x;
+} forEach (_dbresult # 0);
+#endif
 
 _dbresult params ["_ar"];
 
@@ -90,6 +140,7 @@ d_maintargets_list = _ar # 1;
 //publicVariable "d_cur_sm_idx";
 d_resolved_targets = _ar # 4;
 publicVariable "d_resolved_targets";
+__TRACE_1("","d_target_names")
 if (d_with_targetselect_count > 0) then {
 	d_mttargets_ar = [];
 	{
