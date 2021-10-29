@@ -1230,10 +1230,10 @@ if (!d_gmcwgwinter) then {
 	d_arti_observer_G = [["I_Soldier_TL_F"]];
 
 	if (isNil "d_number_attack_planes") then {
-		d_number_attack_planes = 3;
+		d_number_attack_planes = 2;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 4;
+		d_number_attack_choppers = 3;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
 		d_number_light_attack_choppers = 2;

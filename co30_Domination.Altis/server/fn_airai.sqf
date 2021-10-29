@@ -25,7 +25,7 @@ while {true} do {
 
 	private _limit_p = call {
 		if (_type isEqualTo "AP") exitWith {10};
-		if (_type isEqualTo "HAC") exitWith {12};
+		if (_type isEqualTo "HAC") exitWith {14};
 		if (_type isEqualTo "UAV") exitWith {5};
 		3;
 	};
@@ -74,7 +74,7 @@ while {true} do {
 		if (_type == "LAC") exitWith {
 			_heli_type = selectRandom d_light_attack_chopper;
 			_numair = [d_number_light_attack_choppers, ceil (random d_number_light_attack_choppers)] select (d_number_light_attack_choppers > 1);
-			_height = 500;
+			_height = 300;
 			_heightASL = [400, 100 + (random 50), 150 + (random 150)];
 		};
 		if (_type == "UAV") exitWith {
@@ -334,10 +334,10 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 #ifndef __DEBUG__
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
-		if (_num_p < 5) exitWith {120};
-		if (_num_p < 10) exitWith {100};
-		if (_num_p < 15) exitWith {80};
-		if (_num_p < 20) exitWith {60};
+		if (_num_p < 5) exitWith {360};
+		if (_num_p < 10) exitWith {300};
+		if (_num_p < 15) exitWith {240};
+		if (_num_p < 20) exitWith {200};
 		200;
 	});
 	sleep (d_airai_respawntime + _re_random);
