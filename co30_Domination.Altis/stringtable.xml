@@ -3061,10 +3061,10 @@
 <Original>动作快点！仅剩 %1 秒。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_EVENTCIVMASSACRE">
-<Original>The enemy is killing civilians. %1 people are in danger!</Original>
+<Original>敌人正在压迫当地百姓！ %1 个平民正处于生死存亡之际!</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_EVENTCIVMASSACRE_END">
-<Original>%1 out of %2 civilians survived the massacre.</Original>
+<Original>%1 中的 %2 个平民逃过一劫.</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1890CIVVEH">
 <Original>启用平民 民用载具 - 已启用</Original>
