@@ -301,7 +301,7 @@ d_x_drop_array =
 #ifdef __OWN_SIDE_OPFOR__
 	call {
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "O_APC_Tracked_02_AA_F"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "O_ZBD04A"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_ifa3lite) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "LIB_US_Willys_MB"], [localize "STR_DOM_MISSIONSTRING_20", "LIB_BasicWeaponsBox_SU"]]
@@ -1922,7 +1922,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D_wd","RHS_AH64DGrey","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","RHS_AH1Z"]
+					["RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","B_Plane_Fighter_01_F","USAF_F35A"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2148,7 +2148,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR","RHS_AH1Z","KOS_CRO_Gripen_9235","KOS_CRO_Gripen_9238","KOS_CRO_Gripen_9236","B_Heli_Attack_01_dynamicLoadout_F","RHS_A10"]
+					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR","RHS_AH1Z","KOS_CRO_Gripen_9235","KOS_CRO_Gripen_9238","KOS_CRO_Gripen_9236","B_Heli_Attack_01_dynamicLoadout_F","RHS_A10","RHS_AH64D_wd","RHS_AH64DGrey"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
@@ -2571,7 +2571,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "O_MRAP_02_F","O_MRAP_02_hmg_F","rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01","B_T_APC_Tracked_01_CRV_F", "rhs_prp3_msv","RHS_Ural_Zu23_MSV_01", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv","rhs_Ob_681_2", "O_ZBL09","rhs_brm1k_msv","rhs_sprut_vdv","O_ZTL11", "O_ZTD05","rhs_2s3_at_tv"]
+			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "O_MRAP_02_F","O_MRAP_02_hmg_F","rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01","B_T_APC_Tracked_01_CRV_F", "rhs_prp3_msv","RHS_Ural_Zu23_MSV_01","B_Truck_02_CAMM_F", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv","rhs_Ob_681_2", "O_ZBL09","rhs_brm1k_msv","rhs_sprut_vdv","O_ZTL11", "O_ZTD05","rhs_2s3_at_tv"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]

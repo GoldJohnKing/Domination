@@ -12,11 +12,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={11940.037,71.18074,2626.7161};
+		pos[]={11707.124,280.5925,2604.51};
 		dir[]={0.78520143,-0.61927408,0.0082323262};
 		up[]={0.61924928,0.78516054,0.0064923814};
 		aside[]={0.010484555,3.4752884e-007,-1.0000095};
@@ -17925,14 +17925,14 @@ class Mission
 						angles[]={0.0025371844,3.9863474,6.2810569};
 					};
 					side="East";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						name="d_chopper_17D";
 					};
 					id=433;
 					type="O_UAV_AI";
-					atlOffset=0.00023078918;
+					atlOffset=86.3405;
 				};
 				class Item1
 				{
@@ -17943,14 +17943,13 @@ class Mission
 						angles[]={0.0025371844,3.9863474,6.2810569};
 					};
 					side="East";
-					flags=4;
 					class Attributes
 					{
 						name="d_chopper_17G";
 					};
 					id=434;
 					type="O_UAV_AI";
-					atlOffset=0.00023078918;
+					atlOffset=87.955177;
 				};
 			};
 			class Attributes
