@@ -12,18 +12,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=10;
+		nextID=11;
 	};
 	class Camera
 	{
-		pos[]={11749.198,42.661182,2003.9526};
-		dir[]={0.85777903,-0.32284689,0.40001568};
-		up[]={0.29260623,0.94644785,0.13645329};
-		aside[]={0.42265043,2.3795292e-007,-0.90631312};
+		pos[]={11940.037,71.18074,2626.7161};
+		dir[]={0.78520143,-0.61927408,0.0082323262};
+		up[]={0.61924928,0.78516054,0.0064923814};
+		aside[]={0.010484555,3.4752884e-007,-1.0000095};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination_Lythium_test";
+sourceName="co30_Domination_Lythium_A3";
 addons[]=
 {
 	"A3_Ui_F",
@@ -17925,14 +17925,14 @@ class Mission
 						angles[]={0.0025371844,3.9863474,6.2810569};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						name="d_chopper_17D";
 					};
 					id=433;
 					type="O_UAV_AI";
-					atlOffset=86.3405;
+					atlOffset=0.00023078918;
 				};
 				class Item1
 				{
@@ -17943,13 +17943,14 @@ class Mission
 						angles[]={0.0025371844,3.9863474,6.2810569};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 						name="d_chopper_17G";
 					};
 					id=434;
 					type="O_UAV_AI";
-					atlOffset=87.955177;
+					atlOffset=0.00023078918;
 				};
 			};
 			class Attributes
@@ -18015,8 +18016,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11498.182,25.223711,2420.1726};
-				angles[]={0.003797939,4.063509,0};
+				position[]={11498.182,25.223881,2420.1726};
+				angles[]={0.0038048176,4.0635104,0};
 			};
 			side="Empty";
 			flags=4;
@@ -18028,7 +18029,7 @@ class Mission
 			};
 			id=436;
 			type="JS_JC_FA18F";
-			atlOffset=-0.010169983;
+			atlOffset=-0.010000229;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24903,7 +24904,7 @@ class Mission
 				};
 			};
 			id=753;
-			atlOffset=2.5235233;
+			atlOffset=2.5235691;
 		};
 		class Item582
 		{
@@ -24925,7 +24926,7 @@ class Mission
 			};
 			id=755;
 			type="rhs_Igla_AA_pod_msv";
-			atlOffset=2.5235233;
+			atlOffset=2.5235691;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -26180,7 +26181,7 @@ class Mission
 			class Item11
 			{
 				linkID=11;
-				item0=436;
+				item0=460;
 				item1=73;
 				class CustomData
 				{
@@ -26190,7 +26191,7 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=460;
+				item0=462;
 				item1=73;
 				class CustomData
 				{
@@ -26200,7 +26201,7 @@ class Mission
 			class Item13
 			{
 				linkID=13;
-				item0=462;
+				item0=436;
 				item1=73;
 				class CustomData
 				{

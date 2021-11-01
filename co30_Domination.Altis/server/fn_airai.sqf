@@ -27,7 +27,7 @@ while {true} do {
 		if (_type isEqualTo "AP") exitWith {10};
 		if (_type isEqualTo "HAC") exitWith {14};
 		if (_type isEqualTo "UAV") exitWith {5};
-		3;
+		5;
 	};
 	__TRACE_1("","_limit_p")
 	#ifndef __DEBUG__

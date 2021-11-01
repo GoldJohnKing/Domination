@@ -301,7 +301,7 @@ d_x_drop_array =
 #ifdef __OWN_SIDE_OPFOR__
 	call {
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhs_t80ue1"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "O_APC_Tracked_02_AA_F"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_ifa3lite) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "LIB_US_Willys_MB"], [localize "STR_DOM_MISSIONSTRING_20", "LIB_BasicWeaponsBox_SU"]]
@@ -1000,7 +1000,7 @@ if (!d_gmcwgwinter) then {
 
 	d_specops_W = call {
 		if (d_rhs) exitWith {
-			[["West","rhs_group_nato_usarmy_wd_infantry_team","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup, ["West","rhs_group_nato_usmc_recon_d_infantry_team_lite","rhs_group_nato_usmc_recon_d_infantry_team_fast","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup]
+			[["West","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_marsoc_infantry_squad","rhs_group_nato_usarmy_wd_infantry_team"] call d_fnc_GetConfigGroup, ["West","rhs_group_nato_usmc_recon_d_infantry_team_lite","rhs_group_nato_usmc_recon_d_infantry_team_fast","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup]
 		};
 		if (d_ifa3lite) exitWith {
 			[["West","SG_STURM","Infantry","SG_GER_AT_squad"] call d_fnc_GetConfigGroup, ["West","SG_STURM","Infantry","SG_GER_infantry_squad"] call d_fnc_GetConfigGroup]
