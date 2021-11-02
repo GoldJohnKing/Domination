@@ -27,7 +27,7 @@ while {true} do {
 		if (_type isEqualTo "AP") exitWith {12};
 		if (_type isEqualTo "HAC") exitWith {10};
 		if (_type isEqualTo "UAV") exitWith {5};
-		5;
+		4;
 	};
 	__TRACE_1("","_limit_p")
 	#ifndef __DEBUG__
@@ -335,7 +335,7 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
 		if (_num_p < 5) exitWith {300};
-		if (_num_p < 10) exitWith {240};
+		if (_num_p < 10) exitWith {200};
 		if (_num_p < 15) exitWith {200};
 		if (_num_p < 20) exitWith {200};
 		200;
