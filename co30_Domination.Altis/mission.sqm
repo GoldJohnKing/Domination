@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=13;
 	};
 	class Camera
 	{
-		pos[]={11707.124,280.5925,2604.51};
-		dir[]={0.78520143,-0.61927408,0.0082323262};
-		up[]={0.61924928,0.78516054,0.0064923814};
-		aside[]={0.010484555,3.4752884e-007,-1.0000095};
+		pos[]={11809.573,83.440735,2633.8003};
+		dir[]={0.85353833,-0.52055889,0.025129013};
+		up[]={0.52036238,0.85380006,0.015319975};
+		aside[]={0.029429687,1.5026126e-007,-0.99964613};
 	};
 };
 binarizationWanted=0;
@@ -501,7 +501,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="用启动器加入！注意更新地图模组！";
+		briefingName="用启动器来加入战斗吧！达瓦里氏!";
 		overviewText="暴打美帝！解放阿富汗！";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
@@ -14322,16 +14322,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11276.24,111.94582,1876.9524};
-						angles[]={0,4.7361126,0.015844874};
+						angles[]={0,4.7361083,0.01584759};
 					};
 					side="East";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 					};
 					id=350;
 					type="rhs_rva_crew";
-					atlOffset=83.439339;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14400,15 +14399,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11276.24,111.94582,1876.9524};
-						angles[]={0,4.7361126,0.015844874};
+						angles[]={0,4.7361083,0.01584759};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=351;
 					type="rhs_rva_crew_officer";
-					atlOffset=83.439339;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14477,15 +14476,15 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11276.24,111.94582,1876.9524};
-						angles[]={0,4.7361126,0.015844874};
+						angles[]={0,4.7361083,0.01584759};
 					};
 					side="East";
+					flags=4;
 					class Attributes
 					{
 					};
 					id=352;
 					type="rhs_rva_crew_officer";
-					atlOffset=83.439339;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14596,15 +14595,14 @@ class Mission
 				};
 			};
 			id=349;
-			atlOffset=-0.00024795532;
 		};
 		class Item233
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12156.217,26.775887,2400.4756};
-				angles[]={0,4.7361126,0.015844874};
+				position[]={12156.217,26.776134,2400.4761};
+				angles[]={0,4.7361083,0.01584759};
 			};
 			side="East";
 			flags=4;
@@ -14617,7 +14615,6 @@ class Mission
 			};
 			id=353;
 			type="rhsusf_M142_usarmy_WD";
-			atlOffset=-0.00024795532;
 			class CustomAttributes
 			{
 				class Attribute0
