@@ -24,7 +24,7 @@ if (_enemyMode == 3) then {
 switch (_enemyMode) do {
 	case 0: {
 		d_vec_numbers_guard = [
-			[[1,1], 1], // tanks
+			[[2,1], 1], // tanks
 			[[2,1], 1], // tracked apc
 			[[2,1], 1], // wheeled apc
 			[[2,0], 0], // jeep with mg
@@ -42,14 +42,14 @@ switch (_enemyMode) do {
 			[[2,1], 1], // wheeled apc
 			[[1,1], 0], // jeep with mg
 			[[1,1], 0], // jeep with gl
-			[[1,1], 1]  // uav
+			[[2,1], 1]  // uav
 #else
 			[[1,1], 1], // tanks
 			[[2,1], 1], // tracked apc
 			[[2,1], 1], // wheeled apc
 			[[2,1], 0], // jeep with mg
 			[[1,1], 0], // jeep with gl
-			[[1,1], 1]  // uav
+			[[2,1], 1]  // uav
 #endif
 		];
 
@@ -156,7 +156,7 @@ switch (_enemyMode) do {
 			[[0,0], 1], // tanks
 			[[0,0], 1], // tracked apc
 			[[0,0], 1], // wheeled apc
-			[[3,1], 1], // jeep with mg
+			[[4,1], 1], // jeep with mg
 			[[3,1], 1], // jeep with gl
 			[[1,1], 1]  // uav
 		];
@@ -183,7 +183,7 @@ switch (_enemyMode) do {
 			[[0,0], 1], // tanks
 			[[0,0], 1], // tracked apc
 			[[0,0], 1], // wheeled apc
-			[[2,1], 1], // jeep with mg
+			[[3,1], 1], // jeep with mg
 			[[2,1], 1], // jeep with gl
 			[[2,1], 1] // aa
 		];
