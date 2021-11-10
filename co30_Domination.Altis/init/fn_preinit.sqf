@@ -2571,7 +2571,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "O_MRAP_02_F","O_MRAP_02_hmg_F","rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01","B_T_APC_Tracked_01_CRV_F", "rhs_prp3_msv","RHS_Ural_Zu23_MSV_01","B_Truck_02_CAMM_F", "O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv", "rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv","rhs_Ob_681_2", "O_ZBL09","rhs_brm1k_msv","rhs_sprut_vdv","O_ZTL11", "O_ZTD05","rhs_2s3_at_tv"]
+			["rhs_tigr_sts_msv", "AGE_LSV","AGE_LSV_Minigun", "O_LSV_02_AT_F", "O_MRAP_02_F","O_MRAP_02_hmg_F","rhsgref_cdf_reg_uaz_dshkm","rhsgref_cdf_reg_uaz_ags","rhsgref_nat_uaz_spg9", "RHS_Ural_Ammo_MSV_01", "RHS_Ural_Repair_MSV_01","B_T_APC_Tracked_01_CRV_F", "rhs_prp3_msv","RHS_Ural_Zu23_MSV_01","B_Truck_02_CAMM_F","B_Truck_02_CAMM_ER_F","O_PGZ09_AA","O_Truck_02_medical_F", "rhsgref_BRDM2_ATGM_msv", "rhs_btr80a_vdv","O_APC_Wheeled_02_rcws_v2_F","rhs_bmd4_vdv", "rhs_bmp2k_vdv", "rhs_bmp3m_msv","rhs_Ob_681_2", "O_ZBL09","rhs_brm1k_msv","rhs_sprut_vdv","O_ZTL11", "O_ZTD05","rhs_2s3_at_tv","O_ZTQ15","rhs_t72bd_vdv_des"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]
