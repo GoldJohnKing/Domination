@@ -90,6 +90,7 @@ if (!d_tt_ver) then {
 				if (_idx != -1) then {
 					private _tmpar =+ _pn_missionsave # _idx;
 					_tmpar deleteAt 18;
+					_tmpar deleteAt 12;
 					_tmpar deleteAt 0;
 					_dbresult = [_tmpar];
 				};
@@ -99,6 +100,7 @@ if (!d_tt_ver) then {
 				if (_idx != -1) then {
 					private _tmpar =+ _pn_missionsave # _idx;
 					_tmpar deleteAt 19;
+					_tmpar deleteAt 12;
 					_tmpar deleteAt 0;
 					_dbresult = [_tmpar];
 				};
@@ -138,6 +140,7 @@ d_maintargets_list = _ar # 1;
 //publicVariable "d_cur_sm_idx";
 d_resolved_targets = _ar # 4;
 publicVariable "d_resolved_targets";
+__TRACE_1("","d_target_names")
 if (d_with_targetselect_count > 0) then {
 	d_mttargets_ar = [];
 	{

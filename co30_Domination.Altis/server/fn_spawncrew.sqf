@@ -1,5 +1,5 @@
 // by Xeno
-#define __DEBUG__
+//#define __DEBUG__
 #include "..\x_setup.sqf"
 
 params ["_vec", "_grp", ["_nocargo", false]];
@@ -34,18 +34,18 @@ if (count _crew > 0) then {
 	};
 
 	private _addus = [];
-	if (!_nocargo) then {
+	if (!_nocargo && {(call d_fnc_PlayersNumber) < 18}) then {
 		private _ran =
 #ifdef __IFA3LITE__
 			random 100 > 80;
 #else
-			random 100 > 69;
+			random 100 > 59;
 #endif
 		if (_ran && {_vec isKindOf "Wheeled_APC" || {_vec isKindOf "Wheeled_APC_F" || {_vec isKindOf "Tracked_APC" || {_vec isKindOf "APC_Tracked_01_base_F" || {_vec isKindOf "APC_Tracked_02_base_F" || {_vec isKindOf "APC_Tracked_03_base_F"}}}}}}) then {
 			private _counter = _vec emptyPositions "cargo";
 			__TRACE_2("","typeOf _vec","_counter")
 			if (_counter > 0) then {
-				_counter = (ceil (random _counter)) min 6;
+				_counter = (ceil (random _counter)) min 4;
 				if (_counter > 0) then {
 					private _munits = ["allmen", side _grp] call d_fnc_getunitlistm;
 					__TRACE_1("","_munits")

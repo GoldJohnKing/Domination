@@ -45,7 +45,7 @@ if (d_MissionType in [0,2]) then {
 };
 
 #ifdef __TT__
-execfsm "fsms\fn_TTPoints.fsm";
+0 spawn d_fnc_sendttpoints;
 #endif
 
 private _applyfnc = {
@@ -97,7 +97,7 @@ if (d_MissionType == 2) then {
 
 0 spawn d_fnc_cleanerfnc;
 
-diag_log "Internal D Version: 4.4";
+diag_log "Internal D Version: 4.57";
 
 private _av_check_fnc = {
 	_this addEventHandler ["handleDamage", {call d_fnc_pshootatarti;0}];

@@ -360,6 +360,12 @@ if (isNil "d_mt_event_messages_array") then {
 if (isNil "d_priority_targets") then {
 	d_priority_targets = [];
 };
+if (isNil "d_civ_massacre") then {
+	d_civ_massacre = false;
+};
+if (isNil "d_cur_tgt_civ_vehicles") then {
+	d_cur_tgt_civ_vehicles = [];
+};
 
 if (hasInterface) then {
 	if (isNil "d_MainTargets") then {d_MainTargets = count d_target_names};
@@ -566,12 +572,6 @@ if (isServer) then {
 
 #ifdef __TT__
 	d_public_points = true;
-#endif
-
-	call d_fnc_setupserver;
-	if (d_MissionType != 2) then {0 spawn d_fnc_createnexttarget};
-
-#ifdef __TT__
 	d_points_blufor = 0;
 	d_points_opfor = 0;
 	d_kill_points_blufor = 0;
@@ -579,6 +579,9 @@ if (isServer) then {
 	d_points_array = [0,0,0,0];
 	publicVariable "d_points_array";
 #endif
+
+	call d_fnc_setupserver;
+	if (d_MissionType != 2) then {0 spawn d_fnc_createnexttarget};
 
 	addMissionEventHandler ["PlayerDisconnected", {call d_fnc_playerdisconnected}];
 

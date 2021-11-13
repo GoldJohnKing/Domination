@@ -577,7 +577,6 @@ if (isServer) then {
 
 	d_hc_array = [];
 	d_hc_counter = 0;
-	d_virtual_spectators = [];
 	d_retaken_farpspos = [];
 
 	d_with_ace = isClass (configFile>>"CfgPatches">>"ace_main");
@@ -769,7 +768,6 @@ if (isServer) then {
 				0 setFog [0, 0, 0];
 			};
 		};
-		forceWeatherChange;
 		if (d_WithWinterWeather == 0) then {
 			d_winterw = [0, [2, 1] select (rain <= 0.3)] select (overcast > 0.5);
 			publicVariable "d_winterw";
@@ -786,6 +784,7 @@ if (isServer) then {
 			};
 		};
 	};
+	forceWeatherChange;
 
 	if (d_timemultiplier > 1) then {
 		setTimeMultiplier d_timemultiplier;
@@ -2259,7 +2258,7 @@ if (!d_gmcwgwinter) then {
 		"Land_BagBunker_Small_F";
 #endif
 #ifdef __GMCWG__
-		"Land_BagBunker_01_small_green_F";
+		"";
 #endif
 #ifdef __UNSUNG__
 		"Land_BagBunker_01_small_green_F";
@@ -2752,12 +2751,9 @@ if (hasInterface) then {
 	d_add_resp_points_pos = [];
 
 	d_earplugs_fitted = false;
-#ifndef __TT__
-	d_maintarget_auto_vd = true;
-#else
-	d_maintarget_auto_vd = false;
-#endif
 
+	d_maintarget_auto_vd = d_AutoViewdistanceChangeDefault == 1;
+	
 	d_deploy_mhq_camo = true;
 
 	d_player_jescape = 0;

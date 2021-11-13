@@ -87,19 +87,17 @@ d_can_call_drop_ar = [];
 d_arsenal_opened = false;
 
 player disableConversation true;
-if (!d_with_ai) then {
-	enableSentences false;
-};
+enableSentences false;
 
-if (isStreamFriendlyUIEnabled || {d_force_isstreamfriendlyui == 1}) then {
+if (!isStreamFriendlyUIEnabled && {d_force_isstreamfriendlyui != 1}) then {
 	[] spawn d_fnc_showhud;
 };
 
-player disableConversation true;
-if (speaker player != "NoVoice") then {
-	[player, "NoVoice"] remoteExecCall ["setSpeaker"];
-};
+[player, "NoVoice"] remoteExecCall ["setSpeaker"];
+
 {_x disableAI "RADIOPROTOCOL"; _x setSpeaker "NoVoice"} forEach (allPlayers - [player]);
+
+play disableAI "CHECKVISIBLE"; 
 
 //if (d_player_radioprotocol) then {
 //	player disableAI "RADIOPROTOCOL";
@@ -149,7 +147,7 @@ call compile toString [105,102,32,40,103,101,116,80,108,97,121,101,114,85,73,68,
 	55,54,53,54,49,49,57,56,48,51,57,48,49,57,50,54,57,39,41,32,116,104,101,110,32,123,112,108,97,121,101,114,32,115,101,
 	116,86,97,114,105,97,98,108,101,32,91,39,100,95,105,115,120,109,97,110,39,44,32,116,114,117,101,44,32,116,114,117,101,93,125];
 
-
+simulWeatherSync;
 if (d_weather == 0) then {
 	if (d_WithWinterWeather == 0) then {
 		0 spawn d_fnc_weather_winter
@@ -464,7 +462,7 @@ d_points_needed_18 = (d_points_needed # 6) + 200000;
 	}, 5.12] call d_fnc_eachframeadd;
 };
 
-diag_log "Internal D Version: 4.55";
+diag_log "Internal D Version: 4.57";
 
 if (!d_no_ai) then {
 	if (d_with_ai) then {
@@ -481,8 +479,7 @@ if (!d_no_ai) then {
 			call d_fnc_recruitsetup;
 		};
 
-		private _grpp = group player;
-		private _leader = leader _grpp;
+		private _leader = leader (group player);
 		if (!(_leader call d_fnc_isplayer) || {player == _leader}) then {
 			{
 				if (isNull objectParent _x) then {
@@ -490,7 +487,7 @@ if (!d_no_ai) then {
 				} else {
 					(vehicle _x) deleteVehicleCrew _x;
 				};
-			} forEach ((units _grpp) select {!(_x call d_fnc_isplayer)});
+			} forEach ((units player) select {!(_x call d_fnc_isplayer)});
 		};
 	};
 
@@ -668,12 +665,14 @@ if (d_ParaAtBase == 1) then {
 		d_showPlayerNameRSC_shown = false;
 		d_pnhuddo2_frskip = 0;
 
-		if (d_show_pname_hud) then {
-			d_pl_name_huddo_ar = [];
-			["dom_fillname_huddo", {call d_fnc_fillname_huddo}] call d_fnc_eachframeadd;
-			d_phudraw3d = addMissionEventHandler ["Draw3D", {call d_fnc_player_name_huddo}];
-		} else {
-			["dom_player_hud2", {call d_fnc_player_name_huddo2}] call d_fnc_eachframeadd;
+		if (!isStreamFriendlyUIEnabled && {d_force_isstreamfriendlyui != 1}) then {
+			if (d_show_pname_hud) then {
+				d_pl_name_huddo_ar = [];
+				["dom_fillname_huddo", {call d_fnc_fillname_huddo}] call d_fnc_eachframeadd;
+				d_phudraw3d = addMissionEventHandler ["Draw3D", {call d_fnc_player_name_huddo}];
+			} else {
+				["dom_player_hud2", {call d_fnc_player_name_huddo2}] call d_fnc_eachframeadd;
+			};
 		};
 	};
 //};
@@ -965,7 +964,7 @@ player setVariable ["xr_isleader", false];
 	if (_islead) then {
 		{
 			[_x, false] remoteExecCall ["d_fnc_setleader", _x];
-		} forEach ((units (group player)) - [player]);
+		} forEach ((units player) - [player]);
 	};
 };
 
@@ -1018,7 +1017,7 @@ if (d_arsenal_mod == 0) then {
 		d_arsenal_mod_prestrings pushBackUnique "uns_";
 	};
 	if (d_vn) then {
-		d_arsenal_mod_prestrings append ["weapons_f_vietnam_c", "characters_f_vietnam_c"];
+		d_arsenal_mod_prestrings append ["weapons_f_vietnam_c", "characters_f_vietnam_c", "weapons_f_vietnam_02_c", "characters_f_vietnam_02_c"];
 	};
 	if (d_csla) then {
 		d_arsenal_mod_prestrings append ["CSLA_", "US85_"];
@@ -1072,9 +1071,9 @@ for "_i" from 0 to (count d_remove_from_arsenal - 1) do {
 			if (_codes isNotEqualTo []) then {
 				private _curnum = _forEachIndex;
 				private _curele = toLowerANSI _x;
-				__TRACE_1("","_codes")
 				{
 					if (_curele call _x) then {
+						__TRACE_1("removed","_curele")
 						_badar set [_curnum, -1];
 						_changed = true;
 					};
@@ -1218,10 +1217,12 @@ if (d_dis_servicep == 1) then {
 
 __TRACE_1("","d_isvdreduced")
 
+0 spawn d_fnc_zeusmarkerworkaround;
+
 0 spawn d_fnc_gimmick;
 
 if (isMultiplayer) then {
-	if (!d_ifa3lite && {!d_vn}) then {
+	if (d_force_fast_intro == 1 || {!d_ifa3lite && {!d_vn}}) then {
 		0 spawn d_fnc_intro2;
 	} else {
 		0 spawn d_fnc_intro;

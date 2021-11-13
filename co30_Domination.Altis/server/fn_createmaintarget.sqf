@@ -114,7 +114,7 @@ publicVariable "d_priority_targets";
 private _parray = [_trg_center, _radius + 150, 8, 0.7, 0, false, true, true] call d_fnc_GetRanPointCircleBigArray;
 if (count _parray < 8) then {
 	diag_log "DOM Createmaintarget: Couldn't find enough positions with minimum distance 11m from next object, trying again without check!";
-	_parray = [_trg_center, _radius + 150, 8, 0.7, 0, false, true] call d_fnc_GetRanPointCircleBigArray;
+	_parray = [_trg_center, _radius + 150, 6, 0.7, 0, false, true] call d_fnc_GetRanPointCircleBigArray;
 };
 
 __TRACE_1("","_parray")
@@ -186,7 +186,7 @@ for "_i" from 1 to d_num_barracks_objs do {
 		_vec addEventHandler ["handleDamage", {0}];
 		_vec setVariable ["d_timetotake", 30, true];
 		_vec setVariable ["d_taketime", 0, true];
-		_trig = [_vec, [10, 10, 0, false, 10], ["ANYPLAYER", "PRESENT", true], ["this", format ["d_bartrig_%1 = [thisTrigger, 0] spawn d_fnc_barmhqtrig", _i], format ["[thisTrigger, d_bartrig_%1] call d_fnc_bartrigover", _i]]] call d_fnc_createtriggerlocal;
+		_trig = [_vec, [10, 10, 0, false, 10], ["ANYPLAYER", "PRESENT", true], ["{alive _x && {!(_x getVariable ['xr_pluncon', false]) && {!(_x getVariable ['ace_isunconscious', false])}}} count thisList > 0", format ["d_bartrig_%1 = [thisTrigger, 0] spawn d_fnc_barmhqtrig", _i], format ["[thisTrigger, d_bartrig_%1] call d_fnc_bartrigover", _i]]] call d_fnc_createtriggerlocal;
 		_trig setVariable ["d_vec", _vec];
 		_vec setVariable ["d_isbarormhq", 0, true]; // 0 = barracks, 1 = MHQ...
 		d_bara_trig_ar pushBack _trig;
@@ -249,7 +249,7 @@ if (d_bar_mhq_destroy == 1) then {
 	_vec addEventHandler ["handleDamage", {0}];
 	_vec setVariable ["d_timetotake", 40, true];
 	_vec setVariable ["d_taketime", 0, true];
-	_trig = [_vec, [13, 13, 0, false, 10], ["ANYPLAYER", "PRESENT", true], ["this", format ["d_bartrig_%1 = [thisTrigger, 1] spawn d_fnc_barmhqtrig", _barcountxx], format ["[thisTrigger, d_bartrig_%1] call d_fnc_bartrigover", _barcountxx]]] call d_fnc_createtriggerlocal;
+	_trig = [_vec, [13, 13, 0, false, 10], ["ANYPLAYER", "PRESENT", true], ["{alive _x && {!(_x getVariable ['xr_pluncon', false]) && {!(_x getVariable ['ace_isunconscious', false])}}} count thisList > 0", format ["d_bartrig_%1 = [thisTrigger, 1] spawn d_fnc_barmhqtrig", _barcountxx], format ["[thisTrigger, d_bartrig_%1] call d_fnc_bartrigover", _barcountxx]]] call d_fnc_createtriggerlocal;
 	_trig setVariable ["d_vec", _vec];
 	_vec setVariable ["d_isbarormhq", 1, true]; // 0 = barracks, 1 = MHQ...
 	d_bara_trig_ar pushBack _trig;
@@ -470,10 +470,6 @@ if (d_allow_observers == 1 && {d_no_more_observers < 2}) then {
 if (d_enable_civ_vehs > 0) then {
 	_roadList = _trg_center nearroads d_enable_civ_vehs_rad;
 	
-	if (isNil "d_cur_tgt_civ_vehicles") then {
-		d_cur_tgt_civ_vehicles = [];
-	};
-	
 	{
 		_roadConnectedTo = roadsConnectedTo _x;
 		
@@ -526,15 +522,24 @@ if (d_enable_civ_vehs > 0) then {
 if (d_occ_bldgs == 1) then {
 	//create garrisoned "occupy" groups of AI (free to move immediately)
 	private _occ_cnt = 0;
-	if (d_occ_cnt == -1 || d_occ_cnt == -2 || d_occ_cnt == -3) then {
+	if (d_occ_cnt == -1 || d_occ_cnt == -2 || d_occ_cnt == -3 || d_occ_cnt == -4 || d_occ_cnt == -5) then {
 		//adaptive group count
 		//calculate number of occupy groups by counting the number of building in the maintarget area * spawn factor
-		private _occ_spawn_factor = 0.04; // adaptive (normal)
+		private _occ_spawn_factor = 0;
+		if (d_occ_cnt == -1) then {
+			_occ_spawn_factor = 0.03;  // adaptive (low)
+		};
 		if (d_occ_cnt == -2) then {
-			_occ_spawn_factor = 0.06;  // adaptive (high)
+			_occ_spawn_factor = 0.06;  // adaptive (normal)
 		};
 		if (d_occ_cnt == -3) then {
-			_occ_spawn_factor = 0.12;  // adaptive (very high)
+			_occ_spawn_factor = 0.12;  // adaptive (high)
+		};
+		if (d_occ_cnt == -4) then {
+			_occ_spawn_factor = 0.20;  // adaptive (very high)
+		};
+		if (d_occ_cnt == -5) then {
+			_occ_spawn_factor = 0.75;  // adaptive (extreme)
 		};
 		private _bldg_count = count ([_trg_center, d_occ_rad] call d_fnc_getbldgswithpositions);
 		_occ_cnt = floor (_bldg_count * _occ_spawn_factor);
@@ -559,15 +564,24 @@ if (d_occ_bldgs == 1) then {
 	
 	//create garrisoned "overwatch" groups of AI (movement disabled)
 	private _ovrw_cnt = 0;
-	if (d_ovrw_cnt == -1 || d_ovrw_cnt == -2 || d_ovrw_cnt == -3) then {
+	if (d_ovrw_cnt == -1 || d_ovrw_cnt == -2 || d_ovrw_cnt == -3 || d_ovrw_cnt == -4 || d_ovrw_cnt == -5) then {
 		//adaptive group count
 		//calculate number of overwatch groups by counting the number of building in the maintarget area * spawn factor
-		private _ovrw_spawn_factor = 0.04; // adaptive (normal)
+		private _ovrw_spawn_factor = 0;
+		if (d_ovrw_cnt == -1) then {
+			_ovrw_spawn_factor = 0.03;  // adaptive (low)
+		};
 		if (d_ovrw_cnt == -2) then {
-			_ovrw_spawn_factor = 0.06;  // adaptive (high)
+			_ovrw_spawn_factor = 0.06;  // adaptive (normal)
 		};
 		if (d_ovrw_cnt == -3) then {
-			_ovrw_spawn_factor = 0.14;  // adaptive (very high)
+			_ovrw_spawn_factor = 0.12;  // adaptive (high)
+		};
+		if (d_ovrw_cnt == -4) then {
+			_ovrw_spawn_factor = 0.20;  // adaptive (very high)
+		};
+		if (d_ovrw_cnt == -5) then {
+			_ovrw_spawn_factor = 0.75;  // adaptive (extreme)
 		};
 		private _bldg_count = count ([_trg_center, d_ovrw_rad] call d_fnc_getbldgswithpositions);
 		_ovrw_cnt = floor (_bldg_count * _ovrw_spawn_factor);
@@ -592,15 +606,24 @@ if (d_occ_bldgs == 1) then {
 
 	//create garrisoned "ambush" groups of AI (free to move after firedNear is triggered)
 	private _amb_cnt = 0;
-	if (d_amb_cnt == -1 || d_amb_cnt == -2 || d_amb_cnt == -3) then {
+	if (d_amb_cnt == -1 || d_amb_cnt == -2 || d_amb_cnt == -3 || d_amb_cnt == -4 || d_amb_cnt == -5) then {
 		//adaptive group count
 		//calculate number of ambush groups by counting the number of building in the maintarget area * spawn factor
-		private _amb_spawn_factor = 0.02; // adaptive (normal)
+		private _amb_spawn_factor = 0;
+		if (d_amb_cnt == -1) then {
+			_amb_spawn_factor = 0.03;  // adaptive (low)
+		};
 		if (d_amb_cnt == -2) then {
-			_amb_spawn_factor = 0.05;  // adaptive (high)
+			_amb_spawn_factor = 0.06;  // adaptive (normal)
 		};
 		if (d_amb_cnt == -3) then {
-			_amb_spawn_factor = 0.12;  // adaptive (very high)
+			_amb_spawn_factor = 0.12;  // adaptive (high)
+		};
+		if (d_amb_cnt == -4) then {
+			_amb_spawn_factor = 0.20;  // adaptive (very high)
+		};
+		if (d_amb_cnt == -5) then {
+			_amb_spawn_factor = 0.85;  // adaptive (extreme)
 		};
 		private _bldg_count = count ([_trg_center, d_amb_rad] call d_fnc_getbldgswithpositions);
 		_amb_cnt = floor (_bldg_count * _amb_spawn_factor);
@@ -625,15 +648,24 @@ if (d_occ_bldgs == 1) then {
 
 	//create garrisoned "sniper" groups of AI (static, never leave spawn position)
 	private _snp_cnt = 0;
-	if (d_snp_cnt == -1 || d_snp_cnt == -2 || d_snp_cnt == -3) then {
+	if (d_snp_cnt == -1 || d_snp_cnt == -2 || d_snp_cnt == -3 || d_snp_cnt == -4 || d_snp_cnt == -5) then {
 		//adaptive group count
 		//calculate number of sniper groups by counting the number of building in the maintarget area * spawn factor
-		private _snp_spawn_factor = 0.02; // adaptive (normal)
+		private _snp_spawn_factor = 0;
+		if (d_snp_cnt == -1) then {
+			_snp_spawn_factor = 0.02;  // adaptive (low)
+		};
 		if (d_snp_cnt == -2) then {
-			_snp_spawn_factor = 0.05;  // adaptive (high)
+			_snp_spawn_factor = 0.05;  // adaptive (normal)
 		};
 		if (d_snp_cnt == -3) then {
-			_snp_spawn_factor = 0.12;  // adaptive (very high)
+			_snp_spawn_factor = 0.10;  // adaptive (high)
+		};
+		if (d_snp_cnt == -4) then {
+			_snp_spawn_factor = 0.20;  // adaptive (very high)
+		};
+		if (d_snp_cnt == -5) then {
+			_snp_spawn_factor = 0.75;  // adaptive (extreme)
 		};
 		private _bldg_count = count ([_trg_center, d_snp_rad] call d_fnc_getbldgswithpositions);
 		_snp_cnt = floor (_bldg_count * _snp_spawn_factor);
@@ -748,6 +780,9 @@ if (d_with_MainTargetEvents != 0) then {
 			case "KILL_TRIGGERMAN": {
 				[_radius, _trg_center] spawn d_fnc_event_sidekilltriggerman;
 			};
+			case "CIV_MASSACRE": {
+				[_radius, _trg_center] spawn d_fnc_event_civ_massacre;
+			};
 		};
 	};
 	
@@ -792,4 +827,20 @@ if (d_with_MainTargetEvents != 0) then {
 		};
 	};
 };
+#endif
+
+#ifdef __VN__
+// on SOG maps AI navigation is broken by dykes around the rice paddies, fix from johnnyboy
+// https://forums.bohemia.net/forums/topic/234952-enable-prairie-fire-dlc-ai-to-navigate-rice-paddies/
+{ 
+_mapDyke = _x; 
+_dyke = createSimpleObject ["vn\env_assets_f_vietnam\dykes\vn_dyke_10.p3d", [0,0,0]];  
+_dir = getDir _mapDyke; 
+_pos = getpos _mapDyke; 
+hideObjectGlobal _mapDyke; 
+_dyke setDir _dir; 
+_dyke setpos [_pos#0,_pos#1,.3]; 
+} foreach ([nearestTerrainObjects [_trg_center, [], 1000],  
+  {(getModelInfo _x # 1) find "vn_dyke"> 0 }  
+  ] call BIS_fnc_conditionalSelect);
 #endif

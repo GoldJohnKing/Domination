@@ -179,15 +179,13 @@ if (_rtype == 0) then { // player died
 	player setBleedingRemaining 0;
 
 	player disableConversation true;
-	if (!d_with_ai) then {
+	if (isNil "d_hasrecruited") then {
 		enableSentences false;
 	};
-	if (speaker player != "NoVoice") then {
-		[player , "NoVoice"] remoteExecCall ["setSpeaker"];
-	};
+	[player , "NoVoice"] remoteExecCall ["setSpeaker"];
 
 	showChat true;
-	if (isStreamFriendlyUIEnabled || {d_force_isstreamfriendlyui == 1}) then {
+	if (!isStreamFriendlyUIEnabled && {d_force_isstreamfriendlyui != 1}) then {
 		[] spawn d_fnc_showhud;
 	};
 };
