@@ -1233,7 +1233,7 @@ if (!d_gmcwgwinter) then {
 		d_number_attack_planes = 2;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 3;
+		d_number_attack_choppers = 2;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
 		d_number_light_attack_choppers = 1;
@@ -2148,7 +2148,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR","RHS_AH1Z","KOS_CRO_Gripen_9235","KOS_CRO_Gripen_9238","B_Heli_Attack_01_dynamicLoadout_F","RHS_A10","RHS_AH64D_wd","RHS_AH64DGrey","I_Heli_light_03_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F"]
+					["RHS_UH1Y_FFAR_d","RHS_MELB_H6M","RHS_UH60M2_d","B_Heli_Light_01_dynamicLoadout_F","RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR","RHS_AH1Z","KOS_CRO_Gripen_9235","B_Heli_Attack_01_dynamicLoadout_F","RHS_A10","RHS_AH64D_wd","RHS_AH64DGrey","I_Heli_light_03_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};

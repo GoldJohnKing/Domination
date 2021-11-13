@@ -11,7 +11,7 @@ allowFunctionsLog = 1;
 #include "cfgfunctions.hpp"
 
 author = "Xeno、GOLD";
-OnLoadName = "暴打美帝! 阿富汗战役!";
+OnLoadName = "暴打美帝! 阿尔蒂斯战役!";
 onLoadMission = "$STR_DOM_MISSIONSTRING_24";
 onLoadIntroTime = false;
 onLoadMissionTime = false;
