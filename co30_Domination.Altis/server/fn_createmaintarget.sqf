@@ -82,8 +82,8 @@ __TRACE_1("","_type_list_patrol")
 private _type_list_guard_static2 = [];
 if (d_camp_static_weapons == 1) then {
 	_type_list_guard_static2 = [
-    	["stat_mg", 1, ceil (random 10)],
-    	["stat_gl", 1, ceil (random 10)]
+    	["stat_mg", 1, ceil (random 6)],
+    	["stat_gl", 1, ceil (random 4)]
     ];
 };
 

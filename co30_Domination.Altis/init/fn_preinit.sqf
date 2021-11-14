@@ -301,7 +301,7 @@ d_x_drop_array =
 #ifdef __OWN_SIDE_OPFOR__
 	call {
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "O_APC_Tracked_02_AA_F"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhs_t80ue1"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_ifa3lite) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "LIB_US_Willys_MB"], [localize "STR_DOM_MISSIONSTRING_20", "LIB_BasicWeaponsBox_SU"]]
@@ -1922,7 +1922,7 @@ if (!d_gmcwgwinter) then {
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D_wd","pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","B_Plane_Fighter_01_F","USAF_F35A"]
+					["pook_EF2000_BLUFOR","I_Plane_Fighter_04_F","RHS_A10","B_Plane_Fighter_01_F","USAF_F35A","I_Plane_Fighter_04_F","KOS_CRO_Gripen_9235","I_Plane_Fighter_03_dynamicLoadout_F"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2148,7 +2148,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_UH1Y_FFAR_d","RHS_MELB_H6M","RHS_UH60M2_d","B_Heli_Light_01_dynamicLoadout_F","RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","I_Plane_Fighter_04_F","pook_EF2000_BLUFOR","RHS_AH1Z","KOS_CRO_Gripen_9235","B_Heli_Attack_01_dynamicLoadout_F","RHS_A10","RHS_AH64D_wd","RHS_AH64DGrey","I_Heli_light_03_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F"]
+					["RHS_UH1Y_FFAR_d","RHS_MELB_H6M","RHS_UH60M2_d","B_Heli_Light_01_dynamicLoadout_F","RHS_UH60M","RHS_UH1Y","rhsusf_CH53E_USMC_GAU21","RHS_MELB_AH6M","RHSGREF_A29B_HIDF","rhs_L159_cdf_b_CDF","RHS_AH1Z","B_Heli_Attack_01_dynamicLoadout_F","RHS_AH64D_wd","RHS_AH64DGrey","I_Heli_light_03_dynamicLoadout_F"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
