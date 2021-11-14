@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=1855;
+		nextID=1892;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=12;
 	};
 	class Camera
 	{
-		pos[]={15168.281,289.49692,16848.248};
-		dir[]={-0.51488006,-0.66450369,-0.54160273};
-		up[]={-0.45784366,0.74728495,-0.48160613};
-		aside[]={-0.72476065,1.4901161e-008,0.6890009};
+		pos[]={14568.813,68.460625,16448.879};
+		dir[]={-0.4620806,-0.41556495,-0.78348792};
+		up[]={-0.21112798,0.90954065,-0.35798171};
+		aside[]={-0.86137885,-4.4137414e-007,0.50801933};
 	};
 };
 binarizationWanted=0;
@@ -93,14 +93,14 @@ addons[]=
 	"A3_Air_F_Beta_Heli_Attack_02",
 	"fza_ah64_US",
 	"rhsgref_c_a2port_armor",
-	"A3_Air_F_Heli_Light_02",
-	"Y_PLA_WZ10",
-	"rhsgref_c_tohport_air",
-	"A3_Air_F_Exp_VTOL_02",
 	"HWK_MI6_hook",
 	"JS_JC_FA18",
 	"ALiVE_mil_ato",
-	"rhsusf_c_markvsoc"
+	"rhsusf_c_markvsoc",
+	"A3_Air_F_Heli_Light_02",
+	"Y_PLA_WZ10",
+	"rhsgref_c_tohport_air",
+	"A3_Air_F_Exp_VTOL_02"
 };
 class AddonsMetaData
 {
@@ -439,46 +439,46 @@ class AddonsMetaData
 		};
 		class Item50
 		{
-			className="A3_Air_F";
-			name="Arma 3 Alpha - Aircraft";
-			author="波希米亚互动工作室";
-			url="https://www.arma3.com";
-		};
-		class Item51
-		{
-			className="Y_PLA_WZ10";
-			name="Y_PLA_WZ10";
-		};
-		class Item52
-		{
-			className="rhsgref_c_tohport_air";
-			name="TKOH ports";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item53
-		{
 			className="HWK_MI6_hook";
 			name="HAWK MI6A hook";
 			author="[EC] HAWK";
 			url="https://steamcommunity.com/sharedfiles/filedetails/?id=2462593883";
 		};
-		class Item54
+		class Item51
 		{
 			className="JS_JC_FA18";
 			name="JS_JC_FA18";
 			author="F/A-18E/F Super Hornet Team";
 		};
-		class Item55
+		class Item52
 		{
 			className="ALiVE_mil_ato";
 			name="ALiVE_mil_ato";
 			author="ALiVE Mod Team";
 		};
-		class Item56
+		class Item53
 		{
 			className="rhsusf_c_markvsoc";
 			name="Mark V SOC";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item54
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircraft";
+			author="波希米亚互动工作室";
+			url="https://www.arma3.com";
+		};
+		class Item55
+		{
+			className="Y_PLA_WZ10";
+			name="Y_PLA_WZ10";
+		};
+		class Item56
+		{
+			className="rhsgref_c_tohport_air";
+			name="TKOH ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
@@ -22122,14 +22122,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14801.142,20.721651,16734.016};
-				angles[]={0,5.4542694,0};
+				angles[]={0,5.4542756,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				name="d_vec_ammo_3";
+				name="d_vec_ammo_1";
 				textures="GreenHex";
 			};
 			id=1697;
@@ -22309,14 +22309,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14771.302,20.117386,16703.525};
-				angles[]={0,5.5066261,0};
+				angles[]={0,5.5066185,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				name="d_vec_rep_3";
+				name="d_vec_rep_1";
 				textures="Olive";
 			};
 			id=1698;
@@ -22439,19 +22439,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14777.187,20.881147,16709.873};
-				angles[]={0,5.5066271,0};
+				position[]={14777.187,20.881506,16709.873};
+				angles[]={0,5.5066185,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				name="d_vec_fuel_3";
+				name="d_vec_fuel_1";
 				textures="Olive";
 			};
 			id=1699;
 			type="O_ZBD04A";
-			atlOffset=0.9006424;
+			atlOffset=0.90100098;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22542,19 +22542,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14783.477,20.109684,16715.98};
-				angles[]={0,5.5066271,0};
+				position[]={14783.477,20.109989,16715.98};
+				angles[]={0,5.5066185,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
-				name="d_vec_ammo_4";
+				name="d_vec_ammo_2";
 				textures="Olive";
 			};
 			id=1700;
 			type="O_PGZ09_AA";
-			atlOffset=0.52669525;
+			atlOffset=0.52700043;
 		};
 		class Item568
 		{
@@ -22562,14 +22562,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14761.498,21.035814,16690.936};
-				angles[]={0,5.4891858,0};
+				angles[]={0,5.4891825,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				name="d_vec_fuel_4";
+				name="d_vec_fuel_2";
 				textures="Olive";
 			};
 			id=1701;
@@ -22955,14 +22955,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14749.511,20.280441,16680.688};
-				angles[]={0,5.5066524,0};
+				angles[]={0,5.5066533,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
-				name="d_vec_rep_4";
+				name="d_vec_rep_2";
 				textures="GreenHex";
 			};
 			id=1705;
@@ -23113,19 +23113,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14790.05,20.31233,16721.885};
-				angles[]={0,5.5031538,0};
+				position[]={14790.05,20.312704,16721.885};
+				angles[]={0,5.5031452,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				skill=0.60000002;
 				lock="UNLOCKED";
-				name="d_vec_eng_3";
+				name="d_vec_eng_1";
 			};
 			id=1706;
 			type="O_Truck_03_ammo_F";
-			atlOffset=0.25362587;
+			atlOffset=0.25399971;
 		};
 		class Item574
 		{
@@ -23133,7 +23133,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14796.688,20.058704,16728.662};
-				angles[]={0,5.5031428,0};
+				angles[]={0,5.5031452,0};
 			};
 			side="Empty";
 			flags=4;
@@ -23141,7 +23141,7 @@ class Mission
 			{
 				skill=0.60000002;
 				lock="UNLOCKED";
-				name="d_vec_eng_4";
+				name="d_vec_eng_2";
 			};
 			id=1707;
 			type="O_Truck_03_repair_F";
@@ -24660,57 +24660,153 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14513.412,20.346531,16842.203};
-				angles[]={0,5.4976053,0.0053265258};
+				position[]={14513.412,20.346558,16842.203};
+				angles[]={0,5.4976125,0.0053232545};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="d_vec_trans_24";
+				name="d_vec_trans_3";
 				receiveRemoteTargets=1;
 			};
 			id=1731;
 			type="O_T_APC_Tracked_02_AA_ghex_F";
-			atlOffset=-2.6702881e-005;
 		};
 		class Item597
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14531.168,19.122231,16824.596};
-				angles[]={0.0026520467,2.3673453,0.017329043};
+				position[]={14531.168,19.122236,16824.596};
+				angles[]={0.0026529003,2.3673472,0.01733112};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="d_vec_trans_25";
+				name="d_vec_trans_4";
 			};
 			id=1732;
 			type="rhs_t80ue1";
-			atlOffset=-5.7220459e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_ammoslot_2_type";
+					expression="_this setVariable ['rhs_ammoslot_2_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="rhs_mag_3bk31";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_ammoslot_1_type";
+					expression="_this setVariable ['rhs_ammoslot_1_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="rhs_mag_3bm46";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="rhs_decalNumber_type";
+					expression="_this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cRHST80NumberPlaces, _value]]] call rhs_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Default";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="rhs_ammoslot_3_type";
+					expression="_this setVariable ['rhs_ammoslot_3_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="rhs_mag_3of26";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="rhs_ammoslot4_type";
+					expression="_this setVariable ['rhs_ammoslot_4_type', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="rhs_mag_9m119m";
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 		class Item598
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14523.814,20.156477,16851.572};
-				angles[]={6.2818484,5.5160012,0.0039967569};
+				position[]={14523.814,20.156853,16851.572};
+				angles[]={6.2818413,5.5160084,0.0039968039};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="d_vec_trans_26";
+				name="d_vec_trans_5";
 				textures="Hex";
 				reportOwnPosition=1;
 			};
 			id=1733;
 			type="O_APC_Tracked_02_cannon_F";
-			atlOffset=-0.00037574768;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -25756,1043 +25852,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14554.446,17.621475,16631.629};
-				angles[]={6.272521,0.81830335,0.010664274};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				disableSimulation=1;
-			};
-			id=1786;
-			type="Land_HelipadSquare_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item620
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14554.808,17.951551,16640.143};
-				angles[]={6.253861,0.027471652,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1787;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-6.2942505e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item621
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14563.071,17.964121,16631.467};
-				angles[]={0,0.0274597,0.029324362};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1788;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-3.4332275e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item622
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14546.334,17.769545,16632.053};
-				angles[]={0,0.027438914,6.2698579};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1789;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-2.6702881e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item623
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14554.219,17.64187,16623.559};
-				angles[]={6.2631893,0.027431272,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1790;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-1.5258789e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item624
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14595.14,17.634726,16591.791};
-				angles[]={6.2725158,0.78339934,0.039977662};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				disableSimulation=1;
-			};
-			id=1791;
-			type="Land_HelipadSquare_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item625
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14595.197,17.889141,16600.316};
-				angles[]={6.253861,6.2765818,0.029324362};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1792;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-9.3460083e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item626
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14603.764,18.020679,16591.928};
-				angles[]={0,6.2761836,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1793;
-			type="PortableHelipadLight_01_white_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item627
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14587.016,17.725838,16591.924};
-				angles[]={0,6.2761426,6.272521};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1794;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-1.9073486e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item628
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14595.192,17.598677,16583.705};
-				angles[]={6.2631865,6.2757235,0.019999012};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1795;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-2.8610229e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item629
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14567.565,17.620674,16618.434};
-				angles[]={6.272521,0.80009884,0.010664274};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				disableSimulation=1;
-			};
-			id=1796;
-			type="Land_HelipadSquare_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item630
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14567.76,18.004726,16626.955};
-				angles[]={6.253861,0.0076783244,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1797;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-6.1035156e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item631
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14576.194,17.909067,16618.451};
-				angles[]={0,0.0094891386,0.029324362};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1798;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-3.4332275e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item632
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14559.449,17.60968,16618.707};
-				angles[]={0,0.0075215003,0.019996032};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1799;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-1.5258789e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item633
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14567.502,17.743515,16610.359};
-				angles[]={0.010664274,0.0075529171,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1800;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-1.1444092e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item634
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14581.019,17.91,16605.648};
-				angles[]={0,0.79300702,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				disableSimulation=1;
-			};
-			id=1801;
-			type="Land_HelipadSquare_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item635
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14581.158,18.020679,16614.178};
-				angles[]={0,0.0015394101,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1802;
-			type="PortableHelipadLight_01_white_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item636
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14589.643,18.020679,16605.723};
-				angles[]={0,0.0020502501,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1803;
-			type="PortableHelipadLight_01_white_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item637
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14572.896,17.803078,16605.867};
-				angles[]={0.010664274,0.00047153275,0.029324362};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1804;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-4.5776367e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item638
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14581,17.791941,16597.564};
-				angles[]={6.253861,0.0011948028,6.272521};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1805;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-6.2942505e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item639
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14606.982,17.626633,16579.574};
-				angles[]={6.272521,0.79809648,0.010664274};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				disableSimulation=1;
-			};
-			id=1806;
-			type="Land_HelipadSquare_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item640
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14607.171,17.964979,16588.1};
-				angles[]={6.253861,0.0073341778,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1807;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-6.1035156e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item641
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14615.6,17.964952,16579.582};
-				angles[]={0,0.01013789,0.029324362};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1808;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-3.4332275e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item642
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14598.858,17.647858,16579.832};
-				angles[]={0,0.0076948996,0.019996032};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1809;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-1.7166138e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item643
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14606.912,17.758085,16571.492};
-				angles[]={0.010664274,0.0083443429,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1810;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-1.1444092e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item644
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={14716.539,21.140656,16640.311};
 				angles[]={0,5.4903603,0};
 			};
@@ -26831,361 +25890,23 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item645
+		class Item620
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14616.452,30.171303,16551.424};
-				angles[]={0,1.474686,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=1812;
-			type="Land_LampAirport_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item646
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14567.852,19.797855,16618.734};
-				angles[]={6.272521,0.78869885,0.010664274};
+				position[]={14775.386,22.63736,16565.451};
+				angles[]={0,0.020559978,6.2791882};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				name="d_chopper_20";
-				textures="Black";
-			};
-			id=1813;
-			type="O_Heli_Light_02_dynamicLoadout_F";
-			atlOffset=0.0010128021;
-		};
-		class Item647
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14621.604,22.65617,16565.463};
-				angles[]={0,0.79853523,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				disableSimulation=1;
-			};
-			id=1814;
-			type="Land_HelipadSquare_F";
-			atlOffset=5.0099487;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item648
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14621.79,17.98003,16573.982};
-				angles[]={6.2432079,0.01013642,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1815;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-5.9127808e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item649
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14630.229,17.754812,16565.469};
-				angles[]={6.272521,0.0083994251,0.010664274};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1816;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-7.6293945e-006;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item650
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14613.484,17.781717,16565.721};
-				angles[]={6.272521,0.0078161648,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1817;
-			type="PortableHelipadLight_01_white_F";
-			atlOffset=-1.1444092e-005;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item651
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14621.539,17.72068,16557.381};
-				angles[]={0,0.0068092654,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1818;
-			type="PortableHelipadLight_01_white_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item652
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14596.355,19.518362,16591.777};
-				angles[]={6.2725158,0.79493666,0.039977662};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="d_chopper_21";
-			};
-			id=1819;
-			type="C_Y_PLA_WZ10_F";
-			atlOffset=-0.040203094;
-		};
-		class Item653
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14604.725,20.884319,16578.617};
-				angles[]={0,0.8215903,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="d_chopper_22";
-			};
-			id=1820;
-			type="rhsgref_b_mi24g_CAS";
-		};
-		class Item654
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14621.884,20.837704,16565.801};
-				angles[]={0,0.78720498,6.272521};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="d_chopper_23";
-				textures="GreenHex";
-			};
-			id=1821;
-			type="O_T_VTOL_02_infantry_dynamicLoadout_F";
-			atlOffset=-0.00017929077;
-		};
-		class Item655
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14580.371,20.079647,16605.215};
-				angles[]={0,0.76443493,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="d_chopper_24";
-				textures="Black";
-			};
-			id=1822;
-			type="O_Heli_Light_02_unarmed_F";
-		};
-		class Item656
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14775.386,22.63772,16565.451};
-				angles[]={0,0.020561812,6.2791886};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="d_chopper_25";
 				textures="belarus";
 			};
 			id=1823;
 			type="HWK_mi6rus";
-			atlOffset=0.00036048889;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27327,34 +26048,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item657
+		class Item621
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14554.739,20.134567,16632.086};
-				angles[]={0,0.81234962,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="d_chopper_26";
-				textures="Black";
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=1824;
-			type="O_Heli_Light_02_dynamicLoadout_F";
-			atlOffset=0.33516693;
-		};
-		class Item658
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14731.551,21.14065,16657.158};
-				angles[]={0,5.4545312,0};
+				position[]={14731.551,21.140488,16657.158};
+				angles[]={0,5.4545379,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27362,11 +26062,10 @@ class Mission
 			{
 				skill=0.60000002;
 				lock="UNLOCKED";
-				name="d_chopper_27";
+				name="d_chopper_1";
 			};
 			id=1825;
 			type="RHS_Mi8MTV3_heavy_vdv";
-			atlOffset=0.00016212463;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27391,7 +26090,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item659
+		class Item622
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27405,7 +26104,7 @@ class Mission
 			{
 				skill=0.60000002;
 				lock="UNLOCKED";
-				name="d_chopper_28";
+				name="d_chopper_4";
 			};
 			id=1826;
 			type="RHS_Mi8MTV3_heavy_vdv";
@@ -27433,7 +26132,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item660
+		class Item623
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27454,7 +26153,7 @@ class Mission
 			type="JS_JC_FA18E";
 			atlOffset=0.073015213;
 		};
-		class Item661
+		class Item624
 		{
 			dataType="Group";
 			side="East";
@@ -27507,7 +26206,7 @@ class Mission
 			id=1828;
 			atlOffset=-0.00015068054;
 		};
-		class Item662
+		class Item625
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27554,7 +26253,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item663
+		class Item626
 		{
 			dataType="Group";
 			side="East";
@@ -27607,7 +26306,7 @@ class Mission
 			id=1831;
 			atlOffset=-2.8610229e-005;
 		};
-		class Item664
+		class Item627
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27654,7 +26353,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item665
+		class Item628
 		{
 			dataType="Group";
 			side="East";
@@ -27707,7 +26406,7 @@ class Mission
 			id=1834;
 			atlOffset=-6.2942505e-005;
 		};
-		class Item666
+		class Item629
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27754,7 +26453,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item667
+		class Item630
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27773,7 +26472,7 @@ class Mission
 			type="rhsusf_mkvsoc";
 			atlOffset=9.4349022;
 		};
-		class Item668
+		class Item631
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27792,7 +26491,7 @@ class Mission
 			type="rhsusf_mkvsoc";
 			atlOffset=7.7747297;
 		};
-		class Item669
+		class Item632
 		{
 			dataType="Object";
 			class PositionInfo
@@ -27809,7 +26508,7 @@ class Mission
 			type="rhsusf_mkvsoc";
 			atlOffset=11.491193;
 		};
-		class Item670
+		class Item633
 		{
 			dataType="Layer";
 			name="夏级火力支援艇";
@@ -27892,12 +26591,1442 @@ class Mission
 			id=1847;
 			atlOffset=8.0837221;
 		};
-		class Item671
+		class Item634
 		{
 			dataType="Layer";
 			name="夏级火力支援艇";
 			id=1854;
 			atlOffset=185.97;
+		};
+		class Item635
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14565.181,17.682964,16621.773};
+				angles[]={6.2432079,0.81830668,0.010669862};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=1855;
+			type="Land_HelipadSquare_F";
+			atlOffset=5.7220459e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item636
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14565.543,18.020737,16630.287};
+				angles[]={0,0.027471453,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1856;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=5.7220459e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item637
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14573.804,17.886269,16621.611};
+				angles[]={6.253861,0.027459648,0.029324362};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1857;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-9.1552734e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item638
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14557.069,17.614645,16622.195};
+				angles[]={6.2631893,0.027450463,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1858;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=4.196167e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item639
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14564.954,17.719837,16613.701};
+				angles[]={0,0.027431173,0.019996032};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1859;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=3.8146973e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item640
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14605.874,17.640018,16581.934};
+				angles[]={6.272521,0.78369576,0.010664274};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=1860;
+			type="Land_HelipadSquare_F";
+			atlOffset=5.7220459e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item641
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14605.929,18.020643,16590.457};
+				angles[]={0,6.2763958,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1861;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-3.6239624e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item642
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14614.501,17.932762,16582.07};
+				angles[]={0,6.275825,0.029324362};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1862;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item643
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14597.75,17.625759,16582.066};
+				angles[]={0,6.2756963,0.019996032};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1863;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=4.196167e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item644
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14605.933,17.732927,16573.844};
+				angles[]={0.010664274,6.2769213,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1864;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-9.1552734e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item645
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14578.302,17.842157,16608.576};
+				angles[]={0,0.8001042,0.039977662};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=1865;
+			type="Land_HelipadSquare_F";
+			atlOffset=5.3405762e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item646
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14578.495,17.976608,16617.1};
+				angles[]={0,0.0076780771,0.029324362};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1866;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=1.9073486e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item647
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14586.931,18.020733,16608.594};
+				angles[]={0,0.0092728576,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1867;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=5.3405762e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item648
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14570.184,17.759661,16608.85};
+				angles[]={0.010664274,0.0077490094,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1868;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=4.0054321e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item649
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14578.236,17.837149,16600.504};
+				angles[]={6.253861,0.0071071689,0.029324362};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1869;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-6.6757202e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item650
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14591.754,17.637217,16595.791};
+				angles[]={6.272521,0.79297769,0.010664274};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=1870;
+			type="Land_HelipadSquare_F";
+			atlOffset=5.7220459e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item651
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14591.894,18.000862,16604.322};
+				angles[]={6.253861,0.0014928883,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1871;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-3.8146973e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item652
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14600.376,17.958458,16595.865};
+				angles[]={0,0.0021498518,0.029324362};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1872;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=2.2888184e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item653
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14583.632,17.76199,16596.01};
+				angles[]={0,0.00080481177,6.272521};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1873;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=5.531311e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item654
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14591.73,17.674831,16587.705};
+				angles[]={6.2631893,0.0019845841,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1874;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=2.2888184e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item655
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14617.717,17.752831,16569.719};
+				angles[]={6.253861,0.79874223,6.272521};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=1875;
+			type="Land_HelipadSquare_F";
+			atlOffset=5.7220459e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item656
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14617.908,18.020725,16578.244};
+				angles[]={0,0.0074124089,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1876;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=4.5776367e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item657
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14626.334,17.823965,16569.725};
+				angles[]={6.2432079,0.010136539,0.010669862};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1877;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-7.8201294e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item658
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14609.593,17.774334,16569.975};
+				angles[]={0.010664274,0.0077085961,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1878;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=4.5776367e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item659
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14617.646,17.738178,16561.635};
+				angles[]={6.272521,0.0083368495,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1879;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=4.196167e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item660
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14627.187,30.264952,16541.568};
+				angles[]={0,1.4746859,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1880;
+			type="Land_LampAirport_F";
+			atlOffset=5.7220459e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item661
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14578.586,20.023104,16608.875};
+				angles[]={0,0.78869683,0.039985489};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_13";
+				textures="Black";
+			};
+			id=1881;
+			type="O_Heli_Light_02_dynamicLoadout_F";
+			atlOffset=-0.001745224;
+		};
+		class Item662
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14632.339,22.532166,16555.605};
+				angles[]={0,0.79853511,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=1882;
+			type="Land_HelipadSquare_F";
+			atlOffset=5.0100555;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item663
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14632.525,17.765804,16564.125};
+				angles[]={6.2725158,0.010136152,0.039977662};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1883;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-5.1498413e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item664
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14640.965,17.855625,16555.613};
+				angles[]={6.2432079,0.0076950057,0.010669862};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1884;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-5.7220459e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item665
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14624.22,17.720737,16555.863};
+				angles[]={0,0.007705735,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1885;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=5.7220459e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item666
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14632.271,17.674656,16547.525};
+				angles[]={0.019999012,0.0078975232,6.2631865};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=1886;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-7.6293945e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item667
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14605.534,19.516687,16581.813};
+				angles[]={6.272521,0.79523981,0.010664274};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_10";
+			};
+			id=1887;
+			type="C_Y_PLA_WZ10_F";
+			atlOffset=0.006280899;
+		};
+		class Item668
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14615.508,20.950333,16568.678};
+				angles[]={0.010663962,0.82140428,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_6";
+			};
+			id=1888;
+			type="rhsgref_b_mi24g_CAS";
+			atlOffset=-0.0016136169;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalNumber_type";
+					expression="if(_value != 'NoChange')then{ _this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cRHSAIRMI24NumberPlaces, _value]]] call rhs_fnc_decalsInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item669
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14632.618,20.725027,16555.943};
+				angles[]={6.2631841,0.787126,0.020001473};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_16";
+				textures="GreenHex";
+			};
+			id=1889;
+			type="O_T_VTOL_02_infantry_dynamicLoadout_F";
+			atlOffset=-0.0020008087;
+		};
+		class Item670
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14591.105,19.796455,16595.357};
+				angles[]={6.2725215,0.76440185,0.010663962};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_14";
+				textures="Black";
+			};
+			id=1890;
+			type="O_Heli_Light_02_unarmed_F";
+			atlOffset=0.00092124939;
+		};
+		class Item671
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14565.474,20.21232,16622.229};
+				angles[]={0,0.81234956,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="d_chopper_12";
+				textures="Black";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=1891;
+			type="O_Heli_Light_02_dynamicLoadout_F";
+			atlOffset=0.33659554;
 		};
 	};
 	class Connections
