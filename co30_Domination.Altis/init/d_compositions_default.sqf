@@ -367,8 +367,8 @@ private _common = [
 ];
 
 if (d_camp_static_weapons == 1) then {
-	(_compositions_b # 0) append [["B_HMG_01_high_F",[-0.703125,-6.875,-0.0828934],180,1,0,[],"","",true,false]];
-	(_compositions_b # 1) append [["B_HMG_01_high_F",[0.867188,-5.80273,-0.087122],179.999,1,0,[],"","",true,false]];
+	(_compositions_b # 0) append [["rhsgref_ins_g_2b14",[-0.703125,-6.875,-0.0828934],180,1,0,[],"","",true,false]];
+	(_compositions_b # 1) append [["I_HMG_02_high_F",[0.867188,-5.80273,-0.087122],179.999,1,0,[],"","",true,false]];
 	(_compositions_o # 0) append [["O_HMG_01_high_F",[-2.94141,-8.8125,-0.0871181],179.998,1,0,[],"","",true,false]];
 	(_compositions_o # 1) append [["O_HMG_01_high_F",[-8.33203,-2.92383,-0.0871181],225.002,1,0,[],"","",true,false]];
 	(_compositions_i # 0) append [["I_HMG_01_high_F",[1.50391,-6.31641,-0.0871181],179.998,1,0,[],"","",true,false]];
