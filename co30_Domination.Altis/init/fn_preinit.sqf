@@ -2148,7 +2148,7 @@ if (!d_gmcwgwinter) then {
 					[]
 				};
 				if (d_rhs) exitWith {
-					["I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D_Early","rhsgref_cdf_b_Mi24D","sfp_hkp9_sog","sfp_hkp9_rb55","RHSGREF_A29B_HIDF"]
+					["I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D_Early","rhsgref_cdf_b_Mi24D","sfp_hkp9_sog","sfp_hkp9_rb55","RHSGREF_A29B_HIDF","RHS_AN2_B","rhsgref_cdf_b_reg_Mi17Sh","rhsgref_b_mi24g_CAS"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};

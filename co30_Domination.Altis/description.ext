@@ -1300,7 +1300,7 @@ class Params {
 	class d_occ_rad {
 		title = "$STR_DOM_MISSIONSTRING_1902";
 		values[] = {125, 250, 350, 450, 550, 650, 750, 1000};
-		default = 250;
+		default = 350;
 		texts[] = {"125m", "250m", "350m", "450m", "550m", "650m", "750m", "1000m"};
 	};
 	
