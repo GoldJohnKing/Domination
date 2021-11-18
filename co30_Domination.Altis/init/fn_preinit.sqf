@@ -2571,7 +2571,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_m1151_m2_v2_usarmy_d","rhsusf_m1151_mk19_v2_usarmy_d","rhsusf_m966_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_APC_Tracked_01_CRV_F","rhs_btr80a_msv","rhsusf_stryker_m1134_d","B_AFV_Wheeled_01_up_cannon_F","M1128_MGS_DG1_NOSLATDES","M1133_MEV_DG1_NOSLATDES","rhs_bmp2k_msv","rhs_Ob_681_2","rhs_bmd4m_vdv","rhs_2s3_at_tv","rhs_sprut_vdv","O_APC_Wheeled_02_rcws_v2_F","B_APC_Wheeled_01_cannon_F"]
+			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_m1151_m2_v2_usarmy_d","rhsusf_m1151_mk19_v2_usarmy_d","rhsusf_m966_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_APC_Tracked_01_CRV_F","rhs_btr80a_msv","rhsusf_stryker_m1134_d","B_AFV_Wheeled_01_up_cannon_F","M1128_MGS_DG1_NOSLATDES","M1133_MEV_DG1_NOSLATDES","rhs_bmp2k_msv","rhs_Ob_681_2","rhs_bmd4m_vdv","rhs_bmp3m_msv","rhs_2s3_at_tv","rhs_sprut_vdv","O_APC_Wheeled_02_rcws_v2_F","B_APC_Wheeled_01_cannon_F"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]
