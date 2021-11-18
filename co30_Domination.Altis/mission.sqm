@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=34;
+		nextID=36;
 	};
 	class Camera
 	{
-		pos[]={15290.425,26.896225,15704.01};
-		dir[]={0.77032411,-0.23340614,0.59342957};
-		up[]={0.18490642,0.97237426,0.14244512};
-		aside[]={0.61028653,1.7812999e-007,-0.79220301};
+		pos[]={15284.178,31.756863,15696.699};
+		dir[]={0.77031022,-0.23340192,0.59341884};
+		up[]={0.18489872,0.97238034,0.14243922};
+		aside[]={0.61027437,0,-0.79219025};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination_NEW_BATTLE_A";
+sourceName="co30_Domination_NEW_BATTLE_B";
 addons[]=
 {
 	"A3_Ui_F",
@@ -609,7 +609,7 @@ class Mission
 			type="Empty";
 			a=1000;
 			b=800;
-			angle=134.91394;
+			angle=134.91393;
 			id=6;
 			atlOffset=-0.00043106079;
 		};
