@@ -125,7 +125,31 @@ private _allbars = [];
 private _doexit = false;
 d_bara_trig_ar = [];
 
-private _barcompo = if (!d_vn) then {
+private _barcompo = call {
+	if (d_vn) exitWith {
+		[
+			//["Land_vn_o_shelter_05",[0.397461,-0.0214844,0],0,1,0,[],"","",true,false],
+			["Land_vn_fence_bamboo_02",[-1.7793,-5.23535,0],0,1,0,[],"","",true,false],
+			["Land_vn_fence_bamboo_02",[-1.55469,5.90283,0],182,1,0,[],"","",true,false],
+			["Land_vn_fence_bamboo_02",[2.99609,-5.14209,0],359,1,0,[],"","",true,false],
+			["Land_vn_fence_bamboo_02",[-5.91113,-2.00537,0],91.0001,1,0,[],"","",true,false],
+			["Land_vn_fence_bamboo_02",[-5.9082,2.7207,0],91.0001,1,0,[],"","",true,false],
+			["Land_vn_fence_bamboo_02",[3.40723,5.72363,0],182,1,0,[],"","",true,false],
+			["Land_vn_fence_bamboo_02",[7.32715,-2.19434,0],270,1,0,[],"","",true,false],
+			["Land_vn_fence_bamboo_02",[7.26758,2.78857,0],270,1,0,[],"","",true,false]
+		]
+	};
+	if (d_ws) exitWith {
+		[
+			["Land_Wall_IndCnc_4_F",[-6.79297,-3.49902,0],270,1,0,[],"","",true,false],
+			["Land_ConcreteWall_01_l_8m_F",[0.47168,7.73242,0.0022049],0,1,0,[],"","",true,false],
+			["Land_Wall_IndCnc_4_F",[-6.33789,5.1084,0],280,1,0,[],"","",true,false],
+			["Land_Wall_IndCnc_4_F",[7.88184,-3.47754,0.00019455],89.5086,1,0,[],"","",true,false],
+			["Land_Wall_IndCnc_4_F",[-2.95898,-8.21387,0],180.111,1,0,[],"","",true,false],
+			["Land_Wall_IndCnc_4_F",[7.46289,5.07715,0],80,1,0,[],"","",true,false],
+			["Land_Wall_IndCnc_4_F",[4.27734,-8.12598,0],180.111,1,0,[],"","",true,false]
+		]
+	};
 	[
 		["Land_PillboxWall_01_6m_round_F",[-6.79297,-3.49902,0],270,1,0,[],"","",true,false],
 		["Land_ConcreteWall_01_l_8m_F",[0.47168,7.73242,0.0022049],0,1,0,[],"","",true,false],
@@ -135,19 +159,9 @@ private _barcompo = if (!d_vn) then {
 		["Land_PillboxWall_01_6m_round_F",[7.46289,5.07715,0],80,1,0,[],"","",true,false],
 		["Land_PillboxWall_01_6m_round_F",[4.27734,-8.12598,0],180.111,1,0,[],"","",true,false]
 	]
-} else {
-	[
-		//["Land_vn_o_shelter_05",[0.397461,-0.0214844,0],0,1,0,[],"","",true,false],
-		["Land_vn_fence_bamboo_02",[-1.7793,-5.23535,0],0,1,0,[],"","",true,false],
-		["Land_vn_fence_bamboo_02",[-1.55469,5.90283,0],182,1,0,[],"","",true,false],
-		["Land_vn_fence_bamboo_02",[2.99609,-5.14209,0],359,1,0,[],"","",true,false],
-		["Land_vn_fence_bamboo_02",[-5.91113,-2.00537,0],91.0001,1,0,[],"","",true,false],
-		["Land_vn_fence_bamboo_02",[-5.9082,2.7207,0],91.0001,1,0,[],"","",true,false],
-		["Land_vn_fence_bamboo_02",[3.40723,5.72363,0],182,1,0,[],"","",true,false],
-		["Land_vn_fence_bamboo_02",[7.32715,-2.19434,0],270,1,0,[],"","",true,false],
-		["Land_vn_fence_bamboo_02",[7.26758,2.78857,0],270,1,0,[],"","",true,false]
-	];
 };
+
+
 
 private _barcountxx = -1;
 
@@ -842,9 +856,10 @@ if (d_with_MainTargetEvents != 0) then {
 			// create multiple simultaneous events		
 			private _tmpMtEvents = + d_x_mt_event_types;
 			if (d_with_MainTargetEvents != -3 && {d_with_MainTargetEvents != -4}) then {
-            	// guerrilla events are only eligible if d_with_MainTargetEvents == -3 or -4
-            	// remove guerrilla events from the temp array, do not select it here
+            	// some events are only eligible if d_with_MainTargetEvents == -3 or -4
+            	// remove ineligible events from the temp array
             	_tmpMtEvents deleteAt (_tmpMtEvents find "GUERRILLA_INFANTRY");
+            	_tmpMtEvents deleteAt (_tmpMtEvents find "CIV_MASSACRE");
 			};
 			private _num_events_for = 2; // default three events for iterator starting at zero
 			if (d_with_MainTargetEvents == -4) then {
@@ -866,4 +881,18 @@ if (d_with_MainTargetEvents != 0) then {
 		};
 	};
 };
+#endif
+
+#ifdef __VN__
+// on SOG maps AI navigation is broken by dykes around the rice paddies, fix from johnnyboy
+// https://forums.bohemia.net/forums/topic/234952-enable-prairie-fire-dlc-ai-to-navigate-rice-paddies/
+{ 
+	_mapDyke = _x; 
+	_dyke = createSimpleObject ["vn\env_assets_f_vietnam\dykes\vn_dyke_10.p3d", [0,0,0]];
+	_dir = getDir _mapDyke;
+	_pos = getpos _mapDyke;
+	hideObjectGlobal _mapDyke;
+	_dyke setDir _dir; 
+	_dyke setpos [_pos#0,_pos#1,.3];
+} foreach ([nearestTerrainObjects [_trg_center, [], 1000], {(getModelInfo _x # 1) find "vn_dyke"> 0 }] call BIS_fnc_conditionalSelect);
 #endif

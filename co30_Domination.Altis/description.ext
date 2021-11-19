@@ -102,6 +102,9 @@ class Header {
 #ifdef __VNCLN__
 	maxPlayers = 46;
 #endif
+#ifdef __WS__
+	maxPlayers = 21;
+#endif
 };
 
 joinUnassigned = false; // auto assign
@@ -385,6 +388,10 @@ class Params {
 		values[] = {9998,9999,2,4,6,8,10,12,14,16,18,20,25,30,37};
 		texts[] = {"$STR_DOM_MISSIONSTRING_969","$STR_DOM_MISSIONSTRING_2008","2","4","6","8","10","12","14","16","18","20","25","30",37};
 #endif
+#ifdef __WS__
+		values[] = {9998,9999,2,4,6,8,10,12,14};
+		texts[] = {"$STR_DOM_MISSIONSTRING_969","$STR_DOM_MISSIONSTRING_2008","2","4","6","8","10","12","14"};
+#endif
 		default = 9998;
 	};
 
@@ -432,6 +439,9 @@ class Params {
 #endif
 #ifdef __VNCLN__
 		default = 7;
+#endif
+#ifdef __WS__
+		default = 5;
 #endif
 		texts[] = {"00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"};
 	};
@@ -489,6 +499,7 @@ class Params {
 		title = "$STR_DOM_MISSIONSTRING_1052_EVENTS";
 		values[] = {0,1,2,-1,-2,-3,-4};
 		default = -1;
+		// never, low, medium, always, always multiple events, always multiple events with guerrillas, all
 		texts[] = {"$STR_DOM_MISSIONSTRING_418","$STR_DOM_MISSIONSTRING_399","$STR_DOM_MISSIONSTRING_399B","$STR_DOM_MISSIONSTRING_418B","$STR_DOM_MISSIONSTRING_418C","$STR_DOM_MISSIONSTRING_418C_GUERR","$STR_DOM_MISSIONSTRING_ALL"};
 	};
 	
@@ -578,6 +589,9 @@ class Params {
 #endif
 #ifdef __VNCLN__
 		default = 0;
+#endif
+#ifdef __WS__
+		default = 1;
 #endif
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
@@ -713,6 +727,9 @@ class Params {
 #endif
 #ifdef __VNCLN__
 		default = 1;
+#endif
+#ifdef __WS__
+		default = 0;
 #endif
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
@@ -1015,6 +1032,13 @@ class Params {
 		values[] = {-66};
 		default = -66;
 		texts[] = {""};
+	};
+	
+	class d_force_fast_intro {
+		title = "$STR_DOM_MISSIONSTRING_FAST_INTRO";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"$STR_DOM_MISSIONSTRING_418DEFAULT","$STR_DOM_MISSIONSTRING_922"};
 	};
 
 	class d_show_playernames {
@@ -2267,6 +2291,16 @@ class CfgIdentities {
 	class VNDHQ_OP2: DHQ_BF1 {
 		name = "Min Duong";
 		speaker = "male02chi";
+	};
+#endif
+#ifdef __WS__
+	class DHQ_OP1: DHQ_BF1 {
+		name = "Aziz, HQ";
+		speaker = "male03per";
+	};
+	class DHQ_OP2: DHQ_BF1 {
+		name = "Horiz, HQ";
+		speaker = "male02per";
 	};
 #endif
 };

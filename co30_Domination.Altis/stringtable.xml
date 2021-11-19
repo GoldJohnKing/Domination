@@ -1810,6 +1810,9 @@
 <Key ID="STR_DOM_MISSIONSTRING_1137">
 <Original>无限</Original>
 </Key>
+<Key ID="STR_DOM_MISSIONSTRING_FAST_INTRO">
+<Original>强制快速介绍：</Original>
+</Key>
 <Key ID="STR_DOM_MISSIONSTRING_1159">
 <Original>显示玩家名字: </Original>
 </Key>

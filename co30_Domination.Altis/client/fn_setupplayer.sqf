@@ -89,7 +89,7 @@ d_arsenal_opened = false;
 player disableConversation true;
 enableSentences false;
 
-if (isStreamFriendlyUIEnabled || {d_force_isstreamfriendlyui == 1}) then {
+if (!isStreamFriendlyUIEnabled && {d_force_isstreamfriendlyui != 1}) then {
 	[] spawn d_fnc_showhud;
 };
 
@@ -462,7 +462,7 @@ d_points_needed_18 = (d_points_needed # 6) + 200000;
 	}, 5.12] call d_fnc_eachframeadd;
 };
 
-diag_log "Internal D Version: 4.56";
+diag_log "Internal D Version: 4.57";
 
 if (!d_no_ai) then {
 	if (d_with_ai) then {
@@ -1017,7 +1017,7 @@ if (d_arsenal_mod == 0) then {
 		d_arsenal_mod_prestrings pushBackUnique "uns_";
 	};
 	if (d_vn) then {
-		d_arsenal_mod_prestrings append ["weapons_f_vietnam_c", "characters_f_vietnam_c"];
+		d_arsenal_mod_prestrings append ["weapons_f_vietnam_c", "characters_f_vietnam_c", "weapons_f_vietnam_02_c", "characters_f_vietnam_02_c"];
 	};
 	if (d_csla) then {
 		d_arsenal_mod_prestrings append ["CSLA_", "US85_"];
@@ -1222,7 +1222,7 @@ __TRACE_1("","d_isvdreduced")
 0 spawn d_fnc_gimmick;
 
 if (isMultiplayer) then {
-	if (!d_ifa3lite && {!d_vn}) then {
+	if (d_force_fast_intro == 1 || {!d_ifa3lite && {!d_vn}}) then {
 		0 spawn d_fnc_intro2;
 	} else {
 		0 spawn d_fnc_intro;

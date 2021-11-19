@@ -68,12 +68,12 @@ while {true} do {
 		__TRACE_1("","_Dtargets")
 		
 		if (d_civ_massacre) then {
-			// these enemies are attacking civs, add nearby civs to _Dtargets array
+			// these enemies are attacking civs, add nearby civs within 75m to _Dtargets array
 			{
 				if (alive _x && {_x isKindOf "CAManBase" && {side _x == civilian}}) then {
 					_Dtargets pushBack [_x distance2D _unit, _x];
 				};
-			} forEach (nearestObjects [_unit, ["Man"], 50]);
+			} forEach (nearestObjects [_unit, ["Man"], 75]);
 		};
 		
 		private _fired = false;
@@ -104,6 +104,7 @@ while {true} do {
 							if (alive _x && {_x isKindOf "CAManBase" && {side _x == civilian}}) then {
 								// targeting a civ, make the civ a renegade so enemy will engage
 								_x addRating -10000;
+								_x forceSpeed -1; // allow the targeted civilian to move, why not
 							};
 							// execute aggressive shooting
 							_unit doTarget _x;
