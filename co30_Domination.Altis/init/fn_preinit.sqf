@@ -1368,7 +1368,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				"uns_A1J_CAS"
 			};
 			if (d_rhs) exitWith {
-				"sfp_jas39"
+				"rhs_l159_cdf_b_CDF"
 			};
 			if (d_vn) exitWith {
 				"vn_b_air_f4c_ucas"
@@ -1445,7 +1445,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				""
 			};
 			if (d_rhs) exitWith {
-				"sfp_jas39"
+				"rhs_l159_cdf_b_CDF"
 			};
 			"B_Plane_CAS_01_F"
 		};
