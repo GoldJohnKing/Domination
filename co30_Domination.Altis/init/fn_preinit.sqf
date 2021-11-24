@@ -1027,7 +1027,7 @@ if (!d_gmcwgwinter) then {
 
 	d_specops_W = call {
 		if (d_rhs) exitWith {
-			[["Indep","rhssaf_group_army_m10_para_infantry_squad","rhssaf_group_army_m10_para_infantry_squad","rhssaf_group_army_m10_para_infantry_team"] call d_fnc_GetConfigGroup, ["Indep","HAF_InfSquad","HAF_InfSquad","HAF_InfTeam_AT"] call d_fnc_GetConfigGroup]
+			[["Indep","rhssaf_group_army_m10_para_infantry_squad","rhssaf_group_army_m10_para_infantry_squad","rhssaf_group_army_m10_para_infantry_team"] call d_fnc_GetConfigGroup, ["Indep","HAF_InfSquad","HAF_InfSquad","HAF_InfTeam_AT"] call d_fnc_GetConfigGroup]//特战
 		};
 		if (d_ifa3lite) exitWith {
 			[["West","SG_STURM","Infantry","SG_GER_AT_squad"] call d_fnc_GetConfigGroup, ["West","SG_STURM","Infantry","SG_GER_infantry_squad"] call d_fnc_GetConfigGroup]
@@ -1039,7 +1039,7 @@ if (!d_gmcwgwinter) then {
 	};
 
 	if (!d_ws) then {
-		if (d_tanoa || {d_livonia}) then {
+		if (d_tanoa || {d_livonia}) then {//狙击
 			d_sniper_E = [["East","OPF_T_F","Infantry","O_T_SniperTeam"] call d_fnc_GetConfigGroup,["O_T_ghillie_tna_F","O_T_ghillie_tna_F"],["O_ghillie_lsh_F","O_ghillie_lsh_F"]];
 			d_sniper_W = [["West","BLU_T_F","Infantry","B_T_SniperTeam"] call d_fnc_GetConfigGroup,["B_T_ghillie_tna_F","B_T_ghillie_tna_F"],["B_ghillie_lsh_F","B_ghillie_lsh_F"]];
 			d_sniper_G = [["Indep","IND_F","Infantry","HAF_SniperTeam"] call d_fnc_GetConfigGroup];
@@ -1102,7 +1102,7 @@ if (!d_gmcwgwinter) then {
 	d_sniper_W = [["West","LIB_WEHRMACHT","Infantry","LIB_GER_sniper_team"] call d_fnc_GetConfigGroup];
 	d_sniper_I = [["Indep","LIB_US_ARMY","Infantry","LIB_US_Sniper_Team"] call d_fnc_GetConfigGroup];
 #endif
-#ifdef __RHS__
+#ifdef __RHS__ //狙击
 	d_sniper_E = [["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_W = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
@@ -1252,7 +1252,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	d_arti_observer_W = [["LIB_GER_ober_lieutenant"]];
 #endif
 #ifdef __RHS__
-	d_arti_observer_W = [["sfp_m90t_sog_jtac"]];
+	d_arti_observer_W = [["BWA3_SL_Fleck"]];
 	d_arti_observer_E = [["rhs_vmf_recon_rifleman_scout_akm"], ["rhs_vmf_recon_rifleman_scout"]];
 #endif
 #ifdef __UNSUNG__
@@ -1490,7 +1490,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					""
 				};
 				if (d_rhs) exitWith {
-					"sfp_rbb_norrkoping"
+					"I_Boat_Armed_01_minigun_F"
 				};
 				if (d_gmcwg) exitWith {
 					""
@@ -1498,7 +1498,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				if (d_csla) exitWith {
 					""
 				};
-				"sfp_rbb_norrkoping"
+				"I_Boat_Armed_01_minigun_F"
 			};
 		};
 		if (d_enemy_side_short == "G") exitWith {
@@ -1887,7 +1887,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_2", "LIB_FW190F8_5", "LIB_FW190F8_3"]
 				};
 				if (d_rhs) exitWith {
-					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","sfp_jas39_cap","sfp_jas39_bk90","I_Plane_Fighter_04_F"]
+					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F"]
 				};
 				if (d_csla) exitWith {
 					[]
@@ -1996,7 +1996,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","rhs_l39_cdf_b_cdf","sfp_s100b","sfp_jas39","sfp_jas39_cap","sfp_jas39_bk90","I_Plane_Fighter_04_F"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","rhs_l39_cdf_b_cdf","I_Plane_Fighter_04_F"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2237,7 +2237,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D_Early","rhsgref_cdf_b_Mi24D","sfp_hkp9_sog","sfp_hkp9_rb55","RHSGREF_A29B_HIDF","RHS_AN2_B","rhsgref_cdf_b_reg_Mi17Sh","rhsgref_b_mi24g_CAS"]
+					["I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","rhsgref_cdf_b_Mi35","BWA3_Tiger_RMK_Heavy","BWA3_Tiger_RMK_FZ","RHSGREF_A29B_HIDF","BWA3_Tiger_Gunpod_PARS","rhsgref_b_mi24g_CAS","BWA3_Tiger_RMK_PARS","BWA3_Tiger_RMK_Universal"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};

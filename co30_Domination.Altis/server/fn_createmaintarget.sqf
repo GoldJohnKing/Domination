@@ -268,10 +268,10 @@ private _HQ1 = createGroup [west, true];
 private _HQ2 = createGroup [west, true];
 private _HQ3 = createGroup [west, true];
 private _HQ4 = createGroup [west, true];
-_HQ1 createUnit ["sfp_m90w_officer", _poss, [], 0, "FORM"];
-_HQ2 createUnit ["sfp_m90w_rifleman_ak5", _poss, [], 0, "FORM"];
-_HQ3 createUnit ["sfp_m90w_rifleman_ak5", _poss, [], 0, "FORM"];
-_HQ4 createUnit ["sfp_m90w_rifleman_rto", _poss, [], 0, "FORM"];
+_HQ1 createUnit ["BWA3_Officer_Fleck", _poss, [], 0, "FORM"];
+_HQ2 createUnit ["BWA3_Rifleman_Fleck", _poss, [], 0, "FORM"];
+_HQ3 createUnit ["BWA3_Rifleman_G27_Fleck", _poss, [], 0, "FORM"];
+_HQ4 createUnit ["BWA3_RiflemanAT_CG_Fleck", _poss, [], 0, "FORM"];
 //创建直属部队
 // private _HQSP1 = createGroup [west, true];
 // private _HQSP2 = createGroup [west, true];
