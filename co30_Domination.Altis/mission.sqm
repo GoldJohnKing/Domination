@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=44;
+		nextID=46;
 	};
 	class Camera
 	{
@@ -27,7 +27,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination";
+sourceName="co30_Domination_BW";
 addons[]=
 {
 	"A3_Ui_F",
@@ -526,7 +526,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="用启动器来加入战斗吧！当前特色敌人：瑞典！";
+		briefingName="用启动器来加入战斗吧！当前特色敌人：德国！";
 		overviewText="欢迎来到61方面军红锤服！";
 		startWeather=0;
 		startWind=0;
