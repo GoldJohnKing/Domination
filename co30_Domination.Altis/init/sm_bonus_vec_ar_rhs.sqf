@@ -9,7 +9,7 @@ switch (d_own_side) do {
 		["M1128_MGS_DG1_SLATDES","RHS_M2A3_BUSKIII_wd","M1126_ICV_M134_DG1_SLATDES",
 		"rhs_t90sm_tv","BWA3_Puma_Tropen","rhs_t72be_tv",
 		"rhsusf_m1a2sep1tuskiiwd_usarmy","BWA3_Leopard2_Tropen","rhsusf_m1a2sep2wd_usarmy",
-		"BWA3_Tiger_RMK_Universal","RHS_AH1Z",
-		"RHS_Ka52_vvsc","RHS_AH64D_wd","O_Plane_CAS_02_dynamicLoadout_F","Su33_Chine",
-		"Su33_Chine_PT","RHS_T50_vvs_053","RHS_T50_vvs_generic_ext","RHS_T50_vvs_054","RHS_T50_vvs_blueonblue"]};
+		"BWA3_Tiger_RMK_Universal","USAF_F22_EWP_AA",
+		"USAF_F22_Heavy","USAF_F22_EWP_AG","O_Plane_CAS_02_dynamicLoadout_F","Su33_Chine",
+		"Su33_Chine_PT","rhsusf_f22","RHS_T50_vvs_generic_ext","RHS_T50_vvs_054","RHS_T50_vvs_blueonblue"]};
 };

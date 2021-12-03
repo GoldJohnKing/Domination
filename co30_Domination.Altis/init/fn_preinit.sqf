@@ -1887,7 +1887,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_2", "LIB_FW190F8_5", "LIB_FW190F8_3"]
 				};
 				if (d_rhs) exitWith {
-					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F"]
+					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","RHS_T50_vvs_generic","RHS_T50_vvs_051"]
 				};
 				if (d_csla) exitWith {
 					[]
@@ -1996,7 +1996,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","rhs_l39_cdf_b_cdf","I_Plane_Fighter_04_F"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
