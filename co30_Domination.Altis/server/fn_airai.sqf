@@ -25,7 +25,7 @@ while {true} do {
 
 	private _limit_p = call {
 		if (_type isEqualTo "AP") exitWith {12};
-		if (_type isEqualTo "HAC") exitWith {8};
+		if (_type isEqualTo "HAC") exitWith {6};
 		if (_type isEqualTo "UAV") exitWith {5};
 		4;
 	};
