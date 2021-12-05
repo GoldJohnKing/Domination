@@ -1,4 +1,4 @@
-["rhsgref_ins_g_t72bc","rhsgref_ins_g_t72bb","BWA3_Leopard2_Fleck","I_MBT_03_cannon_F","rhsgref_cdf_b_t80bv_tv","rhsgref_cdf_b_t80b_tv"],  //主战坦克
+["rhsgref_ins_g_t72bc","rhsgref_ins_g_t72bb","BWA3_Leopard2_Fleck","BWA3_Leopard2_Fleck","BWA3_Leopard2_Fleck","I_MBT_03_cannon_F","rhsgref_cdf_b_t80bv_tv","rhsgref_cdf_b_t80b_tv"],  //主战坦克
 ["rhsgref_cdf_b_btr80","BWA3_Puma_Fleck","BWA3_Puma_Tropen","I_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F","rhsgref_cdf_b_bmd1p","rhsgref_cdf_b_bmd2k","rhsgref_ins_g_bmp1p"], //步兵战车以及APC
 ["rhsusf_m1a1fep_od","rhsusf_m1a1hc_wd","I_LT_01_AA_F","I_LT_01_scout_F","I_LT_01_cannon_F","I_LT_01_AT_F","rhsgref_ins_g_t72ba","rhsgref_ins_g_2s1_at","rhsgref_ins_g_btr70","rhsgref_ins_g_zsu234","rhsgref_cdf_b_gaz66_ap2","rhsgref_cdf_b_gaz66_zu23","rhsgref_BRDM2_ATGM_b","rhsgref_BRDM2_b"], //战区支援防空、反装甲、反步兵支援
 ["rhsgref_ins_zsu234"], //战区机动防空
