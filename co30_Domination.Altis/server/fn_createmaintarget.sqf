@@ -39,7 +39,7 @@ private _selectitvec = {
 private _type_list_guard = [];
 private _type_list_guard_static = [];
 if (d_camp_enable_guard == 1) then {
-	_type_list_guard = [
+	_type_list_guard = [ //警戒部队
 		["allmen", 0, [d_footunits_guard, 0] call _selectitmen],
 		["specops", 0, [d_footunits_guard, 1] call _selectitmen],
 		["tank", [d_vec_numbers_guard, 0] call _selectit, [d_vec_numbers_guard,0] call _selectitvec],
@@ -48,7 +48,7 @@ if (d_camp_enable_guard == 1) then {
 		["jeep_mg", [d_vec_numbers_guard, 3] call _selectit, [d_vec_numbers_guard,3] call _selectitvec],
 		["jeep_gl", [d_vec_numbers_guard, 4] call _selectit, [d_vec_numbers_guard,4] call _selectitvec]
 	];
-	_type_list_guard_static = [
+	_type_list_guard_static = [ //静态警戒部队
 		["allmen", 0, [d_footunits_guard_static, 0] call _selectitmen],
 		["specops",0, [d_footunits_guard_static, 1] call _selectitmen],
 		["tank", [d_vec_numbers_guard_static, 0] call _selectit, [d_vec_numbers_guard_static,0] call _selectitvec],
@@ -57,7 +57,7 @@ if (d_camp_enable_guard == 1) then {
 	];
 };
 
-private _type_list_patrol = [
+private _type_list_patrol = [ //巡逻部队
 	["allmen", 0, [d_footunits_patrol, 0] call _selectitmen],
 	["specops", 0, [d_footunits_guard_static, 1] call _selectitmen],
 	["tank", [d_vec_numbers_patrol, 0] call _selectit, [d_vec_numbers_patrol,0] call _selectitvec],
@@ -82,8 +82,8 @@ __TRACE_1("","_type_list_patrol")
 private _type_list_guard_static2 = [];
 if (d_camp_static_weapons == 1) then {
 	_type_list_guard_static2 = [
-    	["stat_mg", 1, ceil (random 4)],
-    	["stat_gl", 1, ceil (random 3)]
+    	["stat_mg", 1, ceil (random 6)],
+    	["stat_gl", 1, ceil (random 6)]
     ];
 };
 
@@ -186,6 +186,7 @@ for "_i" from 1 to d_num_barracks_objs do {
 	_poss set [2, 0];
 	_vec = createVehicle [d_barracks_building, _poss, [], 0, "NONE"];
 	_vec setDir (_vec getDir _trg_center);
+	createVehicle ["Flag_Altis_F", _poss, [], 0, "NONE"];//添加兵营旗帜（阿尔蒂斯旗帜）
 	if (([getPos _vec, 20] call d_fnc_getslope) > 0.4) then {
 		_vec setVectorUp (surfaceNormal (getPos _vec));
 	};
@@ -254,6 +255,44 @@ if (([getPos _vec, sizeOf d_vehicle_building] call d_fnc_getslope) > 0.4) then {
 };/* else {
 	_vec setVectorUp [0,0,1];
 };*/
+//创建HQ识别物件
+// createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_Router_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Land_TTowerSmall_1_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_BatterPack_01_open_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+// createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
+createVehicle ["Flag_Altis_F", _poss, [], 0, "NONE"];//添加旗帜
+//敌方HQ指挥官小组
+private _HQ1 = createGroup [west, true];
+private _HQ2 = createGroup [west, true];
+private _HQ3 = createGroup [west, true];
+private _HQ4 = createGroup [west, true];
+_HQ1 createUnit ["BWA3_Officer_Fleck", _poss, [], 0, "FORM"];
+_HQ2 createUnit ["BWA3_Rifleman_Fleck", _poss, [], 0, "FORM"];
+_HQ3 createUnit ["BWA3_Rifleman_G27_Fleck", _poss, [], 0, "FORM"];
+_HQ4 createUnit ["BWA3_RiflemanAT_CG_Fleck", _poss, [], 0, "FORM"];
+//创建直属部队
+// private _HQSP1 = createGroup [west, true];
+// private _HQSP2 = createGroup [west, true];
+// _HQSP1 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
+// _HQSP1 createUnit ["rhsusf_socom_marsoc_sarc", _poss, [], 0, "FORM"];
+// _HQSP1 createUnit ["rhsusf_socom_marsoc_sniper", _poss, [], 0, "FORM"];
+// _HQSP1 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
+// _HQSP1 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+// _HQSP2 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
+// _HQSP2 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+// _HQSP2 createUnit ["rhsusf_socom_marsoc_marksman", _poss, [], 0, "FORM"];
+// _HQSP2 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+// private _HQANTIveh = createGroup [west, true];
+// _HQSP createUnit ["rhsusf_army_ocp_riflemanat", _poss, [], 0, "FORM"];
+// _HQSP createUnit ["rhsusf_army_ocp_arb_sniper_m107", _poss, [], 0, "FORM"];
+// _HQSP createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+// _HQSP createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
+// private _HQSIN = createGroup [west, true];
+// _HQSIN createUnit ["rhsusf_army_ocp_teamleader", _poss, [], 0, "FORM"];
+// _HQSIN createUnit ["rhsusf_army_ocp_sniper", _poss, [], 0, "FORM"];
+//
 _vec setVariable ["d_v_pos", getPos _vec];
 if (d_bar_mhq_destroy == 1) then {
 	[_vec, 1] call d_fnc_checkmtrespawntarget;
@@ -430,10 +469,10 @@ _type_list_guard_static2 = nil;
 _type_list_patrol = nil;
 
 sleep 1.124;
-
+//敌方外围巡逻队，在“attak!”版本中是重点强化的对象
 if (d_allow_observers == 1 && {d_no_more_observers < 2}) then {
-	d_nr_observers = floor random 4;
-	if (d_nr_observers < 2) then {d_nr_observers = 2};
+	d_nr_observers = floor random 8;
+	if (d_nr_observers < 2) then {d_nr_observers = 4};
 	d_obs_array = [];
 	private _unit_array = ["arti_observer", d_enemy_side_short] call d_fnc_getunitlistm;
 	for "_xx" from 0 to d_nr_observers - 1 do {

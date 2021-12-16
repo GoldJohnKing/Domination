@@ -313,7 +313,7 @@ d_x_drop_array =
 #ifdef __OWN_SIDE_OPFOR__
 	call {
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhs_tigr_m_3camo_vdv"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhs_t80ue1"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_ifa3lite) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "LIB_US_Willys_MB"], [localize "STR_DOM_MISSIONSTRING_20", "LIB_BasicWeaponsBox_SU"]]
@@ -1027,7 +1027,7 @@ if (!d_gmcwgwinter) then {
 
 	d_specops_W = call {
 		if (d_rhs) exitWith {
-			[["West","rhs_faction_socom_marsoc","rhs_group_nato_marsoc_infantry","rhs_group_nato_marsoc_infantry_squad"] call d_fnc_GetConfigGroup, ["West","rhs_faction_socom_marsoc","rhs_group_nato_marsoc_infantry","rhs_group_nato_marsoc_infantry_team"] call d_fnc_GetConfigGroup]
+			[["Indep","rhssaf_group_army_m10_para_infantry_squad","rhssaf_group_army_m10_para_infantry_squad","rhssaf_group_army_m10_para_infantry_team"] call d_fnc_GetConfigGroup, ["Indep","HAF_InfSquad","HAF_InfSquad","HAF_InfTeam_AT"] call d_fnc_GetConfigGroup]//特战
 		};
 		if (d_ifa3lite) exitWith {
 			[["West","SG_STURM","Infantry","SG_GER_AT_squad"] call d_fnc_GetConfigGroup, ["West","SG_STURM","Infantry","SG_GER_infantry_squad"] call d_fnc_GetConfigGroup]
@@ -1039,7 +1039,7 @@ if (!d_gmcwgwinter) then {
 	};
 
 	if (!d_ws) then {
-		if (d_tanoa || {d_livonia}) then {
+		if (d_tanoa || {d_livonia}) then {//狙击
 			d_sniper_E = [["East","OPF_T_F","Infantry","O_T_SniperTeam"] call d_fnc_GetConfigGroup,["O_T_ghillie_tna_F","O_T_ghillie_tna_F"],["O_ghillie_lsh_F","O_ghillie_lsh_F"]];
 			d_sniper_W = [["West","BLU_T_F","Infantry","B_T_SniperTeam"] call d_fnc_GetConfigGroup,["B_T_ghillie_tna_F","B_T_ghillie_tna_F"],["B_ghillie_lsh_F","B_ghillie_lsh_F"]];
 			d_sniper_G = [["Indep","IND_F","Infantry","HAF_SniperTeam"] call d_fnc_GetConfigGroup];
@@ -1102,9 +1102,9 @@ if (!d_gmcwgwinter) then {
 	d_sniper_W = [["West","LIB_WEHRMACHT","Infantry","LIB_GER_sniper_team"] call d_fnc_GetConfigGroup];
 	d_sniper_I = [["Indep","LIB_US_ARMY","Infantry","LIB_US_Sniper_Team"] call d_fnc_GetConfigGroup];
 #endif
-#ifdef __RHS__
+#ifdef __RHS__ //狙击
 	d_sniper_E = [["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_sniper"] call d_fnc_GetConfigGroup];
-	d_sniper_W = [["West","rhs_faction_usarmy_d","rhs_group_nato_usarmy_d_infantry","rhs_group_nato_usarmy_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
+	d_sniper_W = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 #endif
 #ifdef __UNSUNG__
@@ -1252,7 +1252,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	d_arti_observer_W = [["LIB_GER_ober_lieutenant"]];
 #endif
 #ifdef __RHS__
-	d_arti_observer_W = [["rhsusf_army_ocp_jfo"], ["rhsusf_army_ucp_fso"], ["rhsusf_usmc_marpat_d_fso"], ["rhsusf_usmc_marpat_d_jfo"]];
+	d_arti_observer_W = [["BWA3_SL_Fleck"]];
 	d_arti_observer_E = [["rhs_vmf_recon_rifleman_scout_akm"], ["rhs_vmf_recon_rifleman_scout"]];
 #endif
 #ifdef __UNSUNG__
@@ -1274,7 +1274,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 		d_number_attack_planes = 1;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 1;
+		d_number_attack_choppers = 2;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
 		d_number_light_attack_choppers = 1;
@@ -1329,7 +1329,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				"LIB_Pe2"
 			};
 			if (d_rhs) exitWith {
-				"RHS_Mi8mt_Cargo_vv"
+				"RHS_C130J"
 			};
 			if (d_csla) exitWith {
 				"CSLA_Mi17"
@@ -1368,7 +1368,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				"uns_A1J_CAS"
 			};
 			if (d_rhs) exitWith {
-				"RHS_A10"
+				"rhs_l159_cdf_b_CDF"
 			};
 			if (d_vn) exitWith {
 				"vn_b_air_f4c_ucas"
@@ -1445,7 +1445,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				""
 			};
 			if (d_rhs) exitWith {
-				"RHS_A10"
+				"rhs_l159_cdf_b_CDF"
 			};
 			"B_Plane_CAS_01_F"
 		};
@@ -1490,7 +1490,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					""
 				};
 				if (d_rhs) exitWith {
-					""
+					"I_Boat_Armed_01_minigun_F"
 				};
 				if (d_gmcwg) exitWith {
 					""
@@ -1498,7 +1498,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				if (d_csla) exitWith {
 					""
 				};
-				"B_Boat_Armed_01_minigun_F"
+				"I_Boat_Armed_01_minigun_F"
 			};
 		};
 		if (d_enemy_side_short == "G") exitWith {
@@ -1566,7 +1566,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 
 	// time (in sec) between attack planes and choppers over main target will respawn once they were shot down (a random value between 0 and 240 will be added)
 	if (isNil "d_airai_respawntime") then {
-		d_airai_respawntime = 1000;
+		d_airai_respawntime = 60;
 	};
 
 	d_side_missions_random = [];
@@ -1878,7 +1878,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				if (d_vn) exitWith {
 					[]
 				};
-				["O_Plane_CAS_02_F"]
+				["O_Plane_CAS_02_F","O_Plane_Fighter_02_F","I_Plane_Fighter_04_F"]//敌方制空固定翼
 			};
 		};
 		if (d_enemy_side_short == "W") exitWith {
@@ -1887,7 +1887,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["LIB_FW190F8", "LIB_FW190F8_4", "LIB_FW190F8_2", "LIB_FW190F8_5", "LIB_FW190F8_3"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_A10","rhsusf_f22"]
+					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","RHS_T50_vvs_generic","RHS_T50_vvs_051"]
 				};
 				if (d_csla) exitWith {
 					[]
@@ -1909,7 +1909,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					[]
+					["I_UAV_02_dynamicLoadout_F"]
 				};
 				if (d_unsung) exitWith {
 					[]
@@ -1935,7 +1935,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					[]
+					["I_UAV_02_dynamicLoadout_F"]
 				};
 				if (d_gmcwg) exitWith {
 					[]
@@ -1987,7 +1987,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				if (d_ws) exitWith {
 					["O_SFIA_Heli_Attack_02_dynamicLoadout_lxWS"]
 				};
-				["O_Heli_Attack_02_F"]
+				["I_Plane_Fighter_03_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F","O_T_VTOL_02_infantry_dynamicLoadout_F"]//普通攻击固定翼
 			};
 		};
 		if (d_enemy_side_short == "W") exitWith {
@@ -1996,7 +1996,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["RHS_AH64D","RHS_AH64DGrey","RHS_AH64D_wd","RHS_AH1Z","RHS_AH1Z_wd"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2146,7 +2146,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 			["RHS_Mi8MTV3_vvsc"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["rhsusf_CH53E_USMC"]
+			["I_Heli_Transport_02_F"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2158,7 +2158,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 			["uns_an2"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["rhsusf_CH53E_USMC"]
+			["I_Heli_Transport_02_F"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2219,7 +2219,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				if (d_rhs) exitWith {
 					["RHS_Mi24P_vvs"]
 				};
-				["O_Heli_Attack_02_black_F"]
+				["O_Heli_Attack_02_black_F","I_Heli_light_03_dynamicLoadout_F","O_Heli_Light_02_dynamicLoadout_F"]//敌军轻型攻击直升机
 			};
 		};
 		if (d_enemy_side_short == "W") exitWith {
@@ -2237,7 +2237,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["RHS_MELB_AH6M","RHS_UH1Y_d","RHS_UH1Y"]
+					["I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","rhsgref_cdf_b_Mi35","BWA3_Tiger_RMK_Heavy","BWA3_Tiger_RMK_FZ","RHSGREF_A29B_HIDF","BWA3_Tiger_Gunpod_PARS","rhsgref_b_mi24g_CAS","BWA3_Tiger_RMK_PARS","BWA3_Tiger_RMK_Universal"]
 				};
 				["B_Heli_Light_01_armed_F"]
 			};
@@ -2261,8 +2261,8 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 
 	// enemy AI inf barracks in main target... As long as the building exists enemy AI inf respawns inside the building thus in the main target area!!!
 	// Needs a building which can be entered by AI (as they will respawn inside)
-	// can only be destroyed by satchel charges!!!
-	// no marker gets created!
+	// can only be destroyed by satchel charges!!! Land_BagBunker_01_large_green_F Land_Bunker_01_HQ_F 
+	// no marker gets created!  兵营修改为"Land_Cargo_HQ_V4_F"
 d_barracks_building = call {
 	if (d_vn) exitWith {
 		"Land_vn_o_shelter_05"
@@ -2270,14 +2270,15 @@ d_barracks_building = call {
 	if (d_ws) exitWith {
 		"Land_BagBunker_Large_F"
 	};
-	"Land_BagBunker_01_large_green_F"
+	"Land_Cargo_HQ_V4_F"
 };
 
 	// same as barracks building. But enemy AI vehicles do not spawn inside the main target area but outside
-	// if destroyed no more enemy vehicles respawn
+	// if destroyed no more enemy vehicles respawn  
+    //Land_GuardHouse_02_F Land_i_House_Big_01_b_pink_F Land_Research_HQ_F Land_PowerStation_01_F Land_i_House_Small_03_V1_F createVehicle ["Flag_NATO_F", _poss, [], 0, "NONE"];//添加兵营旗帜
 	d_vehicle_building =
 #ifdef __ALTIS__
-		"Land_Cargo_HQ_V1_F";
+		"Land_Research_HQ_F";
 #endif
 #ifdef __CUP_CHERNARUS__
 		"Land_Cargo_HQ_V4_F";
@@ -2324,7 +2325,7 @@ d_barracks_building = call {
 
 	d_b_small_static_high =
 #ifdef __ALTIS__
-		"Land_BagBunker_Small_F";
+		"";
 #endif
 #ifdef __CUP_CHERNARUS__
 		"Land_BagBunker_01_small_green_F";
@@ -2342,16 +2343,16 @@ d_barracks_building = call {
 		"Land_BagBunker_01_small_green_F";
 #endif
 #ifdef __STRATIS__
-		"Land_BagBunker_Small_F";
+		;
 #endif
 #ifdef __MALDEN__
-		"Land_BagBunker_Small_F";
+		;
 #endif
 #ifdef __LIVONIA__
 		"Land_BagBunker_01_small_green_F";
 #endif
 #ifdef __TT__
-		"Land_BagBunker_Small_F";
+		;
 #endif
 #ifdef __GMCWG__
 		"";
@@ -2373,7 +2374,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [250, 150, 320, 170];
+		d_ai_groups_respawn_time = [400, 25, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
@@ -2649,7 +2650,7 @@ if (hasInterface) then {
 #ifdef __OWN_SIDE_BLUFOR__
 	call {
 		if (d_tanoa || {d_livonia}) exitWith {
-			["B_Quadbike_01_F", "B_T_LSV_01_unarmed_F"]
+			["B_Quadbike_01_F", "B_T_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","B_MRAP_01_hmg_F","B_MRAP_01_gmg_F","B_APC_Tracked_01_CRV_F","B_APC_Tracked_01_rcws_F"]
 		};
 		if (d_gmcwg) exitWith {
 			if (d_gmcwgwinter) exitWith {
@@ -2669,7 +2670,7 @@ if (hasInterface) then {
 		if (d_ws) exitWith {
 			["B_D_Quadbike_01_lxWS"]
 		};
-		["B_Quadbike_01_F", "B_LSV_01_unarmed_F"]
+		["B_Quadbike_01_F", "B_T_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","B_MRAP_01_hmg_F","B_MRAP_01_gmg_F","B_APC_Tracked_01_CRV_F","B_APC_Tracked_01_rcws_F","B_APC_Wheeled_01_cannon_F","B_AFV_Wheeled_01_up_cannon_F"]
 	};
 #endif
 #ifdef __OWN_SIDE_OPFOR__
@@ -2678,7 +2679,7 @@ if (hasInterface) then {
 			["O_Quadbike_01_F", "O_T_LSV_02_unarmed_F"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_3camo_msv", "RHS_UAZ_MSV_01"]
+			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_M1117_D","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_m1151_m2_v2_usarmy_d","rhsusf_m1151_mk19_v2_usarmy_d","rhsusf_m966_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_m1165a1_gmv_mk19_m240_socom_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_M1238A1_Mk19_socom_d","O_MRAP_02_gmg_F","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_APC_Tracked_01_CRV_F","rhs_btr80a_msv","rhsusf_stryker_m1134_d","B_AFV_Wheeled_01_up_cannon_F","M1128_MGS_DG1_NOSLATDES","M1133_MEV_DG1_NOSLATDES","rhs_bmp2k_msv","rhs_Ob_681_2","rhs_bmd4ma_vdv","rhs_bmp3mera_msv","rhs_2s3_at_tv","rhs_sprut_vdv","O_APC_Wheeled_02_rcws_v2_F","B_APC_Wheeled_01_cannon_F"]
 		};
 		if (d_ifa3lite) exitWith {
 			["LIB_Willys_MB", "LIB_US_Willys_MB"]

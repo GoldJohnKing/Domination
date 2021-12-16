@@ -1,12 +1,12 @@
-["rhsusf_m1a2sep2wd_usarmy","rhsusf_m1a1aimd_usarmy","rhsusf_m1a1aim_tuski_d","rhsusf_m1a2sep1d_usarmy","rhsusf_m1a2sep1tuskid_usarmy","rhsusf_m1a2sep1tuskiid_usarmy","rhsusf_m1a1aimwd_usarmy","rhsusf_m1a1aim_tuski_wd","rhsusf_m1a2sep1wd_usarmy","rhsusf_m1a2sep1tuskiwd_usarmy","rhsusf_m1a2sep1tuskiiwd_usarmy","rhsusf_m1a1fep_d","rhsusf_m1a1fep_wd","rhsusf_m1a1fep_od","rhsusf_m1a1hc_wd"],
-["RHS_M2A2","RHS_M2A2_BUSKI","RHS_M2A32","RHS_M2A3_BUSKI","RHS_M2A3_BUSKIII","RHS_M2A2_wd","RHS_M2A2_BUSKI_WD","RHS_M2A3_wd","RHS_M2A3_BUSKI_wd","RHS_M2A3_BUSKIII_wd","rhsusf_m113d_usarmy","rhsusf_m113d_usarmy_M240","rhsusf_m113d_usarmy_MK19","rhsusf_m113_usarmy","rhsusf_m113_usarmy_M2_90","rhsusf_m113_usarmy_M240","rhsusf_m113_usarmy_MK19","rhsusf_m113_usarmy_MK19_90"],
-["rhsusf_M1117_D","rhsusf_M1117_O","rhsusf_M1117_W"],
-["RHS_M6","RHS_M6_wd"],
-["rhsusf_M1220_M153_M2_usarmy_d","rhsusf_M1220_M2_usarmy_d","rhsusf_M1220_MK19_usarmy_d","rhsusf_M1230_M2_usarmy_d","rhsusf_M1230_MK19_usarmy_d","rhsusf_M1232_M2_usarmy_d","rhsusf_M1232_MK19_usarmy_d","rhsusf_M1237_M2_usarmy_d","rhsusf_M1237_MK19_usarmy_d","rhsusf_M1220_M153_M2_usarmy_wd","rhsusf_M1220_M2_usarmy_wd","rhsusf_M1220_MK19_usarmy_wd","rhsusf_M1230_M2_usarmy_wd","rhsusf_M1230_MK19_usarmy_wd","rhsusf_M1232_M2_usarmy_wd","rhsusf_M1232_MK19_usarmy_wd","rhsusf_M1237_M2_usarmy_wd","rhsusf_M1237_MK19_usarmy_wd","rhsusf_rg33_m2_usmc_d","rhsusf_rg33_m2_usmc_wd"],
-["rhsusf_m1025_d_m2","rhsusf_m1025_d_Mk19","rhsusf_m1025_w_m2","rhsusf_m1025_w_mk19","rhsusf_m1025_d_s_m2","rhsusf_m1025_d_s_Mk19","rhsusf_m1025_w_s_m2","rhsusf_m1025_w_s_Mk19"],
-["RHS_MK19_TriPod_D","RHS_MK19_TriPod_USMC_D"],
-["RHS_Stinger_AA_pod_D","RHS_M2StaticMG_D","RHS_M2StaticMG_MiniTripod_D","RHS_TOW_TriPod_D","RHS_M2StaticMG_USMC_D"],
+["rhsgref_ins_g_t72bc","rhsgref_ins_g_t72bb","BWA3_Leopard2_Fleck","BWA3_Leopard2_Fleck","BWA3_Leopard2_Fleck","I_MBT_03_cannon_F","rhsgref_cdf_b_t80bv_tv","rhsgref_cdf_b_t80b_tv"],  //主战坦克
+["rhsgref_cdf_b_btr80","BWA3_Puma_Fleck","BWA3_Puma_Tropen","I_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F","rhsgref_cdf_b_bmd1p","rhsgref_cdf_b_bmd2k","rhsgref_ins_g_bmp1p"], //步兵战车以及APC
+["rhsusf_m1a1fep_od","rhsusf_m1a1hc_wd","I_LT_01_AA_F","I_LT_01_scout_F","I_LT_01_cannon_F","I_LT_01_AT_F","rhsgref_ins_g_t72ba","rhsgref_ins_g_2s1_at","rhsgref_ins_g_btr70","rhsgref_ins_g_zsu234","rhsgref_cdf_b_gaz66_ap2","rhsgref_cdf_b_gaz66_zu23","rhsgref_BRDM2_ATGM_b","rhsgref_BRDM2_b"], //战区支援防空、反装甲、反步兵支援
+["rhsgref_ins_zsu234"], //战区机动防空
+["I_MRAP_03_hmg_F","I_MRAP_03_gmg_F","rhsgref_ins_g_bmp1","rhsgref_cdf_b_btr60","rhsgref_BRDM2_b","rhsgref_BRDM2_HQ_b","BWA3_Dingo2_FLW100_MG3_Fleck","BWA3_Dingo2_FLW200_M2_Fleck","BWA3_Dingo2_FLW200_GMW_CG13_Fleck","BWA3_Dingo2_FLW200_M2_CG13_Fleck","BWA3_Dingo2_FLW100_MG3_CG13_Fleck"], //巡逻、输送的大型防雷车，装甲输送车,执行重要作战任务的装甲单位
+["rhsgref_BRDM2_ins_g","rhsgref_BRDM2_ATGM_ins_g","rhssaf_army_ural_fuel","rhssaf_m1151_olive_pkm","rhssaf_m1025_olive_m2","rhsgref_cdf_gaz66_ammo","rhsgref_cdf_b_reg_uaz_spg9","rhsgref_cdf_b_reg_uaz_dshkm","rhsgref_cdf_b_reg_uaz_ags","rhsgref_cdf_b_reg_uaz","I_C_Offroad_02_AT_F","I_C_Offroad_02_LMG_F","BWA3_Dingo2_FLW100_MG3_CG13_Fleck"], //轻装甲车辆
+["B_SAM_System_01_F","B_SAM_System_01_F","rhs_prv13_turret_vpvo"],  //GL  现在是防空 ,"B_Radar_System_01_F"
+["I_HMG_02_F","rhsgref_ins_g_d30_at","rhsgref_ins_g_2b14","rhsgref_ins_g_d30","I_HMG_02_high_F","rhsgref_ins_g_Igla_AA_pod","rhsgref_ins_g_DSHKM","rhsgref_ins_g_SPG9M","rhssaf_army_m2staticmg_minitripod","rhssaf_army_nsv_tripod","rhssaf_army_ags30_tripod","rhssaf_army_metis_9k115","pook_M777","rhsgref_cdf_b_ZU23"],    //MG  现在是地面防御
 ["RHS_M252_D","RHS_M119_D","RHS_M252_USMC_WD"],
-["rhsusf_M978A4_BKIT_usarmy_d","rhsusf_M978A4_BKIT_usarmy_wd"],
-["rhsusf_M977A4_REPAIR_usarmy_d","rhsusf_M977A4_REPAIR_usarmy_wd"],
-["rhsusf_M977A4_AMMO_usarmy_d","rhsusf_M977A4_AMMO_usarmy_wd"]
+["I_Truck_02_fuel_F"],
+["I_Truck_02_box_F"],
+["I_Truck_02_ammo_F"]

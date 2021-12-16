@@ -1206,7 +1206,7 @@ if (d_without_nvg != 1 || {d_without_ti != 1}) then {
 
 d_isvdreduced = false;
 #ifndef __TT__
-0 spawn d_fnc_vdhandler;
+// 0 spawn d_fnc_vdhandler; // Edited: Disable auto view distance
 #endif
 
 0 spawn d_fnc_camouflage;

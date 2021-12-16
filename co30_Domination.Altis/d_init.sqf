@@ -357,15 +357,6 @@ if (isNil "d_winterw") then {
 if (isNil "d_mt_event_messages_array") then {
 	d_mt_event_messages_array = [];
 };
-if (isNil "d_priority_targets") then {
-	d_priority_targets = [];
-};
-if (isNil "d_civ_massacre") then {
-	d_civ_massacre = false;
-};
-if (isNil "d_cur_tgt_civ_vehicles") then {
-	d_cur_tgt_civ_vehicles = [];
-};
 
 if (hasInterface) then {
 	if (isNil "d_MainTargets") then {d_MainTargets = count d_target_names};
@@ -454,7 +445,7 @@ if (isServer) then {
 #ifndef __TT__
 	// editor varname, unique number, true = respawn only when the chopper is completely destroyed, false = respawn after some time when no crew is in the chopper or chopper is destroyed
 	// unique number must be between 3000 and 3999
-	private _choppers = [[d_chopper_1,3001,true,600],[d_chopper_2,3002,true,1500],[d_chopper_3,3003,false,1500],[d_chopper_4,3004,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600]] select {!isNil {_x # 0}};
+	private _choppers = [[d_chopper_1,3001,true,600],[d_chopper_2,3001,true,1500],[d_chopper_3,3002,false,1500],[d_chopper_4,3001,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600],[d_chopper_7,3006,false,600],[d_chopper_8,3006,false,600],[d_chopper_9,3006,false,600],[d_chopper_10,3006,false,600],[d_chopper_11,3006,false,600],[d_chopper_12,3006,false,600],[d_chopper_13,3006,false,600],[d_chopper_14,3006,false,600],[d_chopper_15,3006,false,600]] select {!isNil {_x # 0}};
 
 	if (!isNil "d_additional_wreck") then {
 		{
@@ -480,7 +471,7 @@ if (isServer) then {
 	// editor varname, unique number
 	//0-99 = MHQ, 100-199 = Medic vehicles, 200-299 = Fuel, Repair, Reammo trucks, 300-399 = Engineer Salvage trucks, 400-499 = Transport trucks
 	// new in 3.70  third parameter for MHQ means a message will be displayed for a MHQ if it gets destroyed
-	private _vecsar = [[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1, localize "STR_DOM_MISSIONSTRING_13"],[d_vec_med_1,100],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401]] select {!isNil {_x # 0}};
+	private _vecsar = [[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1, localize "STR_DOM_MISSIONSTRING_13"],[d_vec_mhq_3,2, localize "STR_DOM_MISSIONSTRING_13"],[d_vec_mhq_4,3, localize "STR_DOM_MISSIONSTRING_13"],[d_vec_med_1,100],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401]] select {!isNil {_x # 0}};
 	{
 		_vecsar pushBack [_x, 500 + _forEachIndex];
 	} forEach (vehicles select {(str _x) select [0, 12] isEqualTo "d_vec_wreck_"});
@@ -572,6 +563,12 @@ if (isServer) then {
 
 #ifdef __TT__
 	d_public_points = true;
+#endif
+
+	call d_fnc_setupserver;
+	if (d_MissionType != 2) then {0 spawn d_fnc_createnexttarget};
+
+#ifdef __TT__
 	d_points_blufor = 0;
 	d_points_opfor = 0;
 	d_kill_points_blufor = 0;
@@ -579,9 +576,6 @@ if (isServer) then {
 	d_points_array = [0,0,0,0];
 	publicVariable "d_points_array";
 #endif
-
-	call d_fnc_setupserver;
-	if (d_MissionType != 2) then {0 spawn d_fnc_createnexttarget};
 
 	addMissionEventHandler ["PlayerDisconnected", {call d_fnc_playerdisconnected}];
 

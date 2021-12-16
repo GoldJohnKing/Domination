@@ -4,7 +4,7 @@
 
 params ["_radius", "_center"];
 
-private _num_mines = (floor (random 20)) max 10;
+private _num_mines = (floor (random 40)) max 20;
 
 private _ran_start_pos = [_center, _radius, -1] call d_fnc_GetRanPointCircle;
 private _m_pos_ar = [];
@@ -15,7 +15,7 @@ for "_i" from 1 to _num_mines do {
 
 d_mines_created = [];
 #ifndef __VN__
-private _mtype = selectRandom ["APERSMine", "APERSBoundingMine", "SLAMDirectionalMine", "APERSTripMine"];
+private _mtype = selectRandom ["APERSMineDispenser_F", "APERSMineDispenser_Mine_F", "APERSMine", "ATMine","Claymore_F","SLAMDirectionalMine","APERSTripMine","APERSBoundingMine","IEDLandBig_F","IEDUrbanBig_F","IEDLandSmall_F","IEDUrbanSmall_F","rhsusf_mine_M19","rhsusf_mine_m14"];
 #else
 private _mtype = selectRandom ["vn_mine_ammobox_range", "vn_mine_punji_01", "vn_mine_punji_02", "vn_mine_punji_03", "vn_mine_tm57"];
 #endif

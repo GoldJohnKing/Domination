@@ -25,9 +25,9 @@ while {true} do {
 
 	private _limit_p = call {
 		if (_type isEqualTo "AP") exitWith {12};
-		if (_type isEqualTo "HAC") exitWith {10};
+		if (_type isEqualTo "HAC") exitWith {6};
 		if (_type isEqualTo "UAV") exitWith {5};
-		3;
+		4;
 	};
 	__TRACE_1("","_limit_p")
 	#ifndef __DEBUG__
@@ -35,7 +35,7 @@ while {true} do {
 		if (!d_mt_radio_down && {(call d_fnc_PlayersNumber) >= _limit_p && {diag_fps > 15}}) exitWith {
 			__TRACE("spawning airai vehicle")
 		};
-		sleep (5 + random 10);
+		sleep (5 + random 1);
 		};
 	#endif
 
@@ -63,7 +63,7 @@ while {true} do {
 			_heli_type = selectRandom d_airai_attack_chopper;
 			_numair = [d_number_attack_choppers, ceil (random d_number_attack_choppers)] select (d_number_attack_choppers > 1);
 			_height = 250;
-			_heightASL = [250, 100 + (random 100), 250 + (random 250)];
+			_heightASL = [400, 100 + (random 100), 250 + (random 250)];
 		};
 		if (_type == "AP") exitWith {
 			_heli_type = selectRandom d_airai_attack_plane;
@@ -74,14 +74,14 @@ while {true} do {
 		if (_type == "LAC") exitWith {
 			_heli_type = selectRandom d_light_attack_chopper;
 			_numair = [d_number_light_attack_choppers, ceil (random d_number_light_attack_choppers)] select (d_number_light_attack_choppers > 1);
-			_height = 150;
-			_heightASL = [150, 100 + (random 50), 150 + (random 150)];
+			_height = 200;
+			_heightASL = [300, 100 + (random 50), 150 + (random 150)];
 		};
 		if (_type == "UAV") exitWith {
 			_heli_type = selectRandom d_airai_attack_uav;
 			_numair = [d_number_attack_uavs, ceil (random d_number_attack_uavs)] select (d_number_attack_uavs > 1);
 			_height = 400;
-			_heightASL = [400, 250 + (random 100), 400 + (random 200)];
+			_heightASL = [200, 250 + (random 100), 400 + (random 200)];
 		};
 	};
 
@@ -145,12 +145,15 @@ while {true} do {
 		_vec setPilotLight false;
 		_vec setVehicleReceiveRemoteTargets true;
 		_vec setVehicleReportRemoteTargets true;
-		_vec setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 300),false];
+		_vec setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 200),false];
 		__TRACE_1("","_vec")
 		sleep 0.1;
 	};
 
-	(leader _grp) setSkill _grpskill;
+	// (leader _grp) setSkill _grpskill; // Edited: Tweak enemy skill
+	{
+		_x setSkill 1;
+	} forEach units _grp; // Edited: Tweak enemy skill
 
 	sleep 1.011;
 
@@ -283,7 +286,7 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 				         if (diag_tickTime > (_oneveh getVariable "d_enemyAir_nextRearmTime")) then {
 				              _oneveh setFuel 1;
 					      _oneveh setVehicleAmmo 1;
-					      _oneveh setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 300),false];
+					      _oneveh setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 180),false];
 					 };
 				    };
 				    if (_type isEqualTo "AP") then {
@@ -331,10 +334,10 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 #ifndef __DEBUG__
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
-		if (_num_p < 5) exitWith {1000};
-		if (_num_p < 10) exitWith {800};
-		if (_num_p < 15) exitWith {600};
-		if (_num_p < 20) exitWith {400};
+		if (_num_p < 5) exitWith {300};
+		if (_num_p < 10) exitWith {300};
+		if (_num_p < 15) exitWith {300};
+		if (_num_p < 20) exitWith {200};
 		200;
 	});
 	sleep (d_airai_respawntime + _re_random);
