@@ -10,6 +10,6 @@ switch (d_own_side) do {
 		"rhs_t90sm_tv","BWA3_Puma_Tropen","rhs_t72be_tv",
 		"rhsusf_m1a2sep1tuskiiwd_usarmy","BWA3_Leopard2_Tropen","rhsusf_m1a2sep2wd_usarmy",
 		"BWA3_Tiger_RMK_Universal","USAF_F22_EWP_AA",
-		"USAF_F22_Heavy","USAF_F22_EWP_AG","O_Plane_CAS_02_dynamicLoadout_F","Su33_Chine",
+		"USAF_F22_Heavy","USAF_F35A","O_Plane_CAS_02_dynamicLoadout_F","Su33_Chine",
 		"Su33_Chine_PT","rhsusf_f22","RHS_T50_vvs_generic_ext","RHS_T50_vvs_054","RHS_T50_vvs_blueonblue"]};
 };
