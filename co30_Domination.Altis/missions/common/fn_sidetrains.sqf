@@ -9,7 +9,7 @@ if (!isServer) exitWith {};
 params ["_pos", "_trains"];
 
 sleep 2.333;
-["specops", 2, "allmen", 2, _pos, 200, true] spawn d_fnc_CreateInf;
+["specops", 2, "allmen", 6, _pos, 200, true] spawn d_fnc_CreateInf;
 sleep 2.333;
 ["aa", 1, "tracked_apc", 1, "tank", 1, _pos, 2, 300, true] spawn d_fnc_CreateArmor;
 

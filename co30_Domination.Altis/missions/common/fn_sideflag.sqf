@@ -23,7 +23,7 @@ sleep 2.123;
 sleep 1;
 ["stat_mg", 1, "stat_gl", 1, "", 0, _ran_pos, 1, 100, false] spawn d_fnc_CreateArmor;
 sleep 2.123;
-["specops", (floor (random 3)) min 1, "allmen", (floor (random 3)) min 1, _ran_pos, 250, true] spawn d_fnc_CreateInf;
+["specops", (floor (random 3)) max 1, "allmen", (floor (random 6)) max 1, _ran_pos, 250, true] spawn d_fnc_CreateInf;
 
 _ran_pos = nil;
 

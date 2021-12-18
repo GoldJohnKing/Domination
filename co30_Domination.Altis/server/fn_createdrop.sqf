@@ -68,7 +68,7 @@ removeAllWeapons _chopper;
 [_mname, "STR_DOM_MISSIONSTRING_940"] remoteExecCall ["d_fnc_setmatxtloc", [0, -2] select isDedicated];
 sleep 0.1;
 private _crew = _veca # 1;
-{_x setCaptive true} forEach _crew;
+// {_x setCaptive true} forEach _crew;//复习，captive,俘虏
 private _unit = driver _chopper;
 
 private _wp = _grp addWaypoint [_drop_pos, 0];

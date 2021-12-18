@@ -15,7 +15,7 @@ if (isServer) then {
 	private _objs = nearestObjects [_poss, ["Land_HouseBlock_B5"], 30];
 	(_objs # 0) call d_fnc_addkillednormal;
 	sleep 2.123;
-	["specops", 2, "allmen", 1, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 2, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
 	sleep 2.221;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 350, true] spawn d_fnc_CreateArmor;
 };

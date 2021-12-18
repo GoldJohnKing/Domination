@@ -14,7 +14,7 @@ if (isServer) then {
 	d_x_sm_pos params ["_poss"];
 	private _objs = nearestObjects [_poss, ["Land_Ind_Expedice_2","Land_Ind_Expedice_1","Land_Ind_Expedice_3"], 50];
 	sleep 2.123;
-	["specops", 2, "allmen", 1, _poss, 150, true] spawn d_fnc_CreateInf;
+	["specops", 2, "allmen", 5, _poss, 150, true] spawn d_fnc_CreateInf;
 	sleep 2.221;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 300, true] spawn d_fnc_CreateArmor;
 	sleep 5.123;

@@ -23,7 +23,7 @@ if (isServer) then {
 	_sm_vec call d_fnc_addkillednormal;
 	d_x_sm_rem_ar pushBack _sm_vec;
 	sleep 2.123;
-	["specops", 2, "allmen", 0, _newpos, 0, true] call d_fnc_CreateInf;
+	["specops", 5, "allmen", 0, _newpos, 0, true] call d_fnc_CreateInf;
 	sleep 2.123;
 	private _leadero = leader _ogroup;
 	_leadero setRank "COLONEL";

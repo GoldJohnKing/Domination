@@ -18,7 +18,7 @@ if (_createarmor) then {
 if (_createinf) then {
 	sleep 2.123;
 	__TRACE("Creating inf")
-	["specops", 2, "allmen", (floor (random 4)) min 2, _poss, 150, true] spawn d_fnc_CreateInf;
+	["specops", 2, "allmen", (floor (random 8)) min 6, _poss, 150, true] spawn d_fnc_CreateInf;
 };
 
 private _houseArray = nearestTerrainObjects [_poss, ["House"], 150, false, true];

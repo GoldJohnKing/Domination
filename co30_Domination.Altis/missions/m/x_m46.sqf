@@ -15,7 +15,7 @@ if (isServer) then {
 	private _objs = nearestObjects [_poss, ["Land_Ind_Pec_03a", "Land_Ind_MalyKomin", "Land_Smokestack_03_F", "Land_CementWorks_01_brick_F"], 30];
 	__TRACE_1("","_objs")
 	sleep 2.123;
-	["specops", 2, "allmen", 1, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 2, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
 	sleep 2.221;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 400, true] spawn d_fnc_CreateArmor;
 	[_objs # 0, _objs # 1, _objs # 2] spawn d_fnc_sidefactory;

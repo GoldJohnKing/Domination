@@ -74,7 +74,7 @@ for "_i" from 1 to 3 do {
 };
 
 sleep 2.123;
-["specops", 3, "allmen", (floor (random 4) min 2), _poss, 300, true] spawn d_fnc_CreateInf;
+["specops", 3, "allmen", (floor (random 6) max 2), _poss, 300, true] spawn d_fnc_CreateInf;
 sleep 4.123;
 ["aa", 1, selectRandom ["tank", "tracked_apc"], 2, selectRandom ["wheeled_apc", "jeep_gl", "jeep_mg"], 2, _poss, 1, 400, true] spawn d_fnc_CreateArmor;
 

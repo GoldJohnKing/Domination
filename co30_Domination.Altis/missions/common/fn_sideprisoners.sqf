@@ -39,7 +39,7 @@ if (d_with_dynsim == 0) then {
 
 sleep 2.333;
 
-["specops", 2, "allmen", (floor (random 3)) min 1, _pos, 150, true] spawn d_fnc_CreateInf;
+["specops", 2, "allmen", (floor (random 6)) max 1, _pos, 150, true] spawn d_fnc_CreateInf;
 sleep 2.333;
 [selectRandom ["aa", "tank", "tracked_apc"], 1, selectRandom ["tracked_apc", "wheeled_apc"], 1, selectRandom ["jeep_mg", "jeep_gl"], 2, _pos, 1, 400, true] spawn d_fnc_CreateArmor;
 sleep 1;

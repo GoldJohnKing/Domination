@@ -56,8 +56,8 @@ if (count _crew > 0) then {
 							private _one_unit = _grp createUnit [selectRandom _munits, _grp, [], 0, "CARGO"];
 							//[_one_unit] joinSilent _grp;
 							_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
-							_one_unit setSkill ["aimingAccuracy", _subskill];
-							_one_unit setSkill ["spotTime", _subskill];
+							_one_unit setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
+							_one_unit setSkill ["spotTime", 0.9]; // Edited: Tweak enemy skill, default = _subskill
 							_one_unit call d_fnc_removenvgoggles_fak;
 							//_one_unit enableStamina false;
 							//_one_unit enableFatigue false;
@@ -97,8 +97,8 @@ if (count _crew > 0) then {
 			[_x, 4] call d_fnc_setekmode;
 		};
 		_x setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
-		_x setSkill ["aimingAccuracy", _subskill];
-		_x setSkill ["spotTime", 0.4 + _subskill];
+		_x setSkill ["aimingAccuracy", 0]; // Edited: Tweak enemy skill, default = _subskill
+		_x setSkill ["spotTime", 0.9]; // Edited: Tweak enemy skill, default = 0.4 + _subskill
 		//_x enableStamina false;
 		//_x enableFatigue false;
 		_x disableAI "RADIOPROTOCOL";
