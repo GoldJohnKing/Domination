@@ -369,7 +369,7 @@ private _common = [
 if (d_camp_static_weapons == 1) then {
 	(_compositions_b # 0) append [["BWA3_MRS120_Fleck",[-0.703125,-6.875,-0.0828934],180,1,0,[],"","",true,false]];
 	(_compositions_b # 1) append [["rhsgref_ins_g_Igla_AA_pod",[0.867188,-5.80273,-0.087122],179.999,1,0,[],"","",true,false]];
-	(_compositions_o # 0) append [["BWA3_MRS120_Fleck",[-2.94141,-8.8125,-0.0871181],179.998,1,0,[],"","",true,false]];
+	(_compositions_o # 0) append [["rhs_2b14_82mm_msv",[-2.94141,-8.8125,-0.0871181],179.998,1,0,[],"","",true,false]];
 	(_compositions_o # 1) append [["rhsgref_ins_g_Igla_AA_pod",[-8.33203,-2.92383,-0.0871181],225.002,1,0,[],"","",true,false]];
 	(_compositions_i # 0) append [["I_HMG_01_high_F",[1.50391,-6.31641,-0.0871181],179.998,1,0,[],"","",true,false]];
 	(_compositions_i # 1) append [["I_HMG_01_high_F",[-12.7109,-8.58789,-0.0871181],225.003,1,0,[],"","",true,false]];

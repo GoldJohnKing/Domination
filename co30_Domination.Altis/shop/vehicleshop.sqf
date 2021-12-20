@@ -11,14 +11,14 @@ player addaction["2S3M1自行火炮: 需要20000荣誉",{["rhs_2s3_tv",20000]exe
 player addaction["M109自行火炮: 需要20000荣誉",{["rhsusf_m109d_usarmy",20000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M2A3布莱德利BUSK1: 需要3000荣誉",{["RHS_M2A3_BUSKI",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 // player addaction["M1A2SEPv1（TUSK II）: 需要3000荣誉",{["rhsusf_m1a2sep1tuskiid_usarmy",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["豹2A6(沙漠迷彩): 需要4000荣誉",{["BWA3_Leopard2_Tropen",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+// player addaction["豹2A6(沙漠迷彩): 需要4000荣誉",{["BWA3_Leopard2_Tropen",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M1129机动迫击炮: 需要10000荣誉",{["M1129_MC_DG1_NOSLATDES",10000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["T140K主战坦克: 需要5000荣誉",{["O_MBT_04_command_F",5000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["MI24P: 需要1000荣誉",{["RHS_Mi24P_vdv",1000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["MI28N: 需要2000荣誉",{["rhs_mi28n_vvsc",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["Ka52: 需要2000荣誉",{["RHS_Ka52_vvsc",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["AH1Z: 需要2000荣誉",{["RHS_AH1Z",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["UH虎式武装直升机: 需要2000荣誉",{["BWA3_Tiger_RMK_Universal",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+// player addaction["UH虎式武装直升机: 需要2000荣誉",{["BWA3_Tiger_RMK_Universal",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["AH-64D阿帕奇武装直升机: 需要3000荣誉",{["RHS_AH64D",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["沈阳歼15-原型机: 需要4000荣誉",{["Su33_Chine_PT",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["沈阳歼15-飞鲨: 需要4000荣誉",{["Su33_Chine",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
