@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=2222;
+		nextID=2226;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=82;
+		nextID=84;
 	};
 	class Camera
 	{
-		pos[]={14873.965,120.47312,16537.537};
-		dir[]={-0.23618299,-0.23886254,0.9419893};
-		up[]={-0.058129307,0.97098631,0.23184273};
-		aside[]={0.97005922,-9.3846756e-007,0.2432202};
+		pos[]={14824.365,40.144066,16756.582};
+		dir[]={-0.497776,-0.60787618,-0.61879009};
+		up[]={-0.38106814,0.79392987,-0.47370917};
+		aside[]={-0.77924985,-1.1191296e-006,0.62685484};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_DominationBW3";
+sourceName="co30_Domination_lost";
 addons[]=
 {
 	"A3_Ui_F",
@@ -107,8 +107,8 @@ addons[]=
 	"FIR_Su25SM3_F",
 	"FIR_A10C_F",
 	"FIR_AV8B_F",
-	"ZTZ99_LK",
 	"ZTZ99A_LK",
+	"ZTZ99_LK",
 	"PGZ09_LK"
 };
 class AddonsMetaData
@@ -523,13 +523,13 @@ class AddonsMetaData
 		};
 		class Item61
 		{
-			className="ZTZ99_LK";
-			name="ZTZ99_LK";
+			className="ZTZ99A_LK";
+			name="ZTZ99A_LK";
 		};
 		class Item62
 		{
-			className="ZTZ99A_LK";
-			name="ZTZ99A_LK";
+			className="ZTZ99_LK";
+			name="ZTZ99_LK";
 		};
 		class Item63
 		{
@@ -15272,7 +15272,7 @@ class Mission
 			};
 			id=1743;
 			type="JS_JC_SU35";
-			atlOffset=0.48623085;
+			atlOffset=0.48412132;
 		};
 		class Item523
 		{
@@ -23678,7 +23678,7 @@ class Mission
 			};
 			id=2217;
 			type="FIR_AV8B";
-			atlOffset=0.62320709;
+			atlOffset=0.69329071;
 		};
 		class Item647
 		{
@@ -23695,132 +23695,9 @@ class Mission
 			};
 			id=2218;
 			type="JS_JC_FA18F";
-			atlOffset=0.92110825;
+			atlOffset=0.92529297;
 		};
 		class Item648
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14755.476,20.911331,16685.516};
-				angles[]={-0,5.5031977,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				lock="UNLOCKED";
-				name="d_vec_trans_7";
-				textures="min_rf_nakidka";
-			};
-			id=2219;
-			type="O_ZTZ99";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""SMG_min_rf_pp_2000_ekp_8_18"",""launch_min_rf_RPG32""],[2,1]],[[""30Rnd_min_rf_545x39_Mag"",""100Rnd_min_rf_762x54_T_Box"",""10Rnd_762x54_Mag"",""Grenade_min_rf_rgd_5"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""20Rnd_min_rf_9x19_Mag"",""SmokeShell"",""Chemlight_red"",""RPG32_F"",""DemoCharge_Remote_Mag"",""Laserbatteries""],[4,2,3,5,5,2,10,4,2,2,1,2]],[[""Laserdesignator_03"",""FirstAidKit"",""Medikit"",""ToolKit"",""MineDetector""],[1,5,1,1,1]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"ARRAY"
-								};
-							};
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"ARRAY"
-											};
-										};
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="min_rf_nakidka";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"ARRAY"
-											};
-										};
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=2;
-			};
-		};
-		class Item649
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23983,108 +23860,41 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item649
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14755.814,20.911331,16686.088};
+				angles[]={-0,5.4977875,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_vec_trans_7";
+			};
+			id=2224;
+			type="O_ZTZ99";
+		};
 		class Item650
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14810.87,19.582989,16746.078};
-				angles[]={-0,5.4803343,0};
+				position[]={14811.324,19.582989,16745.813};
+				angles[]={-0,5.4977875,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
 				name="d_vec_trans_12";
-				textures="min_rf_nakidka";
+				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 			};
-			id=2221;
+			id=2225;
 			type="O_PGZ09_AA";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="VehicleCustomization";
-					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"ARRAY"
-								};
-							};
-							class value
-							{
-								items=2;
-								class Item0
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"ARRAY"
-											};
-										};
-										class value
-										{
-											items=2;
-											class Item0
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="min_rf_nakidka";
-												};
-											};
-											class Item1
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-									};
-								};
-								class Item1
-								{
-									class data
-									{
-										class type
-										{
-											type[]=
-											{
-												"ARRAY"
-											};
-										};
-									};
-								};
-							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
 		};
 	};
 	class Connections
