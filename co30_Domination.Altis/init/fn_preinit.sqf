@@ -1976,7 +1976,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","iaf_lca_tejas_attack","iaf_mig29s_attack"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2217,7 +2217,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","rhsgref_cdf_b_Mi35","RHSGREF_A29B_HIDF","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_reg_Mi17Sh","rhsgref_cdf_b_su25","RHS_AN2_B","rhsgref_cdf_b_Mi24D","rhsgref_cdf_b_Mi24D_Early"]
+					["I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","rhsgref_cdf_b_Mi35","RHSGREF_A29B_HIDF","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_reg_Mi17Sh","rhsgref_cdf_b_su25","RHS_AN2_B","rhsgref_cdf_b_Mi24D","ind_iaf_Mi35CAS","ind_iaf_Mi35AT","iaf_mi17_amtsh_gcas","iaf_ah_64e"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
@@ -2896,10 +2896,10 @@ if (hasInterface) then {
 		[], // PRIMARYWEAPON
 		[], // SECONDARYWEAPON
 		[], // HANDGUN
-		[{getText (configFile>>"CfgWeapons">>_this>>"ItemInfo">>"containerClass") == "Supply500"}, {d_player_side == blufor && {_this in ["u_o_v_soldier_viper_f", "u_o_v_soldier_viper_hex_f"]}}, {_this select [0, 4] == "u_c_" || {_this select [0, 6] == "u_i_c_"}}, "U_OrestesBody", "U_Marshal", "U_Rangemaster", "U_Competitor", {"paradeuniform" in _this}], // uniforms
-		[{_this isKindOf ["V_DeckCrew_base_F", configFile >> "CfgWeapons"]}, {_this isKindOf ["V_EOD_base_F", configFile >> "CfgWeapons"]}, {_this isKindOf ["V_Safety_base_F", configFile >> "CfgWeapons"]}, "V_Press_F", {_this select [0, 7] == "v_plain"}], // VEST
-		[{_this isKindOf "B_HMG_01_weapon_F"}, {_this isKindOf "B_HMG_01_support_F"}, {_this isKindOf "B_HMG_02_support_F"}, {_this select [1, 15] == "_AA_01_weapon_F"}, {_this select [1, 15] == "_AT_01_weapon_F"}, {getText (configFile>>"CfgVehicles">>_this>>"vehicleclass") == "Respawn"}, {"uav_" in _this || {"ugv_" in _this}}, {_this select [1, 11] == "_messenger_"}, {"_everyday_" in _this}, {"_sport_" in _this}], // BACKPACK
-		[{d_player_side == blufor && {_this == "H_HelmetO_ViperSP_ghex_F" || {_this == "H_HelmetO_ViperSP_hex_F"}}}, {_this isKindOf ["H_Hat_blue", configFile >> "CfgWeapons"]}, {_this isKindOf ["H_HeadBandage_base_F", configFile >> "CfgWeapons"]}, {_this isKindOf ["H_RacingHelmet_1_F", configFile >> "CfgWeapons"]}, {_this isKindOf ["H_Construction_headset_base_F", configFile >> "CfgWeapons"]}, {_this isKindOf ["H_Construction_earprot_base_F", configFile >> "CfgWeapons"]}, {_this isKindOf ["H_Construction_basic_base_F", configFile >> "CfgWeapons"]}, {"paradedresscap" in _this}], // HEADGEAR
+		[], // uniforms
+		[], // VEST
+		[], // BACKPACK
+		[], // HEADGEAR
 		[], // GOGGLES
 		[], // NVGS
 		[], // BINOCULARS
@@ -2916,7 +2916,7 @@ if (hasInterface) then {
 		[], // ITEMMUZZLE
 		[], // CARGOMAG
 		[], // CARGOTHROW
-		["APERSMineDispenser_Mag"], // CARGOPUT
+		[], // CARGOPUT
 		[], // CARGOMISC
 		[], // ITEMBIPOD
 		[] // CARGOMAGALL
