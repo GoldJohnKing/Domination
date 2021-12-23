@@ -8,22 +8,22 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=2245;
+		nextID=2249;
 	};
 	class MarkerIDProvider
 	{
-		nextID=202;
+		nextID=203;
 	};
 	class LayerIndexProvider
 	{
-		nextID=96;
+		nextID=100;
 	};
 	class Camera
 	{
-		pos[]={15163.871,86.284195,15575.861};
-		dir[]={-0.084660985,-0.45310816,-0.8874957};
-		up[]={-0.04303186,0.89143115,-0.45109576};
-		aside[]={-0.99554282,-6.8174995e-007,0.094969638};
+		pos[]={14463.511,42.447464,16768.449};
+		dir[]={0.70193774,-0.46686953,0.53788352};
+		up[]={0.37057999,0.88432521,0.28396955};
+		aside[]={0.60824037,-8.8359229e-008,-0.79375428};
 	};
 };
 binarizationWanted=0;
@@ -632,7 +632,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=649;
+		items=652;
 		class Item0
 		{
 			dataType="Marker";
@@ -739,28 +739,28 @@ class Mission
 		class Item11
 		{
 			dataType="Marker";
-			position[]={14401.607,19.275547,16315.209};
+			position[]={15122.158,17.91,17196.891};
 			name="d_bonus_air_positions_1";
 			type="Empty";
-			angle=202.76416;
+			angle=133.76414;
 			id=14;
 		};
 		class Item12
 		{
 			dataType="Marker";
-			position[]={14344.175,18.702923,16329.023};
+			position[]={15140.774,17.91,17217.709};
 			name="d_bonus_air_positions_2";
 			type="Empty";
-			angle=190.81985;
+			angle=124.81983;
 			id=15;
 		};
 		class Item13
 		{
 			dataType="Marker";
-			position[]={14265.03,19.365999,16300.438};
+			position[]={15161.844,17.91,17239.543};
 			name="d_bonus_air_positions_3";
 			type="Empty";
-			angle=157.74837;
+			angle=121.74834;
 			id=16;
 		};
 		class Item14
@@ -810,10 +810,10 @@ class Mission
 		class Item19
 		{
 			dataType="Marker";
-			position[]={14242.514,19.433016,16285.865};
+			position[]={15136.588,17.91,16990.689};
 			name="d_bonus_air_positions_4";
 			type="Empty";
-			angle=140.88631;
+			angle=226.88629;
 			id=22;
 		};
 		class Item20
@@ -828,34 +828,34 @@ class Mission
 		class Item21
 		{
 			dataType="Marker";
-			position[]={14419.635,18.719999,16246.548};
+			position[]={15131.98,17.91,17117.498};
 			name="d_bonus_air_positions_6";
 			type="Empty";
-			angle=38.261654;
+			angle=281.2616;
 			id=24;
 		};
 		class Item22
 		{
 			dataType="Marker";
-			position[]={14281.168,19.009798,16340.927};
+			position[]={15126.352,17.902807,17072.105};
 			name="d_bonus_air_positions_7";
 			type="Empty";
-			angle=148.69209;
+			angle=267.69208;
 			id=25;
 		};
 		class Item23
 		{
 			dataType="Marker";
-			position[]={14249.917,20.126144,16231.063};
+			position[]={15090.982,17.91,16945.326};
 			name="d_bonus_air_positions_8";
 			type="Empty";
-			angle=278.64862;
+			angle=45.64864;
 			id=26;
 		};
 		class Item24
 		{
 			dataType="Marker";
-			position[]={14293.033,19.426001,16284.094};
+			position[]={15189.809,17.907104,17136.66};
 			name="bonus_air";
 			text="奖励固定翼位置";
 			type="mil_dot";
@@ -863,7 +863,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 			id=27;
-			atlOffset=0.00022125244;
+			atlOffset=-0.89625359;
 		};
 		class Item25
 		{
@@ -14555,8 +14555,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14813.037,20.058704,16717.012};
-				angles[]={0,5.4825168,0};
+				position[]={14468.737,19.512962,16811.504};
+				angles[]={0.0093286335,0.77011341,0.0013372133};
 			};
 			side="Empty";
 			flags=4;
@@ -17768,7 +17768,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14903.817,21.267853,16701.488};
-				angles[]={-0,2.3393817,0};
+				angles[]={0,2.3393817,0};
 			};
 			side="Empty";
 			flags=4;
@@ -19801,8 +19801,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14818.349,19.633263,16722.65};
-				angles[]={0,5.4801598,0};
+				position[]={14497.854,19.272161,16795.109};
+				angles[]={0.0013372133,3.9268095,0.0066682254};
 			};
 			side="Empty";
 			flags=4;
@@ -22582,7 +22582,7 @@ class Mission
 			};
 			id=2217;
 			type="FIR_AV8B";
-			atlOffset=0.6747818;
+			atlOffset=1.0748043;
 		};
 		class Item634
 		{
@@ -24352,7 +24352,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15180.321,23.869995,15488.797};
-				angles[]={0,3.455754,-0};
+				angles[]={0,3.455754,0};
 			};
 			side="Empty";
 			class Attributes
@@ -24362,7 +24362,53 @@ class Mission
 			};
 			id=2244;
 			type="JS_JC_FA18E";
-			atlOffset=0.8032341;
+			atlOffset=0.80741882;
+		};
+		class Item649
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14490.067,19.213676,16802.5};
+				angles[]={0.0039967569,3.9442489,0.0053265258};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_vec_trans_6";
+				receiveRemoteTargets=1;
+			};
+			id=2246;
+			type="rhsusf_m109d_usarmy";
+		};
+		class Item650
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14483.395,19.154654,16810.053};
+				angles[]={0.0013372133,3.944263,0.0053265258};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_vec_trans_9";
+				receiveRemoteTargets=1;
+			};
+			id=2247;
+			type="rhsusf_m109d_usarmy";
+		};
+		class Item651
+		{
+			dataType="Marker";
+			position[]={14481.6,17.455999,16800.418};
+			name="marker_202";
+			text="自行火炮排";
+			type="o_art";
+			id=2248;
+			atlOffset=7.6293945e-005;
 		};
 	};
 	class Connections
