@@ -18,7 +18,7 @@ player addaction["MI24P: 需要1000荣誉",{["RHS_Mi24P_vdv",1000]execvm "moneys
 player addaction["MI28N: 需要2000荣誉",{["rhs_mi28n_vvsc",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["Ka52: 需要2000荣誉",{["RHS_Ka52_vvsc",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["AH1Z: 需要2000荣誉",{["RHS_AH1Z",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-// player addaction["UH虎式武装直升机: 需要2000荣誉",{["BWA3_Tiger_RMK_Universal",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["F/A 18E超级大黄蜂: 需要3000荣誉",{["JS_JC_FA18E",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["AH-64D阿帕奇武装直升机: 需要3000荣誉",{["RHS_AH64D",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["沈阳歼15-原型机: 需要4000荣誉",{["Su33_Chine_PT",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["沈阳歼15-飞鲨: 需要4000荣誉",{["Su33_Chine",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
