@@ -101,9 +101,9 @@ switch (_enemyMode) do {
 			[[1,0], 1] // jeep with gl
 		];
 		d_vec_numbers_guard_static = [
-			[[1,0], 1], // tanks
+			[[2,1], 1], // tanks
 			[[1,0], 1], // tracked apc
-			[[2,1], 1] // aa
+			[[2,2], 1] // aa
 		];
 		d_vec_numbers_patrol = [
 			[[1,1], 1], // tanks
@@ -152,10 +152,10 @@ switch (_enemyMode) do {
 		d_vec_numbers_guard_static = [
 			[[1,0], 1], // tanks
 			[[1,0], 1], // tracked apc
-			[[2,1], 1] // aa
+			[[4,2], 1] // aa
 		];
 		d_vec_numbers_patrol = [
-			[[0,0], 1], // tanks
+			[[2,0], 1], // tanks
 			[[2,0], 1], // tracked apc
 			[[2,0], 1], // wheeled apc
 			[[2,1], 1], // jeep with mg
