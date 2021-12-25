@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=2259;
+		nextID=2260;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=108;
+		nextID=110;
 	};
 	class Camera
 	{
-		pos[]={15050.853,59.090992,15474.846};
-		dir[]={0.93482369,-0.34698766,-0.076186627};
-		up[]={0.34587228,0.9378553,-0.028188827};
-		aside[]={-0.081231616,9.3736162e-008,-0.99674839};
+		pos[]={15256.235,75.03875,15505.726};
+		dir[]={-0.80644196,-0.46017265,-0.37147862};
+		up[]={-0.41798422,0.88781345,-0.19253838};
+		aside[]={-0.41840959,9.0389221e-008,0.90832049};
 	};
 };
 binarizationWanted=0;
@@ -623,7 +623,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="丰富化现代战争!用启动器来加入战斗吧！";
+		briefingName="阿尔蒂斯地空联合机械化战役，用启动器来加入战斗吧！";
 		overviewText="欢迎来到61方面军红锤服！";
 		startWeather=0;
 		startWind=0;
@@ -823,7 +823,7 @@ class Mission
 			position[]={15136.588,17.91,16990.689};
 			name="d_bonus_air_positions_4";
 			type="Empty";
-			angle=226.8862;
+			angle=226.88618;
 			id=22;
 		};
 		class Item20
@@ -23859,24 +23859,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15180.321,23.869995,15488.797};
-				angles[]={0,3.455754,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=2244;
-			type="JS_JC_FA18E";
-			atlOffset=0.80741882;
-		};
-		class Item646
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={14490.067,19.213676,16802.5};
 				angles[]={0.0039967569,3.9442489,0.0053265258};
 			};
@@ -23891,7 +23873,7 @@ class Mission
 			type="rhsusf_m109d_usarmy";
 			atlOffset=1.7166138e-005;
 		};
-		class Item647
+		class Item646
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23910,7 +23892,7 @@ class Mission
 			type="rhsusf_m109d_usarmy";
 			atlOffset=-3.8146973e-006;
 		};
-		class Item648
+		class Item647
 		{
 			dataType="Marker";
 			position[]={14481.6,17.455999,16800.418};
@@ -23920,7 +23902,7 @@ class Mission
 			id=2248;
 			atlOffset=7.6293945e-005;
 		};
-		class Item649
+		class Item648
 		{
 			dataType="Object";
 			class PositionInfo
@@ -23960,7 +23942,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item650
+		class Item649
 		{
 			dataType="Object";
 			class PositionInfo
@@ -24002,7 +23984,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item651
+		class Item650
 		{
 			dataType="Object";
 			class PositionInfo
@@ -24018,7 +24000,7 @@ class Mission
 			};
 			id=2255;
 			type="FIR_F35B_Standard";
-			atlOffset=1.0749931;
+			atlOffset=1.2456341;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24043,7 +24025,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item652
+		class Item651
 		{
 			dataType="Object";
 			class PositionInfo
@@ -24064,6 +24046,85 @@ class Mission
 			id=2258;
 			type="USAF_F35A";
 			atlOffset=1.0179996;
+		};
+		class Item652
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15179.979,23.874577,15489.093};
+				angles[]={0,3.4557519,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=2259;
+			type="JS_JC_FA18F";
+			atlOffset=0.80781555;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="js_jc_fa18_foldWings";
+					expression="[_this, _value] execVM 'js_jc_fa18\scripts\init\wing_fold.sqf';";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="js_jc_fa18_complexStartup";
+					expression="_this setVariable ['js_jc_fa18_complexStartup', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ttt_servicemenu";
+					expression="_this setVariable ['ServiceMenu', _value]; if (!_value) then { _this animate ['service_menu_switch', 1, true]; };";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 	};
 	class Connections
@@ -24258,7 +24319,7 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=2244;
+				item0=2259;
 				item1=1741;
 				class CustomData
 				{
