@@ -1870,7 +1870,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","RHS_T50_vvs_generic","RHS_T50_vvs_051","pook_EF2000_OPFOR"]
+					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","RHS_T50_vvs_generic","RHS_T50_vvs_051","pook_EF2000_OPFOR","RHS_T50_vvs_053","O_Plane_Fighter_02_Stealth_F"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mig21_CAS", "uns_Mig21_CBU", "uns_Mig21_HCAS"]
@@ -1976,7 +1976,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","iaf_lca_tejas_attack","iaf_mig29s_attack"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","iaf_lca_tejas_attack","iaf_mig29s_attack","O_Plane_Fighter_02_F","RHS_T50_vvs_generic_ext"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]

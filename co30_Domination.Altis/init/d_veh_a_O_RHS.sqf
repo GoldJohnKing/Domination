@@ -9,4 +9,5 @@
 ["RHS_M252_D","RHS_M119_D","RHS_M252_USMC_WD"],
 ["I_Truck_02_fuel_F"],
 ["I_Truck_02_box_F"],
-["I_Truck_02_ammo_F"]
+["I_Truck_02_ammo_F"],
+["O_UAV_01_F","O_UAV_06_F","O_UGV_01_rcws_F"]

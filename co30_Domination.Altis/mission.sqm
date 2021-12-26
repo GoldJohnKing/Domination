@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=110;
+		nextID=112;
 	};
 	class Camera
 	{
-		pos[]={15256.235,75.03875,15505.726};
-		dir[]={-0.80644196,-0.46017265,-0.37147862};
-		up[]={-0.41798422,0.88781345,-0.19253838};
-		aside[]={-0.41840959,9.0389221e-008,0.90832049};
+		pos[]={14829.732,75.03875,16054.777};
+		dir[]={-0.48422,-0.37475616,0.7906965};
+		up[]={-0.19573395,0.92710346,0.31962135};
+		aside[]={0.85284603,2.6298221e-007,0.522282};
 	};
 };
 binarizationWanted=0;
@@ -823,7 +823,7 @@ class Mission
 			position[]={15136.588,17.91,16990.689};
 			name="d_bonus_air_positions_4";
 			type="Empty";
-			angle=226.88618;
+			angle=226.88617;
 			id=22;
 		};
 		class Item20
@@ -24063,7 +24063,7 @@ class Mission
 			};
 			id=2259;
 			type="JS_JC_FA18F";
-			atlOffset=0.80781555;
+			atlOffset=0.84647369;
 			class CustomAttributes
 			{
 				class Attribute0
