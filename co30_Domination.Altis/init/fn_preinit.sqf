@@ -1277,7 +1277,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 		d_number_attack_choppers = 2;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
-		d_number_light_attack_choppers = 1;
+		d_number_light_attack_choppers = 2;
 	};
 	if (isNil "d_number_attack_uavs") then {
 		d_number_attack_uavs = 1;
@@ -2217,7 +2217,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","rhsgref_cdf_b_Mi35","RHSGREF_A29B_HIDF","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_reg_Mi17Sh","rhsgref_cdf_b_su25","RHS_AN2_B","rhsgref_cdf_b_Mi24D","ind_iaf_Mi35CAS","ind_iaf_Mi35AT","iaf_mi17_amtsh_gcas","iaf_ah_64e"]
+					["Iaf_bae_hawk","rhs_l39_cdf_b_cdf","rhsgref_cdf_b_su25","rhs_uh1h_hidf_gunship","RHSGREF_A29B_HIDF","RHSGREF_A29B_HIDF","RHSGREF_A29B_HIDF","rhsgred_hidf_cessna_o3a","Dhruv_Armed_wdl","ind_iaf_Mi35AT","ind_iaf_Mi35CAS","rhsgref_b_mi24g_CAS"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
