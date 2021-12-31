@@ -3456,6 +3456,18 @@
 <Key ID="STR_DOM_MISSIONSTRING_2028_INFANTRY">
 <Original>注意: 游击队已从 %1 迁入该城市。游击队对蓝方友好, 对红方敌对。</Original>
 </Key>
+<Key ID="STR_DOM_MISSIONSTRING_CIV_RESISTANCE">
+<English>Attention: some of the civilians are armed and ready to fight!</English>
+<Spanish>Attention: some of the civilians are armed and ready to fight!</Spanish>
+<Portuguese>Attention: some of the civilians are armed and ready to fight!</Portuguese>
+<Korean>Attention: some of the civilians are armed and ready to fight!</Korean>
+<Japanese>Attention: some of the civilians are armed and ready to fight!</Japanese>
+<Original>Attention: some of the civilians are armed and ready to fight!</Original>
+<Russian>Attention: some of the civilians are armed and ready to fight!</Russian>
+<Chinesesimp>注意：一些平民已经武装起来，准备战斗！</Chinesesimp>
+<Chinese>注意：一些平民已經武裝起來，準備戰鬥！</Chinese>
+<French>Attention: some of the civilians are armed and ready to fight!</French>
+</Key>
 <Key ID="STR_DOM_MISSIONSTRING_2028_RABBIT">
 <Original>注意: 我们的幸运宠物兔子迷路了。 查找 %1 ! </Original>
 </Key>

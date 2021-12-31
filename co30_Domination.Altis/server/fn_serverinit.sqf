@@ -28,18 +28,9 @@ d_x_mt_event_types = [
 	"RESCUE_DEFEND",
 	"RESCUE_DEFUSE",
 	"KILL_TRIGGERMAN",
-	"CIV_MASSACRE" //requires awareness/aggressiveshoot
+	"CIV_RESISTANCE_INDEPENDENT",
+	"CIV_RESISTANCE_JOINPLAYER"
 ];
-
-if (d_ai_awareness_rad < 0 && {d_ai_aggressiveshoot == 0}) then {
-	// server is not configured to use awareness/aggressiveshoot script, remove events that won't work 
-	d_x_mt_event_types deleteAt (_tmpMtEvents find "CIV_MASSACRE");
-};
-
-if (d_enable_civs == 0) then {
-	// server is not configured to use civilians, remove events that won't work 
-	d_x_mt_event_types deleteAt (_tmpMtEvents find "CIV_MASSACRE");
-};
 
 d_x_mt_event_ar = [];
 d_x_mt_event_pos = [];
@@ -53,7 +44,11 @@ if (d_MissionType != 2 && {d_disable_airai != 1}) then {
 	0 spawn {
 		scriptName "spawn_init_airai";
 		__TRACE("spawn_init_airai start")
+#ifndef __DEBUG__
 		sleep 30;
+#else
+		sleep 2;
+#endif
 		__TRACE("spawn_init_airai 30 secs over")
 		private _first = false;
 		if (d_number_light_attack_choppers > 0 && {d_light_attack_chopper isNotEqualTo []}) then {

@@ -1,17 +1,13 @@
-4.57
+4.58
 
-ADDED: co21 Western Sahara Blufor version on Sefrou Ramal
-
-- Added: Server parameter to use faster intro sequence, by longtimegamer
-- Changed: Larger search radius (75m) for AI when civilian massacre is triggered, by longtimegamer
-- Changed: Added: only run civ events if guerrilla events are enabled, by longtimegamer
-- Fixed: Player 3D markers were not available after respawn in Zeus
-- Fixed: Wrong variable name in fn_sidearty.sqf
-- Fixed: Main target event "marked for death" didn't work correctly
-- Fixed: CUP civilian profiteer classname in civilianmodule
-- Fixed: Garrison units script errors
-- Fixed: Auto viewdistance server-side override was not working, by longtimegamer
-- Fixed: Status bar wasn't centered in multi monitor setups
-- Fixed: SOG was missing 1.1 update weapons and uniforms
-- Fixed: Correct logic for automatic viewdistance default setting, dyke fix for SOG maps copied from johnnyboy, wiki params fix forcestream add autoviewdistance, by longtimegamer
+- Added: Faster camp capture (non-TT), by longtimegamer
+- Added: WSahara civilian unit types, by longtimegamer
+- Added: Autorevive, if no players nearby in a radius of 215 m, by alexvladn
+- Added: New maintarget event, units dressed in plain clothes can be triggered to fight as guerrillas or join the player group, by longtimegamer
+- Changed: No rain and fog in the Western Sahara version
+- Fixed: Updates to profileNamespace mission progress save were missing a variable resulting in an error when starting the mission again
+- Fixed: Civ massacre event is very rare and with smaller trigger area, by longtimegamer
+- Fixed: Remove civilians near maintarget objectives so they are not killed by explosives, by longtimegamer
+- Fixed: Reoptimized vehicle map marker drawing
+- Fixed: Don't put ZU23 inside a bunker in the WS version
 - Updated: Simplified Chinese translation by SanJinSix
