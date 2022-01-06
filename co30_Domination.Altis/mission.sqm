@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=157;
+		nextID=160;
 	};
 	class Camera
 	{
 		pos[]={15118.911,27.380041,16969.01};
-		dir[]={-0.69761223,-0.24317025,-0.6739639};
-		up[]={-0.17489299,0.9699828,-0.16896431};
-		aside[]={-0.69482023,6.4901542e-009,0.71920186};
+		dir[]={-0.58794785,0.055768244,-0.80697411};
+		up[]={0.032839928,0.99844372,0.045073673};
+		aside[]={-0.80823195,3.7252903e-009,0.58886427};
 	};
 };
 binarizationWanted=0;
@@ -618,20 +618,25 @@ class Mission
 	{
 		briefingName="阿尔蒂斯地空联合机械化战役，用启动器来加入战斗吧！";
 		overviewText="欢迎来到61方面军红锤服！";
-		startWeather=0;
-		startWind=0;
-		startLightnings=1;
-		startWaves=1;
-		forecastWeather=0;
-		forecastWind=0;
-		forecastWaves=1;
-		forecastLightnings=1;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startRain=0.30000001;
+		startLightnings=0.5;
+		startWaves=0.5;
+		startGust=0.050000001;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.5;
+		forecastRain=0.30000001;
+		forecastLightnings=0.5;
+		forecastGust=0.050000001;
 		rainForced=1;
 		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
+		year=2022;
 		month=6;
+		day=25;
 		hour=6;
 		minute=0;
 		startFogBase=-1000;
