@@ -780,13 +780,13 @@ if (isServer) then {
 				[0,0,0]
 			};
 			__TRACE_1("","_fog")
-			0 setFog _fog;
+			0 setFog [0, 1, -5000]; // 0 setFog _fog; // Edited: Force disable fog
 		} else {
-			0 setFog [0, 0, 0];
+			0 setFog [0, 1, -5000]; // 0 setFog [0, 0, 0]; // Edited: Force disable fog
 			0 spawn {
 				scriptName "spawn_preinitfog";
 				sleep 100;
-				0 setFog [0, 0, 0];
+				0 setFog [0, 1, -5000]; // 0 setFog [0, 0, 0]; // Edited: Force disable fog
 			};
 		};
 		if (d_WithWinterWeather == 0) then {
@@ -794,14 +794,14 @@ if (isServer) then {
 			publicVariable "d_winterw";
 		};
 	} else {
-		0 setFog [0, 0, 0];
+		0 setFog [0, 1, -5000]; // 0 setFog [0, 0, 0]; // Edited: Force disable fog
 		0 setOvercast 0;
 		0 spawn {
 			scriptName "spawn_preinitovercast";
 			while {true} do {
 				sleep 100;
 				0 setOvercast 0;
-				0 setFog [0, 0, 0];
+				0 setFog [0, 1, -5000]; // 0 setFog [0, 0, 0]; // Edited: Force disable fog
 			};
 		};
 	};

@@ -13,9 +13,9 @@ while {true} do {
 
 	if (d_enable_fog == 0) then {
 		private _fog = [[0, 0, 0], [random 0.1, 0.1, 20 + (random 40)]] select (random 100 > 90);
-		400 setFog _fog;
+		400 setFog [0, 1, -5000];// 400 setFog _fog; // Edited: Force disable fog
 	} else {
-		0 setFog [0, 0, 0];
+		0 setFog [0, 1, -5000];
 	};
 
 	if (d_WithWinterWeather == 0) then {
