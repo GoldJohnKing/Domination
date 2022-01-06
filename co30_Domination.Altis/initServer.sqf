@@ -162,3 +162,6 @@ if (isDedicated) then {
 #endif
 
 diag_log [diag_frameno, diag_ticktime, time, "MPF initServer.sqf processed"];
+
+private _code = compile preprocessFileLineNumbers "Weather\randomWeatherScript.sqf";
+[] spawn _code;
