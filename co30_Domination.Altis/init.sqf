@@ -55,3 +55,6 @@ addMissionEventHandler ["EntityKilled", {
 		[10] execVM "moneysystem\rewardsystem\reward.sqf";
 	};
 }];
+
+// Edited: Add weather system
+[] execVM "real_weather.sqf";
