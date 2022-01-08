@@ -55,3 +55,9 @@ addMissionEventHandler ["EntityKilled", {
 		[10] execVM "moneysystem\rewardsystem\reward.sqf";
 	};
 }];
+
+// Edited: Add FFE Artillery system
+RydFFE_Debug = false;
+RydFFE_ShellView = false;
+RydFFE_FO = [objNull];
+[] execVM "RYD_FFE\FFE.sqf";

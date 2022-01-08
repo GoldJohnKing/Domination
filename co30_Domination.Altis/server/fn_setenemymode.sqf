@@ -147,7 +147,7 @@ switch (_enemyMode) do {
 			[[2,0], 1], // tracked apc
 			[[2,2], 1], // wheeled apc
 			[[1,0], 1], // jeep with mg
-			[[2,1], 1] // jeep with gl
+			[[2,2], 1] // jeep with gl
 		];
 		d_vec_numbers_guard_static = [
 			[[1,0], 1], // tanks
