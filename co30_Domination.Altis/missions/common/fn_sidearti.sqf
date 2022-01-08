@@ -34,7 +34,7 @@ private _grp = [d_side_enemy] call d_fnc_creategroup;
 
 for "_i" from 0 to (__count_arti - 1) do {
 	private _arti_pos_dir = _pos_array # _i;
-	private _arti = createVehicle [d_sm_arty, _arti_pos_dir # 0, [], 0, "NONE"];
+	private _arti = createVehicle [d_sm_arty, _arti_pos_dir # 0, [], 0, "NONE"];//生成火炮
 	_arti setDir (_arti_pos_dir # 1);
 	_arti setPos (_arti_pos_dir # 0);
 	d_x_sm_vec_rem_ar pushBack _arti;

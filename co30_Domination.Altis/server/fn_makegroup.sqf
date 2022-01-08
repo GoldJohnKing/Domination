@@ -17,7 +17,7 @@ __TRACE_1("","_grp")
 
 _grptype = toLowerANSI _grptype;
 
-private _istatatic = _grptype in ["stat_mg", "stat_gl", "arty"];
+private _istatatic = _grptype in ["stat_mg", "stat_gl", "arty"];//火炮
 private _ismen = _grptype in ["allmen", "specops"];
 
 private _msize = 0;

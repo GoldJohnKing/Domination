@@ -130,7 +130,7 @@ switch (toLowerANSI (_sm_ar # 1)) do {
 	case "minesnaval": { // does NOT create armor and inf in common file
 		[d_x_sm_pos # 0, "naval", (_sm_ar # 3) call _boolorarrayfnc, (_sm_ar # 4) call _boolorarrayfnc] spawn d_fnc_sidemines;
 	};
-	case "artycannon": {
+	case "artycannon": {//火炮
 		[d_x_sm_pos # 0, d_sm_arty, _sm_ar # 7, false, true, true, (_sm_ar # 3) call _boolorarrayfnc, (_sm_ar # 4) call _boolorarrayfnc] spawn d_fnc_sideobject;
 	};
 	case "dataterminal": {
