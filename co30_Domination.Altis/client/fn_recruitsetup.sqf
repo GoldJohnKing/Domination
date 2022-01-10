@@ -82,7 +82,7 @@ if (isNil "d_UnitsToRecruit") then {
 #endif
 #ifdef __RHS__
 	d_UnitsToRecruit = switch (d_player_side) do {
-		case blufor: {["rhsusf_army_ucp_rifleman", "rhsusf_army_ucp_sniper", "rhsusf_army_ucp_medic", "rhsusf_army_ucp_machinegunner", "rhsusf_army_ucp_maaws", "rhsusf_army_ucp_grenadier", "rhsusf_army_ucp_aa", "rhsusf_army_ucp_javelin"]};
+		case blufor: {["rhsusf_army_ucp_rifleman", "rhsusf_army_ucp_sniper", "rhsusf_army_ucp_medic", "rhsusf_army_ucp_machinegunner", "rhsusf_army_ucp_maaws", "rhsusf_army_ucp_grenadier", "rhsusf_army_ucp_aa", "rhsusf_army_ucp_javelin","rhsusf_socom_marsoc_teamleader","rhsusf_socom_marsoc_teamchief","rhsusf_socom_marsoc_spotter","rhsusf_socom_marsoc_sniper","rhsusf_socom_marsoc_sarc","rhsusf_socom_marsoc_jtac","rhsusf_socom_marsoc_marksman","rhsusf_socom_marsoc_cso_light","rhsusf_socom_marsoc_cso_mk17_light","rhs_vdv_recon_rifleman","rhs_vdv_recon_marksman","rhs_vdv_recon_marksman_vss","rhs_vdv_recon_medic","rhs_vdv_recon_rifleman_ak103","rhs_vdv_recon_rifleman_asval","rhs_vdv_recon_grenadier","rhs_vdv_recon_rifleman_lat","rhs_vdv_recon_rifleman_scout_akm","rhs_vdv_recon_arifleman_rpk_scout"]};
 		case opfor: {["rhs_vdv_des_rifleman", "rhs_vdv_des_marksman", "rhs_vdv_des_medic", "rhs_vdv_des_machinegunner", "rhs_vdv_des_at", "rhs_vdv_des_grenadier_rpg", "rhs_vdv_des_engineer", "rhs_vdv_des_aa", "rhs_vdv_des_grenadier", "rhs_vdv_des_RShG2"]};
 		case independent: {[]};
 	};
