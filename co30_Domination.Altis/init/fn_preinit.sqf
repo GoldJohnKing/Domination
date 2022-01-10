@@ -391,9 +391,9 @@ d_cargotower =
 	"Land_Cargo_Tower_V3_F";
 #endif
 
-d_wcamp =
+d_wcamp =//营地
 #ifdef __ALTIS__
-	"Land_Cargo_Patrol_V1_F";
+	"Land_Bunker_01_tall_F";//"Land_Cargo_Patrol_V1_F" "Land_Bunker_01_HQ_F"
 #endif
 #ifdef __CUP_CHERNARUS__
 	"Land_Cargo_Patrol_V4_F";
