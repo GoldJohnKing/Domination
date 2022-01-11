@@ -101,14 +101,14 @@ if (d_del_crew_always == 1) then {
 	_veh setVariable ["d_crew", _crew];
 };
 
-// if (unitIsUAV _veh) then { // Edited: Set data-link and radar usage to default
-// 	_veh allowCrewInImmobile true;
-// 	_veh setVehicleReceiveRemoteTargets true;
-// 	_veh setVehicleReportRemoteTargets true;
-// 	_veh setVehicleRadar 1;
-// 	_veh setAutonomous true;
-// 	_veh enableVehicleSensor ["manSensorComponent",true];
-// };
+if (unitIsUAV _veh) then {
+	_veh allowCrewInImmobile true;
+	_veh setVehicleReceiveRemoteTargets true;
+	_veh setVehicleReportRemoteTargets true;
+	_veh setVehicleRadar 1;
+	_veh setAutonomous true;
+	_veh enableVehicleSensor ["manSensorComponent",true];
+};
 
 if (_newGrp) then {_grp selectLeader (commander _veh)};
 

@@ -349,9 +349,9 @@ if (!isNil "d_sm_speedboat" && {d_sm_speedboat != ""}) then {
 };
 
 sleep 0.1;
-// if (d_IllumMainTarget == 0) then { // Edited: Never shot illuminations
-// 	[_trg_center, _mtradius] execFSM "fsms\fn_Illum.fsm";
-// };
+if (d_IllumMainTarget == 0) then {
+	[_trg_center, _mtradius] execFSM "fsms\fn_Illum.fsm";
+};
 if (worldname == "Altis") then {
 	[_trg_center, _mtradius] spawn d_fnc_ambientanimals;
 };
