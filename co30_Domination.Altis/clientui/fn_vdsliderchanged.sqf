@@ -12,4 +12,4 @@ if (!d_isvdreduced) then {
 d_curviewdistance = _newvd;
 d_curobjectdistance = _newvd + 100;
 
-profileNamespace setVariable ["dom_viewdistance", _newvd];
+// profileNamespace setVariable ["dom_viewdistance", _newvd]; // Edited: Disable view distance adjustment
