@@ -118,12 +118,12 @@ while {true} do {
 		__TRACE_1("","_funits")
 
 		addToRemainsCollector [_vec];
-		[_vec, 2] remoteExec ["setFeatureType", [0, -2] select isDedicated, _vec];
+		// [_vec, 2] remoteExec ["setFeatureType", [0, -2] select isDedicated, _vec]; // Edited: Disable always rendering on air vehicles
 		[_vec, 17] call d_fnc_setekmode;
 
 		if (d_LockAir == 0) then {_vec lock true};
-		_vec flyInHeight _height;
-		_vec flyInHeightASL _heightASL;
+		// _vec flyInHeight _height; // Edited: Allow air vehicles fly at any height
+		// _vec flyInHeightASL _heightASL; // Edited: Allow air vehicles fly at any height
 #ifndef __TT__
 		if !((toUpperANSI _heli_type) in ["B_PLANE_FIGHTER_01_STEALTH_F","O_PLANE_FIGHTER_02_STEALTH_F"]) then {
 			call {
@@ -133,18 +133,18 @@ while {true} do {
 			};
 		};
 #endif
-		if (_vec isKindOf "Plane") then {
-			_vec setVehicleRadar 1;
-		};
-		{
-			_x disableAI "LIGHTS";
-			_x setVehicleReceiveRemoteTargets true;
-			_x setVehicleReportRemoteTargets true;
-		} forEach (crew _vec);
+		// if (_vec isKindOf "Plane") then { // Edited: Set radar usage to default
+		// 	_vec setVehicleRadar 1;
+		// };
+		// { // Edited: Set AI behavior and data-link usage to default
+		// 	_x disableAI "LIGHTS";
+		// 	_x setVehicleReceiveRemoteTargets true; 
+		// 	_x setVehicleReportRemoteTargets true;
+		// } forEach (crew _vec);
 		_vec setCollisionLight true;
 		_vec setPilotLight false;
-		_vec setVehicleReceiveRemoteTargets true;
-		_vec setVehicleReportRemoteTargets true;
+		// _vec setVehicleReceiveRemoteTargets true; // Edited: Set data-link usage to default
+		// _vec setVehicleReportRemoteTargets true; // Edited: Set data-link usage to default
 		_vec setVariable ["d_enemyAir_nextRearmTime",(diag_tickTime + 200),false];
 		__TRACE_1("","_vec")
 		sleep 0.1;

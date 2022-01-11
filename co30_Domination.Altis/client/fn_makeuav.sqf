@@ -28,9 +28,9 @@ _grp deleteGroupWhenEmpty true;
 
 _vecu allowCrewInImmobile true;
 
-_vecu setVehicleReceiveRemoteTargets true;
-_vecu setVehicleReportRemoteTargets true;
-_vecu setVehicleRadar 1;
+// _vecu setVehicleReceiveRemoteTargets true; // Edited: Set data-link and radar usage to default
+// _vecu setVehicleReportRemoteTargets true;
+// _vecu setVehicleRadar 1;
 
 _vecu allowDamage false;
 

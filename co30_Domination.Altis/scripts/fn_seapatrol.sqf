@@ -45,7 +45,7 @@ for "_i" from 1 to _ran do {
 			_veh setDamage 0;
 			[_veh, 5] call d_fnc_setekmode;
 			addToRemainsCollector [_veh];
-			[_veh, 2] remoteExec ["setFeatureType", [0, -2] select isDedicated, _veh];
+			// [_veh, 2] remoteExec ["setFeatureType", [0, -2] select isDedicated, _veh]; // Edited: Disable always rendering on sea vehicles
 			_veh setCollisionLight true;
 			if (sunOrMoon != 1) then {
 				_veh setPilotLight true;
