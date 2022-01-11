@@ -21,16 +21,16 @@ call compileScript ["x_gdbfunctions.sqf", false];
 #endif
 
 if (hasInterface) then {
-	private _vd = profileNamespace getVariable ["dom_viewdistance", d_InitialViewDistance];
-	if (_vd > d_MaxViewDistance) then {
-		_vd = d_MaxViewDistance;
-	};
-	setViewDistance _vd;
-	diag_log ["DOM viewdistance at start:", _vd];
-	setObjectViewDistance (_vd + 100);
+	// private _vd = profileNamespace getVariable ["dom_viewdistance", d_InitialViewDistance]; // Edited: Disable view distance adjustment
+	// if (_vd > d_MaxViewDistance) then {
+	// 	_vd = d_MaxViewDistance;
+	// };
+	// setViewDistance _vd;
+	// diag_log ["DOM viewdistance at start:", _vd];
+	// setObjectViewDistance (_vd + 100);
 	
-	d_curviewdistance = _vd;
-	d_curobjectdistance = _vd + 100;
+	// d_curviewdistance = _vd;
+	// d_curobjectdistance = _vd + 100;
 	
 	d_earplugs_userakey = profileNamespace getVariable ["dom_earplugs_userakey", 0];
 	d_3dmarker_userakey = profileNamespace getVariable ["dom_3dmarker_userakey", 0];
@@ -51,14 +51,12 @@ if (hasInterface) then {
 	if (isMultiplayer) then {
 		["d_server_name", [500, 500], "ICON", "ColorYellow", [2, 2], format ["%1 %2", localize "STR_DOM_MISSIONSTRING_1583a", serverName], 0, "hd_dot"] call d_fnc_CreateMarkerLocal;
 	};
-} else {
-	setViewDistance 1600;
-	setObjectViewDistance [1700, 0];
+// } else { // Edited: Disable view distance adjustment
+// 	setViewDistance 1600;
+// 	setObjectViewDistance [1700, 0];
 };
 
-// Edited: Aleays setTerrainGrid to 3.125
-setTerrainGrid 12.5;
-// if (d_GrasAtStart == 1) then {
+// if (d_GrasAtStart == 1) then { // Edited: Disable terrain grid adjustment
 // 	setTerrainGrid 50;
 // 	d_graslayer_index = 0;
 // } else {

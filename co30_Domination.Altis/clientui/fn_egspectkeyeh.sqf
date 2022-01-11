@@ -9,12 +9,12 @@ if (_this # 1 == DIK_X) then {
 	["Terminate"] call BIS_fnc_EGSpectator;
 	d_commandingMenuIniting = false;
 	d_rscspect_on = false;
-	if (!isNil "d_spect_viewdistance") then {
-		if (d_spect_viewdistance != viewDistance) then {
-			setViewDistance d_spect_viewdistance;
-		};
-		d_spect_viewdistance = nil;
-	};
+	// if (!isNil "d_spect_viewdistance") then { // Edited: Disable view distance adjustment
+	// 	if (d_spect_viewdistance != viewDistance) then {
+	// 		setViewDistance d_spect_viewdistance;
+	// 	};
+	// 	d_spect_viewdistance = nil;
+	// };
 	"d_adminspecttxt" cutText ["", "PLAIN"];
 	true
 } else {

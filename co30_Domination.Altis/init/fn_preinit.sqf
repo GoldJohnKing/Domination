@@ -2864,7 +2864,7 @@ if (hasInterface) then {
 
 	d_earplugs_fitted = false;
 
-	d_maintarget_auto_vd = d_AutoViewdistanceChangeDefault == 1;
+	d_maintarget_auto_vd = false/*d_AutoViewdistanceChangeDefault == 1*/; // Edited: Disable view distance adjustment
 	
 	d_deploy_mhq_camo = true;
 
