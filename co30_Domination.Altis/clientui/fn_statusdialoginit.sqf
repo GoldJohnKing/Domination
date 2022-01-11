@@ -254,7 +254,7 @@ _s_all = str _s_all;
 
 if (d_disable_viewdistance) then {
 	(_disp displayCtrl 1000) ctrlEnable false;
-	(_disp displayCtrl 1999) ctrlSetText (localize "STR_DOM_MISSIONSTRING_357");
+	(_disp displayCtrl 1999) ctrlSetText CHVD_Hint; // Edited: Use CHVD, default = (localize "STR_DOM_MISSIONSTRING_357")
 	(_disp displayCtrl 1997) ctrlSetText "";
 } else {
 	(_disp displayCtrl 1000) sliderSetRange [200, d_MaxViewDistance];
