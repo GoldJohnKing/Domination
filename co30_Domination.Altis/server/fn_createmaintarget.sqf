@@ -504,7 +504,7 @@ if (d_allow_observers == 1 && {d_no_more_observers < 2}) then {
 #ifndef __TT__
 		private _observer = ([_xpos, _unit_array, _agrp, true, false, -1, d_side_player] call d_fnc_makemgroup) # 0;
 #else
-		private _observer = ([_xpos, _unit_array, _agrp, true, false] call d_fnc_makemgroup) # 0;
+		private _observer = ([_xpos, _unit_array, _agrp, true, false] call d_fnc_makemgroup) # 0;//创建小组
 #endif
 		[_agrp, _xpos, [_trg_center, _radius], [5, 20, 40], "", 0] spawn d_fnc_MakePatrolWPX;
 		_agrp setVariable ["d_PATR", true];

@@ -1,5 +1,6 @@
 // by Xeno
 //#define __DEBUG__
+//此文件的m指的是步兵
 #include "..\x_setup.sqf"
 
 params [
@@ -29,7 +30,7 @@ private _ret = [];
 
 if ((d_smallgrps == 0 && {_doreduce}) || {_unitsPerGroup > 0}) then {
 	_unitliste = [_unitliste, _unitsPerGroup] call d_fnc_ulreduce;
-};
+};//对战区的数量判断
 
 _ret resize (count _unitliste);
 

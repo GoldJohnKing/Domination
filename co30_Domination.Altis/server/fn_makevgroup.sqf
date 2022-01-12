@@ -1,5 +1,6 @@
 // by Xeno
 //#define __DEBUG__
+//此文件的V是指载具
 #include "..\x_setup.sqf"
 
 params ["_numvecs", "_pos", "_vname", "_grp", "_dir", ["_is_static", false], ["_nolift", false], ["_dyna", false], ["_nocargo", false]];

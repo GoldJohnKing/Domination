@@ -24,7 +24,7 @@ private _msize = 0;
 if (_numvecs > 0) then {
 	if (!_istatatic) then {
 		_grp setVariable ["d_is_v_gr", true];
-		private _vecar = [_numvecs, _pos, [_grptype, _side] call d_fnc_getunitlistv, _grp, _vec_dir, false, false, true] call d_fnc_makevgroup;
+		private _vecar = [_numvecs, _pos, [_grptype, _side] call d_fnc_getunitlistv, _grp, _vec_dir, false, false, true] call d_fnc_makevgroup;//创建小组
 		_vecs = _vecar # 0;
 		_uinf = _vecar # 1;
 	} else {
@@ -40,7 +40,7 @@ if (_numvecs > 0) then {
 			};
 		};
 		_vec_dir = (_center_rad # 0) getDir _pos;
-		private _vecar = [_numvecs, _pos, [_grptype, _side] call d_fnc_getunitlistv, _grp, _vec_dir, true] call d_fnc_makevgroup;
+		private _vecar = [_numvecs, _pos, [_grptype, _side] call d_fnc_getunitlistv, _grp, _vec_dir, true] call d_fnc_makevgroup;//创建小组
 		_vecs = _vecar # 0;
 		_uinf = _vecar # 1;
 		{

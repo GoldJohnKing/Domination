@@ -136,7 +136,7 @@ if (_ar # 14 == 1) then {
 };
 
 if (_ar # 17 == 1) then {
-	[_obj, 0] remoteExec ["setFeatureType", [0, -2] select isDedicated];
+	// [_obj, 0] remoteExec ["setFeatureType", [0, -2] select isDedicated]; // Edited: Disable always rendering so not needed anymore
 	_obj setFuel 0.05;
 };
 

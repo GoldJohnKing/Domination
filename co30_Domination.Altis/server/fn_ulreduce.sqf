@@ -5,7 +5,7 @@
 params ["_unitliste", "_unitsPerGroup"];
 
 if (count _unitliste > 2) then {
-	private _nump = count (allPlayers - entities "HeadlessClient_F") min 40;
+	private _nump = count (allPlayers - entities "HeadlessClient_F") min 40;//全部玩家位置-目前在线玩家 根据玩家数量改变小组布置
 	
 	private "_maxunits";
 	
@@ -14,10 +14,10 @@ if (count _unitliste > 2) then {
     } else {
 		_maxunits = round (linearConversion [1, 40, _nump, 2, 6, true]);
 		if (_maxunits == 2) then {
-			_maxunits = selectRandom [2, 3];
+			_maxunits = selectRandom [2, 3, 4];
 		} else {
 			if (_maxunits == 6) then {
-				_maxunits = selectRandom [5, 6];
+				_maxunits = selectRandom [5, 6, 7, 8, 9, 10, 11];
 			};
 		};
     };
