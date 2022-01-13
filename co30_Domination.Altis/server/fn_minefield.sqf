@@ -13,9 +13,9 @@ for "_i" from 1 to _num_mines do {
 	_m_pos_ar pushBack ([_ran_start_pos, 100, -1] call d_fnc_GetRanPointCircle);
 };
 
-d_mines_created = [];
+d_mines_created = [];//地雷
 #ifndef __VN__
-private _mtype = selectRandom ["APERSMineDispenser_F", "APERSMineDispenser_Mine_F", "APERSMine", "ATMine","Claymore_F","SLAMDirectionalMine","APERSTripMine","APERSBoundingMine","IEDLandBig_F","IEDUrbanBig_F","IEDLandSmall_F","IEDUrbanSmall_F","rhsusf_mine_M19","rhsusf_mine_m14"];
+private _mtype = selectRandom ["APERSMineDispenser_F", "APERSMineDispenser_Mine_F", "APERSMine", "ATMine","Claymore_F","SLAMDirectionalMine","APERSTripMine","APERSBoundingMine","IEDLandBig_F","IEDUrbanBig_F","IEDLandSmall_F","IEDUrbanSmall_F","rhsusf_mine_M19","rhsusf_mine_m14","IEDLandBig_F","IEDUrbanBig_F","rhsusf_mine_M19","rhsusf_mine_m49a1_6m","rhs_mine_M7A2","APERSTripMine"];
 #else
 private _mtype = selectRandom ["vn_mine_ammobox_range", "vn_mine_punji_01", "vn_mine_punji_02", "vn_mine_punji_03", "vn_mine_tm57"];
 #endif

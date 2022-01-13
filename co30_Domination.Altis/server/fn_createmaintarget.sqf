@@ -145,7 +145,7 @@ private _allbars = [];
 private _doexit = false;
 d_bara_trig_ar = [];
 
-private _barcompo = call {
+private _barcompo = call {//兵营围墙
 	if (d_vn) exitWith {
 		[
 			//["Land_vn_o_shelter_05",[0.397461,-0.0214844,0],0,1,0,[],"","",true,false],
@@ -171,14 +171,41 @@ private _barcompo = call {
 		]
 	};
 	[
-		["Land_PillboxWall_01_6m_round_F",[-6.79297,-3.49902,0],270,1,0,[],"","",true,false],
-		["Land_ConcreteWall_01_l_8m_F",[0.47168,7.73242,0.0022049],0,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[-6.33789,5.1084,0],280,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[7.88184,-3.47754,0.00019455],89.5086,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[-2.95898,-8.21387,0],180.111,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[7.46289,5.07715,0],80,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[4.27734,-8.12598,0],180.111,1,0,[],"","",true,false]
-	]
+		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//指挥部顶层防御设施
+		["Land_HBarrierWall6_F",[-20,-17,0],270,1,0,[],"","",true,false],//外圈设施
+		["Land_HBarrierWall6_F",[17,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-17,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-20,17,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-20,0,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-20,8,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-20,-8,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[20,-17,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[20,0,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[20,8,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[20,-8,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-15,-22,0],180.111,1,0,[],"","",true,false],
+		["Land_BagBunker_Large_F",[0,-22,0],0,1,0,[],"","",true,false],//后侧地堡
+		["Land_HBarrierWall6_F",[20,17,0],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[15,-22,0],180.111,1,0,[],"","",true,false],
+		["Land_DragonsTeeth_01_4x2_new_F",[6,22,0],180.111,1,0,[],"","",true,false],//前侧铁丝网
+		["Land_DragonsTeeth_01_4x2_new_F",[-6,22,0],180.111,1,0,[],"","",true,false],//前侧铁丝网
+		["Land_DragonsTeeth_01_4x2_new_F",[6,-22,0],180.111,1,0,[],"","",true,false],//后侧铁丝网
+		["Land_DragonsTeeth_01_4x2_new_F",[-6,-22,0],180.111,1,0,[],"","",true,false],//后侧铁丝网 
+		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
+		["Land_BagBunker_01_small_green_F",[8,11,0.0022049],180,1,0,[],"","",true,false],
+		["Land_BagBunker_01_small_green_F",[-8,11,0.0022049],180,1,0,[],"","",true,false],
+		["rhsgref_ins_DSHKM",[-8,11,0.0022049],0,1,0,[],"","",true,false],
+		["rhs_Kornet_9M133_2_msv",[8,11,0.0022049],0,1,0,[],"","",true,false],
+		["I_HMG_01_high_F",[-5,1,1],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-10.33789,7,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[10,-7,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-7,-12,0],180,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[8,-12,0],180,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[10,7,0],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[1,-12,0],180,1,0,[],"","",true,false]
+	]//根据推断，第一个值为对应距离下物体左右的移动程度(x)，第二值为对中心点的距离(y)，第三个值均为0不动，前三个值为直角坐标系布置。第四个值为方向，其余两值均相同 "I_HMG_01_high_F"
 };
 
 
@@ -204,9 +231,8 @@ for "_i" from 1 to d_num_barracks_objs do {
 	};
 
 	_poss set [2, 0];
-	_vec = createVehicle [d_barracks_building, _poss, [], 0, "NONE"];
+	_vec = createVehicle [d_barracks_building, _poss, [], 0, "NONE"];//创建兵营
 	_vec setDir (_vec getDir _trg_center);
-	createVehicle ["Flag_Altis_F", _poss, [], 0, "NONE"];//添加兵营旗帜（阿尔蒂斯旗帜）
 	if (([getPos _vec, 20] call d_fnc_getslope) > 0.4) then {
 		_vec setVectorUp (surfaceNormal (getPos _vec));
 	};
@@ -266,7 +292,7 @@ if (_allbars isNotEqualTo []) then {
 };
 _parray deleteAt _idx;
 _poss set [2, 0];
-_vec = createVehicle [d_vehicle_building, _poss, [], 0, "NONE"];
+_vec = createVehicle [d_vehicle_building, _poss, [], 0, "NONE"];//创建指挥部
 __TRACE_1("d_vehicle_building","_vec")
 _vec setDir (_vec getDir _trg_center);
 //_vec setPos _poss;
@@ -275,44 +301,25 @@ if (([getPos _vec, sizeOf d_vehicle_building] call d_fnc_getslope) > 0.4) then {
 };/* else {
 	_vec setVectorUp [0,0,1];
 };*/
-//创建HQ识别物件
-// createVehicle ["Land_PortableServer_01_olive_F", _poss, [], 0, "NONE"];
-// createVehicle ["Land_Router_01_olive_F", _poss, [], 0, "NONE"];
-createVehicle ["Land_TTowerSmall_1_F", _poss, [], 0, "NONE"];
-// createVehicle ["Land_BatterPack_01_open_olive_F", _poss, [], 0, "NONE"];
-// createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
-// createVehicle ["Land_IPPhone_01_olive_F", _poss, [], 0, "NONE"];
-createVehicle ["Flag_Altis_F", _poss, [], 0, "NONE"];//添加旗帜
+// createVehicle ["Land_TTowerSmall_1_F", _poss, [], 0, "NONE"];
 //敌方HQ指挥官小组
-private _HQ1 = createGroup [west, true];
-private _HQ2 = createGroup [west, true];
-private _HQ3 = createGroup [west, true];
-private _HQ4 = createGroup [west, true];
+private _HQ1 = createGroup [east, true];
+private _HQ2 = createGroup [east, true];
+private _HQ3 = createGroup [east, true];
+private _HQ4 = createGroup [east, true];
 _HQ1 createUnit ["rhsgref_ins_squadleader", _poss, [], 0, "FORM"];
 _HQ2 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
 _HQ3 createUnit ["rhsgref_ins_spotter", _poss, [], 0, "FORM"];
 _HQ4 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
-//创建直属部队
-// private _HQSP1 = createGroup [west, true];
-// private _HQSP2 = createGroup [west, true];
-// _HQSP1 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
-// _HQSP1 createUnit ["rhsusf_socom_marsoc_sarc", _poss, [], 0, "FORM"];
-// _HQSP1 createUnit ["rhsusf_socom_marsoc_sniper", _poss, [], 0, "FORM"];
-// _HQSP1 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
-// _HQSP1 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
-// _HQSP2 createUnit ["rhsusf_socom_marsoc_elementleader", _poss, [], 0, "FORM"];
-// _HQSP2 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
-// _HQSP2 createUnit ["rhsusf_socom_marsoc_marksman", _poss, [], 0, "FORM"];
-// _HQSP2 createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
-// private _HQANTIveh = createGroup [west, true];
-// _HQSP createUnit ["rhsusf_army_ocp_riflemanat", _poss, [], 0, "FORM"];
-// _HQSP createUnit ["rhsusf_army_ocp_arb_sniper_m107", _poss, [], 0, "FORM"];
-// _HQSP createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
-// _HQSP createUnit ["rhsusf_army_ocp_arb_maaws", _poss, [], 0, "FORM"];
-// private _HQSIN = createGroup [west, true];
-// _HQSIN createUnit ["rhsusf_army_ocp_teamleader", _poss, [], 0, "FORM"];
-// _HQSIN createUnit ["rhsusf_army_ocp_sniper", _poss, [], 0, "FORM"];
-//
+_HQ1 createUnit ["rhsgref_ins_spotter", _poss, [], 0, "FORM"];
+_HQ1 createUnit ["rhsgref_ins_spotter", _poss, [], 0, "FORM"];
+_HQ1 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
+_HQ1 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
+_HQ1 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
+_HQ2 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
+_HQ2 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
+_HQ2 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
+_HQ2 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
 _vec setVariable ["d_v_pos", getPos _vec];
 if (d_bar_mhq_destroy == 1) then {
 	[_vec, 1] call d_fnc_checkmtrespawntarget;
@@ -328,6 +335,41 @@ if (d_bar_mhq_destroy == 1) then {
 	d_bara_trig_ar pushBack _trig;
 	d_mt_barmhq_ar pushBack _vec;
 };
+private _barcompo = [//指挥部外部环境物件
+		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
+		["Land_Cargo_Patrol_V1_F",[3,10,0.0022049],180,1,0,[],"","",true,false],
+		["Land_BagBunker_01_small_green_F",[-8,11,0.0022049],180,1,0,[],"","",true,false],
+		["rhsgref_ins_DSHKM",[-8,11,0.0022049],0,1,0,[],"","",true,false],
+		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//指挥部顶层防御设施
+		["Land_HBarrierWall6_F",[-20,-17,0],270,1,0,[],"","",true,false],//外圈设施
+		["Land_HBarrierWall6_F",[17,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-17,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-20.33789,17,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-20.33789,0,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-20.33789,8,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-20.33789,-8,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[20,-17,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[20,0,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[20,8,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[20,-8,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-15,-22,0],180.111,1,0,[],"","",true,false],
+		["Land_BagBunker_Large_F",[0,-22,0],0,1,0,[],"","",true,false],//后侧地堡
+		["Land_HBarrierWall6_F",[20,17,0],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[15,-22,0],180.111,1,0,[],"","",true,false],
+		["Land_Razorwire_F",[6,22,0],180.111,1,0,[],"","",true,false],//前侧铁丝网
+		["Land_Razorwire_F",[-6,22,0],180.111,1,0,[],"","",true,false],//前侧铁丝网
+		["Land_Razorwire_F",[6,-22,0],180.111,1,0,[],"","",true,false],//后侧铁丝网
+		["Land_Razorwire_F",[-6,-22,0],180.111,1,0,[],"","",true,false],//后侧铁丝网
+		["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],//内圈设施
+		["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
+		["Land_TTowerSmall_1_F",[-8,1,1],0,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-10.33789,7,0],270,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[10,-7,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[-5,-12,0],180.111,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[10,7,0],90,1,0,[],"","",true,false],
+		["Land_HBarrierWall6_F",[5,-12,0],180.111,1,0,[],"","",true,false]
+	];
+		d_delvecsmt append ([getPos _vec, getDir _vec, _barcompo] call d_fnc_objectsMapper);
 d_mt_mobile_hq_down = false;
 d_mt_mobile_hq_obj = _vec;
 
@@ -464,7 +506,7 @@ sleep 0.233;
 	};
 } forEach (_type_list_guard_static2 select {_x # 2 > 0});
 
-// create patrol groups
+// create patrol groups 创建巡逻小组
 {
 	__TRACE_1("patrol","_x")
 	if ((_x # 0) call _fnc_dospawnr || d_always_max_groups == 1 || d_grp_cnt_footpatrol > 0) then {
