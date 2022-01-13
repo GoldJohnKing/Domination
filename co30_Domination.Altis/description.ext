@@ -1417,7 +1417,7 @@ class Params {
 	class d_max_bar_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1899";
 		values[] = {1, 2, 3, 4, 5, 6, 7};
-		default = 3;
+		default = 4;
 		texts[] = {"1", "2", "3", "4", "5", "6", "7"};
 	};
 
