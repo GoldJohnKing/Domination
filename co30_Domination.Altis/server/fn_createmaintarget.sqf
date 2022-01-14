@@ -171,7 +171,7 @@ private _barcompo = call {//兵营围墙
 		]
 	};
 	[
-		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//指挥部顶层防御设施
+		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//兵营顶层防御设施
 		["Land_HBarrierWall6_F",[-20,-17,0],270,1,0,[],"","",true,false],//外圈设施
 		["Land_HBarrierWall6_F",[17,20,0.0022049],0,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[-17,20,0.0022049],0,1,0,[],"","",true,false],
@@ -337,37 +337,36 @@ if (d_bar_mhq_destroy == 1) then {
 };
 private _barcompo = [//指挥部外部环境物件
 		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
-		["Land_Cargo_Patrol_V1_F",[3,10,0.0022049],180,1,0,[],"","",true,false],
-		["Land_BagBunker_01_small_green_F",[-8,11,0.0022049],180,1,0,[],"","",true,false],
-		["rhsgref_ins_DSHKM",[-8,11,0.0022049],0,1,0,[],"","",true,false],
 		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//指挥部顶层防御设施
-		["Land_HBarrierWall6_F",[-20,-17,0],270,1,0,[],"","",true,false],//外圈设施
-		["Land_HBarrierWall6_F",[17,20,0.0022049],0,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-17,20,0.0022049],0,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-20.33789,17,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-20.33789,0,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-20.33789,8,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-20.33789,-8,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[20,-17,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[20,0,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[20,8,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[20,-8,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-15,-22,0],180.111,1,0,[],"","",true,false],
-		["Land_BagBunker_Large_F",[0,-22,0],0,1,0,[],"","",true,false],//后侧地堡
-		["Land_HBarrierWall6_F",[20,17,0],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[15,-22,0],180.111,1,0,[],"","",true,false],
-		["Land_Razorwire_F",[6,22,0],180.111,1,0,[],"","",true,false],//前侧铁丝网
-		["Land_Razorwire_F",[-6,22,0],180.111,1,0,[],"","",true,false],//前侧铁丝网
-		["Land_Razorwire_F",[6,-22,0],180.111,1,0,[],"","",true,false],//后侧铁丝网
-		["Land_Razorwire_F",[-6,-22,0],180.111,1,0,[],"","",true,false],//后侧铁丝网
-		["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],//内圈设施
-		["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HelipadCircle_F",[-24,-1,0.0022049],90,1,0,[],"","",true,false],
+		["Land_HBarrierTower_F",[-37,-1,0.0022049],90,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-37,-7,0],270,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-37,6,0],270,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-10,-7,0],270,1,0,[],"","",true,false],//内圈设施
+		["Land_HBarrier_Big_F",[4,8,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-4,8,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-15,8,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-33,8,0.0022049],0,1,0,[],"","",true,false],
+		["Land_Cargo_House_V1_F",[4,13,0.0022049],180,1,0,[],"","",true,false],
+		["Land_Cargo_House_V1_F",[-4,13,0.0022049],180,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[4,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-4,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-12,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-20,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-29,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-38,20,0.0022049],0,1,0,[],"","",true,false],
+		["Land_DragonsTeeth_01_4x2_new_F",[-42,15,0.0022049],90,1,0,[],"","",true,false],
 		["Land_TTowerSmall_1_F",[-8,1,1],0,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-10.33789,7,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[10,-7,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-5,-12,0],180.111,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[10,7,0],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[5,-12,0],180.111,1,0,[],"","",true,false]
+		["Land_HBarrier_Big_F",[-10,6,0],270,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-24,-10,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-33,-10,0.0022049],0,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[10,2,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[10,-7,0.00019455],90,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[10,10,0],90,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[10,16,0],90,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-15,-10,0],180,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[-4,-10,0],180,1,0,[],"","",true,false],
+		["Land_HBarrier_Big_F",[5,-10,0],180,1,0,[],"","",true,false]
 	];
 		d_delvecsmt append ([getPos _vec, getDir _vec, _barcompo] call d_fnc_objectsMapper);
 d_mt_mobile_hq_down = false;
