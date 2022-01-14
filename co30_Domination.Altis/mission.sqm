@@ -8,7 +8,7 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=2360;
+		nextID=2364;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=229;
+		nextID=232;
 	};
 	class Camera
 	{
-		pos[]={14663.321,22.003088,16531.633};
-		dir[]={0.49753326,-0.24371548,-0.83250719};
-		up[]={0.12502594,0.96984506,-0.20920248};
-		aside[]={-0.85839003,4.7817593e-008,-0.51300073};
+		pos[]={14663.946,51.542103,16651.848};
+		dir[]={-0.060659792,-0.62948692,0.77474004};
+		up[]={-0.049138788,0.77696985,0.62760067};
+		aside[]={0.99703133,-7.9182428e-007,0.078066945};
 	};
 };
 binarizationWanted=0;
@@ -645,7 +645,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=611;
+		items=613;
 		class Item0
 		{
 			dataType="Marker";
@@ -17077,7 +17077,6 @@ class Mission
 					};
 					id=2153;
 					type="B_UAV_AI";
-					atlOffset=3.8146973e-006;
 				};
 				class Item1
 				{
@@ -17088,13 +17087,13 @@ class Mission
 						angles[]={6.2818484,2.338738,6.2805333};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						name="d_chopper_15G";
 					};
 					id=2154;
 					type="B_UAV_AI";
-					atlOffset=1.5363598;
 				};
 			};
 			class Attributes
@@ -17139,7 +17138,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14494.07,20.372313,16317.606};
+				position[]={14490.167,20.377401,16313.617};
 				angles[]={6.2818484,2.338738,6.2805333};
 			};
 			side="West";
@@ -20623,12 +20622,11 @@ class Mission
 			side="Empty";
 			class Attributes
 			{
-				name="d_chopper_18";
 				textures="RussianAFSkyBlue";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
-				pylons=";;;;;;;;;;;;";
+				pylons=";;;;;;;;;;";
 			};
 			id=2258;
 			type="USAF_F35A";
@@ -23243,16 +23241,114 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item611
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14500.616,18.820887,16324.829};
+						angles[]={-0,2.338738,6.2778587};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="d_chopper_15D_1";
+					};
+					id=2361;
+					type="B_UAV_AI";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14500.62,20.357189,16324.795};
+						angles[]={-0,2.338738,6.2778587};
+					};
+					side="West";
+					flags=4;
+					class Attributes
+					{
+						name="d_chopper_15G_1";
+					};
+					id=2362;
+					type="B_UAV_AI";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=2361;
+						item1=2363;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=2362;
+						item1=2363;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=2360;
+		};
+		class Item612
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14501.204,20.346613,16324.813};
+				angles[]={-0,2.338738,6.2778587};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				name="d_chopper_17";
+				reportRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=2363;
+			type="B_T_UAV_03_dynamicLoadout_F";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=11;
+			nextID=12;
 		};
 		class Links
 		{
-			items=11;
+			items=12;
 			class Item0
 			{
 				linkID=0;
@@ -23357,6 +23453,16 @@ class Mission
 			{
 				linkID=10;
 				item0=2259;
+				item1=1741;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=2258;
 				item1=1741;
 				class CustomData
 				{
