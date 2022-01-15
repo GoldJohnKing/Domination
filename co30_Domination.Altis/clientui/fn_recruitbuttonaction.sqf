@@ -153,11 +153,11 @@ addToRemainsCollector [_unit];
 
 _unit addEventhandler ["getInMan", {call d_fnc_getinmanai}];
 
-if (d_ai_silent == 1) then {
-	[_unit, "NoVoice"] remoteExecCall ["setSpeaker", -2, false];
+// if (d_ai_silent == 1) then {
+// 	[_unit, "NoVoice"] remoteExecCall ["setSpeaker", -2, false];
 	
-	_unit disableAI "RADIOPROTOCOL";
-};
+// 	_unit disableAI "RADIOPROTOCOL";
+// };
 
 enableSentences true;
 d_hasrecruited = true;

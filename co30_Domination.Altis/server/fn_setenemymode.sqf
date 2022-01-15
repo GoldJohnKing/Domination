@@ -138,7 +138,7 @@ switch (_enemyMode) do {
 			[[1,1], 1], // wheeled apc
 			[[1,1], 1], // jeep with mg
 			[[1,0], 1], // jeep with gl
-			[[2,1], 1] // aa
+			[[2,0], 1] // aa
 		];
 	};
 	case 2: {
@@ -184,10 +184,10 @@ switch (_enemyMode) do {
 		d_vec_numbers_attack = [
 			[[0,0], 1], // tanks
 			[[2,0], 1], // tracked apc
-			[[3,3], 1], // wheeled apc
+			[[3,2], 1], // wheeled apc
 			[[2,0], 1], // jeep with mg
 			[[2,1], 1], // jeep with gl
-			[[2,1], 1] // aa
+			[[2,0], 1] // aa
 		];
 	};
 };

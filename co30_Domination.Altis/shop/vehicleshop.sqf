@@ -14,11 +14,12 @@ player addaction["M2A3布莱德利BUSK1: 需要3000荣誉",{["RHS_M2A3_BUSKI",30
 // player addaction["豹2A6(沙漠迷彩): 需要4000荣誉",{["BWA3_Leopard2_Tropen",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["M1129机动迫击炮: 需要10000荣誉",{["M1129_MC_DG1_NOSLATDES",10000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["T140K主战坦克: 需要5000荣誉",{["O_MBT_04_command_F",5000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["MI24P: 需要1000荣誉",{["RHS_Mi24P_vdv",1000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["MI28N: 需要2000荣誉",{["rhs_mi28n_vvsc",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["Ka52: 需要2000荣誉",{["RHS_Ka52_vvsc",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["AH1Z: 需要2000荣誉",{["RHS_AH1Z",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["F/A 18E超级大黄蜂: 需要3000荣誉",{["JS_JC_FA18E",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["MI24P: 需要1000荣誉",{["RHS_Mi24P_vdv",2000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["MI28N: 需要3000荣誉",{["rhs_mi28n_vvsc",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["Ka52: 需要3000荣誉",{["RHS_Ka52_vvsc",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["AH1Z: 需要3000荣誉",{["RHS_AH1Z",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["F/A 18E超级大黄蜂: 需要4000荣誉",{["JS_JC_FA18E",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
+player addaction["F/A 18F超级大黄蜂: 需要4000荣誉",{["JS_JC_FA18F",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["F22: 需要3000荣誉",{["USAF_F22",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["A10D(A164): 需要3000荣誉",{["B_Plane_CAS_01_dynamicLoadout_F",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["雅克130(To199)攻击机: 需要3000荣誉",{["O_Plane_CAS_02_dynamicLoadout_F",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
