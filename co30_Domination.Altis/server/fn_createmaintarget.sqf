@@ -686,7 +686,7 @@ if (d_occ_bldgs == 1) then {
 			_ovrw_spawn_factor = 0.03;  // adaptive (low)
 		};
 		if (d_ovrw_cnt == -2) then {
-			_ovrw_spawn_factor = 0.06;  // adaptive (normal)
+			_ovrw_spawn_factor = 0.08;  // adaptive (normal)
 		};
 		if (d_ovrw_cnt == -3) then {
 			_ovrw_spawn_factor = 0.12;  // adaptive (high)
@@ -725,10 +725,10 @@ if (d_occ_bldgs == 1) then {
 		//calculate number of ambush groups by counting the number of building in the maintarget area * spawn factor
 		private _amb_spawn_factor = 0;
 		if (d_amb_cnt == -1) then {
-			_amb_spawn_factor = 0.03;  // adaptive (low)
+			_amb_spawn_factor = 0.04;  // adaptive (low)
 		};
 		if (d_amb_cnt == -2) then {
-			_amb_spawn_factor = 0.06;  // adaptive (normal)
+			_amb_spawn_factor = 0.08;  // adaptive (normal)
 		};
 		if (d_amb_cnt == -3) then {
 			_amb_spawn_factor = 0.12;  // adaptive (high)

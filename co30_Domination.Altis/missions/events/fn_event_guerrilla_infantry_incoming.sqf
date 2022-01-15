@@ -69,7 +69,7 @@ if (_target_center distance2D _townNearbyPos > _maximumDistanceFromMaintarget) t
 
 private _newgroups = [];
 // calculate the sum of all groups of AI already in the maintarget and size the guerrilla force accordingly
-private _targetGroupCount = d_occ_cnt + d_ovrw_cnt + d_amb_cnt + d_snp_cnt;
+private _targetGroupCount = d_occ_cnt + d_ovrw_cnt + d_amb_cnt + d_snp_cnt;//战区小组组成
 // default guerrilla force
 private _guerrillaForce = ["allmen", "allmen"];
 if (_targetGroupCount > 10) then {
