@@ -629,7 +629,7 @@ class Params {
 	class d_ao_radius_override {
 		title = "$STR_DOM_MISSIONSTRING_MT_RADIUS";
 		values[] = {0,350,450,550,650,750,850,1000};
-		default = 450;
+		default = 350;
 		texts[] = {"$STR_DOM_MISSIONSTRING_11","350","450","550","650","750","850","1000"};
 	};
 	
@@ -1326,7 +1326,7 @@ class Params {
 	class d_occ_rad {
 		title = "$STR_DOM_MISSIONSTRING_1902";
 		values[] = {125, 250, 350, 450, 550, 650, 750, 1000};
-		default = 550;
+		default = 350;
 		texts[] = {"125m", "250m", "350m", "450m", "550m", "650m", "750m", "1000m"};
 	};
 	
@@ -1340,7 +1340,7 @@ class Params {
 	class d_ovrw_rad {
 		title = "$STR_DOM_MISSIONSTRING_1902";
 		values[] = {125, 250, 350, 450, 550, 650, 750, 1000};
-		default = 550;
+		default = 350;
 		texts[] = {"125m", "250m", "350m", "450m", "550m", "650m", "750m", "1000m"};
 	};
 
@@ -1354,7 +1354,7 @@ class Params {
 	class d_amb_rad {
 		title = "$STR_DOM_MISSIONSTRING_1902";
 		values[] = {75, 125, 250, 300, 350, 450, 550, 650, 750, 1000};
-		default = 550;
+		default = 350;
 		texts[] = {"75m", "125m", "250m", "300m", "350m", "450m", "550m", "650m", "750m", "1000m"};
 	};
 
@@ -1368,14 +1368,14 @@ class Params {
 	class d_snp_rad {
 		title = "$STR_DOM_MISSIONSTRING_1902";
 		values[] = {250, 425, 650, 900};
-		default = 425;
+		default = 250;
 		texts[] = {"250m", "425m", "650m", "900m"};
 	};
 	
 	class d_grp_cnt_footpatrol {
 		title = "$STR_DOM_MISSIONSTRING_1900PATROL";
 		values[] = {-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-		default = 4;
+		default = -1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_418DEFAULT", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"};
 	};
 	
