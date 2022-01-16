@@ -70,17 +70,17 @@ deleteVehicle _old_units_trigger;
 _mtunits = _mtunits - [objNull];
 sleep 0.1;
 __TRACE_1("","_mtunits")
-if (d_ai_persistent_corpses != 0) then {
-	{
-		_x setDamage 1;
-		sleep 0.01;
-	} forEach _mtunits;
-} else {
-	{
-		deleteVehicle _x;
-		sleep 0.1;
-	} forEach _mtunits;
-};
+// if (d_ai_persistent_corpses != 0) then {
+// 	{
+// 		_x setDamage 1;
+// 		sleep 0.01;
+// 	} forEach _mtunits;
+// } else {
+// 	{
+// 		deleteVehicle _x;
+// 		sleep 0.1;
+// 	} forEach _mtunits;
+// };
 
 d_delstuff_run = nil;
 

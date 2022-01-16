@@ -103,7 +103,7 @@ if (_camp_static_weapons_current == 1) then {
 	_type_list_guard_static2 = [//主要战区，静态武器
     	["stat_mg", 1, ceil (random 6)],
     	["stat_gl", 1, ceil (random 6)],
-		["arty", 3, ceil (random 3)]
+		["arty", 2, ceil (random 2)]
     ];
 };
 
@@ -172,25 +172,6 @@ private _barcompo = call {//兵营围墙
 	};
 	[
 		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//兵营顶层防御设施
-		["Land_HBarrierWall6_F",[-20,-17,0],270,1,0,[],"","",true,false],//外圈设施
-		["Land_HBarrierWall6_F",[17,20,0.0022049],0,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-17,20,0.0022049],0,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-20,17,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-20,0,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-20,8,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-20,-8,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[20,-17,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[20,0,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[20,8,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[20,-8,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-15,-22,0],180.111,1,0,[],"","",true,false],
-		["Land_BagBunker_Large_F",[0,-22,0],0,1,0,[],"","",true,false],//后侧地堡
-		["Land_HBarrierWall6_F",[20,17,0],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[15,-22,0],180.111,1,0,[],"","",true,false],
-		["Land_DragonsTeeth_01_4x2_new_F",[6,22,0],180.111,1,0,[],"","",true,false],//前侧铁丝网
-		["Land_DragonsTeeth_01_4x2_new_F",[-6,22,0],180.111,1,0,[],"","",true,false],//前侧铁丝网
-		["Land_DragonsTeeth_01_4x2_new_F",[6,-22,0],180.111,1,0,[],"","",true,false],//后侧铁丝网
-		["Land_DragonsTeeth_01_4x2_new_F",[-6,-22,0],180.111,1,0,[],"","",true,false],//后侧铁丝网 
 		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
@@ -337,7 +318,6 @@ if (d_bar_mhq_destroy == 1) then {
 };
 private _barcompo = [//指挥部外部环境物件
 		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
-		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//指挥部顶层防御设施
 		["Land_HelipadCircle_F",[-24,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrierTower_F",[-37,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrier_Big_F",[-37,-7,0],270,1,0,[],"","",true,false],

@@ -32,7 +32,7 @@ while {true} do {
 	__TRACE_1("","_limit_p")
 	#ifndef __DEBUG__
 	while {true} do {
-		if (!d_mt_radio_down && {(call d_fnc_PlayersNumber) >= _limit_p && {diag_fps > 15}}) exitWith {
+		if (!d_mt_radio_down && {(call d_fnc_PlayersNumber) >= _limit_p }) exitWith {
 			__TRACE("spawning airai vehicle")
 		};
 		sleep 5 ;
@@ -49,7 +49,7 @@ while {true} do {
 		};
 	};
 
-	private _grpskill = 0.6 + (random 0.3);
+	private _grpskill = 0.9;
 	__TRACE_2("","_pos","_grpskill")
 
 	private _grp = [d_side_enemy] call d_fnc_creategroup;
@@ -88,7 +88,7 @@ while {true} do {
 	__TRACE_2("","_heli_type","_numair")
 
 	while {true} do {
-		sleep 0.323;
+		sleep 1;
 		if (d_current_target_index >= 0) exitWith {};
 	};
 	private _cdir = _pos getDir d_island_center;
@@ -334,7 +334,7 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 #ifndef __DEBUG__
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
-		if (_num_p < 5) exitWith {300};
+		if (_num_p < 5) exitWith {500};
 		if (_num_p < 10) exitWith {300};
 		if (_num_p < 15) exitWith {300};
 		if (_num_p < 20) exitWith {200};

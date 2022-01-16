@@ -214,10 +214,10 @@ private _placeCivilianCluster = {
 		}];
 		[_civAgent] spawn d_fnc_afterfirednear; 
 		d_cur_tgt_civ_units pushBack _civAgent;
-		if (d_ai_persistent_corpses == 0) then {
-			// civ corpses are removed when civ module is deleted
-			removeFromRemainsCollector [_this];
-		};
+		// if (d_ai_persistent_corpses == 0) then {
+		// 	// civ corpses are removed when civ module is deleted
+		// 	removeFromRemainsCollector [_this];
+		// };
 		_civAgent addEventHandler ["Killed", {
 			call d_fnc_civmodulekilleh;
 		}];
@@ -316,10 +316,10 @@ _m setVariable ["#usepanicmode", false];
 _m setVariable ["#unitcount", _civ_unitcount];
 _m setVariable ["#onCreated", {
 	d_cur_tgt_civ_units pushBack _this;
-	if (d_ai_persistent_corpses == 0) then {
-		// civ corpses are removed when civ module is deleted
-		removeFromRemainsCollector [_this];
-	};
+	// if (d_ai_persistent_corpses == 0) then {
+	// 	// civ corpses are removed when civ module is deleted
+	// 	removeFromRemainsCollector [_this];
+	// };
 	_this addEventHandler ["Killed", {
 		call d_fnc_civmodulekilleh;
 	}];

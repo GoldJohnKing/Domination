@@ -62,7 +62,7 @@ if (_numvecs > 0) then {
 _grp deleteGroupWhenEmpty true;
 
 if (_add_to_ar_type > 0) then {
-	if (d_mt_respawngroups == 0) then {
+	// if (d_mt_respawngroups == 0) then {
 		if (!_istatatic && {_grptype != "uav"}) then { // don't add static weapons or UAVs !!!!, respawn doesn't make sense, they can't travel from the respawn camp to another location
 			if (!_ismen) then {
 				{
@@ -80,7 +80,7 @@ if (_add_to_ar_type > 0) then {
 				_grp setVariable ["d_respawninfo", [_grptype, [], _target_pos, _numvecs, selectRandom ["patrol", "patrol2"], _side, 0, _vec_dir, _add_to_ar_type, _center_rad, false, []]];
 			};
 		};
-	};
+	// };
 	if (_vecs isNotEqualTo []) then {
 		d_delvecsmt append _vecs;
 	};

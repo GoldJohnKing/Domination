@@ -160,11 +160,11 @@ while {!d_mt_done} do {
 d_mt_event_messages_array deleteAt (d_mt_event_messages_array find _eventDescription);
 publicVariable "d_mt_event_messages_array";
 
-if (d_ai_persistent_corpses == 0) then {
-	waitUntil {sleep 10; d_mt_done};
-} else {
-	sleep 120;
-};
+// if (d_ai_persistent_corpses == 0) then {
+// 	waitUntil {sleep 10; d_mt_done};
+// } else {
+// 	sleep 120;
+// };
 
 //cleanup
 d_event_trigger_tanks_guerr = nil;
