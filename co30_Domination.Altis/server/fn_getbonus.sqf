@@ -9,23 +9,23 @@ d_current_sm_bonus_vec = _this # 1;
 
 __TRACE("Starting")
 
-// if (d_MissionType == 2 || {d_bonus_vec_type in [1, 3]}) exitWith {
-// 	[d_sm_winner, ""] remoteExecCall ["d_fnc_sm_res_client", [0, -2] select isDedicated];
-// #ifndef __TT__
-// 	d_kb_logic1 kbTell [d_kb_logic2,d_kb_topic_side,"MissionAccomplished",d_kbtel_chan];
-// #else
-// 	if (d_sm_winner == 1) then {
-// 		d_hq_logic_blufor1 kbTell [d_hq_logic_blufor2,"HQ_W","MissionFailure","SIDE"];
-// 		d_hq_logic_opfor1 kbTell [d_hq_logic_opfor2,"HQ_E","MissionAccomplished","SIDE"];
-// 	} else {
-// 		d_hq_logic_blufor1 kbTell [d_hq_logic_blufor2,"HQ_W","MissionAccomplished","SIDE"];
-// 		d_hq_logic_opfor1 kbTell [d_hq_logic_opfor2,"HQ_E","MissionFailure","SIDE"];
-// 	};
-// #endif
+if (d_MissionType == 2 || {d_bonus_vec_type in [1, 3]}) exitWith {
+	[d_sm_winner, ""] remoteExecCall ["d_fnc_sm_res_client", [0, -2] select isDedicated];
+#ifndef __TT__
+	d_kb_logic1 kbTell [d_kb_logic2,d_kb_topic_side,"MissionAccomplished",d_kbtel_chan];
+#else
+	if (d_sm_winner == 1) then {
+		d_hq_logic_blufor1 kbTell [d_hq_logic_blufor2,"HQ_W","MissionFailure","SIDE"];
+		d_hq_logic_opfor1 kbTell [d_hq_logic_opfor2,"HQ_E","MissionAccomplished","SIDE"];
+	} else {
+		d_hq_logic_blufor1 kbTell [d_hq_logic_blufor2,"HQ_W","MissionAccomplished","SIDE"];
+		d_hq_logic_opfor1 kbTell [d_hq_logic_opfor2,"HQ_E","MissionFailure","SIDE"];
+	};
+#endif
 
-// 	if !(isServer && {!isDedicated}) then {d_sm_winner = 0};
-// 	d_sm_bonus_wait = nil;
-// };
+	if !(isServer && {!isDedicated}) then {d_sm_winner = 0};
+	d_sm_bonus_wait = nil;
+};
 
 #ifdef __TT__
 switch (d_sm_winner) do {

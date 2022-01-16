@@ -445,12 +445,12 @@ if (isServer) then {
 	};
 	publicVariable "d_MainTargets";
 
-	// if (d_sm_dorandom == 0) then {
-	// 	// create random list of side missions
+	if (d_sm_dorandom == 0) then {
+		// create random list of side missions
 		d_side_missions_random = d_sm_array call BIS_fnc_arrayShuffle;
-	// } else {
-		// d_side_missions_random =+ d_sm_array;
-	// };
+	} else {
+		d_side_missions_random =+ d_sm_array;
+	};
 	__TRACE_1("","d_side_missions_random")
 
 	d_current_mission_counter = 0;

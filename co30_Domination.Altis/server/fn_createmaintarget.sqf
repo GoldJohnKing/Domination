@@ -103,7 +103,7 @@ if (_camp_static_weapons_current == 1) then {
 	_type_list_guard_static2 = [//主要战区，静态武器
     	["stat_mg", 1, ceil (random 6)],
     	["stat_gl", 1, ceil (random 6)],
-		["arty", 2, ceil (random 2)]
+		["arty", 3, ceil (random 3)]
     ];
 };
 
@@ -318,6 +318,7 @@ if (d_bar_mhq_destroy == 1) then {
 };
 private _barcompo = [//指挥部外部环境物件
 		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
+		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//指挥部顶层防御设施
 		["Land_HelipadCircle_F",[-24,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrierTower_F",[-37,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrier_Big_F",[-37,-7,0],270,1,0,[],"","",true,false],

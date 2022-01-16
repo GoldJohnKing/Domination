@@ -519,19 +519,19 @@ class Params {
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
-	// class d_sm_dorandom {
-	// 	title = "$STR_DOM_MISSIONSTRING_2009";
-	// 	values[] = {0,1};
-	// 	default = 0;
-	// 	texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
-	// };
+	class d_sm_dorandom {
+		title = "$STR_DOM_MISSIONSTRING_2009";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
+	};
 
-	// class d_bonus_vec_type {
-	// 	title = "$STR_DOM_MISSIONSTRING_1736";
-	// 	values[] = {0,1,2,3};
-	// 	default = 0;
-	// 	texts[] = {"$STR_DOM_MISSIONSTRING_11","$STR_DOM_MISSIONSTRING_1737","$STR_DOM_MISSIONSTRING_1738","$STR_DOM_MISSIONSTRING_1739"};
-	// };
+	class d_bonus_vec_type {
+		title = "$STR_DOM_MISSIONSTRING_1736";
+		values[] = {0,1,2,3};
+		default = 0;
+		texts[] = {"$STR_DOM_MISSIONSTRING_11","$STR_DOM_MISSIONSTRING_1737","$STR_DOM_MISSIONSTRING_1738","$STR_DOM_MISSIONSTRING_1739"};
+	};
 
 	class d_ao_check_for_ai {
 		title = "$STR_DOM_MISSIONSTRING_2002";
@@ -785,12 +785,12 @@ class Params {
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
-	// class d_no_mortar_ar {
-	// 	title = "$STR_DOM_MISSIONSTRING_1831";
-	// 	values[] = {0,1};
-	// 	default = 0;
-	// 	texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
-	// };
+	class d_no_mortar_ar {
+		title = "$STR_DOM_MISSIONSTRING_1831";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
+	};
 	
 	class d_ao_markers {
 		title = "$STR_DOM_MISSIONSTRING_2017";
@@ -848,12 +848,12 @@ class Params {
 		texts[] = {""};
 	};
 
-	// class d_InitialViewDistance {
-	// 	title = "$STR_DOM_MISSIONSTRING_1025";
-	// 	values[] = {1000,1600,2000,2500,3000,3500,4000,4500,5000};
-	// 	default = 1200;
-	// 	texts[] = {"1000 m","1600 m","2000 m","2500 m","3000 m","3500 m","4000 m","4500 m","5000 m"};
-	// };
+	class d_InitialViewDistance {
+		title = "$STR_DOM_MISSIONSTRING_1025";
+		values[] = {1000,1600,2000,2500,3000,3500,4000,4500,5000};
+		default = 1200;
+		texts[] = {"1000 m","1600 m","2000 m","2500 m","3000 m","3500 m","4000 m","4500 m","5000 m"};
+	};
 
 	class d_MaxViewDistance {
 		title = "$STR_DOM_MISSIONSTRING_1035";
@@ -926,7 +926,7 @@ class Params {
 	class d_max_ai {
 		title = "$STR_DOM_MISSIONSTRING_1176";
 		values[] = {4,6,8,10,12,14,16};
-		default = 6;
+		default = 4;
 		texts[] = {"4","6","8","10","12","14","16"};
 	};
 
@@ -983,14 +983,14 @@ class Params {
 	class d_WithRevive {
 		title = "$STR_DOM_MISSIONSTRING_1005";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
 	class d_WithReviveSpectating {
 		title = "$STR_DOM_MISSIONSTRING_1567";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 

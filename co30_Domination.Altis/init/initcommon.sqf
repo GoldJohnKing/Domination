@@ -266,7 +266,7 @@ if (hasInterface) then {
 	// rank needed to fly the wreck lift chopper
 	d_wreck_lift_rank = "CAPTAIN";
 
-	// d_disable_viewdistance = d_ViewdistanceChange == 1;
+	d_disable_viewdistance = d_ViewdistanceChange == 1;
 	
 	d_mob_respawns = [];
 #ifndef __TT__
@@ -421,9 +421,9 @@ if (hasInterface) then {
 		d_launcher_cooldown = d_launcher_cooldownp;
 	};
 	
-	// if (d_no_mortar_ar == 1) then {
-	// 	(d_remove_from_arsenal # 5) append [{_this isKindOf "Weapon_Bag_Base" || {_this isKindOf "B_Mortar_01_support_F"}}];
-	// };
+	if (d_no_mortar_ar == 1) then {
+		(d_remove_from_arsenal # 5) append [{_this isKindOf "Weapon_Bag_Base" || {_this isKindOf "B_Mortar_01_support_F"}}];
+	};
 };
 
 diag_log [diag_frameno, diag_ticktime, time, "Dom initcommon.sqf processed"];

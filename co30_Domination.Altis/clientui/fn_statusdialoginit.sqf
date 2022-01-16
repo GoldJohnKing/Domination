@@ -252,20 +252,20 @@ _s_all = str _s_all;
 (_disp displayCtrl 12016) ctrlSetText serverName;
 
 
-// if (d_disable_viewdistance) then {
-// 	(_disp displayCtrl 1000) ctrlEnable false;
-// 	(_disp displayCtrl 1999) ctrlSetText CHVD_Hint; // Edited: Use CHVD, default = (localize "STR_DOM_MISSIONSTRING_357")
-// 	(_disp displayCtrl 1997) ctrlSetText "";
-// } else {
-// 	// (_disp displayCtrl 1000) sliderSetRange [200, d_MaxViewDistance];
-// 	if (!d_isvdreduced) then {
-// 		(_disp displayCtrl 1000) sliderSetPosition viewDistance;
-// 		(_disp displayCtrl 1999) ctrlSetText format [localize "STR_DOM_MISSIONSTRING_358", round viewDistance];
-// 	} else {
-// 		(_disp displayCtrl 1000) sliderSetPosition d_curviewdistance;
-// 		(_disp displayCtrl 1999) ctrlSetText format [localize "STR_DOM_MISSIONSTRING_358", round d_curviewdistance];
-// 	};
-// };
+if (d_disable_viewdistance) then {
+	(_disp displayCtrl 1000) ctrlEnable false;
+	(_disp displayCtrl 1999) ctrlSetText CHVD_Hint; // Edited: Use CHVD, default = (localize "STR_DOM_MISSIONSTRING_357")
+	(_disp displayCtrl 1997) ctrlSetText "";
+} else {
+	(_disp displayCtrl 1000) sliderSetRange [200, d_MaxViewDistance];
+	if (!d_isvdreduced) then {
+		(_disp displayCtrl 1000) sliderSetPosition viewDistance;
+		(_disp displayCtrl 1999) ctrlSetText format [localize "STR_DOM_MISSIONSTRING_358", round viewDistance];
+	} else {
+		(_disp displayCtrl 1000) sliderSetPosition d_curviewdistance;
+		(_disp displayCtrl 1999) ctrlSetText format [localize "STR_DOM_MISSIONSTRING_358", round d_curviewdistance];
+	};
+};
 
 private _ctrl = _disp displayCtrl 1001;
 

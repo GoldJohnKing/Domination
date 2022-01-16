@@ -134,11 +134,11 @@ publicVariable "d_mt_event_messages_array";
 deleteVehicle _trigger;
 deleteMarker _marker;
 
-// if (d_ai_persistent_corpses == 0) then {
-// 	waitUntil {sleep 10; d_mt_done};
-// } else {
-// 	sleep 120;
-// };
+if (d_ai_persistent_corpses == 0) then {
+	waitUntil {sleep 10; d_mt_done};
+} else {
+	sleep 120;
+};
 
 //cleanup
 _x_mt_event_ar call d_fnc_deletearrayunitsvehicles;

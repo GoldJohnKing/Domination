@@ -81,9 +81,9 @@ private _nightorfog = call d_fnc_nightfograin;
 	//_one_unit enableFatigue false;
 	_one_unit disableAI "RADIOPROTOCOL";	
 	
-	// if (d_ai_persistent_corpses == 0) then {
-	// 	removeFromRemainsCollector [_one_unit];
-	// };
+	if (d_ai_persistent_corpses == 0) then {
+		removeFromRemainsCollector [_one_unit];
+	};
 
 #ifdef __GROUPDEBUG__
 	// does not subtract if a unit dies!

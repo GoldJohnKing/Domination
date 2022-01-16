@@ -192,11 +192,11 @@ deleteMarker _marker;
 d_mt_event_messages_array deleteAt (d_mt_event_messages_array find _eventDescription);
 publicVariable "d_mt_event_messages_array";
 
-// if (d_ai_persistent_corpses == 0) then {
-// 	waitUntil {sleep 10; d_mt_done};
-// } else {
-// 	sleep 120;
-// };
+if (d_ai_persistent_corpses == 0) then {
+	waitUntil {sleep 10; d_mt_done};
+} else {
+	sleep 120;
+};
 
 //cleanup
 _x_mt_event_ar call d_fnc_deletearrayunitsvehicles;
