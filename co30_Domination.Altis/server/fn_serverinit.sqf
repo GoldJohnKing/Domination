@@ -58,17 +58,17 @@ if (d_MissionType != 2 && {d_disable_airai != 1}) then {
 			["LAC"] spawn d_fnc_airai; // LAC = Ligh Attack Chopper
 		};
 		if (d_number_attack_choppers > 0 && {d_airai_attack_chopper isNotEqualTo []}) then {
-			sleep ([200, 60 + random 10] select _first);
+			sleep ([300, 60 + random 10] select _first);
 			_first = true;
 			["HAC"] spawn d_fnc_airai; // HAC = Heavy Attack Chopper
 		};
 		if (d_number_attack_planes > 0 && {d_airai_attack_plane isNotEqualTo []}) then {
-			sleep ([200, 60 + random 10] select _first);
+			sleep ([300, 60 + random 10] select _first);
 			_first = true;
 			["AP"] spawn d_fnc_airai; // AP = Attack Plane
 		};
 		if (d_number_attack_uavs > 0 && {d_airai_attack_uav isNotEqualTo []}) then {
-			sleep ([100, 60 + random 120] select _first);
+			sleep ([300, 60 + random 120] select _first);
 			["UAV"] spawn d_fnc_airai; // UAV = Attack UAV
 		};		
 	};

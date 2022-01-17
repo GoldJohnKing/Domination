@@ -11,11 +11,11 @@ params ["_type"];
 while {true} do {
 #ifndef __DEBUG__
 	if (!d_mt_radio_down) then {
-		while {!d_mt_spotted} do {sleep 8.32};
+		while {!d_mt_spotted} do {sleep 9};
 	} else {
-		while {d_mt_radio_down} do {sleep 8.123};
+		while {d_mt_radio_down} do {sleep 9};
 		if (!d_mt_spotted) then {
-			while {!d_mt_spotted} do {sleep 8.32};
+			while {!d_mt_spotted} do {sleep 9};
 		};
 	};
 #endif
@@ -24,10 +24,10 @@ while {true} do {
 	private _funits = [];
 
 	private _limit_p = call {
-		if (_type isEqualTo "AP") exitWith {12};
-		if (_type isEqualTo "HAC") exitWith {6};
-		if (_type isEqualTo "UAV") exitWith {5};
-		4;
+		if (_type isEqualTo "AP") exitWith {12};//加强制空
+		if (_type isEqualTo "HAC") exitWith {8};//普通制空
+		if (_type isEqualTo "UAV") exitWith {6};
+		6;//轻型支援空军中队
 	};
 	__TRACE_1("","_limit_p")
 	#ifndef __DEBUG__
@@ -49,7 +49,7 @@ while {true} do {
 		};
 	};
 
-	private _grpskill = 0.6 + (random 0.3);
+	private _grpskill = 1;
 	__TRACE_2("","_pos","_grpskill")
 
 	private _grp = [d_side_enemy] call d_fnc_creategroup;

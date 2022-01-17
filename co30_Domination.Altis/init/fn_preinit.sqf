@@ -1274,13 +1274,13 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	d_arti_observer_G = [["I_Soldier_TL_F"]];
 
 	if (isNil "d_number_attack_planes") then {
-		d_number_attack_planes = 3;
+		d_number_attack_planes = 1;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 2;
+		d_number_attack_choppers = 1;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
-		d_number_light_attack_choppers = 2;
+		d_number_light_attack_choppers = 1;
 	};
 	if (isNil "d_number_attack_uavs") then {
 		d_number_attack_uavs = 1;
@@ -2220,7 +2220,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["rhsgref_cdf_b_su25","rhs_uh1h_hidf_gunship","RHSGREF_A29B_HIDF","RHSGREF_A29B_HIDF","RHSGREF_A29B_HIDF","rhsgred_hidf_cessna_o3a","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","I_Heli_light_03_dynamicLoadout_F","O_Plane_CAS_02_dynamicLoadout_F"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","RHSGREF_A29B_HIDF","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","rhsgred_hidf_cessna_o3a","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
