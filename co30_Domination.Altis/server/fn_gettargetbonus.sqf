@@ -21,7 +21,7 @@ if (_vectypetouse == "") then {
 	_vectypetouse = selectRandom d_mt_bonus_vehicle_array;
 };
 private _vec = createVehicle [_vectypetouse, d_bonus_create_pos, [], 0, "CAN_COLLIDE"];
-d_bonus_vecs_db pushBack _vec;
+d_bonus_vecs_db pushBack _vec;//添加载具属性
 if (unitIsUAV _vec) then {
 	private _uavgrp = createVehicleCrew _vec;
 	_vec allowCrewInImmobile true;

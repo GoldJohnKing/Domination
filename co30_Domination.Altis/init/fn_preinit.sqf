@@ -282,7 +282,7 @@ d_sm_b_vec_ar_c pushBack ((d_sm_bonus_vehicle_array # 0) apply {toLowerANSI _x})
 d_sm_b_vec_ar_c pushBack ((d_sm_bonus_vehicle_array # 1) apply {toLowerANSI _x});
 d_sm_bonus_vehicle_array set [0, d_sm_b_vec_ar_c # 0];
 d_sm_bonus_vehicle_array set [1, d_sm_b_vec_ar_c # 1];
-d_mt_bonus_vehicle_array set [0, (d_mt_bonus_vehicle_array # 0) apply {toLowerANSI _x}];
+d_mt_bonus_vehicle_array set [0, (d_mt_bonus_vehicle_array # 0) apply {toLowerANSI _x}];//检查固定翼属性
 d_mt_bonus_vehicle_array set [1, (d_mt_bonus_vehicle_array # 1) apply {toLowerANSI _x}];
 #endif
 
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [400, 25, 300, 170];
+		d_ai_groups_respawn_time = [400, 85, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
@@ -2662,7 +2662,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_M1117_D","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m1151_mk19crows_usarmy_d","rhsusf_m1151_m2_lras3_v1_usarmy_d","rhsusf_m966_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_m1165a1_gmv_mk19_m240_socom_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_M1238A1_Mk19_socom_d","O_MRAP_02_gmg_F","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_APC_Tracked_01_CRV_F","RHS_Ural_Zu23_MSV_01","rhs_btr80a_msv","O_T_APC_Wheeled_02_rcws_v2_ghex_F","rhsusf_stryker_m1134_d","M1133_MEV_DG1_NOSLATDES","rhs_Ob_681_2","rhs_bmp2k_msv","rhs_bmp3mera_msv","O_ZBD05","O_ZBL09","B_MBT_01_mlrs_F","B_MBT_01_arty_F","O_PLZ05","O_PLL09","rhs_2s3_at_tv","M1128_MGS_DG1_NOSLATDES","B_AFV_Wheeled_01_up_cannon_F","O_ZTD05","O_ZTL11"]
+			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_M1117_D","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m1151_mk19crows_usarmy_d","rhsusf_m1151_m2_lras3_v1_usarmy_d","rhsusf_m966_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_m1165a1_gmv_mk19_m240_socom_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_M1238A1_Mk19_socom_d","O_MRAP_02_gmg_F","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_APC_Tracked_01_CRV_F","RHS_Ural_Zu23_MSV_01","rhs_btr80a_msv","O_T_APC_Wheeled_02_rcws_v2_ghex_F","rhsusf_stryker_m1134_d","M1133_MEV_DG1_NOSLATDES","rhs_Ob_681_2","rhs_bmp2k_msv","rhs_bmp3mera_msv","O_ZBD05","O_ZBL09","B_Truck_02_CAMM_F","B_Truck_02_CAMM_ER_F","B_MBT_01_mlrs_F","B_MBT_01_arty_F","O_PLZ05","O_PLL09","rhs_2s3_at_tv","M1128_MGS_DG1_NOSLATDES","B_AFV_Wheeled_01_up_cannon_F","O_ZTD05","O_ZTL11"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]
