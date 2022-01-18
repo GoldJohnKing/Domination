@@ -81,7 +81,6 @@ addons[]=
 	"A3_Static_F_Jets_AAA_System_01",
 	"rhsgref_c_troops",
 	"rhsusf_c_troops",
-	"FIR_AirWeaponSystem_US",
 	"A3_Air_F_Exp_UAV_03",
 	"rhs_c_weapons",
 	"A3_Weapons_F",
@@ -109,7 +108,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=59;
+		items=58;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -386,8 +385,10 @@ class AddonsMetaData
 		};
 		class Item40
 		{
-			className="FIR_AirWeaponSystem_US";
-			name="FIR_AirWeaponSystem_US";
+			className="A3_Air_F_Jets";
+			name="Arma 3 Jets - Aircraft";
+			author="波希米亚互动工作室";
+			url="https://www.arma3.com";
 		};
 		class Item41
 		{
@@ -494,13 +495,6 @@ class AddonsMetaData
 		{
 			className="JS_JC_SU35";
 			name="JS_JC_SU35";
-		};
-		class Item58
-		{
-			className="A3_Air_F_Jets";
-			name="Arma 3 Jets - Aircraft";
-			author="波希米亚互动工作室";
-			url="https://www.arma3.com";
 		};
 	};
 };
