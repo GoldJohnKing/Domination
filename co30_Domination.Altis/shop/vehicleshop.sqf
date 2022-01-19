@@ -20,7 +20,6 @@ player addaction["Ka52: 需要3000荣誉",{["RHS_Ka52_vvsc",3000]execvm "moneysy
 player addaction["AH1Z: 需要3000荣誉",{["RHS_AH1Z",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["F/A 18E超级大黄蜂: 需要4000荣誉",{["JS_JC_FA18E",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["F/A 18F超级大黄蜂: 需要4000荣誉",{["JS_JC_FA18F",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["F22: 需要3000荣誉",{["USAF_F22",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["A10D(A164): 需要3000荣誉",{["B_Plane_CAS_01_dynamicLoadout_F",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["雅克130(To199)攻击机: 需要3000荣誉",{["O_Plane_CAS_02_dynamicLoadout_F",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["SU25攻击机: 需要3000荣誉",{["RHS_Su25SM_vvsc",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
@@ -29,7 +28,6 @@ player addaction["沈阳歼15-原型机: 需要4000荣誉",{["Su33_Chine_PT",400
 player addaction["沈阳歼15-飞鲨: 需要4000荣誉",{["Su33_Chine",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["苏33舰载机: 需要4000荣誉",{["Su33_Protatype_PT_2",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["F35重型（外挂架）: 需要4000荣誉",{["USAF_F35A",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
-player addaction["F22重型（外挂架）: 需要3000荣誉",{["USAF_F22_Heavy",3000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["T50-generic: 需要3000荣誉",{["RHS_T50_vvs_generic_ext",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["T50-055: 需要3000荣誉",{["RHS_T50_vvs_blueonblue",4000]execvm "moneysystem\recrutesystem\buyvehicle .sqf";}];
 player addaction["leave",{removeallActions player}];

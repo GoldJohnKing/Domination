@@ -14,7 +14,7 @@ if (_p isNotEqualTo []) then {
 	__TRACE_1("","_p")
 	if (_numtk >= d_maxnum_tks_forkick) exitWith {
 		private _pna = _p # 6;
-		diag_log format ["Player %1 put into jail because of too much teamkilling, # team kills: %3, ArmA 3 Key: %2", _pna, _uid, _numtk];
+		diag_log format ["玩家 %1 被移到小黑屋因为误伤了太多友军, # team kills: %3, ArmA 3 Key: %2", _pna, _uid, _numtk];
 		[20, _pna, _numtk, _tk] remoteExecCall ["d_fnc_csidechat", [0, -2] select isDedicated];
 	};
 };

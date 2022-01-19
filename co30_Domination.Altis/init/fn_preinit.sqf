@@ -1274,7 +1274,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	d_arti_observer_G = [["I_Soldier_TL_F"]];
 
 	if (isNil "d_number_attack_planes") then {
-		d_number_attack_planes = 1;
+		d_number_attack_planes = 2;
 	};
 	if (isNil "d_number_attack_choppers") then {
 		d_number_attack_choppers = 1;
