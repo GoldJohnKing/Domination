@@ -3,7 +3,7 @@
 <Package name="Domination">
 <Container name="Mission">
 <Key ID="STR_DOM_MISSIONSTRING_0">
-<Original>载具修理点</Original>
+<Original>后勤残骸修理点</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_2">
 <Original>飞机修理点</Original>
