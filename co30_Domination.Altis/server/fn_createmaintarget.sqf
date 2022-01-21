@@ -171,12 +171,9 @@ private _barcompo = call {//兵营围墙
 		]
 	};
 	[
-		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//兵营顶层防御设施
 		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
-		["Land_BagBunker_01_small_green_F",[-8,11,0.0022049],180,1,0,[],"","",true,false],
-		["rhsgref_ins_DSHKM",[-8,11,0.0022049],0,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[-10.33789,7,0],270,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[10,-7,0.00019455],90,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[-7,-12,0],180,1,0,[],"","",true,false],
@@ -289,15 +286,6 @@ _HQ1 createUnit ["rhsgref_ins_squadleader", _poss, [], 0, "FORM"];
 _HQ2 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
 _HQ3 createUnit ["rhsgref_ins_spotter", _poss, [], 0, "FORM"];
 _HQ4 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
-_HQ1 createUnit ["rhsgref_ins_spotter", _poss, [], 0, "FORM"];
-_HQ1 createUnit ["rhsgref_ins_spotter", _poss, [], 0, "FORM"];
-_HQ1 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
-_HQ1 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
-_HQ1 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
-_HQ2 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
-_HQ2 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
-_HQ2 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
-_HQ2 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
 _vec setVariable ["d_v_pos", getPos _vec];
 if (d_bar_mhq_destroy == 1) then {
 	[_vec, 1] call d_fnc_checkmtrespawntarget;
@@ -315,7 +303,6 @@ if (d_bar_mhq_destroy == 1) then {
 };
 private _barcompo = [//指挥部外部环境物件
 		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
-		["rhsgref_cdf_b_ZU23",[0,0,5],0,1,0,[],"","",true,false],//指挥部顶层防御设施
 		["Land_HelipadCircle_F",[-24,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrierTower_F",[-37,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrier_Big_F",[-37,-7,0],270,1,0,[],"","",true,false],
