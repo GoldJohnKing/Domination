@@ -14,10 +14,10 @@ if (count _unitliste > 2) then {
     } else {
 		_maxunits = round (linearConversion [1, 40, _nump, 2, 6, true]);
 		if (_maxunits == 2) then {
-			_maxunits = selectRandom [2, 3, 4];
+			_maxunits = selectRandom [2];
 		} else {
 			if (_maxunits == 6) then {
-				_maxunits = selectRandom [5, 6, 7, 8, 9, 10, 11];
+				_maxunits = selectRandom [3, 4, 5, 6, 7, 8, 9];
 			};
 		};
     };

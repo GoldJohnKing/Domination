@@ -51,7 +51,7 @@
 <Original>欢迎...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_24">
-<Original>放开手脚，全面作战！</Original>
+<Original>军种协同，联合作战！</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_25">
 <Original>你的任务是消灭全部敌人,摧毁目标区域的主通讯塔,完成支线任务并占领所有的军需库。</Original>
@@ -2300,7 +2300,7 @@
 <Original>你没有资格驾驶, 你可以担当炮手或车长来指挥 %1。\n\n你在 %2 分钟内将获得资格。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1417">
-<Original>只有飞行员可以飞行(你需要飞行员制服和头盔)</Original>
+<Original>你需要穿戴正确的飞行员制服和头盔才能飞行，可进群了解：274455383</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1418">
 <Original>解锁载具</Original>
@@ -2321,7 +2321,7 @@
 <Original>只能在驾驶员的位置上卸载弹药箱! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1434">
-<Original>按(%1)键打开游戏互动菜单! ! ! \n按(%2)键关闭3D用户标记, 为空时没有分配按键! ! ! \n按(%3)键戴上或取下耳塞标记, 为空时没有分配按键! ! ! </Original>
+<Original>不清楚驾驶飞机该穿什么服装和头盔？请进群询问：274455383 </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1446">
 <Original>头顶</Original>
@@ -3328,7 +3328,7 @@
 <Original>使用医疗帐篷进行治疗的积分! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1988">
-<Original>你可以从基地旗帜传送到其他位置, 而无需浪费 车辆/直升机...</Original>
+<Original>你可以从基地传送点传送到基地车和小队长身边, 而无需浪费载具...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1989">
 <Original>为另一个玩家生成的点数! </Original>
