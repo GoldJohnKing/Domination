@@ -3,7 +3,7 @@ switch (d_own_side) do {
 	case "GUER": {["I_APC_Wheeled_03_cannon_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_UGV_01_F","I_UGV_01_rcws_F","I_Plane_Fighter_03_dynamicLoadout_F","I_Heli_light_03_dynamicLoadout_F"]};
 	case "WEST":  {
 		["B_Heli_Attack_01_dynamicLoadout_F",
-		"rhs_t90sm_tv","rhs_t72be_tv","JS_JC_SU35",
+		"rhs_t90sm_tv","rhs_t72be_tv","JS_JC_SU35","FIR_Su25SM3","FIR_F35B_Standard",
 		"rhsusf_m1a2sep2wd_usarmy","rhsusf_m1a2sep2d_usarmy","rhsusf_m1a2sep2wd_usarmy","RHS_MELB_AH6M","O_Plane_Fighter_02_F","rhs_t90am_tv",
 		"C_Y_PLA_WZ10_F","RHS_Ka52_vvsc","rhs_mi28n_vvsc","rhsgref_b_mi24g_CAS","O_Plane_Fighter_02_Stealth_F","B_APC_Tracked_01_AA_F","rhs_t90sab_tv",
 		"USAF_F22_Heavy","USAF_F35A","O_Plane_CAS_02_dynamicLoadout_F","Su33_Chine","rhs_t80ue1","rhs_t15_tv","RHS_Mi24P_vdv","rhs_t90a_tv",

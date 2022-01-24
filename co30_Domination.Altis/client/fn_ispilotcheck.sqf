@@ -11,6 +11,26 @@ if (d_unsung) exitWith {
 if (d_vn) exitWith {
 	toLowerANSI (uniform player) in ["vn_b_uniform_heli_01_01","vn_b_uniform_k2b_02_01","vn_b_uniform_k2b_02_02","vn_b_uniform_k2b_01_02","vn_b_uniform_k2b_02_03","vn_o_uniform_nva_air_01"] && {toLowerANSI (headgear player) in ["vn_b_helmet_aph6_01_02","vn_b_helmet_aph6_02_02","vn_b_helmet_aph6_01_05","vn_b_helmet_aph6_02_05","vn_b_helmet_aph6_01_03","vn_b_helmet_aph6_02_03","vn_b_helmet_aph6_01_04","vn_b_helmet_aph6_02_04","vn_b_helmet_aph6_01_01","vn_b_helmet_aph6_02_01"]}
 };
-
-// toLowerANSI (uniform player) in ["U_B_HeliPilotCoveralls","U_B_PilotCoveralls","rhs_uniform_df15_tan","rhs_uniform_df15"] && {toLowerANSI (headgear player) in ["rhs_zsh7a_alt","rhs_zsh7a","rhs_zsh7a_mike_alt","rhs_zsh7a_mike_green","rhs_zsh7a_mike","RHS_jetpilot_usaf","rhsusf_ihadss","rhsusf_hgu56p_visor_green","rhsusf_hgu56p_mask_green","rhsusf_hgu56p_green","rhsusf_hgu56p_visor_black","rhsusf_hgu56p_mask_black_skull","rhsusf_hgu56p_mask_black","rhsusf_hgu56p_black"]}
-"pilot" in toLowerANSI (uniform player) && {"pilot" in toLowerANSI (headgear player)}
+//飞行员白名单 执照
+	// (getPlayerUID player) == "76561198425186785" && {"pilot" in toLowerANSI (uniform player)}
+   (getPlayerUID player) in [
+	   "76561198425186785",//我
+	   "76561198377552749",//起个名难（BDSF)
+	   "76561197996528042",//老金
+	   "76561198044153700",//xiduola
+	   "76561198322399872",//422
+	   "76561198448654167",//SOL44151
+	   "76561199092177895",//风华
+	   "76561198452928851",//IONY
+	   "76561198397795428",//DIANDIAN
+	   "76561199012344429",//USNG
+	   "76561198385245693",//zc
+	   "76561198262486527",//Tiny
+	   "76561198322324149",//深情
+	   "76561198389827603",//Glaube
+	   "76561198303636873",//Quincy
+	   "76561198135068294",//Rayson
+	   "76561198813625204",//JIAJIA
+	   "76561198196256353"//18700
+   ] && {"pilot" in toLowerANSI (uniform player)}
+// "pilot" in toLowerANSI (uniform player) && {"pilot" in toLowerANSI (headgear player)} 76561198425186785用于测试的我的UID

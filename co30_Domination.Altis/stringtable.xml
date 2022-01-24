@@ -2300,7 +2300,7 @@
 <Original>你没有资格驾驶, 你可以担当炮手或车长来指挥 %1。\n\n你在 %2 分钟内将获得资格。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1417">
-<Original>你需要穿戴正确的飞行员制服和头盔才能飞行，可进群了解：274455383</Original>
+<Original>你需要飞行员执照并穿戴正确的飞行员制服才能飞行，可进群了解：274455383</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1418">
 <Original>解锁载具</Original>
@@ -2321,7 +2321,7 @@
 <Original>只能在驾驶员的位置上卸载弹药箱! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1434">
-<Original>不清楚驾驶飞机该穿什么服装和头盔？请进群询问：274455383 </Original>
+<Original>想飞飞行载具但却没有飞行员执照？请进群了解更多：274455383 </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1446">
 <Original>头顶</Original>
