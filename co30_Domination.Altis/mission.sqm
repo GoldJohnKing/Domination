@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=334;
+		nextID=337;
 	};
 	class Camera
 	{
 		pos[]={14664.528,23.838314,16741.807};
-		dir[]={-0.92724752,-0.21206218,-0.30870935};
-		up[]={-0.2012191,0.97724867,-0.066991389};
-		aside[]={-0.31589618,5.8987644e-007,0.94882959};
+		dir[]={-0.92721993,-0.21205586,-0.30870003};
+		up[]={-0.20119818,0.97725761,-0.066985063};
+		aside[]={-0.31588402,3.7252903e-009,0.948798};
 	};
 };
 binarizationWanted=0;
@@ -24530,7 +24530,7 @@ class Mission
 			};
 			id=2515;
 			type="B_Plane_Fighter_01_F";
-			atlOffset=1.2293625;
+			atlOffset=1.3012524;
 		};
 	};
 	class Connections

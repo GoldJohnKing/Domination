@@ -31,6 +31,7 @@ if (d_vn) exitWith {
 	   "76561198303636873",//Quincy
 	   "76561198135068294",//Rayson
 	   "76561198813625204",//JIAJIA
-	   "76561198196256353"//18700
+	   "76561198196256353",//18700
+	   "76561198161412086"//sundashengzong
    ] && {"pilot" in toLowerANSI (uniform player)}
 // "pilot" in toLowerANSI (uniform player) && {"pilot" in toLowerANSI (headgear player)} 76561198425186785用于测试的我的UID
