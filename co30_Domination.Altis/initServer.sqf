@@ -161,6 +161,8 @@ if (isDedicated) then {
 };
 #endif
 
+
+
 // Edited: Add server restart function
 [{"[公告]服务器将于3分钟后重启!" remoteExecCall ["CBA_fnc_notify", -2];}, [], 21420] call CBA_fnc_waitAndExecute; // Restart Hint: -180s 
 [{"[公告]服务器将于60秒后重启!" remoteExecCall ["CBA_fnc_notify", -2];}, [], 21540] call CBA_fnc_waitAndExecute; // Restart Hint: -60s 

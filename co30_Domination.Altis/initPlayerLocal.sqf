@@ -17,6 +17,8 @@ player enableAttack false;
 diag_log ["Dom d_database_found:", d_database_found];
 diag_log ["Dom name player:", name player];
 
+
+//服务器提示
 // Edited: Add server rule hints
 [] spawn { // 创建线程
 	while {true} do {
@@ -28,10 +30,9 @@ diag_log ["Dom name player:", name player];
 		"[公告]战区攻陷的条件是：信号塔被摧毁，所有营地被占领，且战区内敌人数量小于6。" call CBA_fnc_notify;
 		sleep 15; // 每条间隔15秒
 
-		"[公告]恶意破坏基地车和载具会被踢出服务器" call CBA_fnc_notify;
+		"[公告]恶意TK、破坏基地车和载具会被踢出服务器" call CBA_fnc_notify;
 
 		sleep 810; // 15分钟后再显示一次，扣除先前等待的时间
 	};
 };
-
 diag_log [diag_frameno, diag_ticktime, time, "MPF initPlayerLocal.sqf processed"];
