@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=2516;
+		nextID=2517;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=343;
+		nextID=346;
 	};
 	class Camera
 	{
-		pos[]={14777.533,90.055115,16435.313};
-		dir[]={-0.15515319,-0.44770253,0.88063383};
-		up[]={-0.07768213,0.89418012,0.44091743};
-		aside[]={0.98485065,2.7081114e-008,0.17351446};
+		pos[]={14669.28,33.305145,16575.93};
+		dir[]={0.081609495,-0.42527375,-0.90142381};
+		up[]={0.03834464,0.90505058,-0.42355618};
+		aside[]={-0.99598145,1.552944e-007,-0.090173706};
 	};
 };
 binarizationWanted=0;
@@ -106,14 +106,13 @@ addons[]=
 	"re_rhsusf_factions",
 	"rhsusf_c_m11xx",
 	"FIR_A10C_F",
-	"rhs_c_mig29",
-	"A3_Air_F_Jets_Plane_Fighter_01"
+	"JS_JC_SU35"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=63;
+		items=62;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -513,17 +512,8 @@ class AddonsMetaData
 		};
 		class Item61
 		{
-			className="rhs_c_mig29";
-			name="RHS Mig-29 Jets";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item62
-		{
-			className="A3_Air_F_Jets";
-			name="Arma 3 Jets - Aircraft";
-			author="波希米亚互动工作室";
-			url="https://www.arma3.com";
+			className="JS_JC_SU35";
+			name="JS_JC_SU35";
 		};
 	};
 };
@@ -599,7 +589,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="阿尔蒂斯地空联合机械化战役，用启动器来加入战斗吧！";
+		briefingName="丰富自由地空联合现代战争，用启动器来加入战斗吧！";
 		overviewText="欢迎来到61方面军红锤服！";
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -629,7 +619,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=598;
+		items=597;
 		class Item0
 		{
 			dataType="Marker";
@@ -24208,21 +24198,21 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15061.985,21.148018,17156.438};
+				position[]={15061.21,21.787189,17156.9};
 				angles[]={0,2.0522628,0};
 			};
 			side="Empty";
 			class Attributes
 			{
 				name="d_chopper_18";
-				textures="LightGray2";
+				textures="RussianAFSkyBlue";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
-				pylons=";;;;;;;;;;;;";
+				pylons=";;;;;;;;";
 			};
-			id=2513;
-			type="rhs_mig29sm_vvsc";
+			id=2516;
+			type="JS_JC_SU35";
 			atlOffset=1.0179996;
 			class CustomAttributes
 			{
@@ -24269,7 +24259,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="LightGray2";
+													value="RussianAFSkyBlue";
 												};
 											};
 											class Item1
@@ -24308,27 +24298,6 @@ class Mission
 				};
 				nAttributes=1;
 			};
-		};
-		class Item597
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15177.96,24.476168,15489.159};
-				angles[]={0,3.4557519,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="F18F setVariable [""d_isspecialvec"", true, true];                                                                                               F18F setVariable [""d_liftit"", true, true];[F18F, 11] call d_fnc_setekmode; " \n "if (d_with_ranked) then { " \n " clearWeaponCargoGlobal F18F; " \n "};";
-				name="F18F";
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=2515;
-			type="B_Plane_Fighter_01_F";
-			atlOffset=1.3012524;
 		};
 	};
 	class Connections

@@ -24,7 +24,7 @@ diag_log ["Dom name player:", name player];
 	while {true} do {
 		sleep 60; // 玩家首次加入服务器时，有一段加载时间，因此先等待60秒
 
-		"[公告]没有飞行员执照，无法驾驶任何飞行载具。需要飞行员执照请进群联系管理考核。群号：274455383" call CBA_fnc_notify;
+		"[公告]飞行员攻击时请注意敌我识别，TK3次则会被关进小黑屋。群号：274455383" call CBA_fnc_notify;
 		sleep 15; // 每条间隔15秒
 
 		"[公告]战区攻陷的条件是：信号塔被摧毁，所有营地被占领，且战区内敌人数量小于6。" call CBA_fnc_notify;

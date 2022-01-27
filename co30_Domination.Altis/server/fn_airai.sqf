@@ -26,8 +26,8 @@ while {true} do {
 	private _limit_p = call {
 		if (_type isEqualTo "AP") exitWith {12};//加强制空
 		if (_type isEqualTo "HAC") exitWith {8};//普通制空
-		if (_type isEqualTo "UAV") exitWith {6};
-		6;//轻型支援空军中队
+		if (_type isEqualTo "UAV") exitWith {5};
+		4;//轻型支援空军中队
 	};
 	__TRACE_1("","_limit_p")
 	#ifndef __DEBUG__
