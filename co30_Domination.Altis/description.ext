@@ -1108,7 +1108,7 @@ class Params {
 	class d_score_needed_to_fly {
 		title = "$STR_DOM_MISSIONSTRING_2058";
 		values[] = {-1, 10, 50, 100, 500, 1000, 2000, 5000};
-		default = -1;
+		default = 500;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1063","10","50","100","500","1000","2000","5000"};
 	};
 
@@ -1507,7 +1507,7 @@ class Params {
 	class d_sub_kill_points {
 		title = "$STR_DOM_MISSIONSTRING_1113";
 		values[] = {0,1,2,3,4,5,6,7,8,9,10};
-		default = 0;
+		default = 2;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_1114","$STR_DOM_MISSIONSTRING_1115","$STR_DOM_MISSIONSTRING_1116","$STR_DOM_MISSIONSTRING_1117","$STR_DOM_MISSIONSTRING_1118","$STR_DOM_MISSIONSTRING_1119","$STR_DOM_MISSIONSTRING_1120","$STR_DOM_MISSIONSTRING_1121","$STR_DOM_MISSIONSTRING_1122","$STR_DOM_MISSIONSTRING_1123"};
 	};
 

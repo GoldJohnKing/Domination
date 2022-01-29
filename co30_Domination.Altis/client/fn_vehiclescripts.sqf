@@ -35,7 +35,7 @@ private _do_exit = false;
 // 		player action ["getOut", _vec];
 // 		[format [localize "STR_DOM_MISSIONSTRING_2059", [typeOf _vec, "CfgVehicles"] call d_fnc_GetDisplayName, d_score_needed_to_fly, score player], "HQ"] call d_fnc_HintChatMsg;
 // 		_do_exit = true;
-// 	};
+// 	}; "Plane"
 // };
 if (_do_exit) exitWith {};
 
