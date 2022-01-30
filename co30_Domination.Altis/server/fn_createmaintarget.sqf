@@ -101,9 +101,9 @@ if (d_camp_static_weapons == 1) then {
 };
 if (_camp_static_weapons_current == 1) then {
 	_type_list_guard_static2 = [//主要战区，静态武器
-    	["stat_mg", 1, ceil (random 5)],
-    	["stat_gl", 1, ceil (random 5)],
-		["arty", 2, ceil (random 3)]
+    	["stat_mg", 1, ceil (random 6)],
+    	["stat_gl", 1, ceil (random 6)],
+		["arty", 2, ceil (random 2)]
     ];
 };
 

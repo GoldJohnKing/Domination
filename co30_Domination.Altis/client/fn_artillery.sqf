@@ -20,10 +20,10 @@ if (d_tt_ver && {d_player_side == blufor && {!d_ari_available_w} || {d_player_si
 	d_commandingMenuIniting = false;
 };
 
-// if ((d_with_ranked || {d_database_found}) && {score player < (d_ranked_a # 2)}) exitWith {
-// 	[playerSide, "HQ"] sideChat format [localize "STR_DOM_MISSIONSTRING_147", score player, d_ranked_a # 2];
-// 	d_commandingMenuIniting = false;
-// }; 判断玩家需要足够分数来召唤空投
+if ((d_with_ranked || {d_database_found}) && {score player < (d_ranked_a # 2)}) exitWith {
+	[playerSide, "HQ"] sideChat format [localize "STR_DOM_MISSIONSTRING_147", score player, d_ranked_a # 2];
+	d_commandingMenuIniting = false;
+};
 
 #ifndef __TT__
 if (!isNil "d_ari_blocked") exitWith {
