@@ -772,7 +772,7 @@ class d_rscmtexts {
 	class controls {
 		class server_cap: RscText {
 			idc=-1;
-			text = "如果有空军、炮兵随意攻击、TK友军，欢迎截图进群举报";
+			text = "随意攻击、TK友军，欢迎截图进群举报";
 			x = safezoneX + safezoneW - 0.51;
 			y = safezoneY + 0.14;
 			w = 0.5;

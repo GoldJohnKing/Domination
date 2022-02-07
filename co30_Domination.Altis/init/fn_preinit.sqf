@@ -1873,7 +1873,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","RHS_T50_vvs_generic","RHS_T50_vvs_051","pook_EF2000_OPFOR","RHS_T50_vvs_053","O_Plane_Fighter_02_Stealth_F"]
+					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","RHS_T50_vvs_generic","RHS_T50_vvs_051","RHS_T50_vvs_053","O_Plane_Fighter_02_Stealth_F"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mig21_CAS", "uns_Mig21_CBU", "uns_Mig21_HCAS"]
@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -1999,7 +1999,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["LIB_Ju87_Italy2", "LIB_Ju87_Italy", "LIB_Ju87"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18"]
 				};
 				if (d_csla) exitWith {
 					["US85_MH60FFAR"]
@@ -2220,7 +2220,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","RHSGREF_A29B_HIDF","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","rhsgred_hidf_cessna_o3a","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F"]
+					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","RHSGREF_A29B_HIDF","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","rhsgred_hidf_cessna_o3a","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [400, 50, 300, 170];
+		d_ai_groups_respawn_time = [400, 20, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets

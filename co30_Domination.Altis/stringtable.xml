@@ -51,7 +51,7 @@
 <Original>欢迎...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_24">
-<Original>军种协同，联合作战！</Original>
+<Original>联军为确保海上补给线的安全，派出部队以机场为行动基地肃清岛上的所有敌人...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_25">
 <Original>你的任务是消灭全部敌人,摧毁目标区域的主通讯塔,完成支线任务并占领所有的军需库。</Original>
@@ -3328,7 +3328,7 @@
 <Original>使用医疗帐篷进行治疗的积分! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1988">
-<Original>你可以从基地传送点传送到基地车和小队长身边, 而无需浪费载具...</Original>
+<Original>你需要按住U->显示状态->小队管理创建/加入一支小队，这样你才能传送到小队长/或在小队长身边复活</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1989">
 <Original>为另一个玩家生成的点数! </Original>

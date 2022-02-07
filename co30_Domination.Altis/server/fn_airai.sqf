@@ -24,7 +24,7 @@ while {true} do {
 	private _funits = [];
 
 	private _limit_p = call {
-		if (_type isEqualTo "AP") exitWith {12};//加强制空
+		if (_type isEqualTo "AP") exitWith {15};//加强制空
 		if (_type isEqualTo "HAC") exitWith {8};//普通制空
 		if (_type isEqualTo "UAV") exitWith {5};
 		4;//轻型支援空军中队
@@ -335,10 +335,10 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
 		if (_num_p < 5) exitWith {300};
-		if (_num_p < 10) exitWith {200};
-		if (_num_p < 15) exitWith {200};
-		if (_num_p < 20) exitWith {200};
-		200;
+		if (_num_p < 10) exitWith {300};
+		if (_num_p < 15) exitWith {300};
+		if (_num_p < 20) exitWith {300};
+		300;
 	});
 	sleep (d_airai_respawntime + _re_random);
 #else
