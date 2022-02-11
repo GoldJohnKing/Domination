@@ -103,7 +103,7 @@ switch (_enemyMode) do {
 		d_vec_numbers_guard_static = [
 			[[1,0], 1], // tanks
 			[[0,0], 1], // tracked apc
-			[[3,2], 1] // aa
+			[[2,1], 1] // aa
 		];
 		d_vec_numbers_patrol = [
 			[[1,1], 1], // tanks
