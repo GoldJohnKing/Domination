@@ -8,7 +8,7 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=2624;
+		nextID=2627;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=385;
+		nextID=388;
 	};
 	class Camera
 	{
-		pos[]={14675.06,31.364786,16746.902};
-		dir[]={-0.74363029,-0.33405504,0.57929671};
-		up[]={-0.26362109,0.9424932,0.20536424};
-		aside[]={0.61460555,3.1308446e-007,0.78894871};
+		pos[]={14695.47,37.568909,16737.658};
+		dir[]={-0.93192381,-0.35824639,0.058318529};
+		up[]={-0.35770217,0.93352222,0.022385603};
+		aside[]={0.06247415,4.2740976e-007,0.99817735};
 	};
 };
 binarizationWanted=0;
@@ -99,15 +99,13 @@ addons[]=
 	"FIR_A10C_F",
 	"CAMM_Truck",
 	"A3_Armor_F_Tank_AFV_Wheeled_01",
-	"JS_JC_SU35",
-	"rhsusf_c_m11xx",
-	"rhsusf_c_fmtv"
+	"JS_JC_SU35"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=56;
+		items=54;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -466,20 +464,6 @@ class AddonsMetaData
 		{
 			className="JS_JC_SU35";
 			name="JS_JC_SU35";
-		};
-		class Item54
-		{
-			className="rhsusf_c_m11xx";
-			name="M1151/M1152/M1165";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item55
-		{
-			className="rhsusf_c_fmtv";
-			name="FMTV Trucks";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -20219,8 +20203,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14633.432,19.557566,16725.408};
-				angles[]={0,2.3510282,0};
+				position[]={14628.64,19.557566,16730.58};
+				angles[]={-0,2.3510282,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27003,8 +26987,50 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14658.711,20.383381,16751.881};
-				angles[]={0,2.333575,0};
+				position[]={14664.797,21.638283,16770.152};
+				angles[]={-0,2.333575,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				lock="UNLOCKED";
+				name="d_vec_mhq_1";
+			};
+			id=2624;
+			type="RHS_CH_47F_10";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""launch_RPG32_F"",""arifle_Katiba_F"",""LMG_Zafir_F""],[2,4,2]],[[""16Rnd_9x21_Mag"",""30Rnd_9x21_Mag"",""30Rnd_65x39_caseless_green"",""10Rnd_762x54_Mag"",""150Rnd_762x54_Box"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""Chemlight_red"",""RPG32_F"",""RPG32_HE_F"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellRed"",""UGL_FlareYellow_F"",""UGL_FlareRed_F""],[12,12,48,24,8,12,4,4,12,6,2,4,12,12,4,4,4,4]],[[""Laserdesignator"",""FirstAidKit"",""acc_flashlight"",""ToolKit"",""Medikit""],[2,25,4,1,1]],[[""B_Parachute"",""B_FieldPack_ocamo""],[3,4]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item652
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14645.756,20.625805,16749.396};
+				angles[]={-0,2.333575,0};
 			};
 			side="Empty";
 			flags=4;
@@ -27014,8 +27040,8 @@ class Mission
 				lock="UNLOCKED";
 				name="d_vec_mhq_3";
 			};
-			id=2620;
-			type="rhsusf_m1152_sicps_usarmy_d";
+			id=2626;
+			type="RHS_UH60M_d";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27323,48 +27349,6 @@ class Mission
 									};
 								};
 							};
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item652
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={14646.981,20.64094,16739.027};
-				angles[]={0,2.333575,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				lock="UNLOCKED";
-				name="d_vec_mhq_1";
-			};
-			id=2623;
-			type="rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""launch_RPG32_F"",""arifle_Katiba_F"",""LMG_Zafir_F""],[2,4,2]],[[""16Rnd_9x21_Mag"",""30Rnd_9x21_Mag"",""30Rnd_65x39_caseless_green"",""10Rnd_762x54_Mag"",""150Rnd_762x54_Box"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""Chemlight_red"",""RPG32_F"",""RPG32_HE_F"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellRed"",""UGL_FlareYellow_F"",""UGL_FlareRed_F""],[12,12,48,24,8,12,4,4,12,6,2,4,12,12,4,4,4,4]],[[""Laserdesignator"",""FirstAidKit"",""acc_flashlight"",""ToolKit"",""Medikit""],[2,25,4,1,1]],[[""B_Parachute"",""B_FieldPack_ocamo""],[3,4]]],false]";
 						};
 					};
 				};
