@@ -41,6 +41,15 @@
 <Key ID="STR_DOM_MISSIONSTRING_13B">
 <Original>四号基地车（MHQ）</Original>
 </Key>
+<Key ID="STR_DOM_MISSIONSTRING_13C">
+<Original>五号基地车（MHQ）</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_13D">
+<Original>六号基地车（MHQ）</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_13E">
+<Original>七号基地车（MHQ）</Original>
+</Key>
 <Key ID="STR_DOM_MISSIONSTRING_20">
 <Original>空投弹药箱</Original>
 </Key>
@@ -2773,7 +2782,7 @@
 <Original>服务点</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1762">
-<Original>飞行员营地</Original>
+<Original>分支作战基地</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1800">
 <Original>敌人有一个小前哨。 逮捕那里的军官, 把他带回你的基地, 以获得一些重要的信息</Original>
@@ -3328,7 +3337,7 @@
 <Original>使用医疗帐篷进行治疗的积分! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1988">
-<Original>你可以从基地传送点传送到基地车和小队长身边, 而无需浪费载具...</Original>
+<Original>你可以从基地传送点传送到临近的基地、基地车和小队长身边, 而无需浪费载具...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1989">
 <Original>为另一个玩家生成的点数! </Original>

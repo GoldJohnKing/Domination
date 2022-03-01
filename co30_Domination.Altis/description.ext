@@ -1402,7 +1402,7 @@ class Params {
 	class d_camp_enable_guard {
 		title = "$STR_DOM_MISSIONSTRING_ENABLE_GUARD";
 		values[] = {0,1,-1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007_RANDOM"};
 	};
 	

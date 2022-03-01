@@ -6,7 +6,7 @@
 ["rhssaf_m1151_olive_pkm","rhssaf_m1025_olive_m2","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","rhsgref_ins_BM21","rhsgref_ins_BM21","I_Truck_02_MRL_F","I_Truck_02_MRL_F","rhsgref_ins_gaz66_ammo","rhsgref_ins_kraz255b1_fuel","rhsgref_ins_ural_repair"], //轻装甲掩护下的自行火炮师车辆 "rhsgref_BRDM2_ins_g","rhsgref_BRDM2_ATGM_ins_g","rhssaf_army_ural_fuel","rhssaf_m1151_olive_pkm","rhssaf_m1025_olive_m2","rhsgref_cdf_gaz66_ammo","rhsgref_cdf_b_reg_uaz_spg9","rhsgref_cdf_b_reg_uaz_dshkm","rhsgref_cdf_b_reg_uaz_ags","rhsgref_cdf_b_reg_uaz","I_C_Offroad_02_AT_F","I_C_Offroad_02_LMG_F","rhsgref_ins_BM21","rhsgref_ins_BM21","rhsgref_ins_BM21","rhsgref_ins_BM21","RDS_BMP2_Ambul_TK","RDS_BMP2_Ambul_ChDKZ","iaf_gypsy_LMG"
 ["B_SAM_System_01_F","B_SAM_System_01_F","rhs_prv13_turret_vpvo"],  //GL  现在是防空 ,"B_Radar_System_01_F"
 ["I_HMG_02_F","I_HMG_02_high_F","rhsgref_ins_g_Igla_AA_pod","rhsgref_ins_g_DSHKM","rhsgref_ins_g_SPG9M","rhssaf_army_m2staticmg_minitripod","rhssaf_army_nsv_tripod","rhssaf_army_ags30_tripod","rhssaf_army_metis_9k115","pook_M777","rhsgref_cdf_b_ZU23"],    //MG  现在是地面防御
-["rhsgref_ins_g_2b14","rhsgref_ins_g_d30","pook_M777","rhsgref_ins_g_d30_at","O_SAM_System_04_F","O_SAM_System_04_F"],//重点防御阵地
+["rhsgref_ins_g_2b14","rhsgref_ins_g_2b14","rhsgref_ins_g_d30","pook_M777","rhssaf_army_metis_9k115","O_SAM_System_04_F","O_SAM_System_04_F","B_SAM_System_02_F"],//重点防御阵地
 ["rhsgref_ins_kraz255b1_fuel"],
 ["I_Truck_02_box_F"],
 ["I_Truck_02_ammo_F"],

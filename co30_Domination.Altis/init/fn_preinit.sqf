@@ -1277,7 +1277,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 		d_number_attack_planes = 2;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 2;
+		d_number_attack_choppers = 3;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
 		d_number_light_attack_choppers = 1;
@@ -2146,7 +2146,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	// enemy parachute troops transport chopper
 	d_transport_chopper = call {
 		if (d_enemy_side_short == "E") exitWith {
-			["rhsgref_b_mi24g_CAS"]
+			["rhsgref_b_mi24g_CAS","rhs_uh1h_hidf_gunship","rhs_uh1h_hidf","rhsgref_ins_Mi8amt"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
 			["I_Heli_Transport_02_F"]

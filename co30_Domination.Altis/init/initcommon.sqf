@@ -209,7 +209,7 @@ d_choppers_opfor = [
 // vehicle varname, unique number (same as in d_init.sqf), marker name, marker type, marker color, marker text, vehicle string name
 #ifndef __TT__
 d_p_vecs = [
-	["D_MRR1",0,"d_mobilerespawn1","b_hq","ColorYellow","1",localize "STR_DOM_MISSIONSTRING_12"],["D_MRR2",1,"d_mobilerespawn2","b_hq","ColorYellow","2",localize "STR_DOM_MISSIONSTRING_13"],["D_MRR3",2,"d_mobilerespawn3","b_hq","ColorYellow","3",localize "STR_DOM_MISSIONSTRING_13A"],["D_MRR4",3,"d_mobilerespawn4","b_hq","ColorYellow","4",localize "STR_DOM_MISSIONSTRING_13B"],
+	["D_MRR1",0,"d_mobilerespawn1","b_hq","ColorYellow","1",localize "STR_DOM_MISSIONSTRING_12"],["D_MRR2",1,"d_mobilerespawn2","b_hq","ColorYellow","2",localize "STR_DOM_MISSIONSTRING_13"],["D_MRR3",2,"d_mobilerespawn3","b_hq","ColorYellow","3",localize "STR_DOM_MISSIONSTRING_13A"],["D_MRR4",3,"d_mobilerespawn4","b_hq","ColorYellow","4",localize "STR_DOM_MISSIONSTRING_13B"],["D_MRR5",4,"d_mobilerespawn5","b_hq","ColorYellow","5",localize "STR_DOM_MISSIONSTRING_13C"],["D_MRR6",5,"d_mobilerespawn6","b_hq","ColorYellow","6",localize "STR_DOM_MISSIONSTRING_13D"],["D_MRR7",6,"d_mobilerespawn7","b_hq","ColorYellow","7",localize "STR_DOM_MISSIONSTRING_13E"],
 	["D_MEDVEC",100,"d_medvec","n_med","ColorGreen","M",""],["D_TR1",200,"d_truck1","n_maint","ColorGreen","R1",""],
 	["D_TR2",201,"d_truck2","n_support","ColorGreen","F1",""],["D_TR3",202,"d_truck3","n_support","ColorGreen","A1",""],
 	["D_TR6",203,"d_truck4","n_maint","ColorGreen","R2",""],["D_TR5",204,"d_truck5","n_support","ColorGreen","F2",""],
@@ -233,7 +233,7 @@ if (d_gmcwg) then {
 };
 #else
 d_p_vecs_blufor = [
-	["D_MRR1",0,"d_mobilerespawn1","b_hq","ColorYellow","1",localize "STR_DOM_MISSIONSTRING_12"],["D_MRR2",1,"d_mobilerespawn2","b_hq","ColorYellow","2",localize "STR_DOM_MISSIONSTRING_13"],["D_MRR3",2,"d_mobilerespawn3","b_hq","ColorYellow","3",localize "STR_DOM_MISSIONSTRING_13A"],["D_MRR4",3,"d_mobilerespawn4","b_hq","ColorYellow","4",localize "STR_DOM_MISSIONSTRING_13B"],
+	["D_MRR1",0,"d_mobilerespawn1","b_hq","ColorYellow","1",localize "STR_DOM_MISSIONSTRING_12"],["D_MRR2",1,"d_mobilerespawn2","b_hq","ColorYellow","2",localize "STR_DOM_MISSIONSTRING_13"],["D_MRR3",2,"d_mobilerespawn3","b_hq","ColorYellow","3",localize "STR_DOM_MISSIONSTRING_13A"],["D_MRR4",3,"d_mobilerespawn4","b_hq","ColorYellow","4",localize "STR_DOM_MISSIONSTRING_13B"],["D_MRR5",4,"d_mobilerespawn5","b_hq","ColorYellow","5",localize "STR_DOM_MISSIONSTRING_13C"],["D_MRR6",5,"d_mobilerespawn6","b_hq","ColorYellow","6",localize "STR_DOM_MISSIONSTRING_13D"],["D_MRR7",6,"d_mobilerespawn7","b_hq","ColorYellow","7",localize "STR_DOM_MISSIONSTRING_13E"],
 	["D_MEDVEC",100,"d_medvec","n_med","ColorGreen","M",""],["D_TR1",200,"d_truck1","n_maint","ColorGreen","R1",""],
 	["D_TR2",201,"d_truck2","n_support","ColorGreen","F1",""],["D_TR3",202,"d_truck3","n_support","ColorGreen","A1",""],
 	["D_TR6",203,"d_truck4","n_maint","ColorGreen","R2",""],["D_TR5",204,"d_truck5","n_support","ColorGreen","F2",""],
@@ -242,7 +242,7 @@ d_p_vecs_blufor = [
 	["D_TR10",401,"d_truck10","n_support","ColorGreen","T1",""]
 ];
 d_p_vecs_opfor = [
-	["D_MRR1",0,"d_mobilerespawn1","b_hq","ColorYellow","1",localize "STR_DOM_MISSIONSTRING_12"],["D_MRR2",1,"d_mobilerespawn2","b_hq","ColorYellow","2",localize "STR_DOM_MISSIONSTRING_13"],["D_MRR3",2,"d_mobilerespawn3","b_hq","ColorYellow","3",localize "STR_DOM_MISSIONSTRING_13A"],["D_MRR4",3,"d_mobilerespawn4","b_hq","ColorYellow","4",localize "STR_DOM_MISSIONSTRING_13B"],
+	["D_MRR1",0,"d_mobilerespawn1","b_hq","ColorYellow","1",localize "STR_DOM_MISSIONSTRING_12"],["D_MRR2",1,"d_mobilerespawn2","b_hq","ColorYellow","2",localize "STR_DOM_MISSIONSTRING_13"],["D_MRR3",2,"d_mobilerespawn3","b_hq","ColorYellow","3",localize "STR_DOM_MISSIONSTRING_13A"],["D_MRR4",3,"d_mobilerespawn4","b_hq","ColorYellow","4",localize "STR_DOM_MISSIONSTRING_13B"],["D_MRR5",4,"d_mobilerespawn5","b_hq","ColorYellow","5",localize "STR_DOM_MISSIONSTRING_13C"],["D_MRR6",5,"d_mobilerespawn6","b_hq","ColorYellow","6",localize "STR_DOM_MISSIONSTRING_13D"],["D_MRR7",6,"d_mobilerespawn7","b_hq","ColorYellow","7",localize "STR_DOM_MISSIONSTRING_13E"],
 	["D_MEDVECO",1100,"d_medveco","n_med","ColorGreen","M",""],["D_TRO1",1200,"d_trucko1","n_maint","ColorGreen","R1",""],
 	["D_TRO2",1201,"d_trucko2","n_support","ColorGreen","F1",""],["D_TRO3",1202,"d_trucko3","n_support","ColorGreen","A1",""],
 	["D_TRO6",1203,"d_trucko4","n_maint","ColorGreen","R2",""],["D_TRO5",1204,"d_trucko5","n_support","ColorGreen","F2",""],
