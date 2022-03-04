@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=409;
+		nextID=412;
 	};
 	class Camera
 	{
@@ -27726,7 +27726,7 @@ class Mission
 			name="d_farp_marker_5";
 			text="Farp";
 			type="b_service";
-			angle=179.94266;
+			angle=179.94264;
 			id=2653;
 		};
 		class Item675
