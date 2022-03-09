@@ -219,6 +219,7 @@ class CfgRemoteExec {
 		class d_fnc_dynamicGroups {};
 		class d_fnc_addppoints {allowedTargets = 2;};
 		class d_fnc_moduleCAS {allowedTargets = 2;};
+		class d_fnc_moduleCAS_bomb {allowedTargets = 2;};
 		class d_fnc_storeploadout {allowedTargets = 2;};
 		class d_fnc_player_stuff {allowedTargets = 1;};
 		class d_fnc_addceo {allowedTargets = 2;};
@@ -309,6 +310,8 @@ class CfgRemoteExec {
 		class setSpeaker {};
 		class setFeatureType {jip = 1;};
 		class deleteMarkerLocal {allowedTargets = 1;};
+		class enableDynamicSimulation {allowedTargets = 2;};
+		class triggerDynamicSimulation {allowedTargets = 2;};
 #ifdef __TT__
 		class setMarkerPosLocal {allowedTargets = 1;};
 #endif
@@ -473,6 +476,13 @@ class Params {
 		values[] = {0,4,8,12,9999};
 		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_363", "4","8","12","$STR_DOM_MISSIONSTRING_2022"};
+	};
+	
+	class d_targetselect_time {
+		title = "$STR_DOM_MISSIONSTRING_2092";
+		values[] = {30,45,60,120,240,300};
+		default = 30;
+		texts[] = {"30","45","60","120","240",300};
 	};
 
 	class d_MissionType {
@@ -1027,6 +1037,13 @@ class Params {
 		default = 5;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1020a","$STR_DOM_MISSIONSTRING_1020","$STR_DOM_MISSIONSTRING_1012","$STR_DOM_MISSIONSTRING_1021","$STR_DOM_MISSIONSTRING_1013","$STR_DOM_MISSIONSTRING_1014","$STR_DOM_MISSIONSTRING_1015","$STR_DOM_MISSIONSTRING_1016","$STR_DOM_MISSIONSTRING_1017"};
 	};
+	
+	class d_with_autorevive {
+		title = "$STR_DOM_MISSIONSTRING_2090";
+		values[] = {0,1};
+		default = 1;
+		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
+	};
 
 	class d_params_dl_7 {
 		title = "$STR_DOM_MISSIONSTRING_1573";
@@ -1196,6 +1213,13 @@ class Params {
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 	
+	class d_show_headshots {
+		title = "$STR_DOM_MISSIONSTRING_SHOW_HEADSHOTS";
+		values[] = {0,1,3};
+		default = 0;
+		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_CLIENT_ONLY","$STR_DOM_MISSIONSTRING_CLIENT_ALL"};
+	};
+	
 	class d_params_dl_8_civ {
 		title = "$STR_DOM_MISSIONSTRING_1574_CIV";
 		values[] = {-66};
@@ -1212,9 +1236,9 @@ class Params {
 
 	class d_civ_unitcount {
 		title = "$STR_DOM_MISSIONSTRING_1893";
-		values[] = {3,15,20,25,30};
-		default = 3;
-		texts[] = {"10","15","20","25","30"};
+		values[] = {10,15,20,25,30,40,50,75,100};
+		default = 10;
+		texts[] = {"10","15","20","25","30","40","50","75","100"};
 	};
 
 	class d_civ_groupcount {
@@ -1387,9 +1411,9 @@ class Params {
 	
 	class d_grp_size_override {
 		title = "$STR_DOM_MISSIONSTRING_1900GROUPSIZE";
-		values[] = {-1, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-		default = -1;
-		texts[] = {"$STR_DOM_MISSIONSTRING_418DEFAULT", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+		values[] = {0, 1};
+		default = 0;
+		texts[] = {"$STR_DOM_MISSIONSTRING_418DEFAULT", "$STR_DOM_MISSIONSTRING_400"};
 	};
 	
 	class d_camp_static_weapons {
@@ -1415,9 +1439,9 @@ class Params {
 
 	class d_max_bar_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1899";
-		values[] = {1, 2, 3, 4, 5, 6, 7};
-		default = 5;
-		texts[] = {"1", "2", "3", "4", "5", "6", "7"};
+		values[] = {1, 2, 3, 4, 5, 6, 7, 9, 9, 10};
+		default = 7;
+		texts[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
 	};
 
 	class d_max_camp_cnt {
@@ -1569,6 +1593,13 @@ class Params {
 		values[] = {0,1};
 		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
+	};
+	
+	class d_enemy_mercenaries {
+		title = "$STR_DOM_MISSIONSTRING_ENEMY_MERCENARIES";
+		values[] = {0,1};
+		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
+		default = 0;
 	};
 
 	class d_params_dl_13 {

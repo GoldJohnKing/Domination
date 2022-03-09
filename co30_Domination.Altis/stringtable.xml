@@ -704,11 +704,14 @@
 <Key ID="STR_DOM_MISSIONSTRING_356">
 <Original>你找不到任何有价值的文件。</Original>
 </Key>
-<Key ID="STR_DOM_MISSIONSTRING_357">
-<Original>视野距离</Original>
-</Key>
 <Key ID="STR_DOM_MISSIONSTRING_358">
-<Original>视野距离: %1</Original>
+<Original>步兵视野距离: %1</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_358V">
+<Original>载具视野距离: %1</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_358A">
+<Original>空军视野距离: %1</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_359">
 <Original>没有草丛</Original>
@@ -2041,9 +2044,6 @@
 <Key ID="STR_DOM_MISSIONSTRING_1272">
 <Original>占领阵地</Original>
 </Key>
-<Key ID="STR_DOM_MISSIONSTRING_1285">
-<Original>视野距离: </Original>
-</Key>
 <Key ID="STR_DOM_MISSIONSTRING_1287">
 <Original>选择草层</Original>
 </Key>
@@ -2632,6 +2632,30 @@
 <Key ID="STR_DOM_MISSIONSTRING_1711">
 <Original>在激光指示点呼叫空中支援</Original>
 </Key>
+<Key ID="STR_DOM_MISSIONSTRING_1711_CAS_BOMB_POS">
+<English>Call CAS Bomb HE</English>
+<Spanish>Call CAS Bomb HE</Spanish>
+<Portuguese>Call CAS Bomb HE</Portuguese>
+<Korean>Call CAS Bomb HE</Korean>
+<Japanese>Call CAS Bomb HE</Japanese>
+<Original>Call CAS Bomb HE</Original>
+<Russian>Call CAS Bomb HE</Russian>
+<Chinesesimp>Call CAS Bomb HE</Chinesesimp>
+<Chinese>Call CAS Bomb HE</Chinese>
+<French>Call CAS Bomb HE</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_1711_CAS_BOMB_POS_NAPALM">
+<English>Call CAS Bomb Napalm</English>
+<Spanish>Call CAS Bomb Napalm</Spanish>
+<Portuguese>Call CAS Bomb Napalm</Portuguese>
+<Korean>Call CAS Bomb Napalm</Korean>
+<Japanese>Call CAS Bomb Napalm</Japanese>
+<Original>Call CAS Bomb Napalm</Original>
+<Russian>Call CAS Bomb Napalm</Russian>
+<Chinesesimp>Call CAS Bomb Napalm</Chinesesimp>
+<Chinese>Call CAS Bomb Napalm</Chinese>
+<French>Call CAS Bomb Napalm</French>
+</Key>
 <Key ID="STR_DOM_MISSIONSTRING_1712">
 <Original>现在没有空中支援了...</Original>
 </Key>
@@ -3049,7 +3073,7 @@
 <Original>呼叫空中运输</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1885">
-<Original>禁用火炮冷却时间</Original>
+<Original>火炮和CAS的冷却时间</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1888">
 <Original>平民 - 玩家杀死平民时减去分数: </Original>
@@ -3091,7 +3115,7 @@
 <Original>平民 - 启用平民</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1893">
-<Original>平民 - 每组平民单位数</Original>
+<Original>平民 - 每组平民单位数(步行)</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1894">
 <Original>禁止敌方空中载具</Original>
@@ -3247,7 +3271,7 @@
 <Original>玩家已选择 %1 作为新的主要目标! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1958">
-<Original>新目标没有足够的选票或没有投票!  选择一个随机...</Original>
+<Original>新目标没有足够的选票或没有投票！ 随机选择一个...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1959">
 <Original>离开营房: </Original>
@@ -3707,6 +3731,126 @@
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_2089">
 <Original>添加分数</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2090">
+<English>With auto revive if no player is nearby (less than 215m):</English>
+<Spanish>With auto revive if no player is nearby (less than 215m):</Spanish>
+<Portuguese>With auto revive if no player is nearby (less than 215m):</Portuguese>
+<Korean>With auto revive if no player is nearby (less than 215m):</Korean>
+<Japanese>With auto revive if no player is nearby (less than 215m):</Japanese>
+<Original>With auto revive if no player is nearby (less than 215m):</Original>
+<Russian>With auto revive if no player is nearby (less than 215m):</Russian>
+<Chinesesimp>With auto revive if no player is nearby (less than 215m):</Chinesesimp>
+<Chinese>With auto revive if no player is nearby (less than 215m):</Chinese>
+<French>With auto revive if no player is nearby (less than 215m):</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_SHOW_HEADSHOTS">
+<English>Show headshots</English>
+<Spanish>Show headshots</Spanish>
+<Portuguese>Show headshots</Portuguese>
+<Korean>Show headshots</Korean>
+<Japanese>Show headshots</Japanese>
+<Original>Show headshots</Original>
+<Russian>Show headshots</Russian>
+<Chinesesimp>Show headshots</Chinesesimp>
+<Chinese>Show headshots</Chinese>
+<French>Show headshots</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_CLIENT_ONLY">
+<English>Client only</English>
+<Spanish>Client only</Spanish>
+<Portuguese>Client only</Portuguese>
+<Korean>Client only</Korean>
+<Japanese>Client only</Japanese>
+<Original>Client only</Original>
+<Russian>Client only</Russian>
+<Chinesesimp>Client only</Chinesesimp>
+<Chinese>Client only</Chinese>
+<French>Client only</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_CLIENT_GROUP">
+<English>Client and group</English>
+<Spanish>Client and group</Spanish>
+<Portuguese>Client and group</Portuguese>
+<Korean>Client and group</Korean>
+<Japanese>Client and group</Japanese>
+<Original>Client and group</Original>
+<Russian>Client and group</Russian>
+<Chinesesimp>Client and group</Chinesesimp>
+<Chinese>Client and group</Chinese>
+<French>Client and group</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_CLIENT_ALL">
+<English>Client and allies</English>
+<Spanish>Client and allies</Spanish>
+<Portuguese>Client and allies</Portuguese>
+<Korean>Client and allies</Korean>
+<Japanese>Client and allies</Japanese>
+<Original>Client and allies</Original>
+<Russian>Client and allies</Russian>
+<Chinesesimp>Client and allies</Chinesesimp>
+<Chinese>Client and allies</Chinese>
+<French>Client and allies</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_HEADSHOT">
+<English>Headshot by %1 %2 m</English>
+<Spanish>Headshot by %1 %2 m</Spanish>
+<Portuguese>Headshot by %1 %2 m</Portuguese>
+<Korean>Headshot by %1 %2 m</Korean>
+<Japanese>Headshot by %1 %2 m</Japanese>
+<Original>Headshot by %1 %2 m</Original>
+<Russian>Headshot by %1 %2 m</Russian>
+<Chinesesimp>Headshot by %1 %2 m</Chinesesimp>
+<Chinese>Headshot by %1 %2 m</Chinese>
+<French>Headshot by %1 %2 m</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_HEADSHOT_CLIENT">
+<English>(+) %1 m</English>
+<Spanish>(+) %1 m</Spanish>
+<Portuguese>(+) %1 m</Portuguese>
+<Korean>(+) %1 m</Korean>
+<Japanese>(+) %1 m</Japanese>
+<Original>(+) %1 m</Original>
+<Russian>(+) %1 m</Russian>
+<Chinesesimp>(+) %1 m</Chinesesimp>
+<Chinese>(+) %1 m</Chinese>
+<French>(+) %1 m</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2091">
+<English>Emergency exit!</English>
+<Spanish>Emergency exit!</Spanish>
+<Portuguese>Emergency exit!</Portuguese>
+<Korean>Emergency exit!</Korean>
+<Japanese>Emergency exit!</Japanese>
+<Original>Emergency exit!</Original>
+<Russian>Emergency exit!</Russian>
+<Chinesesimp>Emergency exit!</Chinesesimp>
+<Chinese>Emergency exit!</Chinese>
+<French>Emergency exit!</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_2092">
+<English>Target selection time:</English>
+<Spanish>Target selection time:</Spanish>
+<Portuguese>Target selection time:</Portuguese>
+<Korean>Target selection time:</Korean>
+<Japanese>Target selection time:</Japanese>
+<Original>Target selection time:</Original>
+<Russian>Target selection time:</Russian>
+<Chinesesimp>Target selection time:</Chinesesimp>
+<Chinese>Target selection time:</Chinese>
+<French>Target selection time:</French>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_ENEMY_MERCENARIES">
+<English>Enemy mercenaries (2035 only)</English>
+<Spanish>Enemy mercenaries (2035 only)</Spanish>
+<Portuguese>Enemy mercenaries (2035 only)</Portuguese>
+<Korean>Enemy mercenaries (2035 only)</Korean>
+<Japanese>Enemy mercenaries (2035 only)</Japanese>
+<Original>Enemy mercenaries (2035 only)</Original>
+<Russian>Enemy mercenaries (2035 only)</Russian>
+<Chinesesimp>Enemy mercenaries (2035 only)</Chinesesimp>
+<Chinese>Enemy mercenaries (2035 only)</Chinese>
+<French>Enemy mercenaries (2035 only)</French>
 </Key>
 </Container>
 </Package>

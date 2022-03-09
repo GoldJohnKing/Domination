@@ -32,6 +32,13 @@ if (hasInterface) then {
 	// d_curviewdistance = _vd;
 	// d_curobjectdistance = _vd + 100;
 	
+	d_ViewDistanceVec = profileNamespace getVariable ["dom_viewdistancevec", d_curviewdistance];
+	d_ViewDistanceAir = profileNamespace getVariable ["dom_viewdistanceair", d_curviewdistance];
+	
+	d_VD_Combi_use_InfVD = profileNamespace getVariable ["dom_vd_combi_use_infvd", false];
+	
+	d_maintarget_auto_vd = profileNamespace getVariable ["dom_maintarget_auto_vd", true];
+	
 	d_earplugs_userakey = profileNamespace getVariable ["dom_earplugs_userakey", 0];
 	d_3dmarker_userakey = profileNamespace getVariable ["dom_3dmarker_userakey", 0];
 	if (d_earplugs_userakey < 0 || {d_earplugs_userakey > 19}) then {d_earplugs_userakey = 0};
@@ -330,6 +337,9 @@ if (isNil "d_cur_target_radius") then {
 if (isNil "d_mttarget_radius_patrol") then {
 	d_mttarget_radius_patrol = -1;
 };
+if (isNil "d_cur_tgt_building_positions_occupied") then {
+	d_cur_tgt_building_positions_occupied = [];
+};
 #ifndef __TT__
 if (isNil "d_heli_taxi_available") then {
 	d_heli_taxi_available = true;
@@ -366,9 +376,31 @@ if (isNil "d_civ_massacre") then {
 if (isNil "d_cur_tgt_civ_vehicles") then {
 	d_cur_tgt_civ_vehicles = [];
 };
+if (isNil "d_cur_tgt_enemy_units") then {
+	d_cur_tgt_enemy_units = [];
+};
 
 if (isNil "d_mt_tower") then {
 	d_mt_tower_pos = [];
+};
+
+if (isNil "d_object_spawn_civ_blacklist") then {
+	d_object_spawn_civ_blacklist = [
+		"vn_dyke.p3d",
+		"vn_dyke_10.p3d",
+		"u_addon_01_v1_f.p3d",
+		"u_addon_02_v1_f.p3d",
+		"u_addon_03_v1_f.p3d",
+		"i_addon_02_v1_f.p3d",
+		"i_addon_03_v1_f.p3d",
+		"i_addon_03mid_v1_f.p3d",
+		"i_addon_04_v1_f.p3d",
+		"stone_shed_v1_ruins_f.p3d",
+		"unfinished_building_01_f.p3d",
+		"i_garage_v1_f.p3d",
+		"i_garage_v2_f.p3d",
+		"cargo_house_slum_f.p3d"
+	];
 };
 
 if (hasInterface) then {

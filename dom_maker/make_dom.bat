@@ -5,15 +5,14 @@ rem The ArmaScriptCompiler.exe which is needed for SQFC files can be found at ht
 
 set BASE_MASTER=co30_Domination.Altis
 set MASTER=co30_Domination.Altis
-set D_VER=4_58
-set D_BNVER=4.58
+set D_VER=4_59
+set D_BNVER=4.59
 set D_NUM_PLAYERS=40
 set D_NUM_PLAYERS_TT=50
 set D_NUM_PLAYERS_CO=40
 rem set D_DO_ASC=1
 rem set D_DO_ASC_ALL=1
 
-set CUR_DIR=%cd%
 set WORK_DIR=E:\DomSQFC
 
 del *.pbo
@@ -31,7 +30,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -47,16 +49,13 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
-rem goto cleanup
-rem exit
+
 
 rem Blufor Western Sahara
 set NEW_VER=co%D_NUM_PLAYERS%_domination_%D_VER%_blufor_ws.sefrouramal
@@ -66,7 +65,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -83,11 +85,9 @@ rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
 rmdir /S /Q ma3a
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -99,7 +99,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_default.sqf
 del i_weapons_CUP.sqf
@@ -116,11 +119,9 @@ rmdir /S /Q ma3s
 rmdir /S /Q ma3a
 rmdir /S /Q ma3m
 rmdir /S /Q mifa3
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -133,7 +134,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -149,11 +153,9 @@ rmdir /S /Q ma3a
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -166,7 +168,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -182,11 +187,9 @@ rmdir /S /Q msara
 rmdir /S /Q ma3t
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -199,7 +202,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_default.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -215,11 +221,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -232,7 +236,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -248,11 +255,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -265,7 +270,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -281,11 +289,9 @@ rmdir /S /Q msara
 rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q ma3a
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -298,7 +304,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -314,11 +323,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -331,7 +338,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_default.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -347,11 +357,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -364,7 +372,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_default.sqf
 del i_weapons_IFA3.sqf
@@ -380,11 +391,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -397,7 +406,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_default.sqf
 del i_weapons_IFA3.sqf
@@ -413,11 +425,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -430,7 +440,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_IFA3.sqf
 del i_weapons_default.sqf
@@ -446,11 +459,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -463,7 +474,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_IFA3.sqf
 del i_weapons_default.sqf
@@ -479,11 +493,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -496,7 +508,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_IFA3.sqf
 del i_weapons_default.sqf
@@ -512,11 +527,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -529,7 +542,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -545,11 +561,9 @@ rmdir /S /Q msara
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -562,7 +576,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -579,11 +596,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
 rmdir /S /Q ma3s
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -596,7 +611,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -613,11 +631,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
 rmdir /S /Q ma3s
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -630,7 +646,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -647,11 +666,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
 rmdir /S /Q ma3s
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -664,7 +681,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_default.sqf
 del i_weapons_CUP.sqf
@@ -680,24 +700,25 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q ma3a
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
 
 rem Blufor Unsung
-set NEW_VER=co%D_NUM_PLAYERS%_domination_%D_VER%_blufor_usnung.song_bin_tanh
+set NEW_VER=co%D_NUM_PLAYERS%_domination_%D_VER%_blufor_unsung.song_bin_tanh
 set MISSION_SQM=..\mission_sqm\mission_blufor_unsung_bin.sqm
 set X_SETUP=..\mission_sqm\x_setup_blufor_unsung.sqf
 md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_default.sqf
 del i_weapons_CUP.sqf
@@ -714,11 +735,9 @@ rmdir /S /Q ma3s
 rmdir /S /Q ma3a
 rmdir /S /Q ma3m
 rmdir /S /Q mifa3
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -731,7 +750,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_default.sqf
 del i_weapons_CUP.sqf
@@ -748,14 +770,11 @@ rmdir /S /Q ma3s
 rmdir /S /Q ma3a
 rmdir /S /Q ma3m
 rmdir /S /Q mifa3
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
-
 
 
 rem TT Altis
@@ -766,7 +785,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -782,11 +804,9 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -799,7 +819,10 @@ md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
 echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
-cd %WORK_DIR%
+if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+cd %NEW_VER%
 del i_weapons_rhs.sqf
 del i_weapons_CUP.sqf
 del i_weapons_IFA3.sqf
@@ -815,15 +838,13 @@ rmdir /S /Q msara
 rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q ma3a
-cd CUR_DIR
-if defined D_DO_ASC_ALL ArmaScriptCompiler.exe
-md %NEW_VER%
-xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+cd ..
+cd ..
+makePbo -A -B -P -X %NEW_VER% %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
 rem cleanup
 :cleanup
 rmdir /S /Q %MASTER%
-del ddmnew.sqm
+rem del ddmnew.sqm

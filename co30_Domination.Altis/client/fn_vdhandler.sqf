@@ -23,28 +23,27 @@ private _checkvdpos = {
 	false
 };
 
-while {true} do {
-	if (isNil "d_maintarget_auto_vd") then {
-		d_maintarget_auto_vd = false/*d_AutoViewdistanceChangeDefault == 1*/; // d_maintarget_auto_vd suddenly was nil in MP testing and I have no idea why, so small workaround to avoid script errors // Edited: Disable view distance adjustment
-	};
-	if (d_maintarget_auto_vd) then {
-		if (!d_isvdreduced && {isNil "d_is_sat_on" && {isNull (findDisplay 312) && {viewDistance > 600 && {isNull objectParent player && {call _checkvdpos}}}}}) then {
-			// setViewDistance 600; // Edited: Disable view distance adjustment
-			// setObjectViewDistance 700; // Edited: Disable view distance adjustment
-			d_isvdreduced = true;
-		} else {
-			if (d_isvdreduced && {alive player && {!isNil "d_is_sat_on" || {!isNull (findDisplay 312) || {!isNull objectParent player || {!(call _checkvdpos)}}}}}) then {
-				// setViewDistance d_curviewdistance; // Edited: Disable view distance adjustment
-				// setObjectViewDistance d_curobjectdistance; // Edited: Disable view distance adjustment
-				d_isvdreduced = false;
-			};
-		};
-	} else {
-		if (d_isvdreduced) then {
-			// setViewDistance d_curviewdistance; // Edited: Disable view distance adjustment
-			// setObjectViewDistance d_curobjectdistance; // Edited: Disable view distance adjustment
-			d_isvdreduced = false;
-		};
-	};
-	sleep 10;
-};
+// while {true} do { // Edited: Disable auto view distance
+// 	if (!isNil "d_maintarget_auto_vd") then {
+// 		if (d_maintarget_auto_vd) then {
+// 			if (!d_isvdreduced && {isNil "d_is_sat_on" && {isNull (findDisplay 312) && {viewDistance > 600 && {isNull objectParent player && {call _checkvdpos}}}}}) then {
+// 				setViewDistance 600;
+// 				setObjectViewDistance 700;
+// 				d_isvdreduced = true;
+// 			} else {
+// 				if (d_isvdreduced && {alive player && {!isNil "d_is_sat_on" || {!isNull (findDisplay 312) || {!isNull objectParent player || {!(call _checkvdpos)}}}}}) then {
+// 					setViewDistance d_curviewdistance;
+// 					setObjectViewDistance d_curobjectdistance;
+// 					d_isvdreduced = false;
+// 				};
+// 			};
+// 		} else {
+// 			if (d_isvdreduced) then {
+// 				setViewDistance d_curviewdistance;
+// 				setObjectViewDistance d_curobjectdistance;
+// 				d_isvdreduced = false;
+// 			};
+// 		};
+// 	};
+// 	sleep 10;
+// };
