@@ -1030,7 +1030,7 @@ if (!d_gmcwgwinter) then {
 
 	d_specops_W = call {
 		if (d_rhs) exitWith {
-			[["Indep","rhssaf_group_army_m10_para_infantry_squad","rhssaf_group_army_m10_para_infantry_squad","rhssaf_group_army_m10_para_infantry_team"] call d_fnc_GetConfigGroup, ["Indep","HAF_InfSquad","HAF_InfSquad","HAF_InfTeam_AT"] call d_fnc_GetConfigGroup]//特战
+			[["East","ISC_IS_O","Infantry","grp_is_hq_squad_o"] call d_fnc_GetConfigGroup, ["East","ISC_IS_O","Infantry","grp_is_at_team_o"] call d_fnc_GetConfigGroup]//特战
 		};
 		if (d_ifa3lite) exitWith {
 			[["West","SG_STURM","Infantry","SG_GER_AT_squad"] call d_fnc_GetConfigGroup, ["West","SG_STURM","Infantry","SG_GER_infantry_squad"] call d_fnc_GetConfigGroup]
@@ -1057,8 +1057,8 @@ if (!d_gmcwgwinter) then {
 
 #ifdef __RHS__
 	d_specops_E = [//特战
-		["Indep","IND_F","Infantry","HAF_InfSquad_Weapons"] call d_fnc_GetConfigGroup, ["Indep","IND_F","Infantry","HAF_InfSquad_Weapons"] call d_fnc_GetConfigGroup,
-		["Indep","rhssaf_faction_army","rhssaf_group_army_m10_para_infantry","rhssaf_group_army_m10_para_infantry_squad_sniper"] call d_fnc_GetConfigGroup, ["Indep","HAF_InfSquad","HAF_InfSquad","HAF_InfTeam_AT"] call d_fnc_GetConfigGroup
+		["East","ISC_IS_O","Infantry","grp_is_hq_squad_o"] call d_fnc_GetConfigGroup, ["East","ISC_IS_O","Infantry","grp_is_at_team_o"] call d_fnc_GetConfigGroup,
+		["Indep","rhssaf_faction_army","rhssaf_group_army_m10_para_infantry","rhssaf_group_army_m10_para_infantry_squad_sniper"] call d_fnc_GetConfigGroup, ["East","ISC_IS_O","Infantry","grp_is_inf_squad_o"] call d_fnc_GetConfigGroup
 	];
 #endif
 	d_specops_G = [["I_G_Soldier_exp_F", "I_Soldier_exp_F", "I_G_Soldier_GL_F", "I_G_medic_F"]];
@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext"]
+					["pook_MIG31_OPFOR","pook_MIG25_OPFOR","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext","pook_MIG35_OPFOR","pook_SU27_OPFOR","pook_SU30_OPFOR","pook_SU30M_OPFOR","pook_su24_base"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2220,7 +2220,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_03_dynamicLoadout_F","rhs_l159_cdf_b_CDF","I_Plane_Fighter_04_F","RHSGREF_A29B_HIDF","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","rhsgred_hidf_cessna_o3a","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F"]
+					["pook_MIG21_OPFOR","pook_Mig27_OPFOR","pook_Su22_OPFOR","RHSGREF_A29B_HIDF","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","rhsgred_hidf_cessna_o3a","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","pook_su24_OPFOR","pook_su24_base","pook_tu16_G_OPFOR","pook_tu16_C_OPFOR","pook_Mig23_OPFOR"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
