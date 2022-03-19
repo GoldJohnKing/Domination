@@ -1057,8 +1057,8 @@ if (!d_gmcwgwinter) then {
 
 #ifdef __RHS__
 	d_specops_E = [//特战
-		["East","ISC_IS_O","Infantry","grp_is_hq_squad_o"] call d_fnc_GetConfigGroup, ["East","ISC_IS_O","Infantry","grp_is_at_team_o"] call d_fnc_GetConfigGroup,
-		["Indep","rhssaf_faction_army","rhssaf_group_army_m10_para_infantry","rhssaf_group_army_m10_para_infantry_squad_sniper"] call d_fnc_GetConfigGroup, ["East","ISC_IS_O","Infantry","grp_is_inf_squad_o"] call d_fnc_GetConfigGroup
+		["Indep","IND_F","Infantry","HAF_InfSquad_Weapons"] call d_fnc_GetConfigGroup, ["Indep","IND_F","Infantry","HAF_InfSquad_Weapons"] call d_fnc_GetConfigGroup,
+		["Indep","rhssaf_faction_army","rhssaf_group_army_m10_para_infantry","rhssaf_group_army_m10_para_infantry_squad_sniper"] call d_fnc_GetConfigGroup, ["Indep","HAF_InfSquad","HAF_InfSquad","HAF_InfTeam_AT"] call d_fnc_GetConfigGroup
 	];
 #endif
 	d_specops_G = [["I_G_Soldier_exp_F", "I_Soldier_exp_F", "I_G_Soldier_GL_F", "I_G_medic_F"]];
