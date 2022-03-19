@@ -8,7 +8,7 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=2838;
+		nextID=2841;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=430;
+		nextID=436;
 	};
 	class Camera
 	{
-		pos[]={15075.681,23.861769,17143.789};
-		dir[]={-0.57786965,-0.24792875,0.77761447};
-		up[]={-0.14789899,0.96876013,0.19902065};
-		aside[]={0.80266517,-1.4409306e-007,0.59648752};
+		pos[]={11648.301,41.858589,11920.688};
+		dir[]={-0.75502646,-0.36023444,0.54789561};
+		up[]={-0.29156059,0.93286091,0.21157578};
+		aside[]={0.58732915,1.1478551e-007,0.80936599};
 	};
 };
 binarizationWanted=0;
@@ -109,13 +109,14 @@ addons[]=
 	"rhs_c_2s3",
 	"PGZ09_LK",
 	"A3_Air_F_Heli_Light_01",
-	"A3_Air_F_Jets_Plane_Fighter_01"
+	"A3_Air_F_Jets_Plane_Fighter_01",
+	"sab_fl_p51d"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=64;
+		items=65;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -543,6 +544,12 @@ class AddonsMetaData
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
+		class Item64
+		{
+			className="sab_fl_p51d";
+			name="sab_fl_p51d";
+			author="[Dust]Sabre";
+		};
 	};
 };
 dlcs[]=
@@ -646,7 +653,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=781;
+		items=782;
 		class Item0
 		{
 			dataType="Marker";
@@ -34800,7 +34807,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15059.81,21.42305,17157.619};
-				angles[]={0,2.0348096,-0};
+				angles[]={0,2.0348096,0};
 			};
 			side="Empty";
 			class Attributes
@@ -34815,6 +34822,112 @@ class Mission
 			id=2837;
 			type="B_Plane_Fighter_01_Stealth_F";
 			atlOffset=1.0179996;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value + [true]) call (uinamespace getvariable 'BIS_fnc_initVehicle')};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="RussianAFSkyBlue";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item781
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={11571.365,26.557083,11962};
+				angles[]={0,2.1046228,-0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="d_chopper_21";
+				textures="RussianAFSkyBlue";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				pylons=";;;;;;;;;;;;";
+			};
+			id=2840;
+			type="sab_fl_p51d";
+			atlOffset=0.76916313;
 			class CustomAttributes
 			{
 				class Attribute0
