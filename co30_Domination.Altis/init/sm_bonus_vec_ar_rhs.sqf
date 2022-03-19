@@ -2,8 +2,8 @@ d_sm_bonus_vehicle_array =
 switch (d_own_side) do {
 	case "GUER": {["I_APC_Wheeled_03_cannon_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_UGV_01_F","I_UGV_01_rcws_F","I_Plane_Fighter_03_dynamicLoadout_F","I_Heli_light_03_dynamicLoadout_F"]};
 	case "WEST":  {
-		["B_Heli_Attack_01_dynamicLoadout_F","O_Heli_Attack_02_dynamicLoadout_F","rhs_t14_tv","rhs_t14_tv","rhs_t15_tv",
-		"rhs_t90sm_tv","JS_JC_SU35","FIR_Su25SM3","FIR_F35B_Standard","ej_AH96_NATO","FIR_F18C","FIR_F18D","ej_MH92DAP","ej_MH92DAP2",
+		["B_Heli_Attack_01_dynamicLoadout_F","O_Heli_Attack_02_dynamicLoadout_F","rhs_t14_tv","rhs_t14_tv","rhs_t15_tv","O_ZTZ96B","O_ZTZ99","O_ZTZ99A","O_ZBD04A",
+		"rhs_t90sm_tv","JS_JC_SU35","FIR_Su25SM3","FIR_F35B_Standard","ej_AH96_NATO","ej_MH92DAP","ej_MH92DAP2","HTNK_us_desert",
 		"rhsusf_m1a2sep2d_usarmy","rhsusf_m1a2sep2wd_usarmy","O_Plane_Fighter_02_F","rhs_t90am_tv","RHS_M2A3_BUSKIII","rhsusf_m1a1aimd_usarmy","rhsusf_m1a1aim_tuski_d","rhsusf_m1a2sep1tuskiid_usarmy",
 		"C_Y_PLA_WZ10_F","RHS_Ka52_vvsc","rhs_mi28n_vvsc","rhsgref_b_mi24g_CAS","O_Plane_Fighter_02_Stealth_F","B_APC_Tracked_01_AA_F","rhs_t90sab_tv",
 		"USAF_F35A","O_Plane_CAS_02_dynamicLoadout_F","Su33_Chine","rhs_t15_tv","JS_JC_FA18E","B_Plane_Fighter_01_F","RHS_AH64DGrey","O_Plane_Fighter_02_F","RHS_AH1Z",

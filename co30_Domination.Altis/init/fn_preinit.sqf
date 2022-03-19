@@ -1277,7 +1277,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 		d_number_attack_planes = 2;
 	};
 	if (isNil "d_number_attack_choppers") then {
-		d_number_attack_choppers = 1;
+		d_number_attack_choppers = 2;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
 		d_number_light_attack_choppers = 1;
@@ -1467,7 +1467,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					""
 				};
 				if (d_rhs) exitWith {
-					""
+					"O_Boat_Armed_01_hmg_F"
 				};
 				if (d_unsung) exitWith {
 					"UNS_ASSAULT_BOAT_VC"
@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["sab_alphajet_o","sab_baehawk_o_2","I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext","sab_fiat_o","sab_mystere_o","sab_m2000_o","sab_mirageiv_o","sab_jaguar_o","FIR_F18C_Enemy_Type1","FIR_F18C_Enemy_Type1"]
+					["I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","sab_sw_b17","sab_sw_halifax","sab_sw_he177"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2220,7 +2220,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["O_Heli_Light_02_dynamicLoadout_F","isc_saa_L39_CAS_o","sab_f104_o","sab_panther_o","sab_fiat_o","RHSGREF_A29B_HIDF","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","FIR_A10C_Enemy_Type1","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F"]
+					["O_Heli_Light_02_dynamicLoadout_F","isc_saa_L39_CAS_o","RHSGREF_A29B_HIDF","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","FIR_A10C_Enemy_Type1","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","sab_fl_a6m","sab_fl_bf109k","sab_sw_bf110","sab_sw_he177","sab_sw_ju87_2","sab_sw_a26","sab_sw_b17","sab_sw_halifax"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};

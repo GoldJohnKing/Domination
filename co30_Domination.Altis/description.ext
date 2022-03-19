@@ -11,7 +11,7 @@ allowFunctionsLog = 1;
 #include "cfgfunctions.hpp"
 
 author = "Xeno、GOLD";
-OnLoadName = "联合制裁! 阿富汗战役!";
+OnLoadName = "2025 陆地，天空与海洋";
 onLoadMission = "$STR_DOM_MISSIONSTRING_24";
 onLoadIntroTime = false;
 onLoadMissionTime = false;

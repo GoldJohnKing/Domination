@@ -21,6 +21,8 @@ private _ran = selectRandom [1, 2];
 private _ran = [2, 4] call d_fnc_getrandomrangeint;
 #endif
 
+private _navy = selectRandom ["HAFM_Russen","HAFM_MEKO_HN","HAFM_GunBoat_BLU","HAFM_FREMM","HAFM_CB90_BLU","HAFM_BUYAN"];//海军
+
 for "_i" from 1 to _ran do {
 	private _radiusw = 200;
 	private _estart_pos = [];
@@ -31,7 +33,7 @@ for "_i" from 1 to _ran do {
 	};
 	_pos = [];
 	for "_i" from 0 to 49 do {
-		_pos = _estart_pos findEmptyPosition [20, _radiusw, d_sm_speedboat];
+		_pos = _estart_pos findEmptyPosition [20, _radiusw, _navy];
 		if (_estart_pos isNotEqualTo [] && {surfaceIsWater _estart_pos && {(getTerrainHeightASL _estart_pos) < -5}}) exitWith {};
 	};
 	__TRACE_1("","_pos")
@@ -41,7 +43,7 @@ for "_i" from 1 to _ran do {
 			_pos = (_bestpos # 0) # 0;
 			_pos set [2, 0];
 			private _newgrp = [d_side_enemy] call d_fnc_creategroup;
-			([_pos, ceil random 360, d_sm_speedboat, _newgrp] call d_fnc_spawnvehicle) params ["_veh", "_crew"];
+			([_pos, ceil random 360, _navy, _newgrp] call d_fnc_spawnvehicle) params ["_veh", "_crew"];
 			_veh setDamage 0;
 			[_veh, 5] call d_fnc_setekmode;
 			addToRemainsCollector [_veh];
