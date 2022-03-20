@@ -1280,7 +1280,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 		d_number_attack_choppers = 2;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
-		d_number_light_attack_choppers = 1;
+		d_number_light_attack_choppers = 2;
 	};
 	if (isNil "d_number_attack_uavs") then {
 		d_number_attack_uavs = 1;
@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","sab_sw_b17","sab_sw_halifax","sab_sw_he177"]
+					["I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","pook_EF2000_OPFOR","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","sab_sw_b17","sab_sw_halifax","sab_sw_he177","sab_baehawk_o_2","sab_f11tiger_o","sab_panther_o","sab_fiat_o","sab_mystere_o","sab_jaguar_o","sab_alphajet_o","sab_c2a_1_1"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_M1117_D","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m1151_mk19crows_usarmy_d","rhsusf_m1151_m2_lras3_v1_usarmy_d","rhsusf_m966_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_m1165a1_gmv_mk19_m240_socom_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_M1238A1_Mk19_socom_d","O_MRAP_02_gmg_F","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_APC_Tracked_01_CRV_F","RHS_Ural_Zu23_MSV_01","clv_VCLM","rhs_btr80a_msv","rhsusf_stryker_m1134_d","M1133_MEV_DG1_NOSLATDES","M1128_MGS_DG1_SLATDES","RHS_ZU23_MSV","rhs_D30_at_msv"]
+			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_M1117_D","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m1151_mk19crows_usarmy_d","rhsusf_m1151_m2_lras3_v1_usarmy_d","rhsusf_m966_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_m1165a1_gmv_mk19_m240_socom_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_M1238A1_Mk19_socom_d","O_MRAP_02_gmg_F","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_APC_Tracked_01_CRV_F","RHS_Ural_Zu23_MSV_01","B_Truck_02_CAMM_F","B_Truck_02_CAMM_ER_F","rhs_btr80a_msv","rhsusf_stryker_m1134_d","M1133_MEV_DG1_NOSLATDES","M1128_MGS_DG1_SLATDES","RHS_ZU23_MSV","rhs_2s3_at_tv","RHS_M119_D"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]
