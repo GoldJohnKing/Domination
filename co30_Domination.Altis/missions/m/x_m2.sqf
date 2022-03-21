@@ -19,7 +19,7 @@ if (isServer) then {
 	private _vec = createVehicle [d_sm_plane, _poss, [], 0, "NONE"];
 	_vec setDir 120;
 	sleep 2.123;
-	["specops", 1, "allmen", 6, _poss, 250, true] spawn d_fnc_CreateInf;
+	["specops", 4, "allmen", 6, _poss, 250, true] spawn d_fnc_CreateInf;
 	sleep 2.221;
 	["aa", 1, "tracked_apc", 1, "tank", 1, d_x_sm_pos # 1, 1, 400, true] spawn d_fnc_CreateArmor;
 	[_vec] spawn d_fnc_sidesteal;

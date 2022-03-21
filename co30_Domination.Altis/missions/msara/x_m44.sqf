@@ -16,7 +16,7 @@ if (isServer) then {
 	_vec setDir 90;
 	_vec setPos _poss;
 	sleep 2.123;
-	["specops", 1, "allmen", 1, _poss, 100, true] spawn d_fnc_CreateInf;
+	["specops", 4, "allmen", 4, _poss, 100, true] spawn d_fnc_CreateInf;
 	sleep 2.221;
 	["aa", 1, "tracked_apc", 1, "tank", 1, d_x_sm_pos # 1, 1, 140, true] spawn d_fnc_CreateArmor;
 	sleep 2.543;

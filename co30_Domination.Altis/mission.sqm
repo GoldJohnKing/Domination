@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=439;
+		nextID=445;
 	};
 	class Camera
 	{
 		pos[]={14776.147,153.12199,16631.434};
-		dir[]={-0.82582206,-0.56364888,-0.022611797};
-		up[]={-0.56351966,0.82593173,-0.015431416};
-		aside[]={-0.02738245,-5.5249984e-007,0.99971956};
+		dir[]={-0.7642135,-0.63689947,0.10262599};
+		up[]={-0.63129699,0.77086496,0.084774897};
+		aside[]={0.13309857,-1.3841491e-006,0.9911989};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination_navy";
+sourceName="co30_Domination_NewPlan";
 addons[]=
 {
 	"A3_Ui_F",
@@ -10853,7 +10853,7 @@ class Mission
 			};
 			id=1856;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=5.531311e-005;
+			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10884,7 +10884,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14563.162,17.966791,16631.545};
-				angles[]={-0,0.027459648,0.029324362};
+				angles[]={0,0.027459648,0.029324362};
 			};
 			side="Empty";
 			flags=4;
@@ -10895,7 +10895,7 @@ class Mission
 			};
 			id=1857;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=-1.9073486e-006;
+			atlOffset=-4.9591064e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10926,7 +10926,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14546.428,17.76832,16632.129};
-				angles[]={-0,0.027450463,6.2698579};
+				angles[]={0,0.027450463,6.2698579};
 			};
 			side="Empty";
 			flags=4;
@@ -10937,7 +10937,7 @@ class Mission
 			};
 			id=1858;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=4.196167e-005;
+			atlOffset=5.7220459e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10979,7 +10979,7 @@ class Mission
 			};
 			id=1859;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=3.8146973e-005;
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11062,6 +11062,7 @@ class Mission
 			};
 			id=1861;
 			type="PortableHelipadLight_01_white_F";
+			atlOffset=-0.00011825562;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11092,7 +11093,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14603.859,18.020636,16592.004};
-				angles[]={-0,6.275825,0};
+				angles[]={0,6.275825,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11103,7 +11104,7 @@ class Mission
 			};
 			id=1862;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=3.8146973e-006;
+			atlOffset=-4.3869019e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11134,7 +11135,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14587.108,17.724854,16592};
-				angles[]={-0,6.2756963,6.272521};
+				angles[]={0,6.2756963,6.272521};
 			};
 			side="Empty";
 			flags=4;
@@ -11145,7 +11146,6 @@ class Mission
 			};
 			id=1863;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=4.3869019e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11187,6 +11187,7 @@ class Mission
 			};
 			id=1864;
 			type="PortableHelipadLight_01_white_F";
+			atlOffset=-7.2479248e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11269,7 +11270,7 @@ class Mission
 			};
 			id=1866;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=1.9073486e-005;
+			atlOffset=-8.9645386e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11300,7 +11301,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14576.289,17.911886,16618.527};
-				angles[]={-0,0.0092728576,0.029324362};
+				angles[]={0,0.0092728576,0.029324362};
 			};
 			side="Empty";
 			flags=4;
@@ -11311,7 +11312,7 @@ class Mission
 			};
 			id=1867;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=5.1498413e-005;
+			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11342,7 +11343,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14559.542,17.611563,16618.783};
-				angles[]={-0,0.0077490094,0.019996032};
+				angles[]={0,0.0077490094,0.019996032};
 			};
 			side="Empty";
 			flags=4;
@@ -11353,7 +11354,7 @@ class Mission
 			};
 			id=1868;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=3.8146973e-005;
+			atlOffset=1.7166138e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11395,7 +11396,7 @@ class Mission
 			};
 			id=1869;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=1.9073486e-006;
+			atlOffset=-0.0001449585;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11426,7 +11427,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14581.112,17.910057,16605.725};
-				angles[]={-0,0.79297769,0};
+				angles[]={0,0.79297769,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11467,7 +11468,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14581.252,18.020632,16614.256};
-				angles[]={-0,0.0014928883,0};
+				angles[]={0,0.0014928883,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11478,6 +11479,7 @@ class Mission
 			};
 			id=1871;
 			type="PortableHelipadLight_01_white_F";
+			atlOffset=-4.7683716e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11508,7 +11510,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14589.734,18.020657,16605.799};
-				angles[]={-0,0.0021498518,0};
+				angles[]={0,0.0021498518,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11519,7 +11521,7 @@ class Mission
 			};
 			id=1872;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=2.4795532e-005;
+			atlOffset=-2.2888184e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11561,7 +11563,7 @@ class Mission
 			};
 			id=1873;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=5.3405762e-005;
+			atlOffset=-2.4795532e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11603,7 +11605,7 @@ class Mission
 			};
 			id=1874;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=2.2888184e-005;
+			atlOffset=-7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18916,6 +18918,7 @@ class Mission
 			};
 			id=2365;
 			type="RHS_AH64D";
+			atlOffset=-0.0010299683;
 		};
 		class Item517
 		{
@@ -32329,6 +32332,7 @@ class Mission
 			};
 			id=2831;
 			type="RHS_UH60M_d";
+			atlOffset=-0.0013160706;
 		};
 		class Item735
 		{
@@ -32336,7 +32340,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14580.724,20.622646,16605.398};
-				angles[]={-0,0.79930842,0};
+				angles[]={0,0.79930842,0};
 			};
 			side="Empty";
 			flags=4;
@@ -32347,6 +32351,7 @@ class Mission
 			};
 			id=2833;
 			type="Z20";
+			atlOffset=-0.00030326843;
 		};
 		class Item736
 		{
@@ -32599,7 +32604,7 @@ class Mission
 			};
 			id=2836;
 			type="B_Heli_Light_01_dynamicLoadout_F";
-			atlOffset=0.3368969;
+			atlOffset=0.3361721;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32899,7 +32904,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14616.358,17.987255,16579.748};
-				angles[]={-0,6.275825,0.029324362};
+				angles[]={0,6.275825,0.029324362};
 			};
 			side="Empty";
 			flags=4;
@@ -32941,7 +32946,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14599.607,17.662895,16579.744};
-				angles[]={-0,6.2756963,0.019996032};
+				angles[]={0,6.2756963,0.019996032};
 			};
 			side="Empty";
 			flags=4;
@@ -33035,6 +33040,7 @@ class Mission
 			};
 			id=2851;
 			type="O_Heli_Attack_02_dynamicLoadout_F";
+			atlOffset=2.6702881e-005;
 		};
 	};
 	class Connections
