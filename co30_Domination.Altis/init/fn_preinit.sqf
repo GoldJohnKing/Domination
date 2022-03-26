@@ -1280,7 +1280,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 		d_number_attack_choppers = 2;
 	};
 	if (isNil "d_number_light_attack_choppers") then {
-		d_number_light_attack_choppers = 2;
+		d_number_light_attack_choppers = 1;
 	};
 	if (isNil "d_number_attack_uavs") then {
 		d_number_attack_uavs = 1;

@@ -1,4 +1,4 @@
-["rhsgref_ins_g_t72bc","rhsgref_ins_g_t72bb","O_MBT_04_cannon_F","I_MBT_03_cannon_F","rhsgref_cdf_b_t80uk_tv","rhsgref_cdf_b_t80u_tv","O_MBT_04_command_F","O_MBT_02_cannon_F","rhsusf_m1a1fep_od","rhsusf_m1a1fep_wd","rhsusf_m1a1hc_wd","HTNK_Desert","HTNK_Grey"],  //主战坦克
+["rhsgref_ins_g_t72bc","rhsgref_ins_g_t72bb","rhsgref_ins_g_t72bc","rhsgref_ins_g_t72bb","rhsgref_ins_g_t72bb","O_MBT_04_cannon_F","I_MBT_03_cannon_F","rhsgref_cdf_b_t80uk_tv","rhsgref_cdf_b_t80u_tv","O_MBT_04_command_F","O_MBT_02_cannon_F","rhsusf_m1a1fep_od","rhsusf_m1a1fep_wd","rhsusf_m1a1hc_wd","HTNK_Desert","HTNK_Grey"],  //主战坦克
 ["O_APC_Tracked_02_cannon_F","I_APC_tracked_03_cannon_F","rhsgref_cdf_b_bmd1p","rhsgref_cdf_b_bmd2k","rhsgref_cdf_bmp2","rhsgref_cdf_bmp2d","O_APC_Tracked_02_AA_F"], //步兵战车以及APC
 ["rhsgref_cdf_b_btr80","O_APC_Wheeled_02_rcws_v2_F","I_APC_Wheeled_03_cannon_F","rhsgref_ins_btr70","rhsgref_ins_g_btr70","RDS_ZSU_ChDKZ","RDS_ZSU_ChDKZ"], //APC
 ["rhsgref_ins_zsu234","rhsgref_ins_zsu234","RDS_ZSU_ChDKZ","RDS_ZSU_TK","O_APC_Tracked_02_AA_F","O_APC_Tracked_02_AA_F"], //战区机动防空
