@@ -40,7 +40,7 @@ for "_i" from 0 to ((lbSize _listctrl) - 1) do {
 						if (_mrs getVariable ["d_enemy_near", false]) exitWith {__COLRED};
 						if (_mrs isKindOf "Ship" && {_mrs emptyPositions "cargo" == 0}) exitWith {__COLRED};
 						_mravailable = true;
-						[1,1,1,1.0];
+						[1,1,1,1];
 					};
 					_listctrl lbSetColor [_i, _lbcolor];
 				};
@@ -80,7 +80,7 @@ for "_i" from 0 to ((lbSize _listctrl) - 1) do {
 							} forEach (units player);
 						};
 						private _lbcolor = if (!isNil "_respawn_target") then {
-							[1,1,1,1.0]
+							[1,1,1,1]
 						} else {
 							__COLRED
 						};

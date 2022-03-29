@@ -260,10 +260,6 @@ publicVariable "d_cur_tgt_building_positions_occupied";
 
 sleep 0.245;
 
-{deleteVehicle _x} forEach d_mt_fires;
-d_mt_fires = [];
-sleep 0.1;
-
 private _mtmissionobjs =+ d_mtmissionobjs;
 d_mtmissionobjs = [];
 private _delvecsmt =+ d_delvecsmt;
@@ -274,11 +270,11 @@ d_house_objects = [];
 
 [_delpos, d_old_radius, _del_camps_stuff, _mtmissionobjs, _delvecsmt, _house_objects] spawn d_fnc_deleteempty;
 
-if !(isNil "d_cur_tgt_awareness_script_handle" && {!scriptDone d_cur_tgt_awareness_script_handle}) then {
+if (!isNil "d_cur_tgt_awareness_script_handle" && {!scriptDone d_cur_tgt_awareness_script_handle}) then {
 	terminate d_cur_tgt_awareness_script_handle;
 };
 
-if !(isNil "d_cur_tgt_afterfirednear_script_handle" && {!scriptDone d_cur_tgt_afterfirednear_script_handle}) then {
+if (!isNil "d_cur_tgt_afterfirednear_script_handle" && {!scriptDone d_cur_tgt_afterfirednear_script_handle}) then {
 	terminate d_cur_tgt_afterfirednear_script_handle;
 };
 
