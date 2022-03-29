@@ -15,7 +15,7 @@ if (isNil "RydFFE_OnePhase") then {RydFFE_OnePhase = false};
 
 if (isNil ("RydFFE_Amount")) then {RydFFE_Amount = 30};
 //if (isNil ("RydFFE_Disp")) then {RydFFE_Disp = 0.4};
-if (isNil ("RydFFE_Acc")) then {RydFFE_Acc = 3};
+if (isNil ("RydFFE_Acc")) then {RydFFE_Acc = 2};
 if (isNil ("RydFFE_Safe")) then {RydFFE_Safe = 50};
 if (isNil ("RydFFE_Monogamy")) then {RydFFE_Monogamy = false};
 if (isNil ("RydFFE_ShellView")) then {RydFFE_ShellView = false};
@@ -82,7 +82,7 @@ _enemies = [];
 _friends = [];
 RydFFE_Fire = false;
 
-if (isNil ("RydFFE_SVRange")) then {RydFFE_SVRange = 3000};
+if (isNil ("RydFFE_SVRange")) then {RydFFE_SVRange = 7000};
 
 if (RydFFE_ShellView) then {[] spawn Shellview};
 

@@ -155,12 +155,12 @@ switch (_enemyMode) do {
 			[[2,1], 1] // aa
 		];
 		d_vec_numbers_patrol = [
-			[[2,0], 1], // tanks
+			[[2,1], 1], // tanks
 			[[1,0], 1], // tracked apc
-			[[1,1], 1], // wheeled apc
+			[[1,0], 1], // wheeled apc
 			[[2,2], 1], // jeep with mg
-			[[4,3], 1], // jeep with gl
-			[[6,2], 1]  // uav
+			[[4,4], 1], // jeep with gl
+			[[6,4], 1]  // uav
 		];
 
 		// almost the same like above
