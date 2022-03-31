@@ -1873,7 +1873,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","RHS_T50_vvs_generic","RHS_T50_vvs_051","RHS_T50_vvs_053","O_Plane_Fighter_02_Stealth_F"]
+					["rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","RHS_T50_vvs_generic","RHS_T50_vvs_051","RHS_T50_vvs_053","O_Plane_Fighter_02_Stealth_F","sab_m2000_o","sab_mirageiv_o"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mig21_CAS", "uns_Mig21_CBU", "uns_Mig21_HCAS"]
@@ -2220,7 +2220,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["O_Heli_Light_02_dynamicLoadout_F","RHSGREF_A29B_HIDF","rhssaf_airforce_o_l_18","rhs_uh1h_hidf_gunship","rhs_uh1h_hidf_gunship","I_Heli_light_03_dynamicLoadout_F","FIR_A10C_Enemy_Type1","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","sab_fl_a6m","sab_fl_bf109k","sab_sw_bf110","sab_sw_he177","sab_sw_ju87_2","sab_sw_a26","sab_sw_b17","sab_sw_halifax","sab_f104_o","sab_mb339_o"]
+					["O_Heli_Light_02_dynamicLoadout_F","RHSGREF_A29B_HIDF","rhssaf_airforce_o_l_18","rhs_uh1h_hidf_gunship","rhs_uh1h_hidf_gunship","I_Heli_light_03_dynamicLoadout_F","FIR_A10C_Enemy_Type1","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","sab_fl_a6m","sab_fl_bf109k","sab_sw_bf110","sab_sw_he177","sab_sw_ju87_2","sab_sw_a26","sab_sw_b17","sab_sw_halifax","sab_f104_o","sab_mb339_o","sab_alphajet_o"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [400, 30, 300, 170];
+		d_ai_groups_respawn_time = [400, 60, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
