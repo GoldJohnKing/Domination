@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","sab_sw_b17","sab_sw_halifax","sab_sw_he177","sab_baehawk_o_2","sab_f11tiger_o","sab_panther_o","sab_fiat_o","sab_mystere_o","sab_jaguar_o","sab_alphajet_o","sab_c2a_1_1"]
+					["I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","sab_sw_b17","sab_sw_halifax","sab_sw_he177","sab_baehawk_o_2","sab_f11tiger_o","sab_panther_o","sab_fiat_o","sab_mystere_o","sab_jaguar_o","sab_alphajet_o","sab_c2a_1_1","FIR_A10C_Enemy_Type1"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [400, 60, 300, 170];
+		d_ai_groups_respawn_time = [400, 90, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
