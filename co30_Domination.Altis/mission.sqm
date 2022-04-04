@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=481;
+		nextID=484;
 	};
 	class Camera
 	{
@@ -705,7 +705,7 @@ class Mission
 			type="Empty";
 			a=1400;
 			b=1000;
-			angle=134.91397;
+			angle=134.91396;
 			id=6;
 		};
 		class Item7
@@ -7077,6 +7077,7 @@ class Mission
 			};
 			id=1271;
 			type="rhs_t72be_tv";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12671,12 +12672,13 @@ class Mission
 						angles[]={0.023493923,4.4157033,0.013527345};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=2944;
 					type="B_UAV_AI";
+					atlOffset=1.7565346;
 				};
 			};
 			class Attributes
@@ -12705,6 +12707,7 @@ class Mission
 				};
 			};
 			id=2130;
+			atlOffset=-0.00033378601;
 		};
 		class Item461
 		{
@@ -12729,6 +12732,7 @@ class Mission
 					};
 					id=2134;
 					type="rhsgref_cdf_b_reg_crew";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12807,6 +12811,7 @@ class Mission
 					};
 					id=2136;
 					type="rhsgref_cdf_b_reg_crew";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12885,6 +12890,7 @@ class Mission
 					};
 					id=2138;
 					type="rhsgref_cdf_b_reg_crew";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -12995,6 +13001,7 @@ class Mission
 				};
 			};
 			id=2133;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item462
 		{
@@ -17169,7 +17176,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14782.492,17.911438,16686.035};
-						angles[]={-0,5.497788,0};
+						angles[]={0,5.497788,0};
 					};
 					side="West";
 					flags=4;
@@ -17186,16 +17193,17 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14782.492,20.000776,16685.988};
-						angles[]={-0,5.497788,0};
+						angles[]={0,5.497788,0};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						name="d_vec_trans_15G";
 					};
 					id=2311;
 					type="B_UAV_AI";
+					atlOffset=2.0893383;
 				};
 			};
 			class Attributes
@@ -17241,7 +17249,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14801.882,19.999338,16639.699};
-				angles[]={-0,5.497788,0};
+				angles[]={0,5.497788,0};
 			};
 			side="West";
 			flags=6;
@@ -17266,7 +17274,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14787.754,17.911438,16692.666};
-						angles[]={-0,5.4628816,0};
+						angles[]={0,5.4628816,0};
 					};
 					side="West";
 					flags=4;
@@ -17283,16 +17291,17 @@ class Mission
 					class PositionInfo
 					{
 						position[]={14787.754,20.000776,16692.619};
-						angles[]={-0,5.4628816,0};
+						angles[]={0,5.4628816,0};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						name="d_vec_trans_13G";
 					};
 					id=2315;
 					type="B_UAV_AI";
+					atlOffset=2.0893383;
 				};
 			};
 			class Attributes
@@ -17338,7 +17347,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14808.877,19.999338,16646.725};
-				angles[]={-0,5.4628816,0};
+				angles[]={0,5.4628816,0};
 			};
 			side="West";
 			flags=6;
@@ -32336,6 +32345,7 @@ class Mission
 			};
 			id=2943;
 			type="B_SAM_System_01_F";
+			atlOffset=-0.00033378601;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32439,12 +32449,12 @@ class Mission
 						angles[]={0.0087440992,3.9614086,0.00034906584};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=2951;
 					type="rhsusf_army_ocp_combatcrewman";
+					atlOffset=1.5689125;
 				};
 				class Item2
 				{
@@ -32455,12 +32465,13 @@ class Mission
 						angles[]={0.0087440992,3.9614086,0.00034906584};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 					};
 					id=2952;
 					type="rhsusf_army_ocp_combatcrewman";
+					atlOffset=1.5689125;
 				};
 				class Item3
 				{
@@ -32471,12 +32482,12 @@ class Mission
 						angles[]={0.0087440992,3.9614086,0.00034906584};
 					};
 					side="West";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=2953;
 					type="rhsusf_army_ocp_combatcrewman";
+					atlOffset=1.5689125;
 				};
 			};
 			class Attributes
@@ -32537,6 +32548,7 @@ class Mission
 				};
 			};
 			id=2948;
+			atlOffset=-0.0026321411;
 		};
 		class Item731
 		{
@@ -32558,6 +32570,7 @@ class Mission
 			};
 			id=2949;
 			type="rhsusf_m1a2sep1tuskiid_usarmy";
+			atlOffset=-0.0026321411;
 			class CustomAttributes
 			{
 				class Attribute0
