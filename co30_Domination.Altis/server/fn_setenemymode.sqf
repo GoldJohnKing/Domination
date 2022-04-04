@@ -76,20 +76,20 @@ switch (_enemyMode) do {
 #endif
 		];
 		d_footunits_guard_static = [
-			[2,1], // basic groups
-			[2,1] // specop groups
+			[2,2], // basic groups
+			[2,2] // specop groups
 		];
 		d_footunits_attack = [
-			[2,1], // basic groups
-			[2,1] // specop groups
+			[2,2], // basic groups
+			[2,2] // specop groups
 		];
 		d_vec_numbers_attack = [
-			[[3,1], 1], // tanks
-			[[1,0], 1], // tracked apc
+			[[3,3], 1], // tanks
+			[[1,1], 1], // tracked apc
 			[[2,0], 1], // wheeled apc
-			[[1,1], 0], // jeep with mg
-			[[1,1], 0], // jeep with gl
-			[[4,1], 1] // aa
+			[[1,0], 0], // jeep with mg
+			[[1,0], 0], // jeep with gl
+			[[1,1], 1] // aa
 		];
 	};
 	case 1: {
@@ -129,14 +129,14 @@ switch (_enemyMode) do {
 			[2,1] // specop groups
 		];
 		d_footunits_attack = [
-			[2,1], // basic groups
-			[2,1] // specop groups
+			[3,3], // basic groups
+			[3,3] // specop groups
 		];
 		d_vec_numbers_attack = [
-			[[2,1], 1], // tanks
-			[[1,1], 1], // tracked apc
+			[[2,0], 1], // tanks
+			[[2,2], 1], // tracked apc
 			[[1,1], 1], // wheeled apc
-			[[1,1], 1], // jeep with mg
+			[[1,0], 1], // jeep with mg
 			[[1,0], 1], // jeep with gl
 			[[2,0], 1] // aa
 		];
@@ -178,15 +178,15 @@ switch (_enemyMode) do {
 			[4,2] // specop groups
 		];
 		d_footunits_attack = [
-			[4,2], // basic groups
-			[4,2] // specop groups
+			[4,4], // basic groups
+			[4,4] // specop groups
 		];
 		d_vec_numbers_attack = [
 			[[0,0], 1], // tanks
 			[[2,0], 1], // tracked apc
 			[[3,2], 1], // wheeled apc
 			[[2,0], 1], // jeep with mg
-			[[2,1], 1], // jeep with gl
+			[[3,2], 1], // jeep with gl
 			[[2,0], 1] // aa
 		];
 	};

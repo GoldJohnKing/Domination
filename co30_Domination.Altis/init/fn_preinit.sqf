@@ -2146,7 +2146,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	// enemy parachute troops transport chopper
 	d_transport_chopper = call {
 		if (d_enemy_side_short == "E") exitWith {
-			["rhsgref_b_mi24g_CAS","rhs_uh1h_hidf_gunship","rhs_uh1h_hidf","rhsgref_ins_Mi8amt","I_Heli_Transport_02_F"]
+			["rhsgref_b_mi24g_CAS","rhs_uh1h_hidf_gunship","rhsgref_cdf_b_Mi24D_Early","rhsgref_ins_Mi8amt","I_Heli_Transport_02_F"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
 			["I_Heli_Transport_02_F"]
@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {
-			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_M1117_D","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m1151_mk19crows_usarmy_d","rhsusf_m1151_m2_lras3_v1_usarmy_d","rhsusf_m966_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_m1165a1_gmv_mk19_m240_socom_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_M1238A1_Mk19_socom_d","O_MRAP_02_gmg_F","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_Repair_F","B_Truck_01_medical_F","RHS_Ural_Zu23_MSV_01","B_Truck_02_CAMM_F","B_Truck_02_CAMM_ER_F","rhs_btr80a_msv","rhsusf_stryker_m1134_d","M1133_MEV_DG1_NOSLATDES","M1128_MGS_DG1_SLATDES","RHS_ZU23_MSV","rhs_2s3_at_tv","RHS_M119_D"]
+			["rhs_tigr_sts_msv","B_LSV_01_armed_F","B_LSV_01_AT_F","O_LSV_02_AT_F","O_LSV_02_armed_F","rhsusf_M1117_D","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m1151_mk19crows_usarmy_d","rhsusf_m1151_m2_lras3_v1_usarmy_d","rhsusf_m966_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_m1165a1_gmv_mk19_m240_socom_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_M1238A1_M2_socom_d","rhsusf_M1238A1_Mk19_socom_d","O_MRAP_02_gmg_F","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1127_m2_d","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_Repair_F","RHS_Ural_Zu23_MSV_01","B_Truck_02_CAMM_F","B_Truck_02_CAMM_ER_F","rhs_btr80a_msv","rhsusf_stryker_m1134_d","M1133_MEV_DG1_NOSLATDES","M1128_MGS_DG1_SLATDES","RHS_ZU23_MSV","rhs_2s3_at_tv","RHS_M119_D"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]
