@@ -1072,7 +1072,7 @@ if (!d_gmcwgwinter) then {
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
 #endif
 #ifdef __RHS__
-	d_sabotage_E = [["rhs_vmf_recon_rifleman_scout_akm", "rhs_vmf_recon_sergeant"]];
+	d_sabotage_E = [["rhssaf_army_o_m10_para_spotter", "rhssaf_army_o_m10_para_rifleman_at","rhssaf_army_o_m10_para_spec_at","rhssaf_army_o_m10_para_mgun_minimi","rhssaf_army_o_m10_para_exp","rhssaf_army_o_m10_para_officer"]];//进攻基地敌人
 	d_sabotage_W = [["rhsusf_socom_marsoc_cso_breacher", "rhsusf_socom_marsoc_cso"]];
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
 #endif
