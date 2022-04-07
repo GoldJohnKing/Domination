@@ -33,9 +33,9 @@ d_sm_arty = switch (d_enemy_side_short) do {
 	case "G": {"B_MBT_01_arty_F"}; // no independent arty in Alpha 3
 };
 d_sm_plane = switch (d_enemy_side_short) do {
-	case "E": {["O_Plane_Fighter_02_F","JS_JC_SU35","FIR_Su25SM3","FIR_F35B_Standard"]};
-	case "W": {["O_Plane_Fighter_02_F","JS_JC_SU35","FIR_Su25SM3","FIR_F35B_Standard"]};
-	case "G": {["O_Plane_Fighter_02_F","JS_JC_SU35","FIR_Su25SM3","FIR_F35B_Standard"]};
+	case "E": {["JS_JC_SU35"]};
+	case "W": {["JS_JC_SU35"]};
+	case "G": {["JS_JC_SU35"]};
 };
 d_sm_tank = switch (d_enemy_side_short) do {
 	case "E": {["HTNK_Desert","I_MBT_03_cannon_F","O_MBT_04_command_F"]};
@@ -48,9 +48,9 @@ d_sm_HunterGMG = switch (d_enemy_side_short) do {
 	case "G": {"I_MRAP_03_hmg_F"};
 };
 d_sm_chopper = switch (d_enemy_side_short) do {
-	case "E": {["rhsgref_b_mi24g_CAS","RHS_Ka52_vvsc","ej_AH96_NATO"]};
-	case "W": {["rhsgref_b_mi24g_CAS","RHS_Ka52_vvsc","ej_AH96_NATO"]};
-	case "G": {["rhsgref_b_mi24g_CAS","RHS_Ka52_vvsc","ej_AH96_NATO"]};
+	case "E": {["RHS_Ka52_vvsc"]};
+	case "W": {["RHS_Ka52_vvsc"]};
+	case "G": {["RHS_Ka52_vvsc"]};
 };
 d_sm_pilottype = switch (d_enemy_side_short) do {
 	case "E": {"I_helipilot_F"};
