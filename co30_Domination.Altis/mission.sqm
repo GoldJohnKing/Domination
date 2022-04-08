@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=505;
+		nextID=511;
 	};
 	class Camera
 	{
 		pos[]={14585.221,80.402046,16456.598};
-		dir[]={-0.76063895,-0.2796753,0.58584136};
-		up[]={-0.22157392,0.96009463,0.17065543};
-		aside[]={0.61019129,-1.4901161e-008,0.79225409};
+		dir[]={-0.87860984,-0.47740674,-0.011295237};
+		up[]={-0.47736728,0.87868243,-0.0061369408};
+		aside[]={-0.012854743,0,0.99991739};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination_NP3A1";
+sourceName="co30_Domination_NP3A3";
 addons[]=
 {
 	"A3_Ui_F",
