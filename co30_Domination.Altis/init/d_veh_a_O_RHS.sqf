@@ -6,7 +6,7 @@
 ["I_LT_01_AT_F","I_LT_01_AT_F","rhsgref_cdf_b_2s1_at","rhsgref_cdf_b_2s1_at","rhsgref_ins_g_t72ba","RDS_T34_AAF","RDS_T55A_AAF","RDS_T55A_AAF","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","O_MBT_02_arty_F","I_Truck_02_MRL_F","I_Truck_02_MRL_F","I_Truck_02_MRL_F","I_Truck_02_MRL_F","rhsgref_ins_gaz66_ammo","rhsgref_ins_kraz255b1_fuel","rhsgref_ins_ural_repair"], //自行火炮 突击炮 坦克歼击车 火力支援车辆 后勤车辆
 ["B_SAM_System_01_F","B_SAM_System_01_F","rhs_prv13_turret_vpvo","B_SAM_System_02_F"],  //GL  现在是防空 ,"B_Radar_System_01_F" ,"B_SAM_System_02_F"
 ["I_HMG_02_high_F","rhssaf_army_metis_9k115","rhsgref_ins_g_DSHKM","rhssaf_army_metis_9k115","I_GMG_01_high_F","I_static_AT_F"],    //MG  现在是地面防御(当前为防空/反装甲)            "rhsgref_ins_g_DSHKM","rhsgref_ins_g_SPG9M","rhssaf_army_m2staticmg_minitripod","rhssaf_army_nsv_tripod","rhssaf_army_ags30_tripod","I_HMG_02_F","I_HMG_02_high_F"
-["rhsgref_ins_g_2b14","rhsgref_ins_g_2b14","RDS_M119_AAF","pook_M777_IND","pook_M777_IND","O_SAM_System_04_F","rhssaf_army_metis_9k115"],//重点防御阵地
+["rhsgref_ins_g_2b14","pook_M777_IND","pook_M777_IND","rhsgref_ins_g_Igla_AA_pod","O_SAM_System_04_F","I_static_AT_F","rhsgref_ins_g_SPG9M","rhsgref_cdf_b_ZU23"],//重点防御阵地
 ["rhsgref_ins_kraz255b1_fuel"],
 ["I_Truck_02_box_F"],
 ["I_Truck_02_ammo_F"],
