@@ -17,7 +17,7 @@ params ["_u", "_mode", ["_init", false]];
 // 	_u setVariable ["d_aimingSpeed", _u skill "aimingSpeed"];
 // };
 
-// if (_mode == 0) then { // Edited: Tweak enemy skill
+// if (_mode == 0) then { // Edited: Tweak enemy skill技能
 	_u setSkill 0.7;
 	_u setSkill ["aimingAccuracy", 0];
 	_u setSkill ["aimingShake", 0];

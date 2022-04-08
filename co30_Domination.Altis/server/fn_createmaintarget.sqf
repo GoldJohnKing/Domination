@@ -126,7 +126,7 @@ if (d_camp_static_weapons == 1) then {
 };
 if (_camp_static_weapons_current == 1) then {
 	_type_list_guard_static2 = [//主要战区，静态武器
-    	["stat_mg", 2, ceil (random 6)],
+    	["stat_mg", 1, ceil (random 10)],  //this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}]; 
     	["stat_gl", 1, ceil (random 8)],
 		["arty", 3, ceil (random 5)]
     ];

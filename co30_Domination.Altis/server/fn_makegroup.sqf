@@ -17,7 +17,7 @@ __TRACE_1("","_grp")
 
 _grptype = toLowerANSI _grptype;
 
-private _istatatic = _grptype in ["stat_mg", "stat_gl", "arty"];//火炮
+private _istatatic = _grptype in ["stat_mg", "stat_gl", "arty"];//火炮 静态固定武器
 private _ismen = _grptype in ["allmen", "specops"];
 
 private _msize = 0;
@@ -47,7 +47,7 @@ if (_numvecs > 0) then {
 			_x enableWeaponDisassembly false;
 		} forEach _vecs;
 	};
-	_grp setSpeedMode "LIMITED";
+	_grp setSpeedMode "LIMITED";//刷出的小组设定速度
 	_msize = 2;
 } else {
 	__TRACE("from makegroup")
@@ -154,8 +154,12 @@ call {
 			_grp setBehaviour "SAFE";
 		};
 	};
-	if (_type == "guardstatic2") exitWith {
+	if (_type == "guardstatic2") exitWith {//与主线刷出固定武器有关
 		(_vecs # 0) setDir (floor random 360);
+		{
+			_x addeventhandler ["fired", {(_this select 0) setvehicleammo 1}];
+			// Current result is saved in variable _x	
+		} forEach _vecs;//固定武器/固定防空无限弹药
 	};
 	if (_type == "attack") then {
 		_grp setBehaviour "AWARE";

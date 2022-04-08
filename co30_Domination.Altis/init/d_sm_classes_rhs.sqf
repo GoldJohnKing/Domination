@@ -38,9 +38,9 @@ d_sm_plane = switch (d_enemy_side_short) do {
 	case "G": {["JS_JC_SU35"]};
 };
 d_sm_tank = switch (d_enemy_side_short) do {
-	case "E": {["HTNK_Desert","I_MBT_03_cannon_F","O_MBT_04_command_F"]};
-	case "W": {["HTNK_Desert","I_MBT_03_cannon_F","O_MBT_04_command_F"]};
-	case "G": {["HTNK_Desert","I_MBT_03_cannon_F","O_MBT_04_command_F"]};
+	case "E": {["O_MBT_04_command_F"]};
+	case "W": {["O_MBT_04_command_F"]};
+	case "G": {["O_MBT_04_command_F"]};
 };
 d_sm_HunterGMG = switch (d_enemy_side_short) do {
 	case "E": {"I_MRAP_03_hmg_F"};
