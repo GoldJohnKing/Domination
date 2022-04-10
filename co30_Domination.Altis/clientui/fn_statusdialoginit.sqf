@@ -342,16 +342,16 @@ if (d_VD_Combi_use_InfVD) then {
 		profileNamespace setVariable ["dom_viewdistancevec", d_ViewDistanceVec];
 		((uiNamespace getVariable "D_StatusDialog") displayCtrl 3500) ctrlEnable false;
 		((uiNamespace getVariable "D_StatusDialog") displayCtrl 3501) ctrlEnable false;
-		if (!isNull objectParent player) then {
-			private _vp = vehicle player;
-			if (_vp isKindOf "Car" || {_vp isKindOf "Tank" || {_vp isKindOf "Motorcycle" || {_vp isKindOf "Ship" || {_vp isKindOf "Helicopter" || {_vp isKindOf "Plane"}}}}}) then {
-				if (d_isvdreduced) then {
-					d_isvdreduced = false;
-				};
-				setViewDistance d_curviewdistance;
-				setObjectViewDistance d_curviewdistance + 100;
-			};
-		};
+		// if (!isNull objectParent player) then { // Edited: Remove view distance
+		// 	private _vp = vehicle player;
+		// 	if (_vp isKindOf "Car" || {_vp isKindOf "Tank" || {_vp isKindOf "Motorcycle" || {_vp isKindOf "Ship" || {_vp isKindOf "Helicopter" || {_vp isKindOf "Plane"}}}}}) then {
+		// 		if (d_isvdreduced) then {
+		// 			d_isvdreduced = false;
+		// 		};
+		// 		setViewDistance d_curviewdistance;
+		// 		setObjectViewDistance d_curviewdistance + 100;
+		// 	};
+		// };
 	} else {
 		((uiNamespace getVariable "D_StatusDialog") displayCtrl 3500) ctrlEnable true;
 		((uiNamespace getVariable "D_StatusDialog") displayCtrl 3501) ctrlEnable true;

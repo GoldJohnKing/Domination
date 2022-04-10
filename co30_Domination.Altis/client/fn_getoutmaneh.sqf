@@ -71,5 +71,5 @@ if (!isTouchingGround (vehicle player)) then {
 	};
 };
 
-setViewDistance d_curviewdistance;
-setObjectViewDistance d_curobjectdistance + 100;
+// setViewDistance d_curviewdistance; // Edited: Remove view distance
+// setObjectViewDistance d_curobjectdistance + 100;
