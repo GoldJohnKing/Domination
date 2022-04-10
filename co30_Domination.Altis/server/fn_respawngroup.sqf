@@ -37,7 +37,7 @@ if (_isman) then {
 
 	private _old_add = d_groups_respawn_time_add;
 	private _nump = count (allPlayers - (entities "HeadlessClient_F")) min 40;
-	private _endtime = (time + _basetime - _maxtime - (_nump * 9) + d_groups_respawn_time_add) max 100;//步兵重生
+	private _endtime = (time + _basetime - _maxtime - (_nump * 9) + d_groups_respawn_time_add) max 120;//步兵重生
 	
 	__TRACE_1("","_endtime")
 	__TRACE_1("","d_groups_respawn_time_add")
