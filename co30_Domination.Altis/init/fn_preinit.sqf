@@ -296,7 +296,7 @@ d_x_drop_array =
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "CUP_B_M1151_WDL_USA"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhsusf_mrzr4_d"], [localize "STR_DOM_MISSIONSTRING_20", "Box_NATO_Ammo_F"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "B_LSV_01_armed_F"], [localize "STR_DOM_MISSIONSTRING_20", "Box_NATO_Ammo_F"]]
 		};
 		if (d_gmcwg) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", ["gm_ge_army_u1300l_cargo", "gm_ge_army_u1300l_cargo_win"] select d_gmcwgwinter], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
