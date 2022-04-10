@@ -591,7 +591,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="陆地、天空与海洋，用启动器来更新并加入战斗吧！";
+		briefingName="2025燃尽死灰 对抗德意志！用启动器加入战斗！";
 		overviewText="欢迎来到61方面军红锤服！";
 		startWeather=0.30000001;
 		startWind=0.1;
