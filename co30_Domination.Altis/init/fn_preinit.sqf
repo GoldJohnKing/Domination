@@ -597,7 +597,7 @@ if (isServer) then {
 	d_hc_counter = 0;
 	d_retaken_farpspos = [];
 
-	d_with_ace = isClass (configFile>>"CfgPatches">>"ace_main");
+	d_with_ace = false; // Edited: Never use ACE, default = isClass (configFile>>"CfgPatches">>"ace_main")
 	publicVariable "d_with_ace";
 	diag_log ["Dom d_with_ace:", d_with_ace];
 	d_database_found = false;
