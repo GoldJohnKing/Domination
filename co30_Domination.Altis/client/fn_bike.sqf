@@ -36,7 +36,7 @@ if (d_with_ranked) then {
 if (_exitit) exitWith {};
 
 if (_ismhq) then {
-	d_mhqvec_create_cooldown_time = time + 900;//d_mhqvec_create_cooldown
+	d_mhqvec_create_cooldown_time = time + 300;//d_mhqvec_create_cooldown
 };
 
 if (!isNull objectParent player) exitWith {

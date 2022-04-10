@@ -23,6 +23,12 @@ if (isNil ("RydFFE_FOAccGain")) then {RydFFE_FOAccGain = 1};
 if (isNil ("RydFFE_FOClass")) then {RydFFE_FOClass =
 	[
 	"I_Soldier_SL_F",
+	"BWA3_recon_TL_Fleck",
+	"BWA3_SL_Fleck",
+	"BWA3_recon_Radioman_Fleck",
+	"BWA3_recon_TL_Fleck",
+	"BWA3_recon_TL_Multi",
+	"BWA3_recon_Radioman_Multi",
 	"rhssaf_army_m10_para_sq_lead",
 	"rhsgref_ins_g_squadleader",
 	"rhssaf_army_m93_oakleaf_summer_officer",

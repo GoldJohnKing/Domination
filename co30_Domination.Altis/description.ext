@@ -11,7 +11,7 @@ allowFunctionsLog = 1;
 #include "cfgfunctions.hpp"
 
 author = "Xeno、GOLD";
-OnLoadName = "2025 陆地，天空与海洋";
+OnLoadName = " 燃尽死灰 A岛现代战争 主要敌人-德国 ";
 onLoadMission = "$STR_DOM_MISSIONSTRING_24";
 onLoadIntroTime = false;
 onLoadMissionTime = false;
@@ -905,7 +905,7 @@ class Params {
 	class d_with_airdrop {
 		title = "$STR_DOM_MISSIONSTRING_2073";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	
@@ -1173,7 +1173,7 @@ class Params {
 	class d_mhqvec_create_cooldown {
 		title = "$STR_DOM_MISSIONSTRING_1824";
 		values[] = {0, 60, 120, 300, 900, 1200, 1800};
-		default = 900;
+		default = 300;
 		texts[] = {"$STR_DOM_MISSIONSTRING_363","60","120","300","900","1200","1800"};
 	};
 
@@ -1723,7 +1723,7 @@ class Params {
 	class d_WreckDeleteTime {
 		title = "$STR_DOM_MISSIONSTRING_1170";
 		values[] = {1800,3600,5400,7200,1010101};
-		default = 1010101;
+		default = 7200;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1093","$STR_DOM_MISSIONSTRING_1095","$STR_DOM_MISSIONSTRING_1171","$STR_DOM_MISSIONSTRING_1172","$STR_DOM_MISSIONSTRING_418"};
 	};
 

@@ -128,7 +128,7 @@ if (_camp_static_weapons_current == 1) then {
 	_type_list_guard_static2 = [//主要战区，静态武器
     	["stat_mg", 1, ceil (random 10)],  //this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}]; 
     	["stat_gl", 1, ceil (random 8)],
-		["arty", 2, ceil (random 5)]
+		["arty", 3, ceil (random 4)]
     ];
 };
 
@@ -303,14 +303,14 @@ if (([getPos _vec, sizeOf d_vehicle_building] call d_fnc_getslope) > 0.4) then {
 };*/
 // createVehicle ["Land_TTowerSmall_1_F", _poss, [], 0, "NONE"];
 //敌方HQ指挥官小组
-private _HQ1 = createGroup [east, true];
-private _HQ2 = createGroup [east, true];
-private _HQ3 = createGroup [east, true];
-private _HQ4 = createGroup [east, true];
-_HQ1 createUnit ["rhsgref_ins_squadleader", _poss, [], 0, "FORM"];
-_HQ2 createUnit ["rhsgref_ins_sniper", _poss, [], 0, "FORM"];
-_HQ3 createUnit ["rhsgref_ins_spotter", _poss, [], 0, "FORM"];
-_HQ4 createUnit ["rhsgref_ins_rifleman_RPG26", _poss, [], 0, "FORM"];
+// private _HQ1 = createGroup [east, true];
+// private _HQ2 = createGroup [east, true];
+// private _HQ3 = createGroup [east, true];
+// private _HQ4 = createGroup [east, true];
+// _HQ1 createUnit ["BWA3_Officer_Fleck", _poss, [], 0, "FORM"];
+// _HQ2 createUnit ["BWA3_Officer_Fleck", _poss, [], 0, "FORM"];
+// _HQ3 createUnit ["BWA3_Grenadier_G27_Fleck", _poss, [], 0, "FORM"];
+// _HQ4 createUnit ["BWA3_Marksman_Fleck", _poss, [], 0, "FORM"];
 _vec setVariable ["d_v_pos", getPos _vec];
 if (d_bar_mhq_destroy == 1) then {
 	[_vec, 1] call d_fnc_checkmtrespawntarget;
@@ -327,7 +327,7 @@ if (d_bar_mhq_destroy == 1) then {
 	d_mt_barmhq_ar pushBack _vec;
 };
 private _barcompo = [//指挥部外部环境物件
-		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
+		["BWA3_Flag_Germany",[-9,0,0],270,1,0,[],"","",true,false],
 		["Land_HelipadCircle_F",[-24,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrierTower_F",[-37,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrier_Big_F",[-37,-7,0],270,1,0,[],"","",true,false],
