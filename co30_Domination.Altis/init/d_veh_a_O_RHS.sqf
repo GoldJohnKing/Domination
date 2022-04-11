@@ -1,4 +1,4 @@
-["BWA3_Leopard2_Fleck","BWA3_Leopard2_Tropen","BWA3_Leopard2_Fleck","BWA3_Leopard2_Tropen","BWA3_Leopard2_Fleck","O_MBT_04_cannon_F","I_MBT_03_cannon_F","I_MBT_03_cannon_F","rhsgref_cdf_b_t80uk_tv","rhsgref_cdf_b_t80u_tv","I_MBT_03_cannon_F","I_MBT_03_cannon_F","I_MBT_03_cannon_F","BWA3_Leopard2_Fleck","rhsgref_cdf_b_t80u_tv","rhsgref_cdf_b_t80u_tv"],  //主战坦克
+["BWA3_Leopard2_Fleck","BWA3_Leopard2_Tropen","BWA3_Leopard2_Fleck","BWA3_Leopard2_Tropen","BWA3_Leopard2_Fleck","O_MBT_04_cannon_F","I_MBT_03_cannon_F","I_MBT_03_cannon_F","rhsgref_cdf_b_t80uk_tv","rhsgref_cdf_b_t80u_tv","I_MBT_03_cannon_F","I_MBT_03_cannon_F","I_MBT_03_cannon_F","BWA3_Leopard2_Fleck","rhsgref_cdf_b_t80u_tv","rhsgref_cdf_b_t80u_tv","rhsusf_m1a1fep_wd","rhsusf_m1a1fep_od","rhsusf_m1a1hc_wd"],  //主战坦克
 ["O_APC_Tracked_02_cannon_F","I_APC_tracked_03_cannon_F","BWA3_Puma_Fleck","BWA3_Puma_Tropen","BWA3_Puma_Fleck","BWA3_Puma_Tropen"], //步兵战车以及APC
 ["rhsgref_cdf_b_btr80","O_APC_Wheeled_02_rcws_v2_F","I_APC_Wheeled_03_cannon_F","rhsgref_ins_btr70","rhsgref_ins_g_btr70"], //APC
 ["rhsgref_ins_zsu234","rhsgref_ins_zsu234","rhsgref_ins_zsu234","rhsgref_ins_zsu234","O_APC_Tracked_02_AA_F","O_APC_Tracked_02_AA_F"], //战区机动防空
@@ -10,4 +10,4 @@
 ["rhsgref_ins_kraz255b1_fuel"],
 ["I_Truck_02_box_F"],
 ["I_Truck_02_ammo_F"],
-["O_UAV_01_F","O_UAV_06_F","O_UGV_01_rcws_F","O_UGV_01_rcws_F"]
+["O_UAV_01_F","O_UAV_06_F","I_UGV_01_rcws_F","I_UGV_01_rcws_F"]

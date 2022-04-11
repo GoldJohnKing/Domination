@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_04_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","BWA3_Tiger_RMK_FZ","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","sab_baehawk_o_2","sab_f11tiger_o","sab_panther_o","sab_fiat_o","sab_mystere_o","sab_jaguar_o","sab_alphajet_o","sab_c2a_1_1","BWA3_Tiger_RMK_Heavy"]
+					["I_Plane_Fighter_04_F","I_Plane_Fighter_03_dynamicLoadout_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","BWA3_Tiger_RMK_FZ","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","sab_baehawk_o_2","sab_f11tiger_o","sab_panther_o","sab_fiat_o","sab_mystere_o","sab_jaguar_o","sab_alphajet_o","sab_c2a_1_1","BWA3_Tiger_RMK_Heavy"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2220,7 +2220,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["BWA3_Tiger_Gunpod_FZ","RHSGREF_A29B_HIDF","BWA3_Tiger_RMK_PARS","BWA3_Tiger_RMK_Universal","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_Gunpod_Heavy","rhs_uh1h_hidf_gunship","I_Heli_light_03_dynamicLoadout_F","FIR_A10C_Enemy_Type1","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","sab_f104_o","sab_mb339_o","sab_alphajet_o"]
+					["BWA3_Tiger_Gunpod_FZ","RHSGREF_A29B_HIDF","BWA3_Tiger_RMK_PARS","BWA3_Tiger_RMK_Universal","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_Gunpod_Heavy","rhs_uh1h_hidf_gunship","I_Heli_light_03_dynamicLoadout_F","FIR_A10C_Enemy_Type1","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","sab_f104_o","sab_mb339_o","sab_alphajet_o","I_Plane_Fighter_03_dynamicLoadout_F"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
