@@ -48,9 +48,9 @@ d_sm_HunterGMG = switch (d_enemy_side_short) do {
 	case "G": {"I_MRAP_03_hmg_F"};
 };
 d_sm_chopper = switch (d_enemy_side_short) do {
-	case "E": {["RHS_Ka52_vvsc"]};
-	case "W": {["RHS_Ka52_vvsc"]};
-	case "G": {["RHS_Ka52_vvsc"]};
+	case "E": {"I_Heli_light_03_F"};
+	case "W": {"I_Heli_light_03_F"};
+	case "G": {"I_Heli_light_03_F"};
 };
 d_sm_pilottype = switch (d_enemy_side_short) do {
 	case "E": {"I_helipilot_F"};
