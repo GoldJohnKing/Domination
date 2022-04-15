@@ -21,7 +21,7 @@
 ["West","BWA3_Faction_Fleck","Infantry","BWA3_InfSquad"] call d_fnc_GetConfigGroup,
 ["West","BWA3_Faction_Fleck","Infantry","BWA3_InfSquad"] call d_fnc_GetConfigGroup,
 ["West","BWA3_Faction_Fleck","Infantry","BWA3_InfSquad"] call d_fnc_GetConfigGroup,
-["West","BWA3_Faction_Fleck","Infantry","BWA3_InfTeam_AA"] call d_fnc_GetConfigGroup,
+["West","BWA3_Faction_Fleck","Infantry","BWA3_InfSquad"] call d_fnc_GetConfigGroup,
 ["West","BWA3_Faction_Fleck","Infantry","BWA3_InfSquad"] call d_fnc_GetConfigGroup,
 ["West","BWA3_Faction_Fleck","Infantry","BWA3_InfTeam_AA"] call d_fnc_GetConfigGroup,
 ["West","BWA3_Faction_Fleck","Infantry","BWA3_InfTeam_AA"] call d_fnc_GetConfigGroup,

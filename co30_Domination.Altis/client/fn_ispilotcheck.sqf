@@ -38,4 +38,6 @@ if (d_vn) exitWith {
 // 	   "76561198842853565",//zhang
 // 	   "76561198161412086"//sundashengzong
 //    ] && {"pilot" in toLowerANSI (uniform player)}
-"pilot" in toLowerANSI (uniform player)
+
+// "pilot" in toLowerANSI (uniform player)
+ player isKindOf "B_Pilot_F" 
