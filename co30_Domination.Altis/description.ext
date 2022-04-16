@@ -545,7 +545,7 @@ class Params {
 	class d_bonus_vec_type {
 		title = "$STR_DOM_MISSIONSTRING_1736";
 		values[] = {0,1,2,3};
-		default = 2;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_11","$STR_DOM_MISSIONSTRING_1737","$STR_DOM_MISSIONSTRING_1738","$STR_DOM_MISSIONSTRING_1739"};
 	};
 
