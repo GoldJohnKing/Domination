@@ -15,7 +15,7 @@ for "_i" from 1 to _num_mines do {
 
 d_mines_created = [];//地雷
 #ifndef __VN__
-private _mtype = selectRandom ["APERSMineDispenser_Mine_F", "APERSMine", "ATMine","SLAMDirectionalMine","APERSTripMine","APERSBoundingMine","IEDLandBig_F","IEDUrbanBig_F","rhsusf_mine_M19","rhsusf_mine_m14","IEDLandBig_F","IEDUrbanBig_F","rhsusf_mine_M19","rhsusf_mine_m49a1_10m","rhs_mine_sm320_red","rhs_mine_sm320_red","rhs_mine_sm320_red","rhssaf_tm100","rhssaf_tm200","rhssaf_tm500","rhs_mine_tm62m","rhs_mine_TM43","rhs_mine_M7A2","APERSTripMine","rhsusf_uxo_blu97","rhsusf_uxo_blu97","rhssaf_mine_mrud_a","rhssaf_mine_mrud_a"];
+private _mtype = selectRandom ["APERSMineDispenser_Mine_F", "APERSMine", "ATMine","SLAMDirectionalMine","APERSTripMine","APERSBoundingMine","IEDLandBig_F","IEDUrbanBig_F","rhsusf_mine_M19","rhsusf_mine_m14","IEDLandBig_F","IEDUrbanBig_F","rhsusf_mine_M19","rhsusf_mine_m49a1_10m","rhs_mine_sm320_red","rhs_mine_sm320_red","rhs_mine_sm320_red","rhssaf_tm100","rhssaf_tm200","rhssaf_tm500","rhs_mine_tm62m","rhs_mine_TM43","rhs_mine_M7A2","APERSTripMine","rhsusf_uxo_blu97","rhsusf_uxo_blu97"];
 #else
 private _mtype = selectRandom ["vn_mine_ammobox_range", "vn_mine_punji_01", "vn_mine_punji_02", "vn_mine_punji_03", "vn_mine_tm57"];
 #endif
