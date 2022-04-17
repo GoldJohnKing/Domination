@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=3148;
+		nextID=3150;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=562;
+		nextID=565;
 	};
 	class Camera
 	{
-		pos[]={14598.263,20.472933,16782.859};
-		dir[]={0.92039853,-0.26135239,0.29114959};
-		up[]={0.24934906,0.96518296,0.078878};
-		aside[]={0.3016282,-1.6505946e-006,-0.95352989};
+		pos[]={14785.151,28.18412,16769.547};
+		dir[]={0.062259614,-0.42917216,-0.90113568};
+		up[]={0.029580941,0.90320158,-0.4281677};
+		aside[]={-0.99767971,-1.7753337e-009,-0.068926223};
 	};
 };
 binarizationWanted=0;
@@ -113,7 +113,8 @@ addons[]=
 	"FIR_AirWeaponSystem_US",
 	"A3_Air_F_Jets_UAV_05",
 	"rhs_c_2s3",
-	"rhsusf_c_statics"
+	"rhsusf_c_statics",
+	"A3_Air_F_Jets_Plane_Fighter_01"
 };
 class AddonsMetaData
 {
@@ -686,7 +687,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=749;
+		items=750;
 		class Item0
 		{
 			dataType="Marker";
@@ -34055,6 +34056,26 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item749
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15180.09,23.626474,15489.479};
+				angles[]={0,3.4557519,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="F181 setVariable [""d_isspecialvec"", true, true];                                                                                               F181 setVariable [""d_liftit"", true, true];[F181, 11] call d_fnc_setekmode; " \n "if (d_with_ranked) then { " \n " clearWeaponCargoGlobal F181; " \n "};";
+				name="F181";
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=3149;
+			type="B_Plane_Fighter_01_F";
+			atlOffset=0.37966919;
 		};
 	};
 	class Connections
