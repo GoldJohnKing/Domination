@@ -935,7 +935,7 @@ class Params {
 	class d_max_ai {
 		title = "$STR_DOM_MISSIONSTRING_1176";
 		values[] = {4,6,8,10,12,14,16};
-		default = 8;
+		default = 6;
 		texts[] = {"4","6","8","10","12","14","16"};
 	};
 
