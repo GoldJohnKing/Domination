@@ -10,6 +10,9 @@ if (_this # 1 != player) exitWith {
 
 __TRACE_1("","_this")
 
+if (!(player isKindOf "B_officer_F") ) exitWith {
+	[playerSide, "HQ"] sideChat (localize "STR_DOM_MISSIONSTRING_311A");
+};
 if (player != leader (group player)) exitWith {
 	[playerSide, "HQ"] sideChat (localize "STR_DOM_MISSIONSTRING_311");
 };

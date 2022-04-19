@@ -921,7 +921,7 @@ class Params {
 	class d_with_ai {
 		title = "$STR_DOM_MISSIONSTRING_1023";
 		values[] = {0,1,2,3,4};
-		default = 3;
+		default = 2;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_2038","$STR_DOM_MISSIONSTRING_2068","$STR_DOM_MISSIONSTRING_2069"};
 	};
 
@@ -935,7 +935,7 @@ class Params {
 	class d_max_ai {
 		title = "$STR_DOM_MISSIONSTRING_1176";
 		values[] = {4,6,8,10,12,14,16};
-		default = 4;
+		default = 8;
 		texts[] = {"4","6","8","10","12","14","16"};
 	};
 
