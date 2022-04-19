@@ -45,6 +45,9 @@ diag_log ["Dom name player:", name player];
 		"[公告]联合攻击战术管制员可以利用火炮支援电脑呼叫强大的火力支援，包括从105mm火炮到巡航导弹。利用支援火力，打击所有地面和海上敌人！" call CBA_fnc_notify;
 		sleep 15; // 每条间隔15秒
 
+		"[公告]请飞行员适当招募AI，避免卡顿。" call CBA_fnc_notify;
+		sleep 15; // 每条间隔15秒
+
 		"[公告]恶意TK、破坏基地车和载具会被踢出服务器" call CBA_fnc_notify;
 
 		sleep 900; // 15分钟后再显示一次，扣除先前等待的时间
