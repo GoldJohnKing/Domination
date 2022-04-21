@@ -254,9 +254,9 @@ d_p_vecs_opfor = [
 
 
 if (hasInterface) then {
-	if (d_weather == 1) then {
-		0 setOvercast 0;
-	};
+	// if (d_weather == 1) then {
+	// 	0 setOvercast 0;
+	// };
 	
 	if (d_with_ai) then {d_current_ai_num = 0};
 
