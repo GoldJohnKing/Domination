@@ -326,6 +326,7 @@ if (d_bar_mhq_destroy == 1) then {
 	d_bara_trig_ar pushBack _trig;
 	d_mt_barmhq_ar pushBack _vec;
 };
+playSound selectRandom["d_China_loading","d_MEC_loading","d_US_loading"];
 private _barcompo = [//指挥部外部环境物件
 		["BWA3_Flag_Germany",[-9,0,0],270,1,0,[],"","",true,false],
 		["Land_HelipadCircle_F",[-24,-1,0.0022049],90,1,0,[],"","",true,false],
