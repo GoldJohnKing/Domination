@@ -811,7 +811,7 @@ class Params {
 	class d_with_base_sabotage {
 		title = "$STR_DOM_MISSIONSTRING_1837";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
@@ -942,7 +942,7 @@ class Params {
 	class d_ai_alone_in_vehicle {
 		title = "$STR_DOM_MISSIONSTRING_1758";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	
@@ -1447,14 +1447,14 @@ class Params {
 	class d_max_camp_cnt {
 		title = "$STR_DOM_MISSIONSTRING_1930";
 		values[] = {1, 2, 3, 4, 5, -1};
-		default = 3;
+		default = -1;
 		texts[] = {"1", "2", "3", "4", "5", "3 to 5"};
 	};
 
 	class d_camp_center {
 		title = "$STR_DOM_MISSIONSTRING_1931";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 	
