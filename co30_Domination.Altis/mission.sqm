@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=604;
+		nextID=607;
 	};
 	class Camera
 	{
@@ -2662,7 +2662,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3770.03,16.15966,13751.128};
+				position[]={3693.0854,16.849089,13956.724};
+				angles[]={5.9376302,0,0.21018261};
 			};
 			name="d_target_6";
 			id=295;
@@ -2673,7 +2674,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4144.4155,51.694923,11729.349};
+				position[]={11780.843,52.551624,18346.109};
+				angles[]={0.0053265258,0,6.2605233};
 			};
 			name="d_target_7";
 			id=296;
@@ -2684,7 +2686,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5112.6494,49.226151,11233.235};
+				position[]={5228.1401,50.711884,11022.585};
+				angles[]={0.13124155,0,0.20507599};
 			};
 			name="d_target_8";
 			id=297;

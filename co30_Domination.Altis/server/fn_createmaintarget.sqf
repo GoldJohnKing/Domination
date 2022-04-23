@@ -127,7 +127,7 @@ if (d_camp_static_weapons == 1) then {
 if (_camp_static_weapons_current == 1) then {
 	_type_list_guard_static2 = [//主要战区，静态武器
     	["stat_mg", 3, ceil (random 3)],  //this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}]; 
-    	["stat_gl", 1, ceil (random 8)],
+    	["stat_gl", 1, ceil (random 12)],
 		["arty", 3, ceil (random 4)]
     ];
 };
@@ -326,7 +326,7 @@ if (d_bar_mhq_destroy == 1) then {
 	d_bara_trig_ar pushBack _trig;
 	d_mt_barmhq_ar pushBack _vec;
 };
-playSound selectRandom["d_China_loading","d_MEC_loading","d_US_loading"];
+playMusic selectRandom["d_China_loading","d_MEC_loading","d_US_loading"];
 private _barcompo = [//指挥部外部环境物件
 		["BWA3_Flag_Germany",[-9,0,0],270,1,0,[],"","",true,false],
 		["Land_HelipadCircle_F",[-24,-1,0.0022049],90,1,0,[],"","",true,false],
