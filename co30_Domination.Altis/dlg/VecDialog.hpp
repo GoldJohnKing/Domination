@@ -97,12 +97,12 @@ class D_VecDialog {
 			y = 0.65;
 		};
 #endif
-		class UAVButton: DropAmmoButton {
-			idc = 44460;
-			text = "$STR_DOM_MISSIONSTRING_1327a"; 
-			action = "closeDialog 0;call d_fnc_makeuav";
-			y = 0.71;
-		};
+		// class UAVButton: DropAmmoButton {
+		// 	idc = 44460;
+		// 	text = "$STR_DOM_MISSIONSTRING_1327a"; 
+		// 	action = "closeDialog 0;call d_fnc_makeuav";
+		// 	y = 0.71;
+		// };
 		class DeployMHQ: DropAmmoButton {
 			idc = 44462;
 			style = 2;

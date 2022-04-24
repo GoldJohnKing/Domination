@@ -335,9 +335,9 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
 		if (_num_p < 5) exitWith {300};
-		if (_num_p < 10) exitWith {300};
-		if (_num_p < 15) exitWith {300};
-		if (_num_p < 20) exitWith {300};
+		if (_num_p < 10) exitWith {200};
+		if (_num_p < 15) exitWith {200};
+		if (_num_p < 20) exitWith {200};
 		200;
 	});
 	sleep (d_airai_respawntime + _re_random);

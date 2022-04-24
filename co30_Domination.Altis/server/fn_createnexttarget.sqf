@@ -15,7 +15,7 @@ __TRACE("start")
 if (d_first_time_after_start) then {
 	d_first_time_after_start = false;
 	if (isMultiplayer) then {
-		sleep 22.123;
+		sleep 22;
 	} else {
 		sleep 1;
 	};

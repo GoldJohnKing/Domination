@@ -36,7 +36,7 @@ diag_log ["Dom name player:", name player];
 		"[公告]长时间在同一地点停留会招致敌人的围攻。尽快进攻，摧毁关键设施，赢得胜利！" call CBA_fnc_notify;
 		sleep 15; // 每条间隔15秒
 
-		"[公告]战区的敌人部署有3台一组的强大防空系统，它们最大3组，尽早摧毁，这样空军便可以进场。" call CBA_fnc_notify;
+		"[公告]战区的敌人部署有一套或者两套3台一组的强大防空系统，找到它们，尽早摧毁，这样空军便可以进场。" call CBA_fnc_notify;
 		sleep 15; // 每条间隔15秒
 
 		"[公告]空军、炮兵随意轰炸友军可截图进群举报，群号：274455383" call CBA_fnc_notify;
