@@ -627,7 +627,7 @@
 <Original>你现在不是队长, 没有AI可以使用, 建立一个小队吧! </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_311A">
-<Original>你不是战术小队指挥官或飞行员，不能招募AI </Original>
+<Original>你不是战术小队指挥官，不能招募AI </Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_312">
 <Original>你离AI招募点太远了! </Original>
@@ -2312,7 +2312,7 @@
 <Original>你没有资格驾驶, 你可以担当炮手或车长来指挥 %1。\n\n你在 %2 分钟内将获得资格。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1417">
-<Original>只有飞行员才能驾驶飞行载具，可进群了解：274455383</Original>
+<Original>只有飞行员并且拥有飞行执照才能驾驶飞行载具，可进群了解：274455383</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1418">
 <Original>解锁载具</Original>
