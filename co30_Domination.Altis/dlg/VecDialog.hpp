@@ -83,12 +83,12 @@ class D_VecDialog {
 			x = 0.52;
 			y = 0.59;
 		};
-		class TeleportButton: DropAmmoButton {
-			idc = 44453;
-			text = "$STR_DOM_MISSIONSTRING_1250"; 
-			action = "closeDialog 0;call d_fnc_teleportx";
-			y = 0.59;
-		};
+		// class TeleportButton: DropAmmoButton { //传送
+		// 	idc = 44453;
+		// 	text = "$STR_DOM_MISSIONSTRING_1250"; 
+		// 	action = "closeDialog 0;call d_fnc_teleportx";
+		// 	y = 0.59;
+		// };
 #ifndef __TT__
 		class SATViewButton: DropAmmoButton {
 			idc = 44459;
