@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [400, 60, 300, 170];
+		d_ai_groups_respawn_time = [400, 0, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
