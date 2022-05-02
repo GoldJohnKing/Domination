@@ -4,7 +4,7 @@
 
 params ["_radius", "_center"];
 
-private _num_mines = (floor (random 40)) max 30;
+private _num_mines = (floor (random 50)) max 40;
 
 private _ran_start_pos = [_center, _radius, -1] call d_fnc_GetRanPointCircle;
 private _m_pos_ar = [];
