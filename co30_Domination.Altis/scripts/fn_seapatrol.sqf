@@ -21,7 +21,7 @@ private _ran = selectRandom [1, 2];
 private _ran = [2, 4] call d_fnc_getrandomrangeint;
 #endif
 
-private _navy = selectRandom ["HAFM_Russen","HAFM_MEKO_HN","HAFM_GunBoat_BLU","HAFM_FREMM","HAFM_CB90_BLU","HAFM_BUYAN"];//海军
+private _navy = selectRandom ["HAFM_Russen","HAFM_GunBoat_BLU","HAFM_CB90_BLU","HAFM_Replenishment_OPF","HAFM_BUYAN"];//海军
 
 for "_i" from 1 to _ran do {
 	private _radiusw = 200;

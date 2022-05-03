@@ -51,16 +51,16 @@
 <Original>七号基地车（MHQ）</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_20">
-<Original>空投轻型支援载具</Original>
+<Original>空投支援载具</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_22">
-<Original>空投轻型机动载具</Original>
+<Original>空投机动载具</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_23">
 <Original>欢迎...</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_24">
-<Original>2025年，新纳粹势力控制着A岛，我们的任务——击溃侵略者，解放阿尔蒂斯。</Original>
+<Original>现代战争不是单打独斗，需要互相配合，互相依靠，共同取得胜利！</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_25">
 <Original>你的任务是消灭全部敌人,摧毁目标区域的主通讯塔,完成支线任务并占领所有的军需库。</Original>
@@ -2312,7 +2312,7 @@
 <Original>你没有资格驾驶, 你可以担当炮手或车长来指挥 %1。\n\n你在 %2 分钟内将获得资格。</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1417">
-<Original>只有飞行员并且拥有飞行执照才能驾驶飞行载具，可进群了解：274455383</Original>
+<Original>只有飞行员才能驾驶飞行载具，请选择飞行员位。可进群了解：274455383</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1418">
 <Original>解锁载具</Original>
@@ -2809,7 +2809,7 @@
 <Original>服务点</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1762">
-<Original>分支作战基地</Original>
+<Original>飞行员营地</Original>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_1800">
 <Original>敌人有一个小前哨。 逮捕那里的军官, 把他带回你的基地, 以获得一些重要的信息</Original>

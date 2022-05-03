@@ -126,7 +126,7 @@ if (d_camp_static_weapons == 1) then {
 };
 if (_camp_static_weapons_current == 1) then {
 	_type_list_guard_static2 = [//主要战区，静态武器
-    	["stat_mg", 3, ceil (random 2)],  //this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}]; 
+    	["stat_mg", 2, ceil (random 2)],  //this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}]; 
     	["stat_gl", 1, ceil (random 12)],
 		["arty", 3, ceil (random 4)]
     ];
@@ -196,7 +196,7 @@ private _barcompo = call {//兵营围墙
 		]
 	};
 	[
-		["Flag_Altis_F",[-9,0,0],270,1,0,[],"","",true,false],
+		["rhs_Flag_vmf_F",[-9,0,0],270,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
 		["Land_HBarrierWall6_F",[-10.33789,7,0],270,1,0,[],"","",true,false],
@@ -328,7 +328,7 @@ if (d_bar_mhq_destroy == 1) then {
 };
 // playMusic selectRandom["d_China_loading","d_MEC_loading","d_US_loading"];
 private _barcompo = [//指挥部外部环境物件
-		["BWA3_Flag_Germany",[-9,0,0],270,1,0,[],"","",true,false],
+		["rhs_Flag_vmf_F",[-9,0,0],270,1,0,[],"","",true,false],
 		["Land_HelipadCircle_F",[-24,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrierTower_F",[-37,-1,0.0022049],90,1,0,[],"","",true,false],
 		["Land_HBarrier_Big_F",[-37,-7,0],270,1,0,[],"","",true,false],
