@@ -579,7 +579,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="生死与共 现代战争1.0 ";
+		briefingName="美俄大战 现代战争1.0 用启动器来加入战斗！ ";
 		overviewText="欢迎来到61方面军红锤服！";
 		startWeather=0.30000001;
 		startWind=0.1;
