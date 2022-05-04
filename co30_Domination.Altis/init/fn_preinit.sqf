@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {//"rhs_btr80a_msv"
-			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1043_d_m2","rhsusf_m1043_d_mk19","rhsusf_m1151_usarmy_d","rhsusf_m966_d","rhsusf_M1220_usarmy_d","rhsusf_M1230a1_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M1232_M2_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_m109d_usarmy","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10"]
+			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_usarmy_d","rhsusf_M1220_usarmy_d","rhsusf_M1230a1_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M1232_M2_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]

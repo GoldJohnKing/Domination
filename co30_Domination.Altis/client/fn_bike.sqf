@@ -36,7 +36,7 @@ if (d_with_ranked) then {
 if (_exitit) exitWith {};
 
 if (_ismhq) then {
-	d_mhqvec_create_cooldown_time = time + 500;//d_mhqvec_create_cooldown 基地车载具冷却时间
+	d_mhqvec_create_cooldown_time = time + 300;//d_mhqvec_create_cooldown 基地车载具冷却时间
 };
 
 if (!isNull objectParent player) exitWith {
