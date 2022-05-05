@@ -196,7 +196,7 @@ private _barcompo = call {//兵营围墙
 		]
 	};
 	[
-		["rhs_Flag_vmf_F",[-9,0,0],270,1,0,[],"","",true,false],
+		["rhs_Flag_vmf_F",[-9,0,0],270,1,0,[],"","",true,false]
 		// ["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],
 		// ["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
 		// ["Land_HBarrierWall6_F",[-10.33789,7,0],270,1,0,[],"","",true,false],
