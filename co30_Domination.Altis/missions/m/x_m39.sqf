@@ -21,5 +21,5 @@ if (isServer) then {
 	sleep 2.22;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 300, false] spawn d_fnc_CreateArmor;
 	sleep 2.333;
-	["specops", 1, "allmen", 5, _poss, 400, true] spawn d_fnc_CreateInf;
+	["specops", 3, "allmen", 5, _poss, 400, true] spawn d_fnc_CreateInf;
 };

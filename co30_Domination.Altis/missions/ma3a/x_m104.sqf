@@ -17,7 +17,7 @@ if (isServer) then {
 	[d_x_sm_pos # 0, "naval"] spawn d_fnc_sidemines;
 	sleep 2.123;
 	private _pos_other = d_x_sm_pos # 1;
-	["specops", 2, "allmen", 4, _pos_other, 150, true] spawn d_fnc_CreateInf;
+	["specops", 4, "allmen", 4, _pos_other, 150, true] spawn d_fnc_CreateInf;
 	sleep 2.123;
 	private _random_point = [_pos_other, 100, 2] call d_fnc_GetRanPointCircle;
 	["stat_mg", 1, "stat_gl", 1, "", 0, _random_point, 1, 100, false] spawn d_fnc_CreateArmor;
