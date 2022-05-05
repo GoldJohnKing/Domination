@@ -906,7 +906,7 @@ class Params {
 	class d_with_airdrop {
 		title = "$STR_DOM_MISSIONSTRING_2073";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	
@@ -935,7 +935,7 @@ class Params {
 	class d_max_ai {
 		title = "$STR_DOM_MISSIONSTRING_1176";
 		values[] = {4,6,8,10,12,14,16};
-		default = 8;
+		default = 4;
 		texts[] = {"4","6","8","10","12","14","16"};
 	};
 

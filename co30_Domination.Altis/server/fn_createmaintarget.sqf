@@ -146,7 +146,7 @@ d_WithLessArmor call d_fnc_setenemymode;
 
 d_groups_respawn_time_add = 0;
 //limit barracks by d_max_bar_cnt, default is very high but may be lower if mission settings are non-default
-d_num_barracks_objs = ((ceil random 7) max 3) min d_max_bar_cnt;
+d_num_barracks_objs = ((ceil random 5) max 3) min d_max_bar_cnt;
 __TRACE_1("","d_num_barracks_objs")
 d_mt_barracks_obj_ar = [];
 if (d_bar_mhq_destroy == 0) then {
@@ -229,9 +229,9 @@ for "_i" from 1 to d_num_barracks_objs do {
 			};
 		};
 	};
-
+	private _poss =+ _trg_center;
 	_poss set [2, 0];
-	_vec = createVehicle [d_barracks_building, _poss, [], 0, "NONE"];//创建兵营
+	_vec = createVehicle [d_barracks_building, _poss, [], 100, "NONE"];//创建兵营
 	_vec setDir (_vec getDir _trg_center);
 	if (([getPos _vec, 20] call d_fnc_getslope) > 0.4) then {
 		_vec setVectorUp (surfaceNormal (getPos _vec));
