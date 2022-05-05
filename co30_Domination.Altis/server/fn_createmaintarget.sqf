@@ -146,7 +146,7 @@ d_WithLessArmor call d_fnc_setenemymode;
 
 d_groups_respawn_time_add = 0;
 //limit barracks by d_max_bar_cnt, default is very high but may be lower if mission settings are non-default
-d_num_barracks_objs = ((ceil random 7) max 3) min d_max_bar_cnt;
+d_num_barracks_objs = ((ceil random 5) max 3) min d_max_bar_cnt;
 __TRACE_1("","d_num_barracks_objs")
 d_mt_barracks_obj_ar = [];
 if (d_bar_mhq_destroy == 0) then {
@@ -197,14 +197,14 @@ private _barcompo = call {//兵营围墙
 	};
 	[
 		["rhs_Flag_vmf_F",[-9,0,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-10.33789,7,0],270,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[10,-7,0.00019455],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[-7,-12,0],180,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[8,-12,0],180,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[10,7,0],90,1,0,[],"","",true,false],
-		["Land_HBarrierWall6_F",[1,-12,0],180,1,0,[],"","",true,false]
+		// ["Land_HBarrierWall6_F",[-10,-7,0],270,1,0,[],"","",true,false],
+		// ["Land_HBarrierWall6_F",[0.47168,10,0.0022049],0,1,0,[],"","",true,false],
+		// ["Land_HBarrierWall6_F",[-10.33789,7,0],270,1,0,[],"","",true,false],
+		// ["Land_HBarrierWall6_F",[10,-7,0.00019455],90,1,0,[],"","",true,false],
+		// ["Land_HBarrierWall6_F",[-7,-12,0],180,1,0,[],"","",true,false],
+		// ["Land_HBarrierWall6_F",[8,-12,0],180,1,0,[],"","",true,false],
+		// ["Land_HBarrierWall6_F",[10,7,0],90,1,0,[],"","",true,false],
+		// ["Land_HBarrierWall6_F",[1,-12,0],180,1,0,[],"","",true,false]
 	]//根据推断，第一个值为对应距离下物体左右的移动程度(x)，第二值为对中心点的距离(y)，第三个值均为0不动，前三个值为直角坐标系布置。第四个值为方向，其余两值均相同 "I_HMG_01_high_F"
 };
 
@@ -229,9 +229,9 @@ for "_i" from 1 to d_num_barracks_objs do {
 			};
 		};
 	};
-
+	private _poss =+ _trg_center;
 	_poss set [2, 0];
-	_vec = createVehicle [d_barracks_building, _poss, [], 0, "NONE"];//创建兵营
+	_vec = createVehicle [d_barracks_building, _poss, [], 100, "NONE"];//创建兵营
 	_vec setDir (_vec getDir _trg_center);
 	if (([getPos _vec, 20] call d_fnc_getslope) > 0.4) then {
 		_vec setVectorUp (surfaceNormal (getPos _vec));
