@@ -14,7 +14,7 @@ if (isServer) then {
 	d_x_sm_pos params ["_poss"];
 	private _objs = _poss nearObjects [d_sm_land_tankbig, 50];
 	sleep 2.123;
-	["specops", 2, "allmen", 4, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 3, "allmen", 4, _poss, 300, true] spawn d_fnc_CreateInf;
 	sleep 2.221;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 400, true] spawn d_fnc_CreateArmor;
 	[_objs # 0, _objs # 1, _objs # 2] spawn d_fnc_sidefactory;

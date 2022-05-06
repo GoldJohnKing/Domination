@@ -19,7 +19,7 @@ if (isServer) then {
 	_vec lock true;
 	d_x_sm_vec_rem_ar pushBack _vec;
 	sleep 2.123;
-	["specops", 6, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 6, "allmen", 5, _poss, 300, true] spawn d_fnc_CreateInf;
 	sleep 2.111;
 	["aa", 1, "tracked_apc", 1, "tank", 0, d_x_sm_pos # 2, 1, 400, true] spawn d_fnc_CreateArmor;
 };

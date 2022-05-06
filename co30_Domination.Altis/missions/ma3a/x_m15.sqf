@@ -18,5 +18,5 @@ if (isServer) then {
 	_vec call d_fnc_addKilledEHSM;
 	d_x_sm_vec_rem_ar pushBack _vec;
 	sleep 3.21;
-	["specops", 2, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 3, "allmen", 5, _poss, 300, true] spawn d_fnc_CreateInf;
 };
