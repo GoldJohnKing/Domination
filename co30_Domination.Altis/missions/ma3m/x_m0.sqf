@@ -14,5 +14,5 @@ if (isServer) then {
 	d_x_sm_pos params ["_poss"];
 	[_poss, d_illum_tower] spawn d_fnc_sideobject;
 	sleep 3.21;
-	["specops", 2, "allmen", 3, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 3, "allmen", 3, _poss, 200, true] spawn d_fnc_CreateInf;
 };

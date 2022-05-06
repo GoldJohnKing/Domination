@@ -33,7 +33,7 @@ diag_log ["Dom name player:", name player];
 		"[公告]按住U -> 显示状态 -> 小队管理可以创建/加入小队。加入其它玩家的小队后，你可以重生在小队长的附近。" call CBA_fnc_notify;
 		sleep 15; // 每条间隔15秒
 
-		"[公告]基地车内的CAMM卡车为防空载具，利用它进行战区防空掩护！" call CBA_fnc_notify;
+		"[公告]CAMM卡车为防空载具，利用它进行战区防空掩护！" call CBA_fnc_notify;
 		sleep 15; // 每条间隔15秒
 
 		"[公告]战区的敌人部署有一套或者两套3台一组的强大防空系统，找到它们，尽早摧毁！" call CBA_fnc_notify;

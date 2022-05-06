@@ -29,7 +29,7 @@ if (isServer) then {
 	_sm_vec setPos _bpos;
 	["aa", 1, "tracked_apc", 1, "tank", 1, _poss, 1, 400, true] spawn d_fnc_CreateArmor;
 	sleep 2.123;
-	["specops", 2, "allmen", 5, _poss, 300, true] spawn d_fnc_CreateInf;
+	["specops", 3, "allmen", 5, _poss, 400, true] spawn d_fnc_CreateInf;
 	sleep 2.123;
 	private _leadero = leader _ogroup;
 	_leadero setRank "COLONEL";

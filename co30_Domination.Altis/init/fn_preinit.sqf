@@ -296,7 +296,7 @@ d_x_drop_array =
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "CUP_B_M1151_WDL_USA"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "B_LSV_01_armed_F"], [localize "STR_DOM_MISSIONSTRING_20", "rhs_sprut_vdv"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "B_LSV_01_armed_F"], [localize "STR_DOM_MISSIONSTRING_20", "rhsusf_m966_d"]]//m966
 		};
 		if (d_gmcwg) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", ["gm_ge_army_u1300l_cargo", "gm_ge_army_u1300l_cargo_win"] select d_gmcwgwinter], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
@@ -346,7 +346,7 @@ d_illum_tower = "Land_vn_ttowerbig_2_f";
 
 d_cargotower =
 #ifdef __ALTIS__
-	"";//Land_Cargo_Tower_V3_F
+	"";//Land_Cargo_Tower_V3_F Land_Bunker_01_HQ_F
 #endif
 #ifdef __CUP_CHERNARUS__
 	"Land_Cargo_Tower_V1_F";
@@ -1309,7 +1309,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				"gm_ge_airforce_do28d2"
 			};
 			if (d_rhs) exitWith {
-				"USAF_C17"
+				"RHS_CH_47F_light"
 			};
 			if (d_unsung) exitWith {
 				"uns_C130_H"
@@ -1332,7 +1332,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				"LIB_Pe2"
 			};
 			if (d_rhs) exitWith {
-				"USAF_C17"
+				"RHS_CH_47F_light"
 			};
 			if (d_csla) exitWith {
 				"CSLA_Mi17"
@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["I_Plane_Fighter_04_F","I_Plane_Fighter_03_dynamicLoadout_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","BWA3_Tiger_RMK_FZ","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","BWA3_Tiger_RMK_Heavy"]
+					["I_Plane_Fighter_04_F","I_Plane_Fighter_03_dynamicLoadout_F","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","O_Plane_Fighter_02_Stealth_F","FIR_Su25SM3_Enemy"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2219,8 +2219,8 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				if (d_ws) exitWith {
 					[]
 				};
-				if (d_rhs) exitWith {
-					["BWA3_Tiger_Gunpod_FZ","RHSGREF_A29B_HIDF","BWA3_Tiger_RMK_PARS","BWA3_Tiger_RMK_Universal","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_Gunpod_Heavy","rhs_uh1h_hidf_gunship","I_Heli_light_03_dynamicLoadout_F","FIR_A10C_Enemy_Type1","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F"]
+				if (d_rhs) exitWith {//"RHSGREF_A29B_HIDF",
+					["BWA3_Tiger_Gunpod_FZ","BWA3_Tiger_RMK_PARS","BWA3_Tiger_RMK_FZ","BWA3_Tiger_RMK_Universal","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_RMK_Heavy","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_Gunpod_Heavy","rhs_uh1h_hidf_gunship","I_Heli_light_03_dynamicLoadout_F","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [500, 0, 300, 170];
+		d_ai_groups_respawn_time = [400, 0, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {//"rhs_btr80a_msv"
-			["TCGM_Bike_nht","TCGM_Bike_snd","rhsusf_mrzr4_d","rhs_tigr_msv","rhs_tigr_m_msv","O_T_LSV_02_unarmed_F","O_T_LSV_02_AT_F","O_T_LSV_02_armed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_usarmy_d","rhsusf_M1220_usarmy_d","rhsusf_M1230a1_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","RHS_Stinger_AA_pod_D","rhs_Igla_AA_pod_msv","rhs_D30_at_msv","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","rhs_ka60_c","O_Heli_Light_02_dynamicLoadout_F","RHS_Mi8mt_vvsc"]
+			["TCGM_Bike_nht","TCGM_Bike_snd","rhsusf_mrzr4_d","rhs_tigr_msv","rhs_tigr_m_msv","O_T_LSV_02_unarmed_F","O_T_LSV_02_AT_F","O_T_LSV_02_armed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1043_d_m2","rhsusf_m1043_d_mk19","rhsusf_m1151_usarmy_d","rhsusf_M1220_usarmy_d","rhsusf_M1230a1_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","rhsusf_m109d_usarmy","O_PLZ05","RHS_Stinger_AA_pod_D","rhs_Igla_AA_pod_msv","rhs_D30_at_msv","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","rhs_ka60_c","O_Heli_Light_02_dynamicLoadout_F","RHS_Mi8mt_vvsc"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]

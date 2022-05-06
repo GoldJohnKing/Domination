@@ -19,6 +19,6 @@ if (isServer) then {
 	sleep 2.22;
 	["aa", 1, "tracked_apc", 1, "tank", 1, d_x_sm_pos # 1, 1, 350, true] spawn d_fnc_CreateArmor;
 	sleep 2.333;
-	["specops", 1, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
+	["specops", 3, "allmen", 5, _poss, 200, true] spawn d_fnc_CreateInf;
 	d_x_sm_vec_rem_ar pushBack _vec;
 };

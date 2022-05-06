@@ -17,5 +17,5 @@ if (isServer) then {
 	_vec setVectorUp [0,0,1];
 	_vec call d_fnc_addKilledEHSM;
 	sleep 2.22;
-	["specops", 1, "allmen", 3, _poss,0] spawn d_fnc_CreateInf;
+	["specops", 3, "allmen", 3, _poss,0] spawn d_fnc_CreateInf;
 };

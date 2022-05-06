@@ -14,7 +14,7 @@ if (isServer) then {
 	d_x_sm_pos params ["_poss"];
 	[_poss, d_sm_arty, 0, false, true, true] spawn d_fnc_sideobject;
 	sleep 2.21;
-	["specops", 1, "allmen", 5, _poss, 0] spawn d_fnc_CreateInf;
+	["specops", 3, "allmen", 5, _poss, 0] spawn d_fnc_CreateInf;
 	sleep 2.045;
 	["aa", 1, "tracked_apc", 1, "tank", 0, d_x_sm_pos # 1, 1, 0] spawn d_fnc_CreateArmor;
 };
