@@ -1,6 +1,13 @@
 d_mt_bonus_vehicle_array =
 switch (d_own_side) do {
 	case "GUER": {["I_MRAP_03_hmg_F","I_MRAP_03_gmg_F"]};
-	case "WEST": {["rhs_t80ue1","rhs_l159_cdf_b_CDF","RHS_M6","RHS_MELB_AH6M","rhs_bmp3_late_msv","rhs_bmp3mera_msv","RHS_UH1Y_d","B_Plane_CAS_01_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F","rhs_btr80a_msv","rhs_btr80a_msv","O_ZBD04A","rhsusf_m1165a1_gmv_m134d_m240_socom_d","rhsusf_m1165a1_gmv_mk19_m240_socom_d","Z10","rhsusf_stryker_m1126_mk19_d","BWA3_Tiger_RMK_Heavy","BWA3_Tiger_RMK_FZ","rhs_t90a_tv","O_ZTQ15","O_ZTQ15","Z10","rhs_mi28n_vvs","RHS_M2A2","RHS_M2A2_BUSKI","rhsusf_m1240a1_m2crows_usarmy_d","rhsusf_m1240a1_mk19crows_usarmy_d","rhsusf_m1a1aimd_usarmy","rhsusf_m1a1aim_tuski_d","rhsusf_m1a1fep_d","O_ZTD05","O_ZBD05","rhs_mi28n_vvs","rhs_tigr_sts_msv","rhs_tigr_sts_3camo_msv","RHS_Mi24P_vvsc","O_Heli_Light_02_dynamicLoadout_F","O_T_APC_Wheeled_02_rcws_v2_ghex_F","rhs_Ob_681_2","I_Heli_light_03_dynamicLoadout_F","I_APC_Wheeled_03_cannon_F","I_APC_tracked_03_cannon_F","I_Plane_Fighter_04_F","rhs_t90_tv","O_T_APC_Wheeled_02_rcws_v2_ghex_F","RHS_AH64DGrey","RHS_AH64D","O_ZTZ99A","O_ZTZ99A","FIR_F35B_Standard","JS_JC_SU35","FIR_Su25SM3","BWA3_Tiger_RMK_PARS","BWA3_Tiger_RMK_Heavy","BWA3_Dingo2_FLW200_M2_CG13_Fleck","BWA3_Eagle_FLW100_Fleck"]};
+	case "WEST": {["B_MBT_01_TUSK_F","B_Heli_Attack_01_dynamicLoadout_F","B_AFV_Wheeled_01_up_cannon_F",
+	"B_APC_Tracked_01_AA_F","B_Plane_CAS_01_dynamicLoadout_F","JS_JC_FA18E","B_Plane_Fighter_01_Stealth_F",
+	"BWA3_Tiger_RMK_Heavy","BWA3_Tiger_RMK_Universal","BWA3_Leopard2_Tropen","BWA3_Puma_Tropen","rhsusf_m1a2sep1tuskid_usarmy",
+	"rhsusf_m1a2sep1tuskiid_usarmy","rhsusf_m1a2sep2d_usarmy","RHS_AH64D","RHS_AH64DGrey","RHS_M2A3_BUSKI","RHS_M2A3_BUSKIII",
+	"O_T_MBT_04_command_F","O_T_APC_Tracked_02_cannon_ghex_F","Su33_Chine","Su33_Chine_PT","JS_JC_SU35","USAF_F22","USAF_F22_Heavy",
+	"O_Plane_Fighter_02_F","O_Plane_CAS_02_dynamicLoadout_F","O_Heli_Attack_02_dynamicLoadout_F","O_ZTZ99","O_ZTZ99A","O_ZTZ96B",
+	"RHS_Su25SM_vvsc","rhs_bmp3mera_msv","rhs_t72be_msv","rhs_t80ue1","RHS_T50_vvs_blueonblue","RHS_T50_vvs_generic_ext","USAF_F35A",
+	"RHS_Ka52_vvs","rhs_mi28n_vvs","rhs_t90a_tv","rhs_t90am_tv","rhs_t90sm_tv","rhs_2s3_tv"]};
 	case "EAST": {["rhsgref_BRDM2_msv","rhsgref_BRDM2_vdv","rhsgref_BRDM2_ATGM_vdv"]};
 };

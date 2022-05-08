@@ -2,15 +2,17 @@ d_sm_bonus_vehicle_array =
 switch (d_own_side) do {
 	case "GUER": {["I_APC_Wheeled_03_cannon_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_UGV_01_F","I_UGV_01_rcws_F","I_Plane_Fighter_03_dynamicLoadout_F","I_Heli_light_03_dynamicLoadout_F"]};
 	case "WEST":  {
-		["B_Heli_Attack_01_dynamicLoadout_F","O_Heli_Attack_02_dynamicLoadout_F","rhs_t14_tv","rhs_t15_tv","O_ZTZ96B","O_ZTZ99","O_ZTZ99A","O_ZBD04A","O_ZTZ99","O_ZTZ99A","O_T_MBT_04_command_F","O_T_MBT_02_cannon_ghex_F","rhs_2s3_at_tv",
-		"BWA3_Leopard2_Tropen","RHS_UH60M_ESSS_d","rhs_zsu234_aa","O_T_APC_Tracked_02_cannon_ghex_F","BWA3_Puma_Tropen","B_MBT_01_cannon_F","B_MBT_01_TUSK_F","O_ZBD04A","rhsusf_M1117_D","rhs_btr80a_msv","rhsusf_M1238A1_M2_socom_d",
-		"rhsusf_M1238A1_Mk19_socom_d","rhsusf_m1245_m2crows_socom_d","rhsusf_m1245_mk19crows_socom_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d","Z10",
-		"rhs_t90sm_tv","JS_JC_SU35","B_Heli_Attack_01_dynamicLoadout_F","RHS_AH64D","RHS_AH1Z","RHS_Mi24P_vvsc","RHS_AH64D","USAF_F22","USAF_F22_Heavy","USAF_F35A","USAF_A10",
-		"rhsusf_m1a2sep2d_usarmy","rhsusf_m1a2sep2wd_usarmy","O_Plane_Fighter_02_F","rhs_t90am_tv","RHS_M2A3_BUSKIII","rhsusf_m1a2sep1tuskiid_usarmy","rhsusf_m1a2sep1tuskid_usarmy",
-		"RHS_Ka52_vvsc","rhsgref_b_mi24g_CAS","O_Plane_Fighter_02_Stealth_F","RHS_A10",
-		"O_Plane_CAS_02_dynamicLoadout_F","Su33_Chine","JS_JC_FA18E","B_Plane_Fighter_01_F","RHS_AH64DGrey","O_Plane_Fighter_02_F",
-		"O_ZTQ15","O_PGZ09_AA","O_ZTZ99","O_ZTZ99A","O_ZTD05","rhs_t90sab_tv","B_APC_Tracked_01_AA_F",
-		"Su33_Chine_PT","RHS_Su25SM_vvs","JS_JC_FA18F","RHS_T50_vvs_generic_ext","RHS_T50_vvs_blueonblue"]};
+		["B_Heli_Light_01_dynamicLoadout_F","B_APC_Wheeled_01_cannon_F","B_AFV_Wheeled_01_up_cannon_F","BWA3_Eagle_FLW100_Tropen",
+		"BWA3_Dingo2_FLW200_M2_CG13_Tropen","RHSGREF_A29B_HIDF","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d",
+		"rhsusf_stryker_m1134_d","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m1151_mk19crows_usarmy_d","RHS_M6","RHS_M2A2",
+		"RHS_M2A2_BUSKI","rhsusf_M1117_D","rhsusf_M1220_M153_M2_usarmy_d","rhsusf_M1220_M153_MK19_usarmy_d","O_PGZ09_AA",
+		"rhsusf_m1240a1_m2crows_usarmy_d","rhsusf_m1240a1_mk19crows_usarmy_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d",
+		"rhsusf_M1239_M2_socom_d","rhsusf_M1239_MK19_socom_d","O_T_APC_Wheeled_02_rcws_v2_ghex_F","O_Heli_Light_02_dynamicLoadout_F",
+		"O_ZBD04A","O_ZBD04A","O_ZBD04A","Z10","RHS_AH1Z","rhs_btr80a_msv","rhs_tigr_sts_msv","rhs_tigr_sts_3camo_msv",
+		"RHS_Mi24P_vvsc","RHS_Mi24V_vvsc","RHS_Mi24Vt_vvsc","rhsgref_b_mi24g_CAS","rhs_bmp2k_msv","rhs_bmp3_msv",
+		"rhs_bmp3_late_msv","rhsusf_m1151_m2_v2_usarmy_d","rhsusf_m1151_mk19_v2_usarmy_d","rhsusf_m1151_m2_v3_usmc_d",
+		"rhsusf_m1151_mk19_v3_usmc_d","RHS_MELB_AH6M","I_Heli_light_03_dynamicLoadout_F","I_Plane_Fighter_04_F",
+		"I_Plane_Fighter_03_dynamicLoadout_F","rhs_t14_tv","rhs_t15_tv","O_ZTD05","O_ZTQ15","rhs_2s3_at_tv"]};
 	case "EAST": {
 		["M1128_MGS_DG1_SLATDES","RHS_M2A3_BUSKIII_wd","M1126_ICV_M134_DG1_SLATDES",
 		"rhs_t90sm_tv","rhs_t72be_tv",

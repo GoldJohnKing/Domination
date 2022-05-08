@@ -23,7 +23,7 @@ params ["_u", "_mode", ["_init", false]];
 	_u setSkill ["aimingShake", 0.1];
 	_u setSkill ["spotDistance", 0.8]; // Edited: default = _u getVariable "d_spotDistance"
 	_u setSkill ["spotTime", 1]; // Edited: default = _u getVariable "d_spotTime"
-	_u setSkill ["aimingSpeed", 0.8]; // Edited: default = _u getVariable "d_aimingSpeed"
+	_u setSkill ["aimingSpeed", 0.7]; // Edited: default = _u getVariable "d_aimingSpeed"
 
 // } else {
 // 	_u setSkill ["spotDistance", 0.18];
