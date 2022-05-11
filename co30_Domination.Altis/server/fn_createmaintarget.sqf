@@ -146,7 +146,7 @@ d_WithLessArmor call d_fnc_setenemymode;
 
 d_groups_respawn_time_add = 0;
 //limit barracks by d_max_bar_cnt, default is very high but may be lower if mission settings are non-default
-d_num_barracks_objs = ((ceil random 5) max 3) min d_max_bar_cnt;
+d_num_barracks_objs = ((ceil random 5) max 1) min d_max_bar_cnt;
 __TRACE_1("","d_num_barracks_objs")
 d_mt_barracks_obj_ar = [];
 if (d_bar_mhq_destroy == 0) then {
