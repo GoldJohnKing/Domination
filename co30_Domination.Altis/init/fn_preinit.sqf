@@ -2271,9 +2271,9 @@ d_barracks_building = call {
 		"Land_vn_o_shelter_05"
 	};
 	if (d_ws) exitWith {
-		"Land_BagBunker_Large_F"
+		"Land_Cargo_Patrol_V3_F"
 	};
-	"Land_BagBunker_Large_F"
+	"Land_Cargo_Patrol_V3_F"
 };
 
 	// same as barracks building. But enemy AI vehicles do not spawn inside the main target area but outside
