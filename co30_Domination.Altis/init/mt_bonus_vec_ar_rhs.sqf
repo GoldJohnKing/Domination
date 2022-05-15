@@ -3,8 +3,7 @@ switch (d_own_side) do {
 	case "GUER": {["I_MRAP_03_hmg_F","I_MRAP_03_gmg_F"]};
 	case "WEST": {["B_MBT_01_TUSK_F","B_Heli_Attack_01_dynamicLoadout_F","B_AFV_Wheeled_01_up_cannon_F",
 	"B_APC_Tracked_01_AA_F","B_Plane_CAS_01_dynamicLoadout_F","JS_JC_FA18E","B_Plane_Fighter_01_Stealth_F",
-	"BWA3_Tiger_RMK_Heavy","BWA3_Tiger_RMK_Universal","BWA3_Leopard2_Tropen","BWA3_Puma_Tropen","rhsusf_m1a2sep1tuskid_usarmy",
-	"rhsusf_m1a2sep1tuskiid_usarmy","rhsusf_m1a2sep2d_usarmy","RHS_AH64D","RHS_AH64DGrey","RHS_M2A3_BUSKI","RHS_M2A3_BUSKIII",
+	"rhsusf_m1a2sep1tuskid_usarmy","rhsusf_m1a2sep1tuskiid_usarmy","rhsusf_m1a2sep2d_usarmy","RHS_AH64D","RHS_AH64DGrey","RHS_M2A3_BUSKI","RHS_M2A3_BUSKIII",
 	"O_T_MBT_04_command_F","O_T_APC_Tracked_02_cannon_ghex_F","Su33_Chine","Su33_Chine_PT","JS_JC_SU35","USAF_F22","USAF_F22_Heavy",
 	"O_Plane_Fighter_02_F","O_Plane_CAS_02_dynamicLoadout_F","O_Heli_Attack_02_dynamicLoadout_F","O_ZTZ99","O_ZTZ99A","O_ZTZ96B",
 	"RHS_Su25SM_vvsc","rhs_bmp3mera_msv","rhs_t72be_msv","rhs_t80ue1","RHS_T50_vvs_blueonblue","RHS_T50_vvs_generic_ext","USAF_F35A",

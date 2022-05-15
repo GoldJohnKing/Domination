@@ -296,7 +296,7 @@ d_x_drop_array =
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "CUP_B_M1151_WDL_USA"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "B_LSV_01_armed_F"], [localize "STR_DOM_MISSIONSTRING_20", "rhsusf_m966_d"]]//m966
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "B_LSV_01_armed_F"], [localize "STR_DOM_MISSIONSTRING_20", "rhsusf_stryker_m1134_d"]]
 		};
 		if (d_gmcwg) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", ["gm_ge_army_u1300l_cargo", "gm_ge_army_u1300l_cargo_win"] select d_gmcwgwinter], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
@@ -346,7 +346,7 @@ d_illum_tower = "Land_vn_ttowerbig_2_f";
 
 d_cargotower =
 #ifdef __ALTIS__
-	"";//Land_Cargo_Tower_V3_F Land_Bunker_01_HQ_F
+	"Land_Bunker_01_HQ_F";//Land_Cargo_Tower_V3_F
 #endif
 #ifdef __CUP_CHERNARUS__
 	"Land_Cargo_Tower_V1_F";
@@ -1057,8 +1057,8 @@ if (!d_gmcwgwinter) then {
 
 #ifdef __RHS__
 	d_specops_E = [//特战
-		["West","BWA3_Faction_Fleck","Infantry","BWA3_ReconTeam"] call d_fnc_GetConfigGroup, ["West","BWA3_Faction_Fleck","Support","BWA3_Recon_CLS"] call d_fnc_GetConfigGroup,
-		["West","BWA3_Faction_Fleck","Infantry","BWA3_InfTeam_AT"] call d_fnc_GetConfigGroup, ["West","BWA3_Faction_Fleck","Infantry","BWA3_ReconTeam"] call d_fnc_GetConfigGroup
+		["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad"] call d_fnc_GetConfigGroup, ["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_2mg"] call d_fnc_GetConfigGroup,
+		["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_sniper"] call d_fnc_GetConfigGroup, ["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_mg_sniper"] call d_fnc_GetConfigGroup
 	];
 #endif
 	d_specops_G = [["I_G_Soldier_exp_F", "I_Soldier_exp_F", "I_G_Soldier_GL_F", "I_G_medic_F"]];
@@ -1072,7 +1072,7 @@ if (!d_gmcwgwinter) then {
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
 #endif
 #ifdef __RHS__
-	d_sabotage_E = [["BWA3_recon_Medic_Multi", "BWA3_recon_Radioman_Multi","BWA3_recon_LAT_Multi","BWA3_recon_TL_Multi","BWA3_recon_Multi"]];//进攻基地敌人
+	d_sabotage_E = [["rhs_vmf_recon_rifleman_scout_akm", "rhs_vmf_recon_sergeant"]];//进攻基地敌人
 	d_sabotage_W = [["rhsusf_socom_marsoc_cso_breacher", "rhsusf_socom_marsoc_cso"]];
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
 #endif
@@ -1106,7 +1106,7 @@ if (!d_gmcwgwinter) then {
 	d_sniper_I = [["Indep","LIB_US_ARMY","Infantry","LIB_US_Sniper_Team"] call d_fnc_GetConfigGroup];
 #endif
 #ifdef __RHS__ //狙击
-	d_sniper_E = [["West","BWA3_Faction_Fleck","Infantry","BWA3_SniperTeam"] call d_fnc_GetConfigGroup];
+	d_sniper_E = [["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_W = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 #endif
@@ -1274,7 +1274,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	d_arti_observer_G = [["I_Soldier_TL_F"]];
 
 	if (isNil "d_number_attack_planes") then {
-		d_number_attack_planes = 1;
+		d_number_attack_planes = 2;
 	};
 	if (isNil "d_number_attack_choppers") then {
 		d_number_attack_choppers = 2;
@@ -1309,7 +1309,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				"gm_ge_airforce_do28d2"
 			};
 			if (d_rhs) exitWith {
-				"RHS_CH_47F_light"
+				"RHS_C130J_Cargo"
 			};
 			if (d_unsung) exitWith {
 				"uns_C130_H"
@@ -1332,7 +1332,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				"LIB_Pe2"
 			};
 			if (d_rhs) exitWith {
-				"RHS_CH_47F_light"
+				"RHS_C130J_Cargo"
 			};
 			if (d_csla) exitWith {
 				"CSLA_Mi17"
@@ -1863,7 +1863,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	};
 
 	// type of enemy plane that will fly over the main target
-	d_airai_attack_plane = call {//制空固定翼
+	d_airai_attack_plane = call {
 		if (d_enemy_side_short == "E") exitWith {
 			call {
 				if (d_cup) exitWith {
@@ -1873,7 +1873,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					[]
 				};
 				if (d_rhs) exitWith {
-					["O_Plane_Fighter_02_Stealth_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_051","RHS_T50_vvs_052","rhssaf_airforce_l_18_101","rhsgref_cdf_b_mig29s","rhssaf_airforce_l_18_101"]
+					["JS_JC_SU35","rhs_mig29sm_vvsc","JS_JC_SU35","rhs_mig29sm_vmf","RHS_T50_vvs_generic","RHS_T50_vvs_051","RHS_T50_vvs_053","O_Plane_Fighter_02_Stealth_F"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mig21_CAS", "uns_Mig21_CBU", "uns_Mig21_HCAS"]
@@ -1966,7 +1966,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	};
 
 	// type of enemy chopper that will fly over the main target
-	d_airai_attack_chopper = call {//战斗轰炸机
+	d_airai_attack_chopper = call {
 		if (d_enemy_side_short == "E") exitWith {
 			call {
 				if (d_cup) exitWith {
@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["O_Plane_Fighter_02_F","O_Plane_CAS_02_dynamicLoadout_F","rhsgref_cdf_b_su25","rhs_l159_cdf_b_CDF","RHS_T50_vvs_generic_ext","rhssaf_airforce_o_l_18","I_Plane_Fighter_04_F","I_Plane_Fighter_03_dynamicLoadout_F","I_Plane_Fighter_04_F","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","rhssaf_airforce_l_18","I_Plane_Fighter_04_F","rhssaf_airforce_l_18"]
+					["rhs_mig29s_vvsc","rhs_mig29sm_vvsc","rhs_mig29s_vmf","rhs_mig29sm_vmf","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","JS_JC_SU35","RHS_Su25SM_vvsc","O_Plane_CAS_02_dynamicLoadout_F"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2146,7 +2146,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	// enemy parachute troops transport chopper
 	d_transport_chopper = call {
 		if (d_enemy_side_short == "E") exitWith {
-			["rhsgref_b_mi24g_CAS","rhs_uh1h_hidf_gunship","I_Heli_light_03_unarmed_F","I_Heli_light_03_dynamicLoadout_F","I_Heli_Transport_02_F"]
+			["rhsgref_b_mi24g_CAS","rhs_ka60_c","RHS_Mi8AMTSh_vvsc","RHS_Mi8mt_vvsc","RHS_Mi8MTV3_vvsc","RHS_Mi8MTV3_heavy_vvsc","O_Heli_Light_02_dynamicLoadout_F","RHS_Mi24P_vvsc","RHS_Mi24Vt_vvsc","RHS_Mi24V_vvsc"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
 			["I_Heli_Transport_02_F"]
@@ -2219,8 +2219,8 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 				if (d_ws) exitWith {
 					[]
 				};
-				if (d_rhs) exitWith {//"RHSGREF_A29B_HIDF",
-					["BWA3_Tiger_Gunpod_FZ","BWA3_Tiger_RMK_PARS","BWA3_Tiger_RMK_FZ","BWA3_Tiger_RMK_Universal","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_RMK_Heavy","BWA3_Tiger_Gunpod_Heavy","BWA3_Tiger_Gunpod_Heavy","rhs_uh1h_hidf_gunship","I_Heli_light_03_dynamicLoadout_F","rhsgref_b_mi24g_CAS","rhsgref_cdf_b_Mi35","rhsgref_cdf_b_Mi24D","O_Plane_CAS_02_dynamicLoadout_F","I_Plane_Fighter_03_dynamicLoadout_F","O_Plane_Fighter_02_Stealth_F","rhsgref_cdf_b_mig29s","RHS_T50_vvs_051","RHS_T50_vvs_052","rhssaf_airforce_l_18_101"]
+				if (d_rhs) exitWith {
+					["RHS_Ka52_vvsc","RHS_Mi24P_vvsc","RHS_Mi24V_vvsc","rhs_mi28n_vvsc","RHS_Mi8AMTSh_vvsc","RHS_Mi8MTV3_vvsc","RHS_Mi8MTV3_heavy_vvsc","RHS_Ka52_vvs","RHS_Mi24P_vvs","RHS_Mi24V_vvs","rhs_mi28n_vvs","RHS_Mi8AMTSh_vvs","RHS_Mi8MTV3_vvs","RHS_Mi8MTV3_heavy_vvs","O_Heli_Light_02_dynamicLoadout_F","O_Heli_Light_02_dynamicLoadout_F","RHS_Su25SM_vvsc","RHS_Su25SM_vvs"]
 				};
 				["O_Heli_Attack_02_black_F"]
 			};
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [500, 0, 300, 170];
+		d_ai_groups_respawn_time = [600, 0, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {//"rhs_btr80a_msv"
-			["TCGM_Bike_nht","TCGM_Bike_snd","B_Quadbike_01_F","rhsusf_mrzr4_d","B_LSV_01_unarmed_F","O_LSV_02_unarmed_F","rhs_tigr_msv","rhs_tigr_m_msv","rhsusf_m998_d_4dr","rhsusf_m1151_usarmy_d","rhsusf_M1220_usarmy_d","RHS_Stinger_AA_pod_D","rhs_Igla_AA_pod_msv","rhs_D30_at_msv"]
+			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_usarmy_d","rhsusf_M1220_usarmy_d","rhsusf_M1230a1_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M1232_M2_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]

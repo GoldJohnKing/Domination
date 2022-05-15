@@ -42,7 +42,7 @@ if (_do_exit) exitWith {};
 __TRACE_1("","Before")
 
 if (_vec isKindOf "Air") then {
-	if (d_pilots_only == 0 && {!(call d_fnc_isPilotCheck) && {_this # 1 == "driver"}}) exitWith {
+	if (_vec isKindOf "Plane" && {!(call d_fnc_isPilotCheck) }) exitWith {//&& {_this # 1 == "driver"}
 		player action ["getOut", _vec];
 		hintSilent localize "STR_DOM_MISSIONSTRING_1417";
 		_do_exit = true;

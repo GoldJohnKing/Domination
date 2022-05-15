@@ -2,8 +2,8 @@ d_sm_bonus_vehicle_array =
 switch (d_own_side) do {
 	case "GUER": {["I_APC_Wheeled_03_cannon_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_UGV_01_F","I_UGV_01_rcws_F","I_Plane_Fighter_03_dynamicLoadout_F","I_Heli_light_03_dynamicLoadout_F"]};
 	case "WEST":  {
-		["B_Heli_Light_01_dynamicLoadout_F","B_APC_Wheeled_01_cannon_F","B_AFV_Wheeled_01_up_cannon_F","BWA3_Eagle_FLW100_Tropen",
-		"BWA3_Dingo2_FLW200_M2_CG13_Tropen","RHSGREF_A29B_HIDF","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d",
+		["B_Heli_Light_01_dynamicLoadout_F","B_APC_Wheeled_01_cannon_F","B_AFV_Wheeled_01_up_cannon_F",
+		"RHSGREF_A29B_HIDF","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d",
 		"rhsusf_stryker_m1134_d","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m1151_mk19crows_usarmy_d","RHS_M6","RHS_M2A2",
 		"RHS_M2A2_BUSKI","rhsusf_M1117_D","rhsusf_M1220_M153_M2_usarmy_d","rhsusf_M1220_M153_MK19_usarmy_d","O_PGZ09_AA",
 		"rhsusf_m1240a1_m2crows_usarmy_d","rhsusf_m1240a1_mk19crows_usarmy_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d",
