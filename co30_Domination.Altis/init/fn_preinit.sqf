@@ -346,7 +346,7 @@ d_illum_tower = "Land_vn_ttowerbig_2_f";
 
 d_cargotower =
 #ifdef __ALTIS__
-	"Land_Bunker_01_HQ_F";//Land_Cargo_Tower_V3_F
+	"";//Land_Cargo_Tower_V3_F
 #endif
 #ifdef __CUP_CHERNARUS__
 	"Land_Cargo_Tower_V1_F";
