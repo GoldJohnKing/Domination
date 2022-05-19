@@ -2146,7 +2146,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 	// enemy parachute troops transport chopper
 	d_transport_chopper = call {
 		if (d_enemy_side_short == "E") exitWith {
-			["rhsgref_b_mi24g_CAS","rhs_ka60_c","RHS_Mi8AMTSh_vvsc","RHS_Mi8mt_vvsc","RHS_Mi8MTV3_vvsc","RHS_Mi8MTV3_heavy_vvsc","O_Heli_Light_02_dynamicLoadout_F","RHS_Mi24P_vvsc","RHS_Mi24Vt_vvsc","RHS_Mi24V_vvsc"]
+			["rhs_ka60_c","RHS_Mi8AMTSh_vvsc","RHS_Mi8mt_vvsc","RHS_Mi8MTV3_vvsc","RHS_Mi8MTV3_heavy_vvsc","O_Heli_Light_02_dynamicLoadout_F","RHS_Mi24P_vvsc","RHS_Mi24Vt_vvsc","RHS_Mi24V_vvsc"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
 			["I_Heli_Transport_02_F"]
@@ -2271,9 +2271,9 @@ d_barracks_building = call {
 		"Land_vn_o_shelter_05"
 	};
 	if (d_ws) exitWith {
-		"Land_BagBunker_Large_F"
+		"Land_Cargo_Patrol_V3_F"
 	};
-	"Land_BagBunker_Large_F"
+	"Land_Cargo_Patrol_V3_F"
 };
 
 	// same as barracks building. But enemy AI vehicles do not spawn inside the main target area but outside
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [600, 0, 300, 170];
+		d_ai_groups_respawn_time = [500, 0, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {//"rhs_btr80a_msv"
-			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_usarmy_d","rhsusf_M1220_usarmy_d","rhsusf_M1230a1_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M1232_M2_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
+			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_usarmy_d","rhsusf_M1220_usarmy_d","rhsusf_M1230a1_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]
@@ -3078,7 +3078,7 @@ if (hasInterface) then {
 	d_arsenal_mod_remove_strings = [];
 
 	// can either be a class name (string) or code
-	// if code then _this is the classname
+	// if code then _this is the classname从武器库删除
 	d_remove_from_arsenal = [
 		[], // PRIMARYWEAPON
 		[], // SECONDARYWEAPON
@@ -3086,9 +3086,9 @@ if (hasInterface) then {
 		[], // uniforms
 		[], // VEST
 		[], // BACKPACK
-		[], // HEADGEAR
+		[{d_player_side == blufor && {_this == "H_HelmetO_ViperSP_ghex_F" || {_this == "H_HelmetO_ViperSP_hex_F"}}}], // HEADGEAR
 		[], // GOGGLES
-		[], // NVGS
+		[{d_player_side == blufor && {_this == "JAS_GPNVG18_Full_Tan_TI" || {_this == "JAS_GPNVG18_Full_blk_TI"} || {_this == "NVGogglesB_blk_F"} || {_this == "NVGogglesB_grn_F"} || {_this == "NVGogglesB_gry_F"}}}], // NVGS
 		[], // BINOCULARS
 		[], // MAP
 		[], // GPS, UAV Terminal

@@ -49,68 +49,68 @@ if (alive player && {!(player getVariable ["d_has_sfunc_aid", false]) && {(playe
 	d_et_dam_sub = damage d_orig_sfunc_obj / 25;
 	d_et_fuel_add = (1 - fuel d_orig_sfunc_obj) / 25;
 
-	d_actionID2 = [
-		/* 0 object */						d_orig_sfunc_obj,
-		/* 1 action title */				format ["<t color='#7F7F7F'>%1</t>", localize "STR_DOM_MISSIONSTRING_1510"],
-		/* 2 idle icon */					"\A3\Ui_f\data\IGUI\Cfg\HoldActions\holdAction_revive_ca.paa",
-		/* 3 progress icon */				"A3\Ui_f\data\IGUI\Cfg\HoldActions\holdAction_reviveMedic_ca.paa",
-		/* 4 condition to show */			"isNull objectParent player && {alive _this}",
-		/* 5 condition for action */		"isNull objectParent player && {alive _this}",
-		/* 6 code executed on start */		{
-			hintSilent format [localize "STR_DOM_MISSIONSTRING_327", fuel d_orig_sfunc_obj, damage d_orig_sfunc_obj];
-			systemChat format [localize "STR_DOM_MISSIONSTRING_328", [d_orig_sfunc_obj] call d_fnc_GetDisplayName];
-		},
-		/* 7 code executed per tick */	{
-			__TRACE_1("tick","_this select 4")
-			hintSilent format [localize "STR_DOM_MISSIONSTRING_327", fuel d_orig_sfunc_obj, damage d_orig_sfunc_obj];
-			private _damage = damage d_orig_sfunc_obj;
-			if (_damage > 0) then {
-				_damage = _damage - d_et_dam_sub;
-				d_orig_sfunc_obj setDamage _damage;
-			};
-			private _fuel = fuel d_orig_sfunc_obj;
-			if (_fuel < 1) then {
-				_fuel = _fuel + d_et_fuel_add;
-				[d_orig_sfunc_obj, _fuel] remoteExecCall ["setFuel", d_orig_sfunc_obj];
-			};
-		},
-		/* 8 code executed on completion */	{
-			d_orig_sfunc_obj setDamage 0;
-			[d_orig_sfunc_obj, 1] remoteExecCall ["setFuel", d_orig_sfunc_obj];
-			hintSilent format [localize "STR_DOM_MISSIONSTRING_327", fuel d_orig_sfunc_obj, damage d_orig_sfunc_obj];
-			systemChat format [localize "STR_DOM_MISSIONSTRING_334", [d_orig_sfunc_obj] call d_fnc_GetDisplayName];
-			if (d_with_ranked || {d_database_found}) then {
-				private _extra = call {
-					if (d_orig_sfunc_obj isKindOf "Air") exitWith {
-						0
-					};
-					if (d_orig_sfunc_obj isKindOf "Tank") exitWith {
-						1
-					};
-					if (d_orig_sfunc_obj isKindOf "Car") exitWith {
-						2
-					};
-					3
-				};
-				if (_extra > 0) then {
-					[player, 9, _extra] remoteExecCall ["d_fnc_addscore", 2];
-				};
-#ifndef __TT__
-				if (player inArea d_base_array) then {
-#else
-				if (player inArea (d_base_array # 0) || {player inArea (d_base_array # 1)}) then {
-#endif
-					d_last_base_repair = time + 300
-				};
-			};
-		},
-		/* 9 code executed on interruption */	{},
-		/* 10 arguments */					[d_orig_sfunc_obj],
-		/* 11 action duration */			_reptime,
-		/* 12 priority */					-1,
-		/* 13 remove on completion */		false,
-		/* 14 show unconscious */			false
-	] call bis_fnc_holdActionAdd;
+// 	d_actionID2 = [
+// 		/* 0 object */						d_orig_sfunc_obj,
+// 		/* 1 action title */				format ["<t color='#7F7F7F'>%1</t>", localize "STR_DOM_MISSIONSTRING_1510"],
+// 		/* 2 idle icon */					"\A3\Ui_f\data\IGUI\Cfg\HoldActions\holdAction_revive_ca.paa",
+// 		/* 3 progress icon */				"A3\Ui_f\data\IGUI\Cfg\HoldActions\holdAction_reviveMedic_ca.paa",
+// 		/* 4 condition to show */			"isNull objectParent player && {alive _this}",
+// 		/* 5 condition for action */		"isNull objectParent player && {alive _this}",
+// 		/* 6 code executed on start */		{
+// 			hintSilent format [localize "STR_DOM_MISSIONSTRING_327", fuel d_orig_sfunc_obj, damage d_orig_sfunc_obj];
+// 			systemChat format [localize "STR_DOM_MISSIONSTRING_328", [d_orig_sfunc_obj] call d_fnc_GetDisplayName];
+// 		},
+// 		/* 7 code executed per tick */	{
+// 			__TRACE_1("tick","_this select 4")
+// 			hintSilent format [localize "STR_DOM_MISSIONSTRING_327", fuel d_orig_sfunc_obj, damage d_orig_sfunc_obj];
+// 			private _damage = damage d_orig_sfunc_obj;
+// 			if (_damage > 0) then {
+// 				_damage = _damage - d_et_dam_sub;
+// 				d_orig_sfunc_obj setDamage _damage;
+// 			};
+// 			private _fuel = fuel d_orig_sfunc_obj;
+// 			if (_fuel < 1) then {
+// 				_fuel = _fuel + d_et_fuel_add;
+// 				[d_orig_sfunc_obj, _fuel] remoteExecCall ["setFuel", d_orig_sfunc_obj];
+// 			};
+// 		},
+// 		/* 8 code executed on completion */	{
+// 			d_orig_sfunc_obj setDamage 0;
+// 			[d_orig_sfunc_obj, 1] remoteExecCall ["setFuel", d_orig_sfunc_obj];
+// 			hintSilent format [localize "STR_DOM_MISSIONSTRING_327", fuel d_orig_sfunc_obj, damage d_orig_sfunc_obj];
+// 			systemChat format [localize "STR_DOM_MISSIONSTRING_334", [d_orig_sfunc_obj] call d_fnc_GetDisplayName];
+// 			if (d_with_ranked || {d_database_found}) then {
+// 				private _extra = call {
+// 					if (d_orig_sfunc_obj isKindOf "Air") exitWith {
+// 						0
+// 					};
+// 					if (d_orig_sfunc_obj isKindOf "Tank") exitWith {
+// 						1
+// 					};
+// 					if (d_orig_sfunc_obj isKindOf "Car") exitWith {
+// 						2
+// 					};
+// 					3
+// 				};
+// 				if (_extra > 0) then {
+// 					[player, 9, _extra] remoteExecCall ["d_fnc_addscore", 2];
+// 				};
+// #ifndef __TT__
+// 				if (player inArea d_base_array) then {
+// #else
+// 				if (player inArea (d_base_array # 0) || {player inArea (d_base_array # 1)}) then {
+// #endif
+// 					d_last_base_repair = time + 300
+// 				};
+// 			};
+// 		},
+// 		/* 9 code executed on interruption */	{},
+// 		/* 10 arguments */					[d_orig_sfunc_obj],
+// 		/* 11 action duration */			_reptime,
+// 		/* 12 priority */					-1,
+// 		/* 13 remove on completion */		false,
+// 		/* 14 show unconscious */			false
+// 	] call bis_fnc_holdActionAdd;
 } else {
 	if (player getVariable ["d_has_sfunc_aid", false] && {!(call d_fnc_sfunc)}) then {
 		__TRACE("sfunc removed")

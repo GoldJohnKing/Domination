@@ -37,7 +37,7 @@ if (_isman) then {
 
 	private _old_add = d_groups_respawn_time_add;
 	private _nump = count (allPlayers - (entities "HeadlessClient_F")) min 40;
-	private _endtime = (time + _basetime - _maxtime - (_nump * 15) + d_groups_respawn_time_add) max 120;//步兵重生
+	private _endtime = (time + _basetime - _maxtime - (_nump * 15) + d_groups_respawn_time_add) max 180;//步兵重生
 	
 	__TRACE_1("","_endtime")
 	__TRACE_1("","d_groups_respawn_time_add")
@@ -63,7 +63,7 @@ if (_isman) then {
 	
 	private _extratime = [0, d_launcher_cooldown / 2] select (d_launcher_cooldown > 0);
 	private _nump = count (allPlayers - (entities "HeadlessClient_F")) min 40;
-	private _endtime = time + _basetime - linearConversion [1, 40, _nump, 1, _maxtime, true] + 300 + _extratime;
+	private _endtime = time + _basetime - linearConversion [1, 40, _nump, 1, _maxtime, true] + 400 + _extratime;
 
 	__TRACE_1("","_endtime")
 

@@ -24,9 +24,9 @@ while {true} do {
 	private _funits = [];
 
 	private _limit_p = call {
-		if (_type isEqualTo "AP") exitWith {12};//加强制空
-		if (_type isEqualTo "HAC") exitWith {6};//普通制空
-		if (_type isEqualTo "UAV") exitWith {5};
+		if (_type isEqualTo "AP") exitWith {1};//制空战斗机
+		if (_type isEqualTo "HAC") exitWith {8};//战斗轰炸机
+		if (_type isEqualTo "UAV") exitWith {6};
 		4;//轻型支援空军中队
 	};
 	__TRACE_1("","_limit_p")
@@ -39,7 +39,7 @@ while {true} do {
 		};
 	#endif
 
-	while {d_mt_radio_down} do {sleep 6.123};
+	while {d_mt_radio_down} do {sleep 7};
 	private _pos = call d_fnc_GetRanPointOuterAir;
 	if (d_cur_tgt_pos isNotEqualTo []) then {
 		private _counter = 0;
@@ -334,8 +334,8 @@ _pat_pos set [2, _cur_tgt_pos select 2]
 #ifndef __DEBUG__
 	_num_p = call d_fnc_PlayersNumber;
 	private _re_random = (call {
-		if (_num_p < 5) exitWith {300};
-		if (_num_p < 10) exitWith {300};
+		if (_num_p < 5) exitWith {200};
+		if (_num_p < 10) exitWith {200};
 		if (_num_p < 15) exitWith {200};
 		if (_num_p < 20) exitWith {200};
 		200;

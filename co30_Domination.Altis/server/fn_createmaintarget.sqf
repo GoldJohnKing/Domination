@@ -126,9 +126,9 @@ if (d_camp_static_weapons == 1) then {
 };
 if (_camp_static_weapons_current == 1) then {
 	_type_list_guard_static2 = [//主要战区，静态武器
-    	["stat_mg", 2, ceil (random 2)],  //this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}]; 
+    	["stat_mg", 3, ceil (random 2)],  //this addeventhandler ["fired", {(_this select 0) setvehicleammo 1}]; 
     	["stat_gl", 1, ceil (random 12)],
-		["arty", 3, ceil (random 4)]
+		["arty", 3, ceil (random 3)]
     ];
 };
 
@@ -146,7 +146,7 @@ d_WithLessArmor call d_fnc_setenemymode;
 
 d_groups_respawn_time_add = 0;
 //limit barracks by d_max_bar_cnt, default is very high but may be lower if mission settings are non-default
-d_num_barracks_objs = ((ceil random 5) max 3) min d_max_bar_cnt;
+d_num_barracks_objs = ((ceil random 5) max 1) min d_max_bar_cnt;
 __TRACE_1("","d_num_barracks_objs")
 d_mt_barracks_obj_ar = [];
 if (d_bar_mhq_destroy == 0) then {
