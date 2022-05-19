@@ -43,7 +43,7 @@ d_sm_tank = switch (d_enemy_side_short) do {
 	case "G": {"I_MBT_03_cannon_F"};
 };
 d_sm_HunterGMG = switch (d_enemy_side_short) do {
-	case "E": {"rhsgref_BRDM2_HQ_vmf"};
+	case "E": {"rhs_tigr_sts_3camo_vmf"};
 	case "W": {"rhsusf_M1237_M2_usarmy_d"};
 	case "G": {"I_MRAP_03_hmg_F"};
 };

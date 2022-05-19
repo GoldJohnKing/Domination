@@ -39,7 +39,7 @@ while {true} do {
 		};
 	#endif
 
-	while {d_mt_radio_down} do {sleep 6.123};
+	while {d_mt_radio_down} do {sleep 7};
 	private _pos = call d_fnc_GetRanPointOuterAir;
 	if (d_cur_tgt_pos isNotEqualTo []) then {
 		private _counter = 0;
