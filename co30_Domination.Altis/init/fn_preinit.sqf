@@ -296,7 +296,7 @@ d_x_drop_array =
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "CUP_B_M1151_WDL_USA"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "B_LSV_01_armed_F"], [localize "STR_DOM_MISSIONSTRING_20", "rhsusf_stryker_m1134_d"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "B_LSV_01_armed_F"], [localize "STR_DOM_MISSIONSTRING_20", "rhsusf_m966_d"]]
 		};
 		if (d_gmcwg) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", ["gm_ge_army_u1300l_cargo", "gm_ge_army_u1300l_cargo_win"] select d_gmcwgwinter], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["rhs_mig29s_vvsc","rhs_mig29sm_vvsc","rhs_mig29s_vmf","rhs_mig29sm_vmf","rhssaf_airforce_l_18_101","rhssaf_airforce_l_18","O_Plane_Fighter_02_F","RHS_T50_vvs_generic_ext","O_Plane_Fighter_02_Stealth_F","JS_JC_SU35","RHS_Su25SM_vvsc","O_Plane_CAS_02_dynamicLoadout_F"]
+					["rhs_mig29s_vvsc","rhs_mig29sm_vvsc","rhs_mig29s_vmf","rhs_mig29sm_vmf","O_Plane_Fighter_02_F","RHS_T50_vvs_generic_ext","Su33_Protatype_PT_2","JS_JC_SU35","RHS_Su25SM_vvsc","O_Plane_CAS_02_dynamicLoadout_F"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {//"rhs_btr80a_msv"
-			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_usarmy_d","rhsusf_M1220_usarmy_d","rhsusf_M1230a1_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","rhsusf_M1084A1R_SOV_M2_D_fmtv_socom","rhsusf_M1078A1R_SOV_M2_D_fmtv_socom","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
+			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_usarmy_d","rhsusf_m1240a1_usarmy_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]

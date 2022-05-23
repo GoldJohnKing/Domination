@@ -390,7 +390,7 @@ private _diststoa = 40000 * (1 / (_startpoint distance2D _attackpoint));
 __TRACE_1("","_diststoa")
 
 private _icounter = 0;
-while {_icounter < _number_vehicles} do {
+while {!d_mt_radio_down} do {//_icounter < _number_vehicles
 	if (d_mt_radio_down || {d_cur_tgt_pos distance2D _cur_tgt_pos > 500}) exitWith {_stop_it = true};
 	private _vgrp = [d_side_enemy] call d_fnc_creategroup;
 	private _heli_type = selectRandom d_transport_chopper;
@@ -455,7 +455,7 @@ while {d_should_be_there > 0 && {!d_mt_radio_down}} do {
 };
 
 if (!d_mt_radio_down) then {
-	private _etime = time + 20.0123;
+	private _etime = time + 20;
 	while {time < _etime && {!d_mt_radio_down}} do {sleep 1};
 	if (d_mt_radio_down) exitWith {
 		d_create_new_paras = false;

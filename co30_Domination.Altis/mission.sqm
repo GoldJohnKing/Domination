@@ -8,7 +8,7 @@ class EditorData
 	toggles=1569;
 	class ItemIDProvider
 	{
-		nextID=3567;
+		nextID=3574;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=778;
+		nextID=781;
 	};
 	class Camera
 	{
-		pos[]={15094.744,26.314945,17077.557};
-		dir[]={-0.98157364,-0.19057362,0.014198564};
-		up[]={-0.19055429,0.98167092,0.0027563232};
-		aside[]={0.014463707,9.9425051e-008,0.99989909};
+		pos[]={14660.412,51.581516,16595.977};
+		dir[]={-0.74429166,-0.59945923,0.29441231};
+		up[]={-0.55743325,0.80040532,0.22049852};
+		aside[]={0.36782905,0,0.92989349};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination_NHA2";
+sourceName="co30_Domination_NHA3";
 addons[]=
 {
 	"A3_Ui_F",
@@ -92,13 +92,14 @@ addons[]=
 	"A3_Air_F_Jets_Plane_Fighter_01",
 	"Z8L_LK",
 	"A3_Drones_F_Air_F_Gamma_UAV_02",
-	"A3_Air_F_EPC_Plane_CAS_01"
+	"A3_Air_F_EPC_Plane_CAS_01",
+	"A3_Air_F_Heli_Light_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=47;
+		items=48;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -424,6 +425,13 @@ class AddonsMetaData
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
+		class Item47
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircraft";
+			author="波希米亚互动工作室";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -526,7 +534,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=717;
+		items=723;
 		class Item0
 		{
 			dataType="Marker";
@@ -9365,7 +9373,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14591.149,30.119623,16576.662};
+				position[]={14603.233,30.179291,16563.818};
 				angles[]={0,1.4746859,0};
 			};
 			side="Empty";
@@ -9375,7 +9383,7 @@ class Mission
 			};
 			id=1880;
 			type="Land_LampAirport_F";
-			atlOffset=0.0030822754;
+			atlOffset=0.0030212402;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9405,7 +9413,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14596.302,22.682655,16590.699};
+				position[]={14608.386,22.636282,16577.855};
 				angles[]={0,0.79853511,0};
 			};
 			side="Empty";
@@ -9415,7 +9423,7 @@ class Mission
 			};
 			id=1882;
 			type="Land_HelipadSquare_F";
-			atlOffset=5.0130806;
+			atlOffset=5.0130196;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9445,8 +9453,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14596.488,17.897659,16599.219};
-				angles[]={6.253861,0.010136152,0.029324362};
+				position[]={14608.572,17.917095,16586.375};
+				angles[]={6.253861,0.010136152,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9457,7 +9465,7 @@ class Mission
 			};
 			id=1883;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=0.0027599335;
+			atlOffset=0.0026493073;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9487,8 +9495,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14604.928,18.023626,16590.707};
-				angles[]={0,0.0076950057,0};
+				position[]={14617.012,18.009249,16577.863};
+				angles[]={-0,0.0076950057,0.029324362};
 			};
 			side="Empty";
 			flags=4;
@@ -9499,7 +9507,7 @@ class Mission
 			};
 			id=1884;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=0.0029468536;
+			atlOffset=0.002822876;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9529,8 +9537,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14588.183,17.723707,16590.957};
-				angles[]={0,0.007705735,0};
+				position[]={14600.267,17.678986,16578.113};
+				angles[]={-0,0.007705735,0.019996032};
 			};
 			side="Empty";
 			flags=4;
@@ -9541,7 +9549,7 @@ class Mission
 			};
 			id=1885;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=0.0030269623;
+			atlOffset=0.002948761;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9571,8 +9579,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14596.234,17.600611,16582.619};
-				angles[]={6.2631865,0.0078975232,0.019999012};
+				position[]={14608.318,17.779064,16569.775};
+				angles[]={0.010664274,0.0078975232,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9583,7 +9591,7 @@ class Mission
 			};
 			id=1886;
 			type="PortableHelipadLight_01_white_F";
-			atlOffset=0.002784729;
+			atlOffset=0.0026473999;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9613,8 +9621,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14596.581,20.880163,16591.037};
-				angles[]={6.2725158,0.787126,0.039977662};
+				position[]={14608.665,20.823294,16578.193};
+				angles[]={6.272521,0.787126,0.010664274};
 			};
 			side="Empty";
 			flags=4;
@@ -9625,7 +9633,7 @@ class Mission
 			};
 			id=1889;
 			type="O_T_VTOL_02_infantry_dynamicLoadout_F";
-			atlOffset=-0.0013637543;
+			atlOffset=-0.0013771057;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -28086,6 +28094,231 @@ class Mission
 			};
 			id=3566;
 			type="B_Plane_CAS_01_dynamicLoadout_F";
+		};
+		class Item717
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14594.184,17.624678,16592.191};
+				angles[]={6.272521,0.79297769,0.010664274};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=3567;
+			type="Land_HelipadSquare_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item718
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14594.323,17.895275,16600.723};
+				angles[]={6.253861,0.0014928883,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=3568;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-4.9591064e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item719
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14602.806,18.020679,16592.266};
+				angles[]={-0,0.0021498518,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=3569;
+			type="PortableHelipadLight_01_white_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item720
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14586.062,17.736019,16592.41};
+				angles[]={-0,0.00080481177,6.272521};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=3570;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item721
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14594.16,17.602789,16584.105};
+				angles[]={6.2631893,0.0019845841,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=3571;
+			type="PortableHelipadLight_01_white_F";
+			atlOffset=-2.2888184e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item722
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14593.854,19.397068,16591.869};
+				angles[]={6.2725215,0.79930842,0.010663962};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_18";
+				textures="Black";
+			};
+			id=3573;
+			type="B_Heli_Light_01_F";
 		};
 	};
 	class Connections
