@@ -8,10 +8,10 @@ switch (d_own_side) do {
 		"rhsusf_m1240a1_m2crows_usarmy_d","rhsusf_m1240a1_mk19crows_usarmy_d","rhsusf_m1165a1_gmv_m134d_m240_socom_d",
 		"rhsusf_M1239_M2_socom_d","rhsusf_M1239_MK19_socom_d","O_T_APC_Wheeled_02_rcws_v2_ghex_F","O_Heli_Light_02_dynamicLoadout_F",
 		"O_ZBD04A","O_ZBD04A","O_ZBD04A","Z10","RHS_AH1Z","rhs_btr80a_msv","rhs_tigr_sts_msv","rhs_tigr_sts_3camo_msv",
-		"RHS_Mi24P_vvsc","RHS_Mi24V_vvsc","RHS_Mi24Vt_vvsc","rhs_bmp2k_msv","rhs_bmp3_msv","O_ZTL11","O_ZBL09",
+		"RHS_Mi24P_vvsc","RHS_Mi24V_vvsc","RHS_Mi24Vt_vvsc","rhs_bmp2k_msv","rhs_bmp3_msv","O_ZTL11","O_ZBL09","rhs_t90a_tv",
 		"rhs_bmp3_late_msv","rhsusf_m1151_m2_v2_usarmy_d","rhsusf_m1151_mk19_v2_usarmy_d","rhsusf_m1151_m2_v3_usmc_d",
 		"rhsusf_m1151_mk19_v3_usmc_d","I_APC_tracked_03_cannon_F","I_APC_Wheeled_03_cannon_F","I_Heli_light_03_dynamicLoadout_F","I_Plane_Fighter_04_F",
-		"I_Plane_Fighter_03_dynamicLoadout_F","rhs_t14_tv","rhs_t15_tv","O_ZTD05","O_ZTQ15","rhs_2s3_at_tv"]};
+		"I_Plane_Fighter_03_dynamicLoadout_F","rhs_t14_tv","rhs_t15_tv","O_ZTD05","O_ZTQ15","rhs_t72be_msv","rhs_t80ue1","rhs_2s3_at_tv"]};
 	case "EAST": {
 		["M1128_MGS_DG1_SLATDES","RHS_M2A3_BUSKIII_wd","M1126_ICV_M134_DG1_SLATDES",
 		"rhs_t90sm_tv","rhs_t72be_tv",
