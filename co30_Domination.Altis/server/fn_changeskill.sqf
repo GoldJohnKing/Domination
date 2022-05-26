@@ -19,8 +19,8 @@ params ["_u", "_mode", ["_init", false]];
 
 // if (_mode == 0) then { // Edited: Tweak enemy skill技能
 	_u setSkill 0.8;
-	_u setSkill ["aimingAccuracy", 0.1];
-	_u setSkill ["aimingShake", 0.1];
+	_u setSkill ["aimingAccuracy", 0];
+	_u setSkill ["aimingShake", 0.2];
 	_u setSkill ["spotDistance", 0.8]; // Edited: default = _u getVariable "d_spotDistance"
 	_u setSkill ["spotTime", 1]; // Edited: default = _u getVariable "d_spotTime"
 	_u setSkill ["aimingSpeed", 0.7]; // Edited: default = _u getVariable "d_aimingSpeed"
