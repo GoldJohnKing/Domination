@@ -637,7 +637,7 @@ class Params {
 	class d_ao_radius_override {
 		title = "$STR_DOM_MISSIONSTRING_MT_RADIUS";
 		values[] = {0,350,450,550,650,750,850,1000};
-		default = 550;
+		default = 650;
 		texts[] = {"$STR_DOM_MISSIONSTRING_11","350","450","550","650","750","850","1000"};
 	};
 	

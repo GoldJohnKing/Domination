@@ -346,7 +346,7 @@ d_illum_tower = "Land_vn_ttowerbig_2_f";
 
 d_cargotower =
 #ifdef __ALTIS__
-	"Land_Bunker_01_HQ_F";//Land_Cargo_Tower_V3_F
+	"";//Land_Cargo_Tower_V3_F
 #endif
 #ifdef __CUP_CHERNARUS__
 	"Land_Cargo_Tower_V1_F";
@@ -1979,7 +1979,7 @@ d_sabotage_E = [["O_SFIA_exp_lxWS"]];
 					["gm_gc_airforce_mi2urn"]
 				};
 				if (d_rhs) exitWith {
-					["rhs_mig29s_vvsc","rhs_mig29sm_vvsc","rhs_mig29s_vmf","rhs_mig29sm_vmf","O_Plane_Fighter_02_F","RHS_T50_vvs_generic_ext","Su33_Protatype_PT_2","JS_JC_SU35","RHS_Su25SM_vvsc","O_Plane_CAS_02_dynamicLoadout_F"]
+					["rhs_mig29s_vvsc","rhs_mig29sm_vvsc","rhs_mig29s_vmf","rhs_mig29sm_vmf","O_Plane_Fighter_02_F","RHS_T50_vvs_generic_ext","Su33_Protatype_PT_2","JS_JC_SU35","FIR_Su25SM3_Blank","FIR_Su25SM3_Camo_VVSVer"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
