@@ -296,7 +296,7 @@ d_x_drop_array =
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "CUP_B_M1151_WDL_USA"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhsusf_mrzr4_d"], [localize "STR_DOM_MISSIONSTRING_20", "rhsusf_m966_d"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhsusf_m1043_d"], [localize "STR_DOM_MISSIONSTRING_20", "rhsusf_m966_d"]]
 		};
 		if (d_gmcwg) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", ["gm_ge_army_u1300l_cargo", "gm_ge_army_u1300l_cargo_win"] select d_gmcwgwinter], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [500, 0, 300, 170];
+		d_ai_groups_respawn_time = [600, 0, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {//"rhs_btr80a_msv"
-			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_m2_v1_usarmy_d","rhsusf_m1043_d_mk19","rhsusf_m1151_m240_v2_usarmy_d","rhsusf_m966_d","rhsusf_M1232_M2_usarmy_d","rhsusf_m1240a1_m240_usarmy_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_M977A4_BKIT_M2_usarmy_d","rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
+			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_m2_v1_usarmy_d","rhsusf_m1043_d_mk19","rhsusf_m1151_m240_v2_usarmy_d","rhsusf_m966_d","rhsusf_M1232_M2_usarmy_d","rhsusf_m1240a1_m240_usarmy_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_M977A4_BKIT_M2_usarmy_d","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]

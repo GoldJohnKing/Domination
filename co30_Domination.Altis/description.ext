@@ -1334,7 +1334,7 @@ class Params {
 	class d_ai_quickammo {
 		title = "$STR_DOM_MISSIONSTRING_1900QUICKAMMO";
 		values[] = {0, 1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007", "$STR_DOM_MISSIONSTRING_922"};
 	};
     	
