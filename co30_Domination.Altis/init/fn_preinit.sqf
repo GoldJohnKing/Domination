@@ -1057,7 +1057,7 @@ if (!d_gmcwgwinter) then {
 
 #ifdef __RHS__
 	d_specops_E = [//特战
-		["East","rhs_faction_vdv","rhs_group_rus_vdv_infantry_recon","rhs_group_rus_vdv_infantry_recon_squad_2mg"] call d_fnc_GetConfigGroup, ["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_2mg"] call d_fnc_GetConfigGroup,
+		["East","rhs_faction_vdv","rhs_group_rus_vdv_infantry_recon","rhs_group_rus_vdv_infantry_recon_squad"] call d_fnc_GetConfigGroup, ["East","rhs_faction_vdv","rhs_group_rus_vdv_infantry","rhs_group_rus_vdv_infantry_section_AT"] call d_fnc_GetConfigGroup,
 		["East","rhs_faction_vdv","rhs_group_rus_vdv_infantry_recon","rhs_group_rus_vdv_infantry_recon_squad_sniper"] call d_fnc_GetConfigGroup, ["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_mg_sniper"] call d_fnc_GetConfigGroup
 	];
 #endif
@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {//"rhs_btr80a_msv"
-			["rhsusf_mrzr4_d","O_T_LSV_02_unarmed_F","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_m2_v1_usarmy_d","rhsusf_m1043_d_mk19","rhsusf_m1151_m240_v2_usarmy_d","rhsusf_m966_d","rhsusf_M1232_M2_usarmy_d","rhsusf_m1240a1_m240_usarmy_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_M977A4_BKIT_M2_usarmy_d","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
+			["rhsusf_mrzr4_d","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_m2_v1_usarmy_d","rhsusf_m1043_d_mk19","rhsusf_m1151_m240_v2_usarmy_d","rhsusf_m966_d","rhsusf_M1232_M2_usarmy_d","rhsusf_m1240a1_m240_usarmy_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_stryker_m1127_m2_d","rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]

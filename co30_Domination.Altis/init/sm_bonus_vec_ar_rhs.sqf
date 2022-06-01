@@ -4,9 +4,9 @@ switch (d_own_side) do {
 	case "WEST":  {
 		["B_Heli_Attack_01_dynamicLoadout_F","B_AFV_Wheeled_01_up_cannon_F","B_APC_Wheeled_01_cannon_F","B_MBT_01_TUSK_F",
 		"RHS_AH64D","RHS_AH64DGrey","rhsusf_stryker_m1126_m2_d","rhsusf_stryker_m1126_mk19_d","B_AFV_Wheeled_01_up_cannon_F",
-		"rhsusf_stryker_m1132_m2_np_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1134_d",
-		"RHS_M2A2","RHS_M2A2_BUSKI","RHS_M2A3","RHS_M2A3_BUSKI","RHS_M2A3_BUSKIII","RHS_M6",
-		"rhsusf_m1240a1_m2crows_usarmy_d","rhsusf_m1240a1_mk19crows_usarmy_d","rhsusf_M1117_D",
+		"rhsusf_stryker_m1132_m2_np_d","rhsusf_stryker_m1132_m2_d","rhsusf_stryker_m1134_d","rhsusf_m1a1fep_wd",
+		"RHS_M2A2","RHS_M2A2_BUSKI","RHS_M2A3","RHS_M2A3_BUSKI","RHS_M2A3_BUSKIII","RHS_M6","rhsusf_m1a1fep_od",
+		"rhsusf_m1240a1_m2crows_usarmy_d","rhsusf_m1240a1_mk19crows_usarmy_d","rhsusf_M1117_D","rhsusf_m1a1hc_wd",
 		"rhsusf_m1165a1_gmv_m134d_m240_socom_d","M1128_MGS_DG1_SLATDES","M1128_MGS_DG1_NOSLATDES",
 		"rhsusf_m1a1fep_d","RHS_AH1Z","rhsusf_m1a2sep1d_usarmy","rhsusf_m1a2sep1tuskid_usarmy",
 		"rhsusf_m1a2sep1tuskiid_usarmy","rhsusf_m1a2sep2d_usarmy","I_LT_01_AA_F","O_ZTZ99","O_ZTZ99A","O_ZTZ96B",
