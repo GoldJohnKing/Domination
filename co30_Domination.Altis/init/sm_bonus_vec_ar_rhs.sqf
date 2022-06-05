@@ -8,11 +8,11 @@ switch (d_own_side) do {
 		"rhsusf_m1165a1_gmv_m134d_m240_socom_d","M1128_MGS_DG1_SLATDES","M1128_MGS_DG1_NOSLATDES",
 		"rhsusf_m1a1fep_d","RHS_AH1Z","rhsusf_m1a2sep1d_usarmy","rhsusf_m1a2sep1tuskid_usarmy",
 		"rhsusf_m1a2sep1tuskiid_usarmy","rhsusf_m1a2sep2d_usarmy","I_LT_01_AA_F","O_ZTZ99","O_ZTZ99A","O_ZTZ96B",
-		"RHS_Mi24P_vvsc","RHS_Mi8MTV3_heavy_vvsc","O_Heli_Attack_02_dynamicLoadout_F",
+		"RHS_Mi24P_vvsc","RHS_Mi8MTV3_heavy_vvsc","O_Heli_Attack_02_dynamicLoadout_F","I_MBT_03_cannon_F",
 		"rhsusf_m1a1aimd_usarmy","rhsusf_m1a1aim_tuski_d","Z10","Z19","O_ZBD04A","O_ZBD04A","O_ZBD05",
 		"O_ZBL09","O_ZTL11","I_LT_01_AT_F","I_LT_01_cannon_F","I_Heli_light_03_dynamicLoadout_F",
 		"rhsusf_m1a2sep1d_usarmy","rhsusf_m1a2sep1tuskid_usarmy","rhsusf_m1a2sep1tuskiid_usarmy",
-		"rhsusf_m1a1aimd_usarmy","rhsusf_m1a1aim_tuski_d","Z10","Z19","O_ZBD04A","O_ZBD04A",
+		"rhsusf_m1a1aimd_usarmy","rhsusf_m1a1aim_tuski_d","Z10","Z19","O_ZBD04A","O_ZBD04A","Z10","Z19",
 		"RHS_M2A2","RHS_M2A2_BUSKI","RHS_M2A3","RHS_M2A3_BUSKI","rhsusf_m1a2sep1d_usarmy","rhsusf_m1a2sep1tuskid_usarmy",
 		"rhsusf_m1a2sep1tuskiid_usarmy","I_APC_Wheeled_03_cannon_F","I_APC_tracked_03_cannon_F","O_PGZ09_AA","O_ZTD05",
 		"B_APC_Tracked_01_AA_F"]};
