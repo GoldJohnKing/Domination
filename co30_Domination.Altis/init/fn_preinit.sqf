@@ -296,7 +296,7 @@ d_x_drop_array =
 			[[], [localize "STR_DOM_MISSIONSTRING_22", "CUP_B_M1151_WDL_USA"], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
 		};
 		if (d_rhs) exitWith {
-			[[], [localize "STR_DOM_MISSIONSTRING_22", "B_LSV_01_armed_F"], [localize "STR_DOM_MISSIONSTRING_20", "M1128_MGS_DG1_NOSLATDES"]]
+			[[], [localize "STR_DOM_MISSIONSTRING_22", "rhsusf_m1165a1_gmv_m134d_m240_socom_d"], [localize "STR_DOM_MISSIONSTRING_20", "M1128_MGS_DG1_NOSLATDES"]]
 		};
 		if (d_gmcwg) exitWith {
 			[[], [localize "STR_DOM_MISSIONSTRING_22", ["gm_ge_army_u1300l_cargo", "gm_ge_army_u1300l_cargo_win"] select d_gmcwgwinter], [localize "STR_DOM_MISSIONSTRING_20", "Box_East_Ammo_F"]]
@@ -2377,7 +2377,7 @@ d_barracks_building = call {
 		// inf base time, inf min time, vehicle base time, vehicle min time, all in seconds
 		// means, inf base time minus number of players but at least wait 130 to respawn a group, same for vehicles
 		// can also be put into the dom_settings in Domination sql DB
-		d_ai_groups_respawn_time = [600, 0, 300, 170];
+		d_ai_groups_respawn_time = [900, 0, 300, 170];
 	};
 
 	// set to true to disable ambient battlefield sounds at main targets
