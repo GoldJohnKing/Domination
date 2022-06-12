@@ -8,7 +8,7 @@ class EditorData
 	toggles=1057;
 	class ItemIDProvider
 	{
-		nextID=3906;
+		nextID=3914;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=837;
+		nextID=853;
 	};
 	class Camera
 	{
-		pos[]={14731.408,121.91199,16434.619};
-		dir[]={0.42510515,-0.38664937,0.81849939};
-		up[]={0.17826745,0.92217308,0.34323621};
-		aside[]={0.88750726,-5.4441625e-007,-0.46094611};
+		pos[]={14992.044,64.118668,16789.258};
+		dir[]={0.39706177,-0.37160665,0.83923203};
+		up[]={0.15894164,0.92837179,0.33593646};
+		aside[]={0.90395927,-3.5283301e-007,-0.42768741};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination_NHA6";
+sourceName="co30_Domination_NHA7";
 addons[]=
 {
 	"A3_Ui_F",
@@ -85,29 +85,26 @@ addons[]=
 	"rhsusf_c_melb",
 	"rhsusf_c_stryker",
 	"rhsusf_c_fmtv",
-	"FIR_AirWeaponSystem_US",
 	"A3_Air_F_Jets_Plane_Fighter_01",
 	"Z8L_LK",
 	"A3_Air_F_Heli_Light_01",
-	"FIR_PilotCrewPack_US",
 	"real_uniform_unlock",
 	"ace_gforces",
 	"rhsusf_c_m11xx",
 	"rhsusf_c_RG33L",
-	"re_rhsusf_factions",
 	"rhsusf_c_m109",
-	"USAF_AC130U_C",
 	"usaf_kc135_c",
 	"USAF_C17_C",
 	"USAF_MQ9",
-	"USAF_RQ4A",
-	"FIR_F14D_F"
+	"JS_JC_FA18",
+	"USAF_F22_C",
+	"A3_Air_F_EPC_Plane_CAS_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=58;
+		items=55;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -401,101 +398,89 @@ class AddonsMetaData
 		};
 		class Item42
 		{
-			className="FIR_AirWeaponSystem_US";
-			name="FIR_AirWeaponSystem_US";
-		};
-		class Item43
-		{
 			className="A3_Air_F_Jets";
 			name="Arma 3 Jets - Aircraft";
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
-		class Item44
+		class Item43
 		{
 			className="A3_Air_F_Beta";
 			name="Arma 3 Beta - Aircraft";
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
-		class Item45
+		class Item44
 		{
 			className="A3_Air_F";
 			name="Arma 3 Alpha - Aircraft";
 			author="波希米亚互动工作室";
 			url="https://www.arma3.com";
 		};
-		class Item46
-		{
-			className="FIR_PilotCrewPack_US";
-			name="FIR_PilotCrewPack_US";
-		};
-		class Item47
+		class Item45
 		{
 			className="real_uniform_unlock";
 			name="Real Uniform Unlock";
 			author="amartyn";
 		};
-		class Item48
+		class Item46
 		{
 			className="rhsusf_c_m11xx";
 			name="M1151/M1152/M1165";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item49
+		class Item47
 		{
 			className="rhsusf_c_RG33L";
 			name="RG33L MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item50
-		{
-			className="re_rhsusf_factions";
-			name="RE: RHS USF Factions Fix";
-			author="amartyn";
-		};
-		class Item51
+		class Item48
 		{
 			className="rhsusf_c_m109";
 			name="M109A6 SPH";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item52
-		{
-			className="USAF_AC130U_C";
-			name="USAF_AC130U_C";
-		};
-		class Item53
+		class Item49
 		{
 			className="usaf_kc135_c";
 			name="usaf_kc135_c";
 			author="USAF Mod Team";
 		};
-		class Item54
+		class Item50
 		{
 			className="USAF_C17_C";
 			name="USAF_C17_C";
 			author="USAF Mod Team";
 		};
-		class Item55
+		class Item51
 		{
 			className="USAF_MQ9";
 			name="USAF_MQ9";
 			author="USAF Mod Team";
 		};
-		class Item56
+		class Item52
 		{
-			className="USAF_RQ4A";
-			name="USAF_RQ4A";
-			author="USAF Mod Team";
+			className="JS_JC_FA18";
+			name="JS_JC_FA18";
+			author="F/A-18E/F Super Hornet Team";
 		};
-		class Item57
+		class Item53
 		{
-			className="FIR_F14D_F";
-			name="FIR_F14D_F";
+			className="USAF_F22_C";
+			name="USAF_F22_C";
+			author="USAF Mod Team";
+			url="https://gitlab.com/usaf-a3/usaf-mod";
+		};
+		class Item54
+		{
+			className="A3_Air_F_EPC";
+			name="Arma 3 Win Episode - Aircraft";
+			author="波希米亚互动工作室";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -508,7 +493,8 @@ dlcs[]=
 	"Heli",
 	"Jets",
 	"ORANGE",
-	"Tank"
+	"Tank",
+	"USAF_Mod"
 };
 randomSeed=10318084;
 class ScenarioData
@@ -29378,24 +29364,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15059.064,18.790743,17076.084};
-				angles[]={0,1.570744,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="d_chopper_6";
-				pylons=";;;;;;;;;;";
-			};
-			id=3786;
-			type="RHS_A10";
-		};
-		class Item728
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={14441.59,19.648949,16737.66};
 				angles[]={0.0066592805,2.3559492,0};
 			};
@@ -29433,7 +29401,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item729
+		class Item728
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29474,7 +29442,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item730
+		class Item729
 		{
 			dataType="Object";
 			class PositionInfo
@@ -29515,7 +29483,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item731
+		class Item730
 		{
 			dataType="Group";
 			side="West";
@@ -30029,7 +29997,7 @@ class Mission
 			id=3810;
 			atlOffset=-0.00042724609;
 		};
-		class Item732
+		class Item731
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30071,7 +30039,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item733
+		class Item732
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30112,7 +30080,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item734
+		class Item733
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30152,7 +30120,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item735
+		class Item734
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30193,7 +30161,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item736
+		class Item735
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30234,7 +30202,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item737
+		class Item736
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30275,7 +30243,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item738
+		class Item737
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30316,7 +30284,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item739
+		class Item738
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30356,7 +30324,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item740
+		class Item739
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30396,7 +30364,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item741
+		class Item740
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30436,7 +30404,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item742
+		class Item741
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30476,7 +30444,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item743
+		class Item742
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30516,7 +30484,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item744
+		class Item743
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30556,7 +30524,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item745
+		class Item744
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30596,7 +30564,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item746
+		class Item745
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30636,7 +30604,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item747
+		class Item746
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30676,7 +30644,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item748
+		class Item747
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30717,7 +30685,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item749
+		class Item748
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30757,7 +30725,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item750
+		class Item749
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30798,7 +30766,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item751
+		class Item750
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30838,7 +30806,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item752
+		class Item751
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30879,28 +30847,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item753
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15059.135,23.768976,16936.049};
-				angles[]={0,2.3393869,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="d_chopper_2";
-				textures="Olive";
-				reportRemoteTargets=1;
-				receiveRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=3855;
-			type="USAF_AC130U";
-		};
-		class Item754
+		class Item752
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30921,7 +30868,7 @@ class Mission
 			id=3857;
 			type="usaf_kc135";
 		};
-		class Item755
+		class Item753
 		{
 			dataType="Object";
 			class PositionInfo
@@ -30942,7 +30889,7 @@ class Mission
 			id=3860;
 			type="USAF_C17";
 		};
-		class Item756
+		class Item754
 		{
 			dataType="Group";
 			side="West";
@@ -31020,7 +30967,7 @@ class Mission
 			};
 			id=3873;
 		};
-		class Item757
+		class Item755
 		{
 			dataType="Object";
 			class PositionInfo
@@ -31037,7 +30984,7 @@ class Mission
 			id=3876;
 			type="USAF_MQ9";
 		};
-		class Item758
+		class Item756
 		{
 			dataType="Group";
 			side="West";
@@ -31049,15 +30996,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14401.16,19.286829,16312.116};
-						angles[]={0.0039967569,1.9896413,0.0026520467};
+						position[]={14157.396,20.496847,16194.212};
+						angles[]={0.0039967569,1.9896405,0.0026520467};
 					};
 					side="West";
 					flags=6;
 					class Attributes
 					{
 					};
-					id=3902;
+					id=3912;
 					type="B_UAV_AI";
 				};
 				class Item1
@@ -31065,16 +31012,16 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14401.16,21.1052,16313.764};
-						angles[]={0.0039967569,1.9896413,0.0026520467};
+						position[]={14157.396,22.284012,16193.597};
+						angles[]={0.0039967569,1.9896405,0.0026520467};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 					};
-					id=3903;
+					id=3913;
 					type="B_UAV_AI";
-					atlOffset=1.8202362;
 				};
 			};
 			class Attributes
@@ -31092,8 +31039,8 @@ class Mission
 					class Item0
 					{
 						linkID=0;
-						item0=3902;
-						item1=3901;
+						item0=3912;
+						item1=3911;
 						class CustomData
 						{
 							role=1;
@@ -31102,8 +31049,8 @@ class Mission
 					class Item1
 					{
 						linkID=1;
-						item0=3903;
-						item1=3901;
+						item0=3913;
+						item1=3911;
 						class CustomData
 						{
 							role=2;
@@ -31113,35 +31060,14 @@ class Mission
 				};
 			};
 			id=3897;
-			atlOffset=-0.01117897;
 		};
-		class Item759
+		class Item757
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={14157.395,22.287006,16195.839};
-				angles[]={0.0039967569,1.9896413,0.0026520467};
-			};
-			side="West";
-			flags=6;
-			class Attributes
-			{
-				name="d_chopper_21";
-				reportRemoteTargets=1;
-				reportOwnPosition=1;
-			};
-			id=3901;
-			type="USAF_RQ4A";
-			atlOffset=-0.01117897;
-		};
-		class Item760
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15073.006,19.980244,17001.195};
-				angles[]={-0,1.1169584,0};
+				position[]={15073.021,20.225006,17001.229};
+				angles[]={0,1.1169584,0};
 			};
 			side="Empty";
 			flags=4;
@@ -31149,10 +31075,10 @@ class Mission
 			{
 				name="d_chopper_17";
 				textures="DarkGreyCamo";
-				pylons=";;;;;;;;;;;;";
+				pylons=";;;;;;;;";
 			};
-			id=3905;
-			type="FIR_F14A";
+			id=3906;
+			type="JS_JC_FA18E";
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31269,6 +31195,64 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item758
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15098.076,20.389683,16946.877};
+				angles[]={0,0.73368388,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_2";
+				textures="Olive";
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=3907;
+			type="USAF_F22";
+		};
+		class Item759
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15059.064,20.290455,17076.08};
+				angles[]={0,1.570744,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="d_chopper_6";
+				pylons=";;;;;;;;;;;;";
+			};
+			id=3908;
+			type="B_Plane_CAS_01_dynamicLoadout_F";
+		};
+		class Item760
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14152.715,22.263561,16197.929};
+				angles[]={0.0039967569,1.9896405,0.0026520467};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				name="d_chopper_21";
+				reportRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=3911;
+			type="USAF_MQ9";
 		};
 	};
 	class Connections

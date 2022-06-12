@@ -50,7 +50,7 @@ if (d_MissionType != 2 && {d_disable_airai != 1}) then {
 #else
 		sleep 2;
 #endif
-		__TRACE("spawn_init_airai 30 secs over")
+		__TRACE("spawn_init_airai 30 secs over")//敌人空中单位将会在战区敌人发现玩家后20分钟左右才会到达战场
 		private _first = false;
 		if (d_number_light_attack_choppers > 0 && {d_light_attack_chopper isNotEqualTo []}) then {
 			sleep 60;
@@ -59,17 +59,17 @@ if (d_MissionType != 2 && {d_disable_airai != 1}) then {
 			["LAC"] spawn d_fnc_airai; // LAC = Ligh Attack Chopper
 		};
 		if (d_number_attack_choppers > 0 && {d_airai_attack_chopper isNotEqualTo []}) then {
-			sleep ([120, 60 + random 10] select _first);
+			sleep ([1800, 600 + random 600] select _first);
 			_first = true;
 			["HAC"] spawn d_fnc_airai; // HAC = Heavy Attack Chopper
 		};
 		if (d_number_attack_planes > 0 && {d_airai_attack_plane isNotEqualTo []}) then {
-			sleep ([60, 60 + random 10] select _first);
+			sleep ([1200, 600 + random 600] select _first);
 			_first = true;
 			["AP"] spawn d_fnc_airai; // AP = Attack Plane
 		};
 		if (d_number_attack_uavs > 0 && {d_airai_attack_uav isNotEqualTo []}) then {
-			sleep ([120, 60 + random 10] select _first);
+			sleep ([1200, 600 + random 600] select _first);
 			["UAV"] spawn d_fnc_airai; // UAV = Attack UAV
 		};		
 	};

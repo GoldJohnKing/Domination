@@ -15,7 +15,7 @@ for "_i" from 1 to _num_mines do {
 
 d_mines_created = [];//地雷
 #ifndef __VN__
-private _mtype = selectRandom ["APERSMine","ATMine","IEDLandBig_F","IEDUrbanBig_F","IEDLandSmall_F","IEDUrbanSmall_F","SLAMDirectionalMine","rhs_mine_pmn2","rhs_mine_TM43"];
+private _mtype = selectRandom ["APERSMine","APERSMine","ATMine","rhsusf_mine_blu91","rhsusf_mine_blu92","rhs_mine_tm62m"];
 #else
 private _mtype = selectRandom ["vn_mine_ammobox_range", "vn_mine_punji_01", "vn_mine_punji_02", "vn_mine_punji_03", "vn_mine_tm57"];
 #endif

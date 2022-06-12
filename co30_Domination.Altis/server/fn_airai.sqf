@@ -65,9 +65,9 @@ while {true} do {
 			// _height = 250; // Edited: Allow air vehicles fly at any height
 			// _heightASL = [400, 100 + (random 100), 250 + (random 250)]; // Edited: Allow air vehicles fly at any height
 		};
-		if (_type == "AP") exitWith {
+		if (_type == "AP") exitWith {//制空固定翼，固定2架一组
 			_heli_type = selectRandom d_airai_attack_plane;
-			_numair = [d_number_attack_planes, ceil (random d_number_attack_planes)] select (d_number_attack_planes > 1);
+			_numair = [d_number_attack_planes, ceil (random d_number_attack_planes)] select (d_number_attack_planes > 1);//
 			// _height = 700; // Edited: Allow air vehicles fly at any height
 			// _heightASL = [700, 500 + (random 100), 700 + (random 700)]; // Edited: Allow air vehicles fly at any height
 		};
