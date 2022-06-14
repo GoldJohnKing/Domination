@@ -2844,7 +2844,7 @@ if (hasInterface) then {
 			["gm_ge_army_k125", "gm_xx_civ_bicycle_01", "gm_ge_army_iltis_cargo"]
 		};
 		if (d_rhs) exitWith {//"rhs_btr80a_msv"
-			["rhsusf_mrzr4_d","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_m2_v1_usarmy_d","rhsusf_m1151_m2_v2_usarmy_d","rhsusf_m1151_m240_v2_usarmy_d","rhsusf_m1043_d_mk19","rhsusf_m966_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_M1220_M2_usarmy_d","rhsusf_M1232_M2_usarmy_d","rhsusf_M1237_M2_usarmy_d","rhsusf_m1240a1_m240_usarmy_d","rhsusf_m1240a1_m240_uik_usarmy_d","rhsusf_stryker_m1127_m2_d","rhsusf_stryker_m1134_d","M1128_MGS_DG1_SLATDES","rhsusf_m113d_usarmy","rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
+			["rhsusf_mrzr4_d","B_LSV_01_unarmed_F","B_LSV_01_armed_F","B_LSV_01_AT_F","rhsusf_m1151_m2crows_usarmy_d","rhsusf_m966_d","rhsusf_m1165a1_gmv_m2_m240_socom_d","rhsusf_M1220_M153_M2_usarmy_d","rhsusf_M1237_M2_usarmy_d","rhsusf_M1237_MK19_usarmy_d","rhsusf_m1240a1_m2crows_usarmy_d","rhsusf_m1240a1_m2_uik_usarmy_d","rhsusf_m1240a1_mk19_uik_usarmy_d","rhsusf_stryker_m1127_m2_d","rhsusf_stryker_m1134_d","M1128_MGS_DG1_SLATDES","rhsusf_m113d_usarmy","rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d","RHS_Stinger_AA_pod_D","RHS_MELB_MH6M","RHS_MELB_H6M","RHS_UH60M_d","RHS_CH_47F_10","B_Boat_Transport_01_F"]
 		};
 		if (d_unsung) exitWith {
 			["uns_willys"]
